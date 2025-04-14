@@ -21,7 +21,7 @@ lexer grammar JavadocLexer;
 }
 
 LEADING_ASTERISK
-    : {isAfterNewline()}? [ \t]* '*'
+    : [ \t]* '*' {isAfterNewline()}?
     ;
 
 NEWLINE
@@ -29,6 +29,6 @@ NEWLINE
     ;
 
 TEXT
-    : {isAfterNewline()}? ~[@*{}\r\n]+
-    | {!isAfterNewline()}? ~[@{}\r\n]+
+    : ~[@*{}\r\n]+ {isAfterNewline()}?
+    | ~[@{}\r\n]+ {!isAfterNewline()}?
     ;
