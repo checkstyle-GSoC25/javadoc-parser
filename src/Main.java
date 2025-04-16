@@ -1,5 +1,6 @@
 import grammar.JavadocLexer;
 import grammar.JavadocParser;
+import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -8,6 +9,7 @@ import org.antlr.v4.runtime.Token;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +24,7 @@ public class Main {
             JavadocParser parser = new JavadocParser(tokens);
             JavadocParser.JavadocContext tree = ParseAndPrintStats(parser);
             printParseTree(tree, parser);
+            DisplayTreeInGUI(tree, parser);
 
         } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
@@ -60,6 +63,11 @@ public class Main {
         return tokens;
     }
 
+    /**
+     * Prints the lexed tokens.
+     *
+     * @param tokens the CommonTokenStream containing the lexed tokens
+     */
     private static void printLexedTokens(CommonTokenStream tokens) {
         System.out.println("\n=== TOKENS ===");
         for (Token token : tokens.getTokens()) {
@@ -77,6 +85,12 @@ public class Main {
 //        }
     }
 
+    /**
+     * Parses the input and prints the parse time.
+     *
+     * @param parser the JavadocParser instance
+     * @return the JavadocContext tree (parse tree)
+     */
     private static JavadocParser.JavadocContext ParseAndPrintStats(JavadocParser parser) {
 
         long parseStart = System.nanoTime();
@@ -92,5 +106,11 @@ public class Main {
     private static void printParseTree(JavadocParser.JavadocContext tree, JavadocParser parser) {
         System.out.println("\n=== PARSE TREE ===");
         System.out.println(tree.toStringTree(parser));
+    }
+
+    private static void DisplayTreeInGUI(JavadocParser.JavadocContext tree, JavadocParser parser) {
+        TreeViewer viewer = new TreeViewer(Arrays.asList(
+                parser.getRuleNames()),tree);
+        viewer.open();
     }
 }
