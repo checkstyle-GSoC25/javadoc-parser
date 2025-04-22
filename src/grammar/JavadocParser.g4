@@ -14,7 +14,7 @@ which provide additional information about the declaration to which the comment 
 
 */
 javadoc
-    : mainDescription (blockTagSection)*
+    : mainDescription (blockTag)*
     ;
 
 /*
@@ -30,16 +30,13 @@ Each javadoc line is series of descriptive text tokens, starting with an asteris
 TODO: It may include inline tags and HTML Content
 */
 javadocLine
-    :  LEADING_ASTERISK? (TEXT | NEWLINE)+
+    :  LEADING_ASTERISK (TEXT | NEWLINE)*
     ;
 
 /*
 After the main description, the comment may contain a series of block tags.
 Each block tag starts with an optional asterisk and is followed by the actual block tag
 */
-blockTagSection
-    :  LEADING_ASTERISK? blockTag
-    ;
 
 /*
 TODO: extend with other block tags.
@@ -77,5 +74,6 @@ description
     ;
 
 descriptionLine
-    :  LEADING_ASTERISK? (TEXT | NEWLINE)+
+    : LEADING_ASTERISK? (TEXT | NEWLINE)+
+    | LEADING_ASTERISK
     ;
