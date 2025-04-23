@@ -30,7 +30,7 @@ Each javadoc line is series of descriptive text tokens, starting with an asteris
 TODO: It may include inline tags and HTML Content
 */
 javadocLine
-    :  LEADING_ASTERISK (TEXT | NEWLINE)*
+    :  LEADING_ASTERISK (TEXT | inlineTag | NEWLINE)*
     ;
 
 /*
@@ -74,6 +74,24 @@ description
     ;
 
 descriptionLine
-    : LEADING_ASTERISK? (TEXT | NEWLINE)+
+    : LEADING_ASTERISK? (TEXT | inlineTag | NEWLINE)+
     | LEADING_ASTERISK
+    ;
+
+inlineTag
+    : JAVADOC_INLINE_TAG_START
+      (codeInlineTag | linkInlineTag | linkPlainInlineTag)
+      JAVADOC_INLINE_TAG_END
+    ;
+
+codeInlineTag
+    : CODE_LITERAL TEXT*
+    ;
+
+linkInlineTag
+    : LINK_LITERAL TEXT*
+    ;
+
+linkPlainInlineTag
+    : LINKPLAIN_LITERAL TEXT*
     ;

@@ -52,6 +52,7 @@ PARAM_LITERAL: '@param' {isJavadocTag()}?;
 
 CUSTOM_NAME: '@' [a-zA-Z0-9:._-]+ {isJavadocTag()}?;
 
+JAVADOC_INLINE_TAG_START: '{' -> pushMode(JavadocInlineTag);
 
 ASTERISK_IN_TEXT
     : '*' -> type(TEXT)
@@ -64,3 +65,13 @@ AT_IN_TEXT
 TEXT
     : ~[@*{}\r\n]+
     ;
+
+mode JavadocInlineTag;
+
+CODE_LITERAL: '@code';
+LINK_LITERAL : '@link';
+LINKPLAIN_LITERAL: '@linkplain';
+JavadocInlineTag_TEXT: ~[@*{}\r\n]+ -> type(TEXT);
+JavadocInlineTag_AT_IN_TEXT: '@' -> type(TEXT);
+JavadocInlineTag_ASTERISK_IN_TEXT: '*' -> type(TEXT);
+JAVADOC_INLINE_TAG_END: '}' -> popMode;
