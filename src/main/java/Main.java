@@ -1,5 +1,3 @@
-import grammar.JavadocLexer;
-import grammar.JavadocParser;
 import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
@@ -14,7 +12,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         try {
-            String inputFile = "src/javadoc/input.javadoc";
+            String inputFile = "src/test/resources/input.javadoc";
             String input = new String(Files.readAllBytes(Paths.get(inputFile)));
             printInputStats(input);
 
@@ -79,10 +77,10 @@ public class Main {
                             .replace("\t", "\\t"));
         }
 
-//        System.out.println("\n=== TOKEN DETAILS ===");
-//        for (Token token : tokens.getTokens()) {
-//            System.out.println(token.toString());
-//        }
+        System.out.println("\n=== TOKEN DETAILS ===");
+        for (Token token : tokens.getTokens()) {
+            System.out.println(token.toString());
+        }
     }
 
     /**
