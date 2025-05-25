@@ -1,0 +1,7 @@
+ * This is a code example of the {@code @code} inline tag.
+ * {@code
+ *      int x = 9;
+ *      @Deprecated
+ *      public void oldMethod() {}
+ * }
+ * End text

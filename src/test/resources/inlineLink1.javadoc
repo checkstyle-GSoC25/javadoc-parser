@@ -1,0 +1,4 @@
+* {@link MyClass}
+* {@link com.example.MyClass}
+* {@link MyClass#myMethod}
+* {@link com.example.MyClass#myMethod}

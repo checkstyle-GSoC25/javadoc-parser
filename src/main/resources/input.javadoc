@@ -1,0 +1,6 @@
+* Use the {@link #getComponentAt(int, int) getComponentAt} method
+* to locate components by coordinates.
+* Use the {@link Test#getComponentAt(int, int) getComponentAt} method
+* The {@link ArrayList} class provides a resizable array.
+* See {@link java.util.Map} for details.
+* This flag behaves similarly to {@link #DEBUG_MODE}.

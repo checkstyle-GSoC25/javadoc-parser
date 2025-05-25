@@ -1,0 +1,73 @@
+'- javadoc
+   |- mainDescription
+   |  |- inlineTag
+   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  |- TOKEN[type: 10, text: com]
+   |  |  |     |  |- TOKEN[type: 11, text: .]
+   |  |  |     |  |- TOKEN[type: 10, text: example]
+   |  |  |     |  |- TOKEN[type: 11, text: .]
+   |  |  |     |  '- TOKEN[type: 10, text: MyClass]
+   |  |  |     |- TOKEN[type: 12, text: #]
+   |  |  |     '- memberReference
+   |  |  |        |- TOKEN[type: 10, text: myMethod]
+   |  |  |        |- TOKEN[type: 13, text: (]
+   |  |  |        '- TOKEN[type: 14, text: )]
+   |  |  '- TOKEN[type: 7, text: }]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  '- TOKEN[type: 10, text: MyClass]
+   |  |  |     |- TOKEN[type: 12, text: #]
+   |  |  |     '- memberReference
+   |  |  |        |- TOKEN[type: 10, text: myMethod]
+   |  |  |        |- TOKEN[type: 13, text: (]
+   |  |  |        '- TOKEN[type: 14, text: )]
+   |  |  '- TOKEN[type: 7, text: }]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  '- TOKEN[type: 10, text: MyClass]
+   |  |  |     |- TOKEN[type: 12, text: #]
+   |  |  |     '- memberReference
+   |  |  |        |- TOKEN[type: 10, text: myMethod]
+   |  |  |        |- TOKEN[type: 13, text: (]
+   |  |  |        |- parameterList
+   |  |  |        |  '- TOKEN[type: 10, text: int]
+   |  |  |        '- TOKEN[type: 14, text: )]
+   |  |  '- TOKEN[type: 7, text: }]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  |- TOKEN[type: 10, text: example]
+   |  |  |     |  |- TOKEN[type: 11, text: .]
+   |  |  |     |  '- TOKEN[type: 10, text: MyClass]
+   |  |  |     |- TOKEN[type: 12, text: #]
+   |  |  |     '- memberReference
+   |  |  |        |- TOKEN[type: 10, text: myMethod]
+   |  |  |        |- TOKEN[type: 13, text: (]
+   |  |  |        |- parameterList
+   |  |  |        |  |- TOKEN[type: 10, text: String]
+   |  |  |        |  |- TOKEN[type: 15, text: ,]
+   |  |  |        |  |- TOKEN[type: 10, text: int]
+   |  |  |        |  |- TOKEN[type: 15, text: ,]
+   |  |  |        |  '- TOKEN[type: 10, text: MyType]
+   |  |  |        '- TOKEN[type: 14, text: )]
+   |  |  '- TOKEN[type: 7, text: }]
+   |  '- TOKEN[type: 3, text: \n]
+   '- TOKEN[type: -1, text: <EOF>]

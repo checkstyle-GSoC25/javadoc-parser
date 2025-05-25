@@ -1,0 +1,6 @@
+* {@link com.example.MyClass#myMethod(String, int) the main entry method}
+* {@link #localMethod local method}
+* {@link #localMethod(int, String) a useful utility}
+* {@link Class#localMethod(int , String ) a useful utility}
+* {@link com.example.util.MathUtils#calculateScore(int, int)
+* Computes the final score for a player in a tournament.}
