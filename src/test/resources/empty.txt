@@ -1,0 +1,9 @@
+'- javadoc
+   |- javadocLine
+   |  |- TOKEN[type: 1, text: *]
+   |  '- TOKEN[type: 2, text: \n]
+   |- javadocLine
+   |  |- TOKEN[type: 1, text: *]
+   |  '- TOKEN[type: 2, text: \n]
+   '- javadocLine
+      '- TOKEN[type: 1, text: *]

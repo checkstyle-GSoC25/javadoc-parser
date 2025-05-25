@@ -104,6 +104,7 @@ public class Main {
     private static void printParseTree(JavadocParser.JavadocContext tree, JavadocParser parser) {
         System.out.println("\n=== PARSE TREE ===");
         System.out.println(tree.toStringTree(parser));
+        System.out.println(AstPrinter.createAstString(tree));
     }
 
     private static void DisplayTreeInGUI(JavadocParser.JavadocContext tree, JavadocParser parser) {
