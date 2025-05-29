@@ -7,7 +7,8 @@ channels {
 tokens {
     JAVADOC, LEADING_ASTERISK, NEWLINE, TEXT, WS, JAVADOC_INLINE_TAG_START, JAVADOC_INLINE_TAG_END,
     CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LEFT_BRACE, RIGHT_BRACE, COMMA, LINKPLAIN_LITERAL,
-    AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL
+    AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
+    TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE
 }
 
 @lexer::members {
@@ -74,7 +75,7 @@ Text_NEWLINE
     ;
 
 TEXT
-    : {!isJavadocTag()}? ~[{}\r\n]+
+    : {!isJavadocTag()}? ~[<{}\r\n]+
     ;
 
 BLOCK_TAG_ENTRY
@@ -82,6 +83,8 @@ BLOCK_TAG_ENTRY
     ;
 
 JAVADOC_INLINE_TAG_START: '{' -> pushMode(javadocInlineTag);
+
+TAG_OPEN: '<' -> pushMode(tag);
 
 
 mode javadocInlineTag;
@@ -120,6 +123,14 @@ RIGHT_BRACE: ')' -> pushMode(inlineTagDescription);
 COMMA: ',';
 Link_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 Link_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
+
+fragment LetterOrDigit
+    : Letter
+    | [0-9]
+    ;
+
+fragment Letter: [a-zA-Z$_];
+
 
 mode inlineTagDescription;
 
@@ -163,9 +174,56 @@ PARAMETER_NAME: Letter LetterOrDigit* -> type(IDENTIFIER), mode(blockTagDescript
 Param_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 
 
-fragment LetterOrDigit
-    : Letter
-    | [0-9]
-    ;
+mode tag;
 
-fragment Letter: [a-zA-Z$_];
+TAG_CLOSE: '>' -> popMode;
+TAG_SLASH_CLOSE: '/>' -> popMode;
+TAG_SLASH: '/';
+TAG_EQUALS: '=' -> pushMode(attrValue);
+TAG_NAME: TagNameStartChar TagNameChar*;
+Tag_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    ;
+TAG_WHITESPACE:  [ \t]+ -> type(WS), channel(WHITESPACES);
+
+
+
+fragment TagNameChar:
+    TagNameStartChar
+    | '-'
+    | '_'
+    | '.'
+    | DIGIT
+    | '\u00B7'
+    | '\u0300' ..'\u036F'
+    | '\u203F' ..'\u2040'
+;
+
+fragment TagNameStartChar:
+    [:a-zA-Z]
+    | '\u2070' ..'\u218F'
+    | '\u2C00' ..'\u2FEF'
+    | '\u3001' ..'\uD7FF'
+    | '\uF900' ..'\uFDCF'
+    | '\uFDF0' ..'\uFFFD'
+;
+
+fragment DIGIT: [0-9];
+
+mode attrValue;
+
+ATTRIBUTE_VALUE: ' '* ATTRIBUTE -> popMode;
+
+ATTRIBUTE: DOUBLE_QUOTE_STRING | SINGLE_QUOTE_STRING | ATTCHARS | HEXCHARS | DECCHARS;
+
+fragment ATTCHARS: ATTCHAR+ ' '?;
+
+fragment ATTCHAR: '-' | '_' | '.' | '/' | '+' | ',' | '?' | '=' | ':' | ';' | '#' | [0-9a-zA-Z];
+
+fragment HEXCHARS: '#' [0-9a-fA-F]+;
+
+fragment DECCHARS: [0-9]+ '%'?;
+
+fragment DOUBLE_QUOTE_STRING: '"' ~[<"]* '"';
+
+fragment SINGLE_QUOTE_STRING: '\'' ~[<']* '\'';

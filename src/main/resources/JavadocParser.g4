@@ -7,7 +7,7 @@ options {
 javadoc
     : mainDescription (blockTag)* EOF;
 
-mainDescription: (NEWLINE | TEXT | inlineTag)*;
+mainDescription: (NEWLINE | TEXT | inlineTag | htmlElement)*;
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
@@ -55,3 +55,29 @@ parameterName: IDENTIFIER;
 customBlockTag: CUSTOM_NAME description;
 
 description : (TEXT | NEWLINE |inlineTag)+ ;
+
+
+htmlElement
+    : normalElement
+    | singltonElement
+    ;
+
+normalElement
+    : htmlTagStart TAG_CLOSE (htmlContent TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE)?
+    ;
+
+singltonElement
+    : htmlTagStart TAG_SLASH_CLOSE
+    ;
+
+htmlTagStart
+    : TAG_OPEN TAG_NAME (htmlAttribute)*
+    ;
+
+htmlAttribute
+    : TAG_NAME (TAG_EQUALS ATTRIBUTE_VALUE)?
+    ;
+
+htmlContent
+    : (TEXT | htmlElement | inlineTag | NEWLINE)*
+    ;

@@ -63,4 +63,14 @@ public class AstTest extends AbstractTestSupport {
     public void testBlockParamTag() throws IOException {
         verifyAst(getPath("blockParam.txt"), getPath("blockParam.javadoc"));
     }
+
+    @Test
+    public void testHTML1() throws IOException {
+        verifyAst(getPath("html1.txt"), getPath("html1.javadoc"));
+    }
+
+    @Test
+    public void testHTML2() throws IOException {
+        verifyAst(getPath("html2.txt"), getPath("html2.javadoc"));
+    }
 }

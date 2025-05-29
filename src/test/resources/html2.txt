@@ -1,0 +1,121 @@
+'- javadoc
+   |- mainDescription
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |- TOKEN[type: 26, text: font]
+   |  |  |  '- htmlAttribute
+   |  |  |     |- TOKEN[type: 26, text: size]
+   |  |  |     |- TOKEN[type: 25, text: =]
+   |  |  |     '- TOKEN[type: 27, text: 3]
+   |  |  |- TOKEN[type: 22, text: >]
+   |  |  |- htmlContent
+   |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  '- TOKEN[type: 26, text: p]
+   |  |  |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |  |- htmlContent
+   |  |  |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |  |  |- htmlElement
+   |  |  |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  |  |  '- TOKEN[type: 26, text: i]
+   |  |  |  |  |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |  |  |  |- htmlContent
+   |  |  |  |  |  |  |  |- TOKEN[type: 4, text: Looking for ]
+   |  |  |  |  |  |  |  |- htmlElement
+   |  |  |  |  |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  |  |  |  |  |- TOKEN[type: 26, text: a]
+   |  |  |  |  |  |  |  |  |  '- htmlAttribute
+   |  |  |  |  |  |  |  |  |     |- TOKEN[type: 26, text: href]
+   |  |  |  |  |  |  |  |  |     |- TOKEN[type: 25, text: =]
+   |  |  |  |  |  |  |  |  |     '- TOKEN[type: 27, text: "http://www.antlr3.org"]
+   |  |  |  |  |  |  |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |  |  |  |  |  |- htmlContent
+   |  |  |  |  |  |  |  |  |  '- TOKEN[type: 4, text: ANTLR v3]
+   |  |  |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  |  |  |  |- TOKEN[type: 24, text: /]
+   |  |  |  |  |  |  |  |  |- TOKEN[type: 26, text: a]
+   |  |  |  |  |  |  |  |  '- TOKEN[type: 22, text: >]
+   |  |  |  |  |  |  |  '- TOKEN[type: 4, text: ?]
+   |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  |  |- TOKEN[type: 24, text: /]
+   |  |  |  |  |  |  |- TOKEN[type: 26, text: i]
+   |  |  |  |  |  |  '- TOKEN[type: 22, text: >]
+   |  |  |  |  |  '- TOKEN[type: 3, text: \n]
+   |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |- TOKEN[type: 24, text: /]
+   |  |  |  |  |- TOKEN[type: 26, text: p]
+   |  |  |  |  '- TOKEN[type: 22, text: >]
+   |  |  |  '- TOKEN[type: 3, text: \n]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 24, text: /]
+   |  |  |- TOKEN[type: 26, text: font]
+   |  |  '- TOKEN[type: 22, text: >]
+   |  |- TOKEN[type: 3, text: \n]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: 21, text: <]
+   |     |  |- TOKEN[type: 26, text: div]
+   |     |  '- htmlAttribute
+   |     |     |- TOKEN[type: 26, text: id]
+   |     |     |- TOKEN[type: 25, text: =]
+   |     |     '- TOKEN[type: 27, text: "terence"]
+   |     |- TOKEN[type: 22, text: >]
+   |     |- htmlContent
+   |     |  |- TOKEN[type: 3, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: 21, text: <]
+   |     |  |  |  |- TOKEN[type: 26, text: img]
+   |     |  |  |  |- htmlAttribute
+   |     |  |  |  |  |- TOKEN[type: 26, text: src]
+   |     |  |  |  |  |- TOKEN[type: 25, text: =]
+   |     |  |  |  |  '- TOKEN[type: 27, text: "images/terence.jpg"]
+   |     |  |  |  '- htmlAttribute
+   |     |  |  |     |- TOKEN[type: 26, text: alt]
+   |     |  |  |     |- TOKEN[type: 25, text: =]
+   |     |  |  |     '- TOKEN[type: 27, text: "terence"]
+   |     |  |  '- TOKEN[type: 23, text: />]
+   |     |  |- TOKEN[type: 3, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: 21, text: <]
+   |     |  |  |  '- TOKEN[type: 26, text: strong]
+   |     |  |  |- TOKEN[type: 22, text: >]
+   |     |  |  |- htmlContent
+   |     |  |  |  '- TOKEN[type: 4, text: Terence Parr]
+   |     |  |  |- TOKEN[type: 21, text: <]
+   |     |  |  |- TOKEN[type: 24, text: /]
+   |     |  |  |- TOKEN[type: 26, text: strong]
+   |     |  |  '- TOKEN[type: 22, text: >]
+   |     |  |- TOKEN[type: 4, text:  is the maniac behind ANTLR and has been]
+   |     |  |- TOKEN[type: 3, text: \n]
+   |     |  |- TOKEN[type: 4, text: working on language tools since 1989. He is a professor of computer]
+   |     |  |- TOKEN[type: 3, text: \n]
+   |     |  |- TOKEN[type: 4, text: science at the ]
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: 21, text: <]
+   |     |  |  |  |- TOKEN[type: 26, text: a]
+   |     |  |  |  '- htmlAttribute
+   |     |  |  |     |- TOKEN[type: 26, text: href]
+   |     |  |  |     |- TOKEN[type: 25, text: =]
+   |     |  |  |     '- TOKEN[type: 27, text: "http://www.cs.usfca.edu/~parrt"]
+   |     |  |  |- TOKEN[type: 22, text: >]
+   |     |  |  |- htmlContent
+   |     |  |  |  '- TOKEN[type: 4, text: University of San Francisco]
+   |     |  |  |- TOKEN[type: 21, text: <]
+   |     |  |  |- TOKEN[type: 24, text: /]
+   |     |  |  |- TOKEN[type: 26, text: a]
+   |     |  |  '- TOKEN[type: 22, text: >]
+   |     |  |- TOKEN[type: 4, text: .]
+   |     |  '- TOKEN[type: 3, text: \n]
+   |     |- TOKEN[type: 21, text: <]
+   |     |- TOKEN[type: 24, text: /]
+   |     |- TOKEN[type: 26, text: div]
+   |     '- TOKEN[type: 22, text: >]
+   '- TOKEN[type: -1, text: <EOF>]

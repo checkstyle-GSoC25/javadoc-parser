@@ -1,0 +1,144 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: 4, text: Returns a new ]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  '- TOKEN[type: 26, text: code]
+   |  |  |- TOKEN[type: 22, text: >]
+   |  |  |- htmlContent
+   |  |  |  '- TOKEN[type: 4, text: List]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 24, text: /]
+   |  |  |- TOKEN[type: 26, text: code]
+   |  |  '- TOKEN[type: 22, text: >]
+   |  |- TOKEN[type: 4, text:  containing all elements from the specified]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  '- TOKEN[type: 26, text: code]
+   |  |  |- TOKEN[type: 22, text: >]
+   |  |  |- htmlContent
+   |  |  |  '- TOKEN[type: 4, text: Collection]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 24, text: /]
+   |  |  |- TOKEN[type: 26, text: code]
+   |  |  '- TOKEN[type: 22, text: >]
+   |  |- TOKEN[type: 4, text:  in the same iteration order.]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  '- TOKEN[type: 26, text: p]
+   |  |  '- TOKEN[type: 23, text: />]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- TOKEN[type: 4, text: This method is useful when you want to create a mutable copy of an existing]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- TOKEN[type: 4, text: collection. For example:]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  '- TOKEN[type: 26, text: pre]
+   |  |  |- TOKEN[type: 22, text: >]
+   |  |  |- htmlContent
+   |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |- inlineTag
+   |  |  |  |  |- TOKEN[type: 6, text: {]
+   |  |  |  |  |- codeInlineTag
+   |  |  |  |  |  |- TOKEN[type: 8, text: @code]
+   |  |  |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |  |  |- TOKEN[type: 4, text:  List<String> names = new ArrayList<>(createNames());]
+   |  |  |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |  |  '- TOKEN[type: 4, text:  ]
+   |  |  |  |  '- TOKEN[type: 7, text: }]
+   |  |  |  '- TOKEN[type: 3, text: \n]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 24, text: /]
+   |  |  |- TOKEN[type: 26, text: pre]
+   |  |  '- TOKEN[type: 22, text: >]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  '- TOKEN[type: 26, text: p]
+   |  |  '- TOKEN[type: 23, text: />]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- TOKEN[type: 4, text: See also:]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  '- TOKEN[type: 26, text: ul]
+   |  |  |- TOKEN[type: 22, text: >]
+   |  |  |- htmlContent
+   |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  '- TOKEN[type: 26, text: li]
+   |  |  |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |  |- htmlContent
+   |  |  |  |  |  |- TOKEN[type: 6, text: {]
+   |  |  |  |  |  |- linkInlineTag
+   |  |  |  |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  |  |  |  '- reference
+   |  |  |  |  |  |     |- qualifiedName
+   |  |  |  |  |  |     |  |- TOKEN[type: 10, text: java]
+   |  |  |  |  |  |     |  |- TOKEN[type: 11, text: .]
+   |  |  |  |  |  |     |  |- TOKEN[type: 10, text: util]
+   |  |  |  |  |  |     |  |- TOKEN[type: 11, text: .]
+   |  |  |  |  |  |     |  '- TOKEN[type: 10, text: Collections]
+   |  |  |  |  |  |     |- TOKEN[type: 12, text: #]
+   |  |  |  |  |  |     '- memberReference
+   |  |  |  |  |  |        |- TOKEN[type: 10, text: unmodifiableList]
+   |  |  |  |  |  |        |- TOKEN[type: 13, text: (]
+   |  |  |  |  |  |        |- parameterList
+   |  |  |  |  |  |        |  '- TOKEN[type: 10, text: List]
+   |  |  |  |  |  |        '- TOKEN[type: 14, text: )]
+   |  |  |  |  |  '- TOKEN[type: 7, text: }]
+   |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |- TOKEN[type: 24, text: /]
+   |  |  |  |  |- TOKEN[type: 26, text: li]
+   |  |  |  |  '- TOKEN[type: 22, text: >]
+   |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  '- TOKEN[type: 26, text: li]
+   |  |  |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |  |- htmlContent
+   |  |  |  |  |  |- TOKEN[type: 6, text: {]
+   |  |  |  |  |  |- linkInlineTag
+   |  |  |  |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  |  |  |  '- reference
+   |  |  |  |  |  |     |- TOKEN[type: 10, text: java]
+   |  |  |  |  |  |     |- TOKEN[type: 11, text: .]
+   |  |  |  |  |  |     |- TOKEN[type: 10, text: util]
+   |  |  |  |  |  |     |- TOKEN[type: 11, text: .]
+   |  |  |  |  |  |     '- TOKEN[type: 10, text: ArrayList]
+   |  |  |  |  |  '- TOKEN[type: 7, text: }]
+   |  |  |  |  |- TOKEN[type: 21, text: <]
+   |  |  |  |  |- TOKEN[type: 24, text: /]
+   |  |  |  |  |- TOKEN[type: 26, text: li]
+   |  |  |  |  '- TOKEN[type: 22, text: >]
+   |  |  |  '- TOKEN[type: 3, text: \n]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 24, text: /]
+   |  |  |- TOKEN[type: 26, text: ul]
+   |  |  '- TOKEN[type: 22, text: >]
+   |  |- TOKEN[type: 3, text: \n]
+   |  '- TOKEN[type: 3, text: \n]
+   |- blockTag
+   |  |- TOKEN[type: 20, text: @param]
+   |  |- parameterName
+   |  |  '- TOKEN[type: 10, text: collection]
+   |  '- description
+   |     |- TOKEN[type: 4, text:  the source collection]
+   |     '- TOKEN[type: 3, text: \n]
+   |- blockTag
+   |  |- TOKEN[type: 19, text: @return]
+   |  '- description
+   |     '- TOKEN[type: 4, text:  a new mutable list containing the elements of the collection]
+   '- TOKEN[type: -1, text: <EOF>]
