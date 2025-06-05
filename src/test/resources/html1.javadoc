@@ -1,6 +1,5 @@
 * Returns a new <code>List</code> containing all elements from the specified
 * <code>Collection</code> in the same iteration order.
-* <p/>
 * This method is useful when you want to create a mutable copy of an existing
 * collection. For example:
 * <pre>
@@ -8,7 +7,6 @@
 * List<String> names = new ArrayList<>(createNames());
 * }
 * </pre>
-* <p/>
 * See also:
 * <ul>
 *   <li>{@link java.util.Collections#unmodifiableList(List)}</li>

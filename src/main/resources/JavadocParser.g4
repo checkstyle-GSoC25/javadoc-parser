@@ -4,6 +4,23 @@ options {
     tokenVocab = JavadocLexer;
 }
 
+@parser::header {
+import java.util.Set;
+}
+
+
+@parser::members {
+    private static final Set<String> VOID_TAGS = Set.of(
+        "area", "base", "basefont", "br", "col", "frame", "hr",
+        "img", "input", "isindex", "link", "meta", "param"
+    );
+
+    public boolean isVoidTag() {
+        String tagName = _input.LT(2).getText();
+        return VOID_TAGS.contains(tagName.toLowerCase());
+    }
+}
+
 javadoc
     : mainDescription (blockTag)* EOF;
 
@@ -58,16 +75,16 @@ description : (TEXT | NEWLINE |inlineTag)+ ;
 
 
 htmlElement
-    : normalElement
-    | singltonElement
+    : voidElement
+    | normalElement
+    ;
+
+voidElement
+    : {isVoidTag()}? htmlTagStart (TAG_SLASH_CLOSE | TAG_CLOSE)
     ;
 
 normalElement
-    : htmlTagStart TAG_CLOSE (htmlContent TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE)?
-    ;
-
-singltonElement
-    : htmlTagStart TAG_SLASH_CLOSE
+    : htmlTagStart TAG_CLOSE htmlContent TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE
     ;
 
 htmlTagStart
