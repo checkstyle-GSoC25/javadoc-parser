@@ -1,0 +1,6 @@
+* @param name the user's name
+* @param age the user's age in years
+* @param    email,   the user's email address
+* @param    address
+*       the user's physical address
+*@param mode one of {@code "asc"}, {@code "desc"}, or {@code "none"}

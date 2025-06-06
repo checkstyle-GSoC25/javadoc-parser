@@ -1,0 +1,4 @@
+* {@link com.example.MyClass#myMethod()}
+* {@link MyClass#myMethod()}
+* {@link MyClass#myMethod(int)}
+* {@link example.MyClass#myMethod(String, int, MyType)}

@@ -1,0 +1,19 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: 4, text: This is a code example of inline tag code.]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: 6, text: {@]
+   |  |  |- codeInlineTag
+   |  |  |  |- TOKEN[type: 8, text: code]
+   |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |- TOKEN[type: 4, text:     int x = 3 * 5;]
+   |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  |- TOKEN[type: 4, text:     int y = 10 * 6;]
+   |  |  |  |- TOKEN[type: 3, text: \n]
+   |  |  |  '- TOKEN[type: 4, text:    ]
+   |  |  '- TOKEN[type: 7, text: }]
+   |  |- TOKEN[type: 4, text:  int is the variable type]
+   |  |- TOKEN[type: 3, text: \n]
+   |  '- TOKEN[type: 4, text: x is variable name.]
+   '- TOKEN[type: -1, text: <EOF>]
