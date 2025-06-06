@@ -45,7 +45,7 @@ reference
 
 qualifiedName: IDENTIFIER (DOT IDENTIFIER)*;
 
-memberReference: IDENTIFIER (LEFT_BRACE parameterList? RIGHT_BRACE)?;
+memberReference: IDENTIFIER (LPAREN parameterList? RPAREN)?;
 
 parameterList: IDENTIFIER (COMMA IDENTIFIER)*;
 
@@ -80,15 +80,19 @@ htmlElement
     ;
 
 voidElement
-    : {isVoidTag()}? htmlTagStart (TAG_SLASH_CLOSE | TAG_CLOSE)
+    : {isVoidTag()}? htmlTagStart
     ;
 
 normalElement
-    : htmlTagStart TAG_CLOSE htmlContent TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE
+    : htmlTagStart htmlContent htmlTagEnd
     ;
 
 htmlTagStart
-    : TAG_OPEN TAG_NAME (htmlAttribute)*
+    : TAG_OPEN TAG_NAME (htmlAttribute)* (TAG_SLASH_CLOSE | TAG_CLOSE)
+    ;
+
+htmlTagEnd
+    : TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE
     ;
 
 htmlAttribute

@@ -6,21 +6,22 @@
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  '- TOKEN[type: 26, text: p]
-   |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |- TOKEN[type: 26, text: p]
+   |  |  |  '- TOKEN[type: 22, text: >]
    |  |  |- htmlContent
    |  |  |  '- TOKEN[type: 4, text: This is a normal paragraph.]
-   |  |  |- TOKEN[type: 21, text: <]
-   |  |  |- TOKEN[type: 24, text: /]
-   |  |  |- TOKEN[type: 26, text: p]
-   |  |  '- TOKEN[type: 22, text: >]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: 21, text: <]
+   |  |     |- TOKEN[type: 24, text: /]
+   |  |     |- TOKEN[type: 26, text: p]
+   |  |     '- TOKEN[type: 22, text: >]
    |  |- TOKEN[type: 3, text: \n]
    |  |- TOKEN[type: 3, text: \n]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  '- TOKEN[type: 26, text: p]
-   |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |- TOKEN[type: 26, text: p]
+   |  |  |  '- TOKEN[type: 22, text: >]
    |  |  |- htmlContent
    |  |  |  |- TOKEN[type: 3, text: \n]
    |  |  |  |- TOKEN[type: 4, text: Here's a list of features:]
@@ -28,135 +29,131 @@
    |  |  |  |- htmlElement
    |  |  |  |  |- htmlTagStart
    |  |  |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |  |  '- TOKEN[type: 26, text: ul]
-   |  |  |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |  |  |- TOKEN[type: 26, text: ul]
+   |  |  |  |  |  '- TOKEN[type: 22, text: >]
    |  |  |  |  |- htmlContent
    |  |  |  |  |  |- TOKEN[type: 3, text: \n]
    |  |  |  |  |  |- htmlElement
    |  |  |  |  |  |  |- htmlTagStart
    |  |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |  |  |  |  '- TOKEN[type: 26, text: li]
-   |  |  |  |  |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |  |  |  |  |- TOKEN[type: 26, text: li]
+   |  |  |  |  |  |  |  '- TOKEN[type: 22, text: >]
    |  |  |  |  |  |  |- htmlContent
    |  |  |  |  |  |  |  '- TOKEN[type: 4, text: Feature one]
-   |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |  |  |  |- TOKEN[type: 24, text: /]
-   |  |  |  |  |  |  |- TOKEN[type: 26, text: li]
-   |  |  |  |  |  |  '- TOKEN[type: 22, text: >]
+   |  |  |  |  |  |  '- htmlTagEnd
+   |  |  |  |  |  |     |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  |     |- TOKEN[type: 24, text: /]
+   |  |  |  |  |  |     |- TOKEN[type: 26, text: li]
+   |  |  |  |  |  |     '- TOKEN[type: 22, text: >]
    |  |  |  |  |  |- TOKEN[type: 3, text: \n]
    |  |  |  |  |  |- htmlElement
    |  |  |  |  |  |  |- htmlTagStart
    |  |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |  |  |  |  '- TOKEN[type: 26, text: li]
-   |  |  |  |  |  |  |- TOKEN[type: 22, text: >]
+   |  |  |  |  |  |  |  |- TOKEN[type: 26, text: li]
+   |  |  |  |  |  |  |  '- TOKEN[type: 22, text: >]
    |  |  |  |  |  |  |- htmlContent
    |  |  |  |  |  |  |  '- TOKEN[type: 4, text: Feature two]
-   |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |  |  |  |- TOKEN[type: 24, text: /]
-   |  |  |  |  |  |  |- TOKEN[type: 26, text: li]
-   |  |  |  |  |  |  '- TOKEN[type: 22, text: >]
+   |  |  |  |  |  |  '- htmlTagEnd
+   |  |  |  |  |  |     |- TOKEN[type: 21, text: <]
+   |  |  |  |  |  |     |- TOKEN[type: 24, text: /]
+   |  |  |  |  |  |     |- TOKEN[type: 26, text: li]
+   |  |  |  |  |  |     '- TOKEN[type: 22, text: >]
    |  |  |  |  |  '- TOKEN[type: 3, text: \n]
-   |  |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |  |- TOKEN[type: 24, text: /]
-   |  |  |  |  |- TOKEN[type: 26, text: ul]
-   |  |  |  |  '- TOKEN[type: 22, text: >]
+   |  |  |  |  '- htmlTagEnd
+   |  |  |  |     |- TOKEN[type: 21, text: <]
+   |  |  |  |     |- TOKEN[type: 24, text: /]
+   |  |  |  |     |- TOKEN[type: 26, text: ul]
+   |  |  |  |     '- TOKEN[type: 22, text: >]
    |  |  |  '- TOKEN[type: 3, text: \n]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: 21, text: <]
+   |  |     |- TOKEN[type: 24, text: /]
+   |  |     |- TOKEN[type: 26, text: p]
+   |  |     '- TOKEN[type: 22, text: >]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- TOKEN[type: 3, text: \n]
+   |  |- htmlElement
    |  |  |- TOKEN[type: 21, text: <]
-   |  |  |- TOKEN[type: 24, text: /]
-   |  |  |- TOKEN[type: 26, text: p]
+   |  |  |- TOKEN[type: 26, text: hr]
    |  |  '- TOKEN[type: 22, text: >]
    |  |- TOKEN[type: 3, text: \n]
    |  |- TOKEN[type: 3, text: \n]
    |  |- htmlElement
-   |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  '- TOKEN[type: 26, text: hr]
-   |  |  '- TOKEN[type: 22, text: >]
-   |  |- TOKEN[type: 3, text: \n]
-   |  |- TOKEN[type: 3, text: \n]
-   |  |- htmlElement
-   |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |- TOKEN[type: 26, text: img]
-   |  |  |  |- htmlAttribute
-   |  |  |  |  |- TOKEN[type: 26, text: src]
-   |  |  |  |  |- TOKEN[type: 25, text: =]
-   |  |  |  |  '- TOKEN[type: 27, text: "example.png"]
-   |  |  |  '- htmlAttribute
-   |  |  |     |- TOKEN[type: 26, text: alt]
-   |  |  |     |- TOKEN[type: 25, text: =]
-   |  |  |     '- TOKEN[type: 27, text: "Example image"]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 26, text: img]
+   |  |  |- htmlAttribute
+   |  |  |  |- TOKEN[type: 26, text: src]
+   |  |  |  |- TOKEN[type: 25, text: =]
+   |  |  |  '- TOKEN[type: 27, text: "example.png"]
+   |  |  |- htmlAttribute
+   |  |  |  |- TOKEN[type: 26, text: alt]
+   |  |  |  |- TOKEN[type: 25, text: =]
+   |  |  |  '- TOKEN[type: 27, text: "Example image"]
    |  |  '- TOKEN[type: 22, text: >]
    |  |- TOKEN[type: 3, text: \n]
    |  |- htmlElement
-   |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  '- TOKEN[type: 26, text: br]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 26, text: br]
    |  |  '- TOKEN[type: 22, text: >]
    |  |- TOKEN[type: 3, text: \n]
    |  |- htmlElement
-   |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  '- TOKEN[type: 26, text: br]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 26, text: br]
    |  |  '- TOKEN[type: 23, text: />]
    |  |- TOKEN[type: 3, text: \n]
    |  |- htmlElement
-   |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |- TOKEN[type: 26, text: input]
-   |  |  |  |- htmlAttribute
-   |  |  |  |  |- TOKEN[type: 26, text: type]
-   |  |  |  |  |- TOKEN[type: 25, text: =]
-   |  |  |  |  '- TOKEN[type: 27, text: "text"]
-   |  |  |  '- htmlAttribute
-   |  |  |     |- TOKEN[type: 26, text: name]
-   |  |  |     |- TOKEN[type: 25, text: =]
-   |  |  |     '- TOKEN[type: 27, text: "username"]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 26, text: input]
+   |  |  |- htmlAttribute
+   |  |  |  |- TOKEN[type: 26, text: type]
+   |  |  |  |- TOKEN[type: 25, text: =]
+   |  |  |  '- TOKEN[type: 27, text: "text"]
+   |  |  |- htmlAttribute
+   |  |  |  |- TOKEN[type: 26, text: name]
+   |  |  |  |- TOKEN[type: 25, text: =]
+   |  |  |  '- TOKEN[type: 27, text: "username"]
    |  |  '- TOKEN[type: 23, text: />]
    |  |- TOKEN[type: 3, text: \n]
    |  |- htmlElement
-   |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |- TOKEN[type: 26, text: meta]
-   |  |  |  '- htmlAttribute
-   |  |  |     |- TOKEN[type: 26, text: charset]
-   |  |  |     |- TOKEN[type: 25, text: =]
-   |  |  |     '- TOKEN[type: 27, text: "UTF-8"]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 26, text: meta]
+   |  |  |- htmlAttribute
+   |  |  |  |- TOKEN[type: 26, text: charset]
+   |  |  |  |- TOKEN[type: 25, text: =]
+   |  |  |  '- TOKEN[type: 27, text: "UTF-8"]
    |  |  '- TOKEN[type: 22, text: >]
    |  |- TOKEN[type: 3, text: \n]
    |  |- htmlElement
-   |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: 21, text: <]
-   |  |  |  |- TOKEN[type: 26, text: link]
-   |  |  |  |- htmlAttribute
-   |  |  |  |  |- TOKEN[type: 26, text: rel]
-   |  |  |  |  |- TOKEN[type: 25, text: =]
-   |  |  |  |  '- TOKEN[type: 27, text: "stylesheet"]
-   |  |  |  '- htmlAttribute
-   |  |  |     |- TOKEN[type: 26, text: href]
-   |  |  |     |- TOKEN[type: 25, text: =]
-   |  |  |     '- TOKEN[type: 27, text: "style.css"]
+   |  |  |- TOKEN[type: 21, text: <]
+   |  |  |- TOKEN[type: 26, text: link]
+   |  |  |- htmlAttribute
+   |  |  |  |- TOKEN[type: 26, text: rel]
+   |  |  |  |- TOKEN[type: 25, text: =]
+   |  |  |  '- TOKEN[type: 27, text: "stylesheet"]
+   |  |  |- htmlAttribute
+   |  |  |  |- TOKEN[type: 26, text: href]
+   |  |  |  |- TOKEN[type: 25, text: =]
+   |  |  |  '- TOKEN[type: 27, text: "style.css"]
    |  |  '- TOKEN[type: 22, text: >]
    |  |- TOKEN[type: 3, text: \n]
    |  '- htmlElement
-   |     |- htmlTagStart
-   |     |  |- TOKEN[type: 21, text: <]
-   |     |  |- TOKEN[type: 26, text: area]
-   |     |  |- htmlAttribute
-   |     |  |  |- TOKEN[type: 26, text: shape]
-   |     |  |  |- TOKEN[type: 25, text: =]
-   |     |  |  '- TOKEN[type: 27, text: "rect"]
-   |     |  |- htmlAttribute
-   |     |  |  |- TOKEN[type: 26, text: coords]
-   |     |  |  |- TOKEN[type: 25, text: =]
-   |     |  |  '- TOKEN[type: 27, text: "34,44,270,350"]
-   |     |  |- htmlAttribute
-   |     |  |  |- TOKEN[type: 26, text: href]
-   |     |  |  |- TOKEN[type: 25, text: =]
-   |     |  |  '- TOKEN[type: 27, text: "link.html"]
-   |     |  '- htmlAttribute
-   |     |     |- TOKEN[type: 26, text: alt]
-   |     |     |- TOKEN[type: 25, text: =]
-   |     |     '- TOKEN[type: 27, text: "Link"]
+   |     |- TOKEN[type: 21, text: <]
+   |     |- TOKEN[type: 26, text: area]
+   |     |- htmlAttribute
+   |     |  |- TOKEN[type: 26, text: shape]
+   |     |  |- TOKEN[type: 25, text: =]
+   |     |  '- TOKEN[type: 27, text: "rect"]
+   |     |- htmlAttribute
+   |     |  |- TOKEN[type: 26, text: coords]
+   |     |  |- TOKEN[type: 25, text: =]
+   |     |  '- TOKEN[type: 27, text: "34,44,270,350"]
+   |     |- htmlAttribute
+   |     |  |- TOKEN[type: 26, text: href]
+   |     |  |- TOKEN[type: 25, text: =]
+   |     |  '- TOKEN[type: 27, text: "link.html"]
+   |     |- htmlAttribute
+   |     |  |- TOKEN[type: 26, text: alt]
+   |     |  |- TOKEN[type: 25, text: =]
+   |     |  '- TOKEN[type: 27, text: "Link"]
    |     '- TOKEN[type: 22, text: >]
    '- TOKEN[type: -1, text: <EOF>]

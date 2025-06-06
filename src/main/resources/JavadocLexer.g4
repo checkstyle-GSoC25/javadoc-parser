@@ -6,7 +6,7 @@ channels {
 
 tokens {
     JAVADOC, LEADING_ASTERISK, NEWLINE, TEXT, WS, JAVADOC_INLINE_TAG_START, JAVADOC_INLINE_TAG_END,
-    CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LEFT_BRACE, RIGHT_BRACE, COMMA, LINKPLAIN_LITERAL,
+    CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN_LITERAL,
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE
 }
@@ -59,10 +59,14 @@ tokens {
 }
 
 LEADING_ASTERISK
-    : [ \t]* '*' {isAfterNewline()}? -> channel(LEADING_ASTERISKS)
+    : [ \t]* '*' {isAfterNewline()}? {
+        if (!Character.isWhitespace(_input.LA(1))) {
+           pushMode(text);
+        }
+    } -> channel(LEADING_ASTERISKS)
     ;
 
-WS :   (' '|'\t')* -> channel(WHITESPACES),  pushMode(text) ;
+WS :   (' '|'\t')+ -> channel(WHITESPACES),  pushMode(text) ;
 
 NEWLINE
     : '\r'? '\n' {setAfterNewline();}
@@ -82,17 +86,17 @@ BLOCK_TAG_ENTRY
     : {isJavadocTag()}? -> pushMode(blockTag), skip
     ;
 
-JAVADOC_INLINE_TAG_START: '{' -> pushMode(javadocInlineTag);
+JAVADOC_INLINE_TAG_START: '{@' -> pushMode(javadocInlineTag);
 
 TAG_OPEN: '<' -> pushMode(tag);
 
 
 mode javadocInlineTag;
 
-CODE_LITERAL: '@code' -> pushMode(code);
-LINK_LITERAL : '@link'-> pushMode(link);
-LINKPLAIN_LITERAL : '@linkplain' -> pushMode(link);
-CUSTOM_NAME: '@' [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
+CODE_LITERAL: 'code' -> pushMode(code);
+LINK_LITERAL : 'link'-> pushMode(link);
+LINKPLAIN_LITERAL : 'linkplain' -> pushMode(link);
+CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
 mode code;
 // TODO: Allow '}' to be treated as regular text within code blocks.
@@ -118,8 +122,8 @@ IDENTIFIER:
 
 DOT: '.';
 HASH: '#';
-LEFT_BRACE: '(';
-RIGHT_BRACE: ')' -> pushMode(inlineTagDescription);
+LPAREN: '(';
+RPAREN: ')' -> pushMode(inlineTagDescription);
 COMMA: ',';
 Link_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 Link_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
@@ -167,7 +171,7 @@ BlockDescription_NEWLINE
     ;
 
 BlockDescription_JAVADOC_INLINE_TAG_START:
-        '{' -> type(JAVADOC_INLINE_TAG_START), pushMode(javadocInlineTag);
+        '{@' -> type(JAVADOC_INLINE_TAG_START), pushMode(javadocInlineTag);
 
 mode parameterName;
 PARAMETER_NAME: Letter LetterOrDigit* -> type(IDENTIFIER), mode(blockTagDescription);

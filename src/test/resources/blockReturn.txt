@@ -1,6 +1,6 @@
 '- javadoc
-   |- [50]
-   |  '- [50]
+   |- [52]
+   |  '- [52]
    |- blockTag
    |  |- TOKEN[type: 19, text: @return]
    |  '- description
@@ -11,16 +11,16 @@
    |  '- description
    |     |- TOKEN[type: 4, text:   ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {]
+   |     |  |- TOKEN[type: 6, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: @code]
+   |     |  |  |- TOKEN[type: 8, text: code]
    |     |  |  '- TOKEN[type: 4, text:  true]
    |     |  '- TOKEN[type: 7, text: }]
    |     |- TOKEN[type: 4, text:  if the file was successfully saved, ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {]
+   |     |  |- TOKEN[type: 6, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: @code]
+   |     |  |  |- TOKEN[type: 8, text: code]
    |     |  |  '- TOKEN[type: 4, text:  false]
    |     |  '- TOKEN[type: 7, text: }]
    |     |- TOKEN[type: 4, text:  otherwise.]
@@ -30,17 +30,17 @@
    |  '- description
    |     |- TOKEN[type: 4, text:   ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {]
+   |     |  |- TOKEN[type: 6, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: @code]
+   |     |  |  |- TOKEN[type: 8, text: code]
    |     |  |  '- TOKEN[type: 4, text:  true]
    |     |  '- TOKEN[type: 7, text: }]
    |     |- TOKEN[type: 4, text:  if the file was successfully saved]
    |     |- TOKEN[type: 3, text: \n]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {]
+   |     |  |- TOKEN[type: 6, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: @code]
+   |     |  |  |- TOKEN[type: 8, text: code]
    |     |  |  '- TOKEN[type: 4, text:  false]
    |     |  '- TOKEN[type: 7, text: }]
    |     |- TOKEN[type: 4, text:  otherwise.]

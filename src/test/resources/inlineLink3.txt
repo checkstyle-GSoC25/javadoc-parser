@@ -1,9 +1,9 @@
 '- javadoc
    |- mainDescription
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- TOKEN[type: 6, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  |- TOKEN[type: 9, text: link]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
    |  |  |  |  |  |- TOKEN[type: 10, text: com]
@@ -25,9 +25,9 @@
    |  |  '- TOKEN[type: 7, text: }]
    |  |- TOKEN[type: 3, text: \n]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- TOKEN[type: 6, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  |- TOKEN[type: 9, text: link]
    |  |  |  |- reference
    |  |  |  |  |- TOKEN[type: 12, text: #]
    |  |  |  |  '- memberReference
@@ -37,9 +37,9 @@
    |  |  '- TOKEN[type: 7, text: }]
    |  |- TOKEN[type: 3, text: \n]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- TOKEN[type: 6, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  |- TOKEN[type: 9, text: link]
    |  |  |  |- reference
    |  |  |  |  |- TOKEN[type: 12, text: #]
    |  |  |  |  '- memberReference
@@ -55,9 +55,9 @@
    |  |  '- TOKEN[type: 7, text: }]
    |  |- TOKEN[type: 3, text: \n]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- TOKEN[type: 6, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  |- TOKEN[type: 9, text: link]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
    |  |  |  |  |  '- TOKEN[type: 10, text: Class]
@@ -75,9 +75,9 @@
    |  |  '- TOKEN[type: 7, text: }]
    |  |- TOKEN[type: 3, text: \n]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- TOKEN[type: 6, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: @link]
+   |  |  |  |- TOKEN[type: 9, text: link]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
    |  |  |  |  |  |- TOKEN[type: 10, text: com]

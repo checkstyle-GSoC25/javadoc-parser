@@ -1,6 +1,6 @@
 '- javadoc
-   |- [50]
-   |  '- [50]
+   |- [52]
+   |  '- [52]
    |- blockTag
    |  |- TOKEN[type: 20, text: @param]
    |  |- parameterName
@@ -37,23 +37,23 @@
    |  '- description
    |     |- TOKEN[type: 4, text:  one of ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {]
+   |     |  |- TOKEN[type: 6, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: @code]
+   |     |  |  |- TOKEN[type: 8, text: code]
    |     |  |  '- TOKEN[type: 4, text:  "asc"]
    |     |  '- TOKEN[type: 7, text: }]
    |     |- TOKEN[type: 4, text: , ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {]
+   |     |  |- TOKEN[type: 6, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: @code]
+   |     |  |  |- TOKEN[type: 8, text: code]
    |     |  |  '- TOKEN[type: 4, text:  "desc"]
    |     |  '- TOKEN[type: 7, text: }]
    |     |- TOKEN[type: 4, text: , or ]
    |     '- inlineTag
-   |        |- TOKEN[type: 6, text: {]
+   |        |- TOKEN[type: 6, text: {@]
    |        |- codeInlineTag
-   |        |  |- TOKEN[type: 8, text: @code]
+   |        |  |- TOKEN[type: 8, text: code]
    |        |  '- TOKEN[type: 4, text:  "none"]
    |        '- TOKEN[type: 7, text: }]
    '- TOKEN[type: -1, text: <EOF>]

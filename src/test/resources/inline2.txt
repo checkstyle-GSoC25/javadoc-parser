@@ -2,17 +2,17 @@
    |- mainDescription
    |  |- TOKEN[type: 4, text: This is a code example of the ]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- TOKEN[type: 6, text: {@]
    |  |  |- codeInlineTag
-   |  |  |  |- TOKEN[type: 8, text: @code]
+   |  |  |  |- TOKEN[type: 8, text: code]
    |  |  |  '- TOKEN[type: 4, text:  @code]
    |  |  '- TOKEN[type: 7, text: }]
    |  |- TOKEN[type: 4, text:  inline tag.]
    |  |- TOKEN[type: 3, text: \n]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {]
+   |  |  |- TOKEN[type: 6, text: {@]
    |  |  |- codeInlineTag
-   |  |  |  |- TOKEN[type: 8, text: @code]
+   |  |  |  |- TOKEN[type: 8, text: code]
    |  |  |  |- TOKEN[type: 3, text: \n]
    |  |  |  |- TOKEN[type: 4, text:       int x = 9;]
    |  |  |  |- TOKEN[type: 3, text: \n]
