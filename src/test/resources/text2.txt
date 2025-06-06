@@ -2,5 +2,6 @@
    |- mainDescription
    |  |- TOKEN[type: 4, text: int z = 5 * 3]
    |  |- TOKEN[type: 3, text: \n]
-   |  '- TOKEN[type: 4, text: mohamad@gmail.com]
+   |  |- TOKEN[type: 4, text: mohamad]
+   |  '- TOKEN[type: 4, text: @gmail.com]
    '- TOKEN[type: -1, text: <EOF>]

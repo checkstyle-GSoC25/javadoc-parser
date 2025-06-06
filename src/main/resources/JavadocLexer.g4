@@ -25,6 +25,16 @@ tokens {
         afterNewline = true;
     }
 
+    public boolean isNormalText() {
+        int nextChar = _input.LA(1);
+        int afterNextChar = _input.LA(2);
+        boolean isJavadocTag = isJavadocTag();
+        boolean isHtmlTag = nextChar == '<'
+                    && (Character.isLetter(afterNextChar) || afterNextChar == '/');
+        boolean isInlineTag = nextChar == '{' && afterNextChar == '@';
+        return !isJavadocTag && !isHtmlTag && !isInlineTag;
+    }
+
     public boolean isJavadocTag() {
         if (previousToken == null) {
             return true;
@@ -79,7 +89,11 @@ Text_NEWLINE
     ;
 
 TEXT
-    : {!isJavadocTag()}? ~[<{}\r\n]+
+    : TEXT_CHAR+
+    ;
+
+fragment TEXT_CHAR
+    : {isNormalText()}? ~[\r\n]
     ;
 
 BLOCK_TAG_ENTRY
@@ -155,26 +169,14 @@ StartOfLine_LEADING_ASTERISK
     ;
 
 mode blockTag;
-AUTHOR_LITERAL: '@author' -> pushMode(blockTagDescription);
-DEPRECATED_LITERAL : '@deprecated' -> pushMode(blockTagDescription);
-RETURN_LITERAL: '@return' -> pushMode(blockTagDescription);
+AUTHOR_LITERAL: '@author' -> pushMode(text);
+DEPRECATED_LITERAL : '@deprecated' -> pushMode(text);
+RETURN_LITERAL: '@return' -> pushMode(text);
 PARAM_LITERAL: '@param' -> pushMode(parameterName);
-BlockTag_CUSTOM_NAME: '@' [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(blockTagDescription);
-
-mode blockTagDescription;
-BlockDescription_TEXT
-    : {!isJavadocTag()}? ~[{}\r\n]+ -> type(TEXT)
-    ;
-
-BlockDescription_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> mode(DEFAULT_MODE), type(NEWLINE)
-    ;
-
-BlockDescription_JAVADOC_INLINE_TAG_START:
-        '{@' -> type(JAVADOC_INLINE_TAG_START), pushMode(javadocInlineTag);
+BlockTag_CUSTOM_NAME: '@' [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(text);
 
 mode parameterName;
-PARAMETER_NAME: Letter LetterOrDigit* -> type(IDENTIFIER), mode(blockTagDescription);
+PARAMETER_NAME: Letter LetterOrDigit* -> type(IDENTIFIER), mode(text);
 Param_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 
 
@@ -189,8 +191,6 @@ Tag_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
     ;
 TAG_WHITESPACE:  [ \t]+ -> type(WS), channel(WHITESPACES);
-
-
 
 fragment TagNameChar:
     TagNameStartChar

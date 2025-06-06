@@ -24,11 +24,15 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testSpecialCharacter() throws IOException {
+    verifyAst(getPath("specialCharacter.txt"), getPath("specialCharacter.javadoc"));
+    }
+
+    @Test
     public void testInlineCodeTag1() throws IOException {
         verifyAst(getPath("inline1.txt"), getPath("inline1.javadoc"));
     }
 
-    // TODO: fix line 6:3 token recognition error at: '}'
     @Test
     public void testInlineCodeTag2() throws IOException {
         verifyAst(getPath("inline2.txt"), getPath("inline2.javadoc"));
