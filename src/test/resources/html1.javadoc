@@ -1,0 +1,17 @@
+* Returns a new <code>List</code> containing all elements from the specified
+* <code>Collection</code> in the same iteration order.
+* This method is useful when you want to create a mutable copy of an existing
+* collection. For example:
+* <pre>
+* {@code
+* List<String> names = new ArrayList<>(createNames());
+* }
+* </pre>
+* See also:
+* <ul>
+*   <li>{@link java.util.Collections#unmodifiableList(List)}</li>
+*   <li>{@link java.util.ArrayList}</li>
+* </ul>
+*
+* @param collection the source collection
+* @return a new mutable list containing the elements of the collection

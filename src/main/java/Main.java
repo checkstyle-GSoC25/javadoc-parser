@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         try {
-            String inputFile = "src/test/resources/input.javadoc";
+            String inputFile = "src/main/resources/input.javadoc";
             String input = new String(Files.readAllBytes(Paths.get(inputFile)));
             printInputStats(input);
 
