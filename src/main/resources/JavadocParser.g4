@@ -19,6 +19,10 @@ import java.util.Set;
         String tagName = _input.LT(2).getText();
         return VOID_TAGS.contains(tagName.toLowerCase());
     }
+
+    public String getCloseTagName() {
+        return _input.LT(3).getText();
+    }
 }
 
 javadoc
@@ -84,15 +88,20 @@ voidElement
     ;
 
 normalElement
-    : htmlTagStart htmlContent htmlTagEnd
+    : tagStart=htmlTagStart htmlContent htmlTagEnd[$tagStart.tagName]
     ;
 
-htmlTagStart
-    : TAG_OPEN TAG_NAME (htmlAttribute)* (TAG_SLASH_CLOSE | TAG_CLOSE)
+htmlTagStart returns[String tagName]
+    : TAG_OPEN name=TAG_NAME (htmlAttribute)* (TAG_SLASH_CLOSE | TAG_CLOSE)
+        {$tagName = $name.text;}
     ;
 
-htmlTagEnd
-    : TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE
+htmlTagEnd [String openTagName]
+    : {
+        // Lookahead to 3rd token: < / TAG_NAME >
+        $openTagName.equalsIgnoreCase(getCloseTagName())
+      }?
+      TAG_OPEN TAG_SLASH TAG_NAME TAG_CLOSE
     ;
 
 htmlAttribute

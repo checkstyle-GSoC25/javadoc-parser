@@ -47,7 +47,7 @@ import org.antlr.v4.runtime.tree.ParseTreeWalker;
  */
 public class AstPrinter {
 
-    private static final Pattern NEWLINE = Pattern.compile("\r\n", Pattern.LITERAL);
+    private static final Pattern NEWLINE = Pattern.compile("\\r\\n|\\n|\\r");
     /**
      * The payload will either be the name of the parser rule, or the token
      * of a leaf in the tree.

@@ -1,0 +1,29 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: 4, text: Here's a list of features:]
+   |  |- TOKEN[type: 3, text: \n]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: 21, text: <]
+   |     |  |- TOKEN[type: 26, text: ul]
+   |     |  '- TOKEN[type: 22, text: >]
+   |     |- htmlContent
+   |     |  |- TOKEN[type: 3, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- TOKEN[type: 21, text: <]
+   |     |  |  |- TOKEN[type: 26, text: li]
+   |     |  |  '- TOKEN[type: 22, text: >]
+   |     |  |- TOKEN[type: 4, text: Feature one]
+   |     |  |- TOKEN[type: 3, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- TOKEN[type: 21, text: <]
+   |     |  |  |- TOKEN[type: 26, text: li]
+   |     |  |  '- TOKEN[type: 22, text: >]
+   |     |  |- TOKEN[type: 4, text: Feature two]
+   |     |  '- TOKEN[type: 3, text: \n]
+   |     '- htmlTagEnd
+   |        |- TOKEN[type: 21, text: <]
+   |        |- TOKEN[type: 24, text: /]
+   |        |- TOKEN[type: 26, text: ul]
+   |        '- TOKEN[type: 22, text: >]
+   '- TOKEN[type: -1, text: <EOF>]
