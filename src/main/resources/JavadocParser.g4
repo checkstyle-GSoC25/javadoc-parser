@@ -19,10 +19,13 @@ import java.util.Set;
         String tagName = _input.LT(2).getText();
         return VOID_TAGS.contains(tagName.toLowerCase());
     }
+<<<<<<< HEAD
 
     public String getCloseTagName() {
         return _input.LT(3).getText();
     }
+=======
+>>>>>>> master
 }
 
 javadoc

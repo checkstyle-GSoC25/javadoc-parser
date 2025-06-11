@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 * Here's a list of features:
 * <p>
 * <b>Customizable</b>: You can set the number of columns, the number of rows, and the size of each cell.
 * <b>Responsive</b>: The grid adjusts to the size of the container.
+=======
+* Example with angle brackets: 5 < 10 and 10 > 5. <br>
+* Example with braces: map.get("{key}") returns {value}.
+* Curly braces that aren't tags: This is just {braced text}.
+* Not a tag: { @code not a real tag}.
+* You can write an email like test@example.com in plain text.
+* Do not interpret @this or @123 as block tags.
+* Not a leading asterisk: int x = 3 * 5;
+* Not a tag: This is a normal <  p> sentence with no html tags. < /p>. <p> this is a real tag </p>
+>>>>>>> master
