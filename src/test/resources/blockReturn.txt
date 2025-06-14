@@ -1,6 +1,4 @@
 '- javadoc
-   |- [58]
-   |  '- [58]
    |- blockTag
    |  |- TOKEN[type: RETURN_LITERAL, text: @return]
    |  '- description

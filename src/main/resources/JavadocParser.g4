@@ -30,7 +30,9 @@ import java.util.Set;
 }
 
 javadoc
-    : mainDescription (blockTag)* EOF;
+    : mainDescription (blockTag)* EOF
+    | blockTag+ EOF
+    ;
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
@@ -81,7 +83,7 @@ description : (TEXT | NEWLINE |inlineTag)+ ;
 
 // HTML stuff
 
-mainDescription: (NEWLINE | TEXT | inlineTag | htmlElement)*;
+mainDescription: (NEWLINE | TEXT | inlineTag | htmlElement)+;
 
 htmlElement
     : voidElement
