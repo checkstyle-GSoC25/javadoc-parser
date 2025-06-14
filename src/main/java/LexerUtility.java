@@ -1,0 +1,52 @@
+import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.CharStream;
+
+import java.util.*;
+
+public final class LexerUtility {
+
+    private LexerUtility() {
+        throw new IllegalStateException("Utility class");
+    }
+
+    public static List<Token> getUnclosedTagNameTokens(
+            Deque<Token> openTagNameTokens, Deque<Token> closeTagNameTokens) {
+
+        final Deque<Token> unmatchedOpen = new ArrayDeque<>(openTagNameTokens);
+
+        for (Token closingTag : closeTagNameTokens) {
+            final Deque<Token> tempStack = new ArrayDeque<>();
+            boolean matched = false;
+            while (!unmatchedOpen.isEmpty()) {
+                Token openingTag = unmatchedOpen.pop();
+                if (openingTag.getText().equalsIgnoreCase(closingTag.getText())) {
+                    matched = true;
+                    break;
+                } else {
+                    tempStack.push(openingTag);
+                }
+            }
+
+            // Put unmatched tags back
+            while (!tempStack.isEmpty()) {
+                unmatchedOpen.push(tempStack.pop());
+            }
+
+            if (!matched) {
+                // might need this, let's see how this works out
+            }
+        }
+
+        final List<Token> unmatched = new ArrayList<>(unmatchedOpen);
+        Collections.reverse(unmatched);
+        return Collections.unmodifiableList(unmatched);
+    }
+
+    public static boolean isOpenTagName(Token previousToken) {
+        return previousToken == null || previousToken.getType() != JavadocParser.TAG_SLASH;
+    }
+
+    public static boolean isSelfClosing(CharStream _input) {
+        return _input.LA(1) == JavadocParser.TAG_SLASH_CLOSE;
+    }
+}

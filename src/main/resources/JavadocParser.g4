@@ -15,16 +15,22 @@ import java.util.Set;
         "img", "input", "isindex", "link", "meta", "param"
     );
 
+    private List<Token> unclosedTagNameTokens;
+
     public boolean isVoidTag() {
         String tagName = _input.LT(2).getText();
         return VOID_TAGS.contains(tagName.toLowerCase());
+    }
+
+    public JavadocParser(CommonTokenStream tokens, List<Token> unclosed) {
+        super(tokens);
+        _interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+        this.unclosedTagNameTokens = unclosed;
     }
 }
 
 javadoc
     : mainDescription (blockTag)* EOF;
-
-mainDescription: (NEWLINE | TEXT | inlineTag | htmlElement)*;
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
@@ -73,22 +79,31 @@ customBlockTag: CUSTOM_NAME description;
 
 description : (TEXT | NEWLINE |inlineTag)+ ;
 
+// HTML stuff
+
+mainDescription: (NEWLINE | TEXT | inlineTag | htmlElement)*;
 
 htmlElement
     : voidElement
-    | normalElement
+    | selfClosingElement
+    | tight
+    | nonTight
     ;
 
 voidElement
     : {isVoidTag()}? htmlTagStart
     ;
 
-normalElement
-    : htmlTagStart htmlContent htmlTagEnd
+tight: {!ParserUtility.isNonTightTag(_input, unclosedTagNameTokens)}? htmlTagStart htmlContent htmlTagEnd;
+
+nonTight: htmlTagStart nonTightHtmlContent;
+
+selfClosingElement
+    : TAG_OPEN TAG_NAME (htmlAttribute)* TAG_SLASH_CLOSE
     ;
 
 htmlTagStart
-    : TAG_OPEN TAG_NAME (htmlAttribute)* (TAG_SLASH_CLOSE | TAG_CLOSE)
+    : TAG_OPEN TAG_NAME (htmlAttribute)* TAG_CLOSE
     ;
 
 htmlTagEnd
@@ -100,5 +115,9 @@ htmlAttribute
     ;
 
 htmlContent
-    : (TEXT | htmlElement | inlineTag | NEWLINE)*
+    : (TEXT | htmlElement | inlineTag | NEWLINE)+
+    ;
+
+nonTightHtmlContent
+    : (TEXT | inlineTag | NEWLINE)+
     ;

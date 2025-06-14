@@ -211,7 +211,16 @@ public class AstPrinter {
             CharStream codePointCharStream = CharStreams.fromFileName(filename);
             JavadocLexer lexer = new JavadocLexer(codePointCharStream);
             CommonTokenStream tokens = new CommonTokenStream(lexer);
-            JavadocParser parser = new JavadocParser(tokens);
+
+            // Force full lexing *before* parsing starts
+            // ensures lexer emits all tokens and populates internal state.
+            // We can even have some boolean that we set after the initial pass that lets
+            // use enter special modes, use predicates, whatever. But - I don't think this
+            // will be necessary.
+            tokens.fill();
+
+            final List<Token> unclosed = lexer.getUnclosedTagNameTokens();
+            JavadocParser parser = new JavadocParser(tokens, unclosed);
             ParseTree tree = parser.javadoc();
             return createAstString(tree);
         } catch (IOException e) {
@@ -219,4 +228,5 @@ public class AstPrinter {
         }
         return "";
     }
+
 }
