@@ -26,6 +26,8 @@ import org.antlr.v4.runtime.Token;
     private boolean afterNewline = true;
     private boolean isJavadocTag = true;
     private boolean hasSeenTagName = false;
+    private boolean shouldDetectedHtmlTag = true;
+    private int braceCounter = 0;
 
     private final Deque<Token> openTagNameTokens = new ArrayDeque<>();
     private final Deque<Token> closeTagNameTokens = new ArrayDeque<>();
@@ -43,7 +45,8 @@ import org.antlr.v4.runtime.Token;
         int afterNextChar = _input.LA(2);
         boolean isJavadocTag = isJavadocTag();
         boolean isHtmlTag = nextChar == '<'
-                    && (Character.isLetter(afterNextChar) || afterNextChar == '/');
+                    && (Character.isLetter(afterNextChar) || afterNextChar == '/')
+                    && shouldDetectedHtmlTag;
         boolean isInlineTag = nextChar == '{' && afterNextChar == '@';
         return !isJavadocTag && !isHtmlTag && !isInlineTag;
     }
@@ -126,14 +129,14 @@ BLOCK_TAG_ENTRY
     : {isJavadocTag()}? '@' -> pushMode(blockTag), more
     ;
 
-JAVADOC_INLINE_TAG_START: '{@' -> pushMode(javadocInlineTag);
+JAVADOC_INLINE_TAG_START: '{@' { braceCounter = 1;} -> pushMode(javadocInlineTag);
 
 TAG_OPEN: '<' -> pushMode(tag);
 
 
 mode javadocInlineTag;
 
-CODE_LITERAL: 'code' -> pushMode(code);
+CODE_LITERAL: 'code' {shouldDetectedHtmlTag = false;} -> pushMode(code);
 LINK_LITERAL : 'link'-> pushMode(link);
 LINKPLAIN_LITERAL : 'linkplain' -> pushMode(link);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
@@ -145,9 +148,13 @@ Code_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
     ;
 
-Code_TEXT: ~[}\r\n]+ -> type(TEXT);
+Code_TEXT
+    :   ( {isNormalText()}? ~[{}\r\n]
+        | '{' {braceCounter++;}
+        | '}' {braceCounter != 1}? {braceCounter--;})+  -> type(TEXT)
+    ;
 
-JAVADOC_INLINE_TAG_END: '}' -> mode(text);
+JAVADOC_INLINE_TAG_END: '}' {braceCounter == 1}? {shouldDetectedHtmlTag = true;} -> mode(text);
 
 
 mode link;
