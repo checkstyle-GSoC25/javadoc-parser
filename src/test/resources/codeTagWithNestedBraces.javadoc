@@ -1,0 +1,29 @@
+ * This method demonstrates complex usage of the {@code
+ *     Map<String, List<Map<String, Object>>> complexMap = new HashMap<>();
+ *     complexMap.put("key", Arrays.asList(
+ *         Map.of("innerKey1", "{value1}", "innerKey2", new Object() {
+ *             @Override
+ *             public String toString() {
+ *                 return "Anonymous {Object} with @annotation and special chars like <, >, &";
+ *             }
+ *         })
+ *     );
+ *     // Note: { not always means new scope! }
+ *     System.out.println("Literal brace: { and comment brace: }");
+ * }}
+ * The same example using the common {@code <pre>} format:
+ *
+ * <pre>{@code
+ * Map<String, List<Map<String, Object>>> complexMap = new HashMap<>();
+ * complexMap.put("key", Arrays.asList(
+ *     Map.of("innerKey1", "{value1}", "innerKey2", new Object() {
+ *         @Override
+ *         public String toString() {
+ *             return "Anonymous {Object} with @annotation and special chars like <, >, &";
+ *         }
+ *     })
+ * ));
+ * // Note: { not always means new scope!}
+ * System.out.println("Literal brace: { and comment brace: }");
+ * }</pre>
+ * Done.

@@ -26,6 +26,7 @@ import org.antlr.v4.runtime.Token;
     private boolean afterNewline = true;
     private boolean isJavadocTag = true;
     private boolean hasSeenTagName = false;
+    private int braceCounter = 0;
 
     private final Deque<Token> openTagNameTokens = new ArrayDeque<>();
     private final Deque<Token> closeTagNameTokens = new ArrayDeque<>();
@@ -44,6 +45,7 @@ import org.antlr.v4.runtime.Token;
         boolean isJavadocTag = isJavadocTag();
         boolean isHtmlTag = nextChar == '<'
                     && (Character.isLetter(afterNextChar) || afterNextChar == '/');
+
         boolean isInlineTag = nextChar == '{' && afterNextChar == '@';
         return !isJavadocTag && !isHtmlTag && !isInlineTag;
     }
@@ -126,7 +128,7 @@ BLOCK_TAG_ENTRY
     : {isJavadocTag()}? '@' -> pushMode(blockTag), more
     ;
 
-JAVADOC_INLINE_TAG_START: '{@' -> pushMode(javadocInlineTag);
+JAVADOC_INLINE_TAG_START: '{@' { braceCounter = 1;} -> pushMode(javadocInlineTag);
 
 TAG_OPEN: '<' -> pushMode(tag);
 
@@ -145,9 +147,13 @@ Code_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
     ;
 
-Code_TEXT: ~[}\r\n]+ -> type(TEXT);
+Code_TEXT
+    :   ( ~[{}\r\n]
+        | '{' {braceCounter++;}
+        | '}' {braceCounter != 1}? {braceCounter--;})+  -> type(TEXT)
+    ;
 
-JAVADOC_INLINE_TAG_END: '}' -> mode(text);
+JAVADOC_INLINE_TAG_END: '}' {braceCounter == 1}? {braceCounter--;} -> mode(text);
 
 
 mode link;
