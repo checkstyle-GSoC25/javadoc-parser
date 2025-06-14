@@ -16,6 +16,7 @@ tokens {
     private Token previousToken = null;
     private boolean afterNewline = true;
     private boolean isJavadocTag = true;
+    private boolean hasSeenTagName = false;
 
     public boolean isAfterNewline() {
         return afterNewline;
@@ -182,11 +183,13 @@ Param_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 
 mode tag;
 
-TAG_CLOSE: '>' -> popMode;
-TAG_SLASH_CLOSE: '/>' -> popMode;
+TAG_CLOSE: '>' {hasSeenTagName = false;} -> popMode;
+TAG_SLASH_CLOSE: '/>' {hasSeenTagName = false;} -> popMode;
 TAG_SLASH: '/';
 TAG_EQUALS: '=' -> pushMode(attrValue);
-TAG_NAME: TagNameStartChar TagNameChar*;
+// TODO: this can be one rule maybe?
+TAG_NAME: {hasSeenTagName == false}? TagNameStartChar TagNameChar* {hasSeenTagName = true;};
+TAG_ATTR_NAME: {hasSeenTagName == true}? TagNameStartChar TagNameChar*;
 Tag_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
     ;

@@ -96,7 +96,7 @@ htmlTagEnd
     ;
 
 htmlAttribute
-    : TAG_NAME (TAG_EQUALS ATTRIBUTE_VALUE)?
+    : TAG_ATTR_NAME (TAG_EQUALS ATTRIBUTE_VALUE)?
     ;
 
 htmlContent
