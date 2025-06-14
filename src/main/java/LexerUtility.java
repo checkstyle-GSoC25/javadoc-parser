@@ -2,6 +2,7 @@ import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.CharStream;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public final class LexerUtility {
 
@@ -9,7 +10,7 @@ public final class LexerUtility {
         throw new IllegalStateException("Utility class");
     }
 
-    public static List<Token> getUnclosedTagNameTokens(
+    public static Set<SimpleToken> getUnclosedTagNameTokens(
             Deque<Token> openTagNameTokens, Deque<Token> closeTagNameTokens) {
 
         final Deque<Token> unmatchedOpen = new ArrayDeque<>(openTagNameTokens);
@@ -37,9 +38,11 @@ public final class LexerUtility {
             }
         }
 
-        final List<Token> unmatched = new ArrayList<>(unmatchedOpen);
-        Collections.reverse(unmatched);
-        return Collections.unmodifiableList(unmatched);
+        // We cannot map to SimpleToken until lexing has completed, otherwise
+        // the token index will not be set.
+        return unmatchedOpen.stream()
+                .map(SimpleToken::from)
+                .collect(Collectors.toUnmodifiableSet());
     }
 
     public static boolean isOpenTagName(Token previousToken) {

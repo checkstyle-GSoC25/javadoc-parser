@@ -6,6 +6,7 @@ options {
 
 @parser::header {
 import java.util.Set;
+import java.util.stream.Collectors;
 }
 
 
@@ -15,14 +16,14 @@ import java.util.Set;
         "img", "input", "isindex", "link", "meta", "param"
     );
 
-    private List<Token> unclosedTagNameTokens;
+    private Set<SimpleToken> unclosedTagNameTokens;
 
     public boolean isVoidTag() {
         String tagName = _input.LT(2).getText();
         return VOID_TAGS.contains(tagName.toLowerCase());
     }
 
-    public JavadocParser(CommonTokenStream tokens, List<Token> unclosed) {
+    public JavadocParser(CommonTokenStream tokens, Set<SimpleToken> unclosed) {
         super(tokens);
         _interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
         this.unclosedTagNameTokens = unclosed;

@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -219,7 +220,7 @@ public class AstPrinter {
             // will be necessary.
             tokens.fill();
 
-            final List<Token> unclosed = lexer.getUnclosedTagNameTokens();
+            final Set<SimpleToken> unclosed = lexer.getUnclosedTagNameTokens();
             JavadocParser parser = new JavadocParser(tokens, unclosed);
             ParseTree tree = parser.javadoc();
             return createAstString(tree);

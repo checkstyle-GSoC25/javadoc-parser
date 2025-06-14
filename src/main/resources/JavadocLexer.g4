@@ -16,7 +16,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Deque;
-import java.util.List;
+import java.util.Set;
 import org.antlr.v4.runtime.Token;
 }
 
@@ -89,7 +89,7 @@ import org.antlr.v4.runtime.Token;
         }
     }
 
-     public List<Token> getUnclosedTagNameTokens() {
+     public Set<SimpleToken> getUnclosedTagNameTokens() {
          return LexerUtility.getUnclosedTagNameTokens(openTagNameTokens, closeTagNameTokens);
      }
 }
