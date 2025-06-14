@@ -1,21 +1,21 @@
 '- javadoc
    |- mainDescription
-   |  |- TOKEN[type: 4, text: Usage of author block tag.]
-   |  '- TOKEN[type: 3, text: \n]
+   |  |- TOKEN[type: TEXT, text: Usage of author block tag.]
+   |  '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 17, text: @author]
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author]
    |  '- description
-   |     |- TOKEN[type: 4, text:  mohamed mahfouz]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |- TOKEN[type: TEXT, text:  mohamed mahfouz]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 17, text: @author]
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author]
    |  '- description
-   |     |- TOKEN[type: 4, text:  mohamed]
-   |     |- TOKEN[type: 3, text: \n]
-   |     |- TOKEN[type: 4, text: mohamed mahfouz]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |- TOKEN[type: TEXT, text:  mohamed]
+   |     |- TOKEN[type: NEWLINE, text: \n]
+   |     |- TOKEN[type: TEXT, text: mohamed mahfouz]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 17, text: @author]
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author]
    |  '- description
-   |     '- TOKEN[type: 4, text:  mohamed]
-   '- TOKEN[type: -1, text: <EOF>]
+   |     '- TOKEN[type: TEXT, text:  mohamed]
+   '- TOKEN[type: EOF, text: <EOF>]

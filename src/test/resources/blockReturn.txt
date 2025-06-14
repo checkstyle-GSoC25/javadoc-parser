@@ -2,51 +2,51 @@
    |- [52]
    |  '- [52]
    |- blockTag
-   |  |- TOKEN[type: 19, text: @return]
+   |  |- TOKEN[type: RETURN_LITERAL, text: @return]
    |  '- description
-   |     |- TOKEN[type: 4, text:  the user's age]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |- TOKEN[type: TEXT, text:  the user's age]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 19, text: @return]
+   |  |- TOKEN[type: RETURN_LITERAL, text: @return]
    |  '- description
-   |     |- TOKEN[type: 4, text:   ]
+   |     |- TOKEN[type: TEXT, text:   ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {@]
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: code]
-   |     |  |  '- TOKEN[type: 4, text:  true]
-   |     |  '- TOKEN[type: 7, text: }]
-   |     |- TOKEN[type: 4, text:  if the file was successfully saved, ]
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |     |  |  '- TOKEN[type: TEXT, text:  true]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |     |- TOKEN[type: TEXT, text:  if the file was successfully saved, ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {@]
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: code]
-   |     |  |  '- TOKEN[type: 4, text:  false]
-   |     |  '- TOKEN[type: 7, text: }]
-   |     |- TOKEN[type: 4, text:  otherwise.]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |     |  |  '- TOKEN[type: TEXT, text:  false]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |     |- TOKEN[type: TEXT, text:  otherwise.]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 19, text: @return]
+   |  |- TOKEN[type: RETURN_LITERAL, text: @return]
    |  '- description
-   |     |- TOKEN[type: 4, text:   ]
+   |     |- TOKEN[type: TEXT, text:   ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {@]
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: code]
-   |     |  |  '- TOKEN[type: 4, text:  true]
-   |     |  '- TOKEN[type: 7, text: }]
-   |     |- TOKEN[type: 4, text:  if the file was successfully saved]
-   |     |- TOKEN[type: 3, text: \n]
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |     |  |  '- TOKEN[type: TEXT, text:  true]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |     |- TOKEN[type: TEXT, text:  if the file was successfully saved]
+   |     |- TOKEN[type: NEWLINE, text: \n]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {@]
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: code]
-   |     |  |  '- TOKEN[type: 4, text:  false]
-   |     |  '- TOKEN[type: 7, text: }]
-   |     |- TOKEN[type: 4, text:  otherwise.]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |     |  |  '- TOKEN[type: TEXT, text:  false]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |     |- TOKEN[type: TEXT, text:  otherwise.]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 17, text: @author]
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author]
    |  '- description
-   |     '- TOKEN[type: 4, text:  John Doe]
-   '- TOKEN[type: -1, text: <EOF>]
+   |     '- TOKEN[type: TEXT, text:  John Doe]
+   '- TOKEN[type: EOF, text: <EOF>]

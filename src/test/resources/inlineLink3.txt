@@ -1,104 +1,104 @@
 '- javadoc
    |- mainDescription
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {@]
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: link]
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: 10, text: com]
-   |  |  |  |  |  |- TOKEN[type: 11, text: .]
-   |  |  |  |  |  |- TOKEN[type: 10, text: example]
-   |  |  |  |  |  |- TOKEN[type: 11, text: .]
-   |  |  |  |  |  '- TOKEN[type: 10, text: MyClass]
-   |  |  |  |  |- TOKEN[type: 12, text: #]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: com]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: example]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: MyClass]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
    |  |  |  |  '- memberReference
-   |  |  |  |     |- TOKEN[type: 10, text: myMethod]
-   |  |  |  |     |- TOKEN[type: 13, text: (]
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: myMethod]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
    |  |  |  |     |- parameterList
-   |  |  |  |     |  |- TOKEN[type: 10, text: String]
-   |  |  |  |     |  |- TOKEN[type: 15, text: ,]
-   |  |  |  |     |  '- TOKEN[type: 10, text: int]
-   |  |  |  |     '- TOKEN[type: 14, text: )]
+   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: String]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
    |  |  |  '- description
-   |  |  |     '- TOKEN[type: 4, text:  the main entry method]
-   |  |  '- TOKEN[type: 7, text: }]
-   |  |- TOKEN[type: 3, text: \n]
+   |  |  |     '- TOKEN[type: TEXT, text:  the main entry method]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {@]
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: link]
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
    |  |  |  |- reference
-   |  |  |  |  |- TOKEN[type: 12, text: #]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
    |  |  |  |  '- memberReference
-   |  |  |  |     '- TOKEN[type: 10, text: localMethod]
+   |  |  |  |     '- TOKEN[type: IDENTIFIER, text: localMethod]
    |  |  |  '- description
-   |  |  |     '- TOKEN[type: 4, text:  local method]
-   |  |  '- TOKEN[type: 7, text: }]
-   |  |- TOKEN[type: 3, text: \n]
+   |  |  |     '- TOKEN[type: TEXT, text:  local method]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {@]
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: link]
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
    |  |  |  |- reference
-   |  |  |  |  |- TOKEN[type: 12, text: #]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
    |  |  |  |  '- memberReference
-   |  |  |  |     |- TOKEN[type: 10, text: localMethod]
-   |  |  |  |     |- TOKEN[type: 13, text: (]
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: localMethod]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
    |  |  |  |     |- parameterList
-   |  |  |  |     |  |- TOKEN[type: 10, text: int]
-   |  |  |  |     |  |- TOKEN[type: 15, text: ,]
-   |  |  |  |     |  '- TOKEN[type: 10, text: String]
-   |  |  |  |     '- TOKEN[type: 14, text: )]
+   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: String]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
    |  |  |  '- description
-   |  |  |     '- TOKEN[type: 4, text:  a useful utility]
-   |  |  '- TOKEN[type: 7, text: }]
-   |  |- TOKEN[type: 3, text: \n]
+   |  |  |     '- TOKEN[type: TEXT, text:  a useful utility]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
    |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {@]
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: link]
-   |  |  |  |- reference
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  '- TOKEN[type: 10, text: Class]
-   |  |  |  |  |- TOKEN[type: 12, text: #]
-   |  |  |  |  '- memberReference
-   |  |  |  |     |- TOKEN[type: 10, text: localMethod]
-   |  |  |  |     |- TOKEN[type: 13, text: (]
-   |  |  |  |     |- parameterList
-   |  |  |  |     |  |- TOKEN[type: 10, text: int]
-   |  |  |  |     |  |- TOKEN[type: 15, text: ,]
-   |  |  |  |     |  '- TOKEN[type: 10, text: String]
-   |  |  |  |     '- TOKEN[type: 14, text: )]
-   |  |  |  '- description
-   |  |  |     '- TOKEN[type: 4, text:  a useful utility]
-   |  |  '- TOKEN[type: 7, text: }]
-   |  |- TOKEN[type: 3, text: \n]
-   |  |- inlineTag
-   |  |  |- TOKEN[type: 6, text: {@]
-   |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: 9, text: link]
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: 10, text: com]
-   |  |  |  |  |  |- TOKEN[type: 11, text: .]
-   |  |  |  |  |  |- TOKEN[type: 10, text: example]
-   |  |  |  |  |  |- TOKEN[type: 11, text: .]
-   |  |  |  |  |  |- TOKEN[type: 10, text: util]
-   |  |  |  |  |  |- TOKEN[type: 11, text: .]
-   |  |  |  |  |  '- TOKEN[type: 10, text: MathUtils]
-   |  |  |  |  |- TOKEN[type: 12, text: #]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Class]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
    |  |  |  |  '- memberReference
-   |  |  |  |     |- TOKEN[type: 10, text: calculateScore]
-   |  |  |  |     |- TOKEN[type: 13, text: (]
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: localMethod]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
    |  |  |  |     |- parameterList
-   |  |  |  |     |  |- TOKEN[type: 10, text: int]
-   |  |  |  |     |  |- TOKEN[type: 15, text: ,]
-   |  |  |  |     |  '- TOKEN[type: 10, text: int]
-   |  |  |  |     '- TOKEN[type: 14, text: )]
+   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: String]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
    |  |  |  '- description
-   |  |  |     |- TOKEN[type: 3, text: \n]
-   |  |  |     '- TOKEN[type: 4, text:  Computes the final score for a player in a tournament.]
-   |  |  '- TOKEN[type: 7, text: }]
-   |  '- TOKEN[type: 3, text: \n]
-   '- TOKEN[type: -1, text: <EOF>]
+   |  |  |     '- TOKEN[type: TEXT, text:  a useful utility]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: com]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: example]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: MathUtils]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: calculateScore]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     |- parameterList
+   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: NEWLINE, text: \n]
+   |  |  |     '- TOKEN[type: TEXT, text:  Computes the final score for a player in a tournament.]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  '- TOKEN[type: NEWLINE, text: \n]
+   '- TOKEN[type: EOF, text: <EOF>]
