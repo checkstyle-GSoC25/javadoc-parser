@@ -5,7 +5,7 @@
    |  |  |  |- TOKEN[type: 21, text: <]
    |  |  |  |- TOKEN[type: 26, text: font]
    |  |  |  |- htmlAttribute
-   |  |  |  |  |- TOKEN[type: 26, text: size]
+   |  |  |  |  |- TOKEN[type: 30, text: size]
    |  |  |  |  |- TOKEN[type: 25, text: =]
    |  |  |  |  '- TOKEN[type: 27, text: 3]
    |  |  |  '- TOKEN[type: 22, text: >]
@@ -30,7 +30,7 @@
    |  |  |  |  |  |  |  |  |  |- TOKEN[type: 21, text: <]
    |  |  |  |  |  |  |  |  |  |- TOKEN[type: 26, text: a]
    |  |  |  |  |  |  |  |  |  |- htmlAttribute
-   |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: 26, text: href]
+   |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: 30, text: href]
    |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: 25, text: =]
    |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: 27, text: "http://www.antlr3.org"]
    |  |  |  |  |  |  |  |  |  '- TOKEN[type: 22, text: >]
@@ -65,7 +65,7 @@
    |     |  |- TOKEN[type: 21, text: <]
    |     |  |- TOKEN[type: 26, text: div]
    |     |  |- htmlAttribute
-   |     |  |  |- TOKEN[type: 26, text: id]
+   |     |  |  |- TOKEN[type: 30, text: id]
    |     |  |  |- TOKEN[type: 25, text: =]
    |     |  |  '- TOKEN[type: 27, text: "terence"]
    |     |  '- TOKEN[type: 22, text: >]
@@ -75,11 +75,11 @@
    |     |  |  |- TOKEN[type: 21, text: <]
    |     |  |  |- TOKEN[type: 26, text: img]
    |     |  |  |- htmlAttribute
-   |     |  |  |  |- TOKEN[type: 26, text: src]
+   |     |  |  |  |- TOKEN[type: 30, text: src]
    |     |  |  |  |- TOKEN[type: 25, text: =]
    |     |  |  |  '- TOKEN[type: 27, text: "images/terence.jpg"]
    |     |  |  |- htmlAttribute
-   |     |  |  |  |- TOKEN[type: 26, text: alt]
+   |     |  |  |  |- TOKEN[type: 30, text: alt]
    |     |  |  |  |- TOKEN[type: 25, text: =]
    |     |  |  |  '- TOKEN[type: 27, text: "terence"]
    |     |  |  '- TOKEN[type: 23, text: />]
@@ -106,7 +106,7 @@
    |     |  |  |  |- TOKEN[type: 21, text: <]
    |     |  |  |  |- TOKEN[type: 26, text: a]
    |     |  |  |  |- htmlAttribute
-   |     |  |  |  |  |- TOKEN[type: 26, text: href]
+   |     |  |  |  |  |- TOKEN[type: 30, text: href]
    |     |  |  |  |  |- TOKEN[type: 25, text: =]
    |     |  |  |  |  '- TOKEN[type: 27, text: "http://www.cs.usfca.edu/~parrt"]
    |     |  |  |  '- TOKEN[type: 22, text: >]
