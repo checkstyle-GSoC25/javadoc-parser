@@ -1,5 +1,7 @@
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -12,12 +14,21 @@ public abstract class AbstractTestSupport {
     // by replacing the full match with the empty string
     private static final String CR_FOLLOWED_BY_LF_REGEX = "(?x)\\\\r(?=\\\\n)|\\r(?=\\n)";
 
+    private static final boolean SHOULD_OVERWRITE_EXPECTED_CONTENTS =
+            Boolean.getBoolean("shouldOverwriteExpectedContents");
+
     protected static void verifyAst(String expectedAstPrintFilename, String actualJavadocFilename) throws IOException {
         final String expectedContents = readFile(expectedAstPrintFilename);
         final String actualContents = toLfLineEnding(AstPrinter.createAstString(actualJavadocFilename));
 
-        assertEquals(expectedContents, actualContents,
-            "Generated AST should match AST from printed text file.");
+        if (SHOULD_OVERWRITE_EXPECTED_CONTENTS) {
+            try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(expectedAstPrintFilename), StandardCharsets.UTF_8)) {
+                writer.write(actualContents);
+            }
+        } else {
+            assertEquals(expectedContents, actualContents,
+                    "Generated AST should match AST from printed text file.");
+        }
 
     }
 
