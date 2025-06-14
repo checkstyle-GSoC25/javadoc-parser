@@ -88,4 +88,10 @@ public class AstTest extends AbstractTestSupport {
     public void testNonTightTags() throws IOException {
         verifyAst(getPath("htmlNonTight1.txt"), getPath("htmlNonTight1.javadoc"));
     }
+
+
+    @Test
+    public void testCodeTagWithNestedBraces() throws IOException {
+        verifyAst(getPath("codeTagWithNestedBraces.txt"), getPath("codeTagWithNestedBraces.javadoc"));
+    }
 }
