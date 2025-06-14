@@ -9,3 +9,7 @@ verify:
 overwrite:
     mvn clean verify -DshouldOverwriteExpectedContents=true
 
+# generate antlr stuff and compile project
+antlr:
+    mvn clean antlr4:antlr4 compile
+
