@@ -34,3 +34,4 @@ bin/
 gen/
 
 target/
+/src/main/resources/JavadocLexer.tokens
