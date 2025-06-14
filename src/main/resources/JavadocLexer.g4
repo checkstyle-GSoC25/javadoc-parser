@@ -11,12 +11,24 @@ tokens {
     TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE
 }
 
+@header {
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Deque;
+import java.util.List;
+import org.antlr.v4.runtime.Token;
+}
+
 @lexer::members {
     private int previousTokenType = 0;
     private Token previousToken = null;
     private boolean afterNewline = true;
     private boolean isJavadocTag = true;
     private boolean hasSeenTagName = false;
+
+    private final Deque<Token> openTagNameTokens = new ArrayDeque<>();
+    private final Deque<Token> closeTagNameTokens = new ArrayDeque<>();
 
     public boolean isAfterNewline() {
         return afterNewline;
@@ -61,12 +73,25 @@ tokens {
     @Override
     public void emit(Token token) {
         super.emit(token);
+        if (token.getType() == TAG_NAME) {
+            if (LexerUtility.isOpenTagName(previousToken)) {
+                openTagNameTokens.push(token);
+            } else if (LexerUtility.isSelfClosing(_input)) {
+              // TODO: think about this a bit
+            } else {
+                closeTagNameTokens.push(token);
+            }
+        }
         previousTokenType = token.getType();
         previousToken = token;
         if (previousTokenType != NEWLINE) {
             afterNewline = false;
         }
     }
+
+     public List<Token> getUnclosedTagNameTokens() {
+         return LexerUtility.getUnclosedTagNameTokens(openTagNameTokens, closeTagNameTokens);
+     }
 }
 
 LEADING_ASTERISK
