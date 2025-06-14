@@ -123,7 +123,7 @@ fragment TEXT_CHAR
     ;
 
 BLOCK_TAG_ENTRY
-    : {isJavadocTag()}? -> pushMode(blockTag), skip
+    : {isJavadocTag()}? '@' -> pushMode(blockTag), more
     ;
 
 JAVADOC_INLINE_TAG_START: '{@' -> pushMode(javadocInlineTag);
@@ -195,11 +195,11 @@ StartOfLine_LEADING_ASTERISK
     ;
 
 mode blockTag;
-AUTHOR_LITERAL: '@author' -> pushMode(text);
-DEPRECATED_LITERAL : '@deprecated' -> pushMode(text);
-RETURN_LITERAL: '@return' -> pushMode(text);
-PARAM_LITERAL: '@param' -> pushMode(parameterName);
-BlockTag_CUSTOM_NAME: '@' [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(text);
+AUTHOR_LITERAL: 'author' -> pushMode(text);
+DEPRECATED_LITERAL : 'deprecated' -> pushMode(text);
+RETURN_LITERAL: 'return' -> pushMode(text);
+PARAM_LITERAL: 'param' -> pushMode(parameterName);
+BlockTag_CUSTOM_NAME: [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(text);
 
 mode parameterName;
 PARAMETER_NAME: Letter LetterOrDigit* -> type(IDENTIFIER), mode(text);
