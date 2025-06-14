@@ -159,8 +159,9 @@ public class AstPrinter {
 
                 if (ast.payload instanceof Token token) {
                     String escapedText = NEWLINE.matcher(token.getText()).replaceAll(Matcher.quoteReplacement("\\n"));
+                    final String tokenName = JavadocLexer.VOCABULARY.getSymbolicName(token.getType());
                     caption = String.format("TOKEN[type: %s, text: %s]",
-                        token.getType(), escapedText);
+                            tokenName, escapedText);
                 } else {
                     caption = String.valueOf(ast.payload);
                 }

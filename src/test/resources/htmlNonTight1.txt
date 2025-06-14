@@ -1,51 +1,51 @@
 '- javadoc
    |- mainDescription
-   |  |- TOKEN[type: 4, text: This method does something important.]
-   |  |- TOKEN[type: 3, text: \n]
+   |  |- TOKEN[type: TEXT, text: This method does something important.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
    |  '- htmlElement
    |     |- htmlTagStart
-   |     |  |- TOKEN[type: 21, text: <]
-   |     |  |- TOKEN[type: 26, text: p]
-   |     |  '- TOKEN[type: 22, text: >]
+   |     |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |- TOKEN[type: TAG_NAME, text: p]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >]
    |     |- htmlContent
-   |     |  |- TOKEN[type: 3, text: \n]
-   |     |  |- TOKEN[type: 4, text: This is a normal paragraph]
-   |     |  |- TOKEN[type: 3, text: \n]
-   |     |  |- TOKEN[type: 3, text: \n]
-   |     |  |- TOKEN[type: 4, text: Here's a list of features:]
-   |     |  |- TOKEN[type: 3, text: \n]
+   |     |  |- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- TOKEN[type: TEXT, text: This is a normal paragraph]
+   |     |  |- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- TOKEN[type: TEXT, text: Here's a list of features:]
+   |     |  |- TOKEN[type: NEWLINE, text: \n]
    |     |  '- htmlElement
    |     |     |- htmlTagStart
-   |     |     |  |- TOKEN[type: 21, text: <]
-   |     |     |  |- TOKEN[type: 26, text: ul]
-   |     |     |  '- TOKEN[type: 22, text: >]
+   |     |     |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |     |  |- TOKEN[type: TAG_NAME, text: ul]
+   |     |     |  '- TOKEN[type: TAG_CLOSE, text: >]
    |     |     |- htmlContent
-   |     |     |  |- TOKEN[type: 3, text: \n]
+   |     |     |  |- TOKEN[type: NEWLINE, text: \n]
    |     |     |  '- htmlElement
    |     |     |     |- htmlTagStart
-   |     |     |     |  |- TOKEN[type: 21, text: <]
-   |     |     |     |  |- TOKEN[type: 26, text: li]
-   |     |     |     |  '- TOKEN[type: 22, text: >]
+   |     |     |     |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |     |     |  |- TOKEN[type: TAG_NAME, text: li]
+   |     |     |     |  '- TOKEN[type: TAG_CLOSE, text: >]
    |     |     |     |- htmlContent
-   |     |     |     |  |- TOKEN[type: 4, text: Feature one]
-   |     |     |     |  |- TOKEN[type: 3, text: \n]
+   |     |     |     |  |- TOKEN[type: TEXT, text: Feature one]
+   |     |     |     |  |- TOKEN[type: NEWLINE, text: \n]
    |     |     |     |  '- htmlElement
    |     |     |     |     |- htmlTagStart
-   |     |     |     |     |  |- TOKEN[type: 21, text: <]
-   |     |     |     |     |  |- TOKEN[type: 26, text: li]
-   |     |     |     |     |  '- TOKEN[type: 22, text: >]
+   |     |     |     |     |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |     |     |     |  |- TOKEN[type: TAG_NAME, text: li]
+   |     |     |     |     |  '- TOKEN[type: TAG_CLOSE, text: >]
    |     |     |     |     |- htmlContent
-   |     |     |     |     |  |- TOKEN[type: 4, text: Feature two]
-   |     |     |     |     |  '- TOKEN[type: 3, text: \n]
+   |     |     |     |     |  |- TOKEN[type: TEXT, text: Feature two]
+   |     |     |     |     |  '- TOKEN[type: NEWLINE, text: \n]
    |     |     |     |     '- htmlTagEnd
-   |     |     |     |        |- TOKEN[type: 21, text: <]
-   |     |     |     |        |- TOKEN[type: 24, text: /]
-   |     |     |     |        |- TOKEN[type: 26, text: ul]
-   |     |     |     |        '- TOKEN[type: 22, text: >]
+   |     |     |     |        |- TOKEN[type: TAG_OPEN, text: <]
+   |     |     |     |        |- TOKEN[type: TAG_SLASH, text: /]
+   |     |     |     |        |- TOKEN[type: TAG_NAME, text: ul]
+   |     |     |     |        '- TOKEN[type: TAG_CLOSE, text: >]
    |     |     |     '- [174 166 197 173 166 197 173 166 64 52]
    |     |     |        '- [174 166 197 173 166 197 173 166 64 52]
    |     |     '- htmlTagEnd
-   |     |        '- TOKEN[type: -1, text: <EOF>]
+   |     |        '- TOKEN[type: EOF, text: <EOF>]
    |     '- htmlTagEnd
-   |        '- TOKEN[type: -1, text: <EOF>]
-   '- TOKEN[type: -1, text: <EOF>]
+   |        '- TOKEN[type: EOF, text: <EOF>]
+   '- TOKEN[type: EOF, text: <EOF>]

@@ -1,7 +1,7 @@
 '- javadoc
    |- mainDescription
-   |  |- TOKEN[type: 4, text: int z = 5 * 3]
-   |  |- TOKEN[type: 3, text: \n]
-   |  |- TOKEN[type: 4, text: mohamad]
-   |  '- TOKEN[type: 4, text: @gmail.com]
-   '- TOKEN[type: -1, text: <EOF>]
+   |  |- TOKEN[type: TEXT, text: int z = 5 * 3]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: mohamad]
+   |  '- TOKEN[type: TEXT, text: @gmail.com]
+   '- TOKEN[type: EOF, text: <EOF>]

@@ -2,58 +2,58 @@
    |- [52]
    |  '- [52]
    |- blockTag
-   |  |- TOKEN[type: 20, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
    |  |- parameterName
-   |  |  '- TOKEN[type: 10, text: name]
+   |  |  '- TOKEN[type: IDENTIFIER, text: name]
    |  '- description
-   |     |- TOKEN[type: 4, text:  the user's name]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |- TOKEN[type: TEXT, text:  the user's name]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 20, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
    |  |- parameterName
-   |  |  '- TOKEN[type: 10, text: age]
+   |  |  '- TOKEN[type: IDENTIFIER, text: age]
    |  '- description
-   |     |- TOKEN[type: 4, text:  the user's age in years]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |- TOKEN[type: TEXT, text:  the user's age in years]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 20, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
    |  |- parameterName
-   |  |  '- TOKEN[type: 10, text: email]
+   |  |  '- TOKEN[type: IDENTIFIER, text: email]
    |  '- description
-   |     |- TOKEN[type: 4, text: ,   the user's email address]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |- TOKEN[type: TEXT, text: ,   the user's email address]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 20, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
    |  |- parameterName
-   |  |  '- TOKEN[type: 10, text: address]
+   |  |  '- TOKEN[type: IDENTIFIER, text: address]
    |  '- description
-   |     |- TOKEN[type: 3, text: \n]
-   |     |- TOKEN[type: 4, text: the user's physical address]
-   |     '- TOKEN[type: 3, text: \n]
+   |     |- TOKEN[type: NEWLINE, text: \n]
+   |     |- TOKEN[type: TEXT, text: the user's physical address]
+   |     '- TOKEN[type: NEWLINE, text: \n]
    |- blockTag
-   |  |- TOKEN[type: 20, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
    |  |- parameterName
-   |  |  '- TOKEN[type: 10, text: mode]
+   |  |  '- TOKEN[type: IDENTIFIER, text: mode]
    |  '- description
-   |     |- TOKEN[type: 4, text:  one of ]
+   |     |- TOKEN[type: TEXT, text:  one of ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {@]
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: code]
-   |     |  |  '- TOKEN[type: 4, text:  "asc"]
-   |     |  '- TOKEN[type: 7, text: }]
-   |     |- TOKEN[type: 4, text: , ]
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |     |  |  '- TOKEN[type: TEXT, text:  "asc"]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |     |- TOKEN[type: TEXT, text: , ]
    |     |- inlineTag
-   |     |  |- TOKEN[type: 6, text: {@]
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: 8, text: code]
-   |     |  |  '- TOKEN[type: 4, text:  "desc"]
-   |     |  '- TOKEN[type: 7, text: }]
-   |     |- TOKEN[type: 4, text: , or ]
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |     |  |  '- TOKEN[type: TEXT, text:  "desc"]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |     |- TOKEN[type: TEXT, text: , or ]
    |     '- inlineTag
-   |        |- TOKEN[type: 6, text: {@]
+   |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |        |- codeInlineTag
-   |        |  |- TOKEN[type: 8, text: code]
-   |        |  '- TOKEN[type: 4, text:  "none"]
-   |        '- TOKEN[type: 7, text: }]
-   '- TOKEN[type: -1, text: <EOF>]
+   |        |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |        |  '- TOKEN[type: TEXT, text:  "none"]
+   |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   '- TOKEN[type: EOF, text: <EOF>]
