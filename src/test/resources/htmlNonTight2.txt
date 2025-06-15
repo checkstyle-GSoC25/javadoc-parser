@@ -1,0 +1,175 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: TEXT, text: Demonstrates complex HTML cases in Javadoc.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: ul]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |- htmlContent
+   |  |  |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  '- nonTightHtmlContent
+   |  |  |  |     |- TOKEN[type: TEXT, text: Feature A]
+   |  |  |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  '- nonTightHtmlContent
+   |  |  |  |     |- TOKEN[type: TEXT, text: Feature B]
+   |  |  |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  '- nonTightHtmlContent
+   |  |  |  |     '- TOKEN[type: TEXT, text:  Text ]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: p]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  '- nonTightHtmlContent
+   |  |  |  |     |- TOKEN[type: TEXT, text: Feature C with paragraph inside list]
+   |  |  |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  '- nonTightHtmlContent
+   |  |  |  |     '- TOKEN[type: TEXT, text: Feature D ]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |- TOKEN[type: TAG_NAME, text: br]
+   |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |- TOKEN[type: TEXT, text:  with a line break and an ]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |- TOKEN[type: TAG_NAME, text: img]
+   |  |  |  |  |- htmlAttribute
+   |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: src]
+   |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =]
+   |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "icon.png"]
+   |  |  |  |  |- htmlAttribute
+   |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: alt]
+   |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =]
+   |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "icon"]
+   |  |  |  |  '- TOKEN[type: TAG_SLASH_CLOSE, text: />]
+   |  |  |  |- TOKEN[type: TEXT, text:  icon]
+   |  |  |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  '- nonTightHtmlContent
+   |  |  |  |     |- TOKEN[type: TEXT, text: Feature E with nesting]
+   |  |  |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: ul]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  |- htmlContent
+   |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |  |  |- htmlElement
+   |  |  |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li]
+   |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  |  |  '- nonTightHtmlContent
+   |  |  |  |  |  |     |- TOKEN[type: TEXT, text: Subfeature 1]
+   |  |  |  |  |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |  |  |- htmlElement
+   |  |  |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li]
+   |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  |  |  |- htmlContent
+   |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text: Subfeature 2]
+   |  |  |  |  |  |  '- htmlTagEnd
+   |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /]
+   |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: li]
+   |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n]
+   |  |  |  |  '- htmlTagEnd
+   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /]
+   |  |  |  |     |- TOKEN[type: TAG_NAME, text: ul]
+   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  '- TOKEN[type: NEWLINE, text: \n]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: TAG_OPEN, text: <]
+   |  |     |- TOKEN[type: TAG_SLASH, text: /]
+   |  |     |- TOKEN[type: TAG_NAME, text: ul]
+   |  |     '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |- TOKEN[type: TAG_NAME, text: table]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |- htmlContent
+   |     |  |- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |  |  |- TOKEN[type: TAG_NAME, text: tr]
+   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |  '- nonTightHtmlContent
+   |     |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |  |  |- TOKEN[type: TAG_NAME, text: td]
+   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |  '- nonTightHtmlContent
+   |     |  |     |- TOKEN[type: TEXT, text: Row 1 Col 1]
+   |     |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |  |  |- TOKEN[type: TAG_NAME, text: td]
+   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |  '- nonTightHtmlContent
+   |     |  |     |- TOKEN[type: TEXT, text: Row 1 Col 2]
+   |     |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |  |  |- TOKEN[type: TAG_NAME, text: tr]
+   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |  '- nonTightHtmlContent
+   |     |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |  |  |- TOKEN[type: TAG_NAME, text: td]
+   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |  '- nonTightHtmlContent
+   |     |  |     '- TOKEN[type: TEXT, text: Row 2 Col 1]
+   |     |  '- htmlElement
+   |     |     |- htmlTagStart
+   |     |     |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |     |  |- TOKEN[type: TAG_NAME, text: td]
+   |     |     |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |     '- nonTightHtmlContent
+   |     |        |- TOKEN[type: TEXT, text: Row 2 Col 2]
+   |     |        '- TOKEN[type: NEWLINE, text: \n]
+   |     '- htmlTagEnd
+   |        |- TOKEN[type: TAG_OPEN, text: <]
+   |        |- TOKEN[type: TAG_SLASH, text: /]
+   |        |- TOKEN[type: TAG_NAME, text: table]
+   |        '- TOKEN[type: TAG_CLOSE, text: >]
+   '- TOKEN[type: EOF, text: <EOF>]
