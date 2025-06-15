@@ -83,7 +83,6 @@ public class AstTest extends AbstractTestSupport {
         verifyAst(getPath("htmlVoidTags1.txt"), getPath("htmlVoidTags1.javadoc"));
     }
 
-    // TODO: Handle non-tight html tags
     @Test
     public void testNonTightTags() throws IOException {
         verifyAst(getPath("htmlNonTight1.txt"), getPath("htmlNonTight1.javadoc"));
@@ -93,5 +92,30 @@ public class AstTest extends AbstractTestSupport {
     @Test
     public void testCodeTagWithNestedBraces() throws IOException {
         verifyAst(getPath("codeTagWithNestedBraces.txt"), getPath("codeTagWithNestedBraces.javadoc"));
+    }
+
+    @Test
+    public void testNonTightTags2() throws IOException {
+        verifyAst(getPath("htmlNonTight2.txt"), getPath("htmlNonTight2.javadoc"));
+    }
+
+    @Test
+    public void testNonTightTags3() throws IOException {
+        verifyAst(getPath("htmlNonTight3.txt"), getPath("htmlNonTight3.javadoc"));
+    }
+
+    @Test
+    public void testNonTightTags4() throws IOException {
+        verifyAst(getPath("htmlNonTight4.txt"), getPath("htmlNonTight4.javadoc"));
+    }
+
+    @Test
+    public void testNonTightTags5() throws IOException {
+        verifyAst(getPath("htmlNonTight5.txt"), getPath("htmlNonTight5.javadoc"));
+    }
+
+    @Test
+    public void testNonTightTags6() throws IOException {
+        verifyAst(getPath("htmlNonTight6.txt"), getPath("htmlNonTight6.javadoc"));
     }
 }

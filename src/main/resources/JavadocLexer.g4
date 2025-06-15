@@ -78,9 +78,8 @@ import org.antlr.v4.runtime.Token;
         if (token.getType() == TAG_NAME) {
             if (LexerUtility.isOpenTagName(previousToken)) {
                 openTagNameTokens.push(token);
-            } else if (LexerUtility.isSelfClosing(_input)) {
-              // TODO: think about this a bit
-            } else {
+            }
+            else {
                 closeTagNameTokens.push(token);
             }
         }

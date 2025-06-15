@@ -8,8 +8,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.Set;
 
 public class Main {
+    static Set<SimpleToken> unclosed;
     public static void main(String[] args) {
         try {
             String inputFile = "src/main/resources/input.javadoc";
@@ -19,7 +21,7 @@ public class Main {
             CommonTokenStream tokens = lexingAndPrintStats(input);
             printLexedTokens(tokens);
 
-            JavadocParser parser = new JavadocParser(tokens);
+            JavadocParser parser = new JavadocParser(tokens, unclosed);
             JavadocParser.JavadocContext tree = ParseAndPrintStats(parser);
             printParseTree(tree, parser);
             DisplayTreeInGUI(tree, parser);
@@ -52,6 +54,9 @@ public class Main {
         JavadocLexer lexer = new JavadocLexer(chars);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         tokens.fill();
+
+        unclosed = lexer.getUnclosedTagNameTokens();
+
         long lexEnd = System.nanoTime();
         double lexTimeMs = (lexEnd - lexStart) / 1_000_000.0;
 
