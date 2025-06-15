@@ -1,0 +1,29 @@
+ * This is a code example of the inline tag.
+ * {@code
+ *      @MyAnnotation
+ *      String myTrickyString = "}{{{}{{{{{{{";
+ * }
+ *
+ * {@code
+ *    public List<Integer> m() {
+ *        return List.of(49);
+ *    }
+ * }
+* {@code
+*    public String s() {
+*        return """
+*            hello, world!
+*        """;
+*    }
+* }
+*
+*{@code
+*    /**
+*      * Nested javadoc :)
+*      */
+*    public int x() {
+*        return 49;
+*    }
+*}
+*
+* End text

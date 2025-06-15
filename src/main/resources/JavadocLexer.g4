@@ -26,6 +26,7 @@ import org.antlr.v4.runtime.Token;
     private boolean afterNewline = true;
     private boolean isJavadocTag = true;
     private boolean hasSeenTagName = false;
+    private int codeTagCurlyBraceNestingDepth = 0;
 
     private final Deque<Token> openTagNameTokens = new ArrayDeque<>();
     private final Deque<Token> closeTagNameTokens = new ArrayDeque<>();
@@ -145,10 +146,37 @@ Code_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
     ;
 
-Code_TEXT: ~[}\r\n]+ -> type(TEXT);
+Code_TEXT
+    :   ( ~[{}"\r\n]+
+      | '{' {codeTagCurlyBraceNestingDepth++;}
+      | {codeTagCurlyBraceNestingDepth > 0}? '}' {codeTagCurlyBraceNestingDepth--;}
+      )+ ->  type(TEXT);
+
+Code_STRING_LITERAL: '"' ( ~["\\\r\n] | '\\' . )* '"' -> type(TEXT);
+
+Code_TEXTBLOCK_START
+    : '"""' -> pushMode(codeTextBlock), type(TEXT)
+    ;
 
 JAVADOC_INLINE_TAG_END: '}' -> mode(text);
 
+mode codeTextBlock;
+
+Code_Text_Block_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    ;
+
+Code_Text_Block_End
+    : '"""' -> popMode, type(TEXT)
+    ;
+
+Code_Text_Block_Content
+    : (   { _input.LA(1) != '\r' && _input.LA(1) != '\n'
+            && (_input.LA(1) != '"' || _input.LA(2) != '"' || _input.LA(3) != '"') }?
+          .
+      )+
+      -> type(TEXT)
+    ;
 
 mode link;
 IDENTIFIER:
@@ -202,7 +230,7 @@ PARAM_LITERAL: 'param' -> pushMode(parameterName);
 BlockTag_CUSTOM_NAME: [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(text);
 
 mode parameterName;
-PARAMETER_NAME: Letter LetterOrDigit* -> type(IDENTIFIER), mode(text);
+PARAMETER_NAME: Letter LetterOrDigit* -> type(IDENTIFIER), pushMode(text);
 Param_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 
 

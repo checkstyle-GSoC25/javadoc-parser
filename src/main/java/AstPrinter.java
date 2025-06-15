@@ -220,6 +220,7 @@ public class AstPrinter {
             // will be necessary.
             tokens.fill();
 
+
             final Set<SimpleToken> unclosed = lexer.getUnclosedTagNameTokens();
             JavadocParser parser = new JavadocParser(tokens, unclosed);
             ParseTree tree = parser.javadoc();

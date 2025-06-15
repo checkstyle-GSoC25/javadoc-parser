@@ -38,20 +38,23 @@
    |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |     |  |- codeInlineTag
    |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
-   |     |  |  '- TOKEN[type: TEXT, text:  "asc"]
+   |     |  |  |- TOKEN[type: TEXT, text:  ]
+   |     |  |  '- TOKEN[type: TEXT, text: "asc"]
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
    |     |- TOKEN[type: TEXT, text: , ]
    |     |- inlineTag
    |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |     |  |- codeInlineTag
    |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
-   |     |  |  '- TOKEN[type: TEXT, text:  "desc"]
+   |     |  |  |- TOKEN[type: TEXT, text:  ]
+   |     |  |  '- TOKEN[type: TEXT, text: "desc"]
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
    |     |- TOKEN[type: TEXT, text: , or ]
    |     '- inlineTag
    |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
    |        |- codeInlineTag
    |        |  |- TOKEN[type: CODE_LITERAL, text: code]
-   |        |  '- TOKEN[type: TEXT, text:  "none"]
+   |        |  |- TOKEN[type: TEXT, text:  ]
+   |        |  '- TOKEN[type: TEXT, text: "none"]
    |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
    '- TOKEN[type: EOF, text: <EOF>]
