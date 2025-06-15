@@ -1,0 +1,24 @@
+'- javadoc
+   |- mainDescription
+   |  |- [174 58]
+   |  |  '- [174 58]
+   |  |- htmlElement
+   |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |- TOKEN[type: TAG_SLASH, text: /]
+   |  |  |- TOKEN[type: TAG_NAME, text: li]
+   |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |- TOKEN[type: TEXT, text:  ]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  '- nonTightHtmlContent
+   |  |     '- TOKEN[type: TEXT, text:  Text ]
+   |  |- [174 58]
+   |  |  '- [174 58]
+   |  '- htmlElement
+   |     |- TOKEN[type: TAG_OPEN, text: <]
+   |     |- TOKEN[type: TAG_NAME, text: li]
+   |     '- TOKEN[type: TAG_CLOSE, text: >]
+   '- TOKEN[type: EOF, text: <EOF>]
