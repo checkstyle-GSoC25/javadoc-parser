@@ -43,8 +43,8 @@
    |  |  |     '- memberReference
    |  |  |        |- TOKEN[type: IDENTIFIER, text: myMethod]
    |  |  |        |- TOKEN[type: LPAREN, text: (]
-   |  |  |        |- parameterList
-   |  |  |        |  '- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |        |- parameterTypeList
+   |  |  |        |  '- TOKEN[type: PARAMETER_TYPE, text: int]
    |  |  |        '- TOKEN[type: RPAREN, text: )]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
    |  |- TOKEN[type: NEWLINE, text: \n]
@@ -61,12 +61,12 @@
    |  |  |     '- memberReference
    |  |  |        |- TOKEN[type: IDENTIFIER, text: myMethod]
    |  |  |        |- TOKEN[type: LPAREN, text: (]
-   |  |  |        |- parameterList
-   |  |  |        |  |- TOKEN[type: IDENTIFIER, text: String]
+   |  |  |        |- parameterTypeList
+   |  |  |        |  |- TOKEN[type: PARAMETER_TYPE, text: String]
    |  |  |        |  |- TOKEN[type: COMMA, text: ,]
-   |  |  |        |  |- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |        |  |- TOKEN[type: PARAMETER_TYPE, text: int]
    |  |  |        |  |- TOKEN[type: COMMA, text: ,]
-   |  |  |        |  '- TOKEN[type: IDENTIFIER, text: MyType]
+   |  |  |        |  '- TOKEN[type: PARAMETER_TYPE, text: MyType]
    |  |  |        '- TOKEN[type: RPAREN, text: )]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
    |  '- TOKEN[type: NEWLINE, text: \n]
