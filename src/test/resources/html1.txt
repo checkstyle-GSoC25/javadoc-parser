@@ -85,8 +85,8 @@
    |  |  |  |  |  |     '- memberReference
    |  |  |  |  |  |        |- TOKEN[type: IDENTIFIER, text: unmodifiableList]
    |  |  |  |  |  |        |- TOKEN[type: LPAREN, text: (]
-   |  |  |  |  |  |        |- parameterList
-   |  |  |  |  |  |        |  '- TOKEN[type: IDENTIFIER, text: List]
+   |  |  |  |  |  |        |- parameterTypeList
+   |  |  |  |  |  |        |  '- TOKEN[type: PARAMETER_TYPE, text: List]
    |  |  |  |  |  |        '- TOKEN[type: RPAREN, text: )]
    |  |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
    |  |  |  |  '- htmlTagEnd

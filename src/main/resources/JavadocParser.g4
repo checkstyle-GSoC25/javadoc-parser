@@ -48,15 +48,15 @@ linkPlainInlineTag: LINKPLAIN_LITERAL reference description?;
 linkInlineTag: LINK_LITERAL reference description?;
 
 reference
-        : qualifiedName (HASH memberReference)?
+        : (moduleName=qualifiedName SLASH)? typeName=qualifiedName (HASH memberReference)?
         | (HASH memberReference)
         ;
 
 qualifiedName: IDENTIFIER (DOT IDENTIFIER)*;
 
-memberReference: IDENTIFIER (LPAREN parameterList? RPAREN)?;
+memberReference: IDENTIFIER (LPAREN parameterTypeList? RPAREN)?;
 
-parameterList: IDENTIFIER (COMMA IDENTIFIER)*;
+parameterTypeList: PARAMETER_TYPE (COMMA PARAMETER_TYPE)*;
 
 customInlineTag: CUSTOM_NAME description?;
 

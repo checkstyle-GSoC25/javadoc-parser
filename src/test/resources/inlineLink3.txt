@@ -15,10 +15,10 @@
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: myMethod]
    |  |  |  |     |- TOKEN[type: LPAREN, text: (]
-   |  |  |  |     |- parameterList
-   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: String]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: String]
    |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
-   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: int]
    |  |  |  |     '- TOKEN[type: RPAREN, text: )]
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  the main entry method]
@@ -45,10 +45,10 @@
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: localMethod]
    |  |  |  |     |- TOKEN[type: LPAREN, text: (]
-   |  |  |  |     |- parameterList
-   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: int]
    |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
-   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: String]
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: String]
    |  |  |  |     '- TOKEN[type: RPAREN, text: )]
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a useful utility]
@@ -65,10 +65,10 @@
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: localMethod]
    |  |  |  |     |- TOKEN[type: LPAREN, text: (]
-   |  |  |  |     |- parameterList
-   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: int]
    |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
-   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: String]
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: String]
    |  |  |  |     '- TOKEN[type: RPAREN, text: )]
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a useful utility]
@@ -91,10 +91,10 @@
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: calculateScore]
    |  |  |  |     |- TOKEN[type: LPAREN, text: (]
-   |  |  |  |     |- parameterList
-   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: int]
    |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
-   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: int]
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: int]
    |  |  |  |     '- TOKEN[type: RPAREN, text: )]
    |  |  |  '- description
    |  |  |     |- TOKEN[type: NEWLINE, text: \n]

@@ -8,7 +8,7 @@ tokens {
     JAVADOC, LEADING_ASTERISK, NEWLINE, TEXT, WS, JAVADOC_INLINE_TAG_START, JAVADOC_INLINE_TAG_END,
     CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN_LITERAL,
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
-    TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE
+    TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE
 }
 
 @header {
@@ -152,7 +152,7 @@ Code_TEXT
         | '}' {braceCounter != 1}? {braceCounter--;})+  -> type(TEXT)
     ;
 
-JAVADOC_INLINE_TAG_END: '}' {braceCounter == 1}? {braceCounter--;} -> mode(text);
+JAVADOC_INLINE_TAG_END: '}' {braceCounter == 1}? {braceCounter--;} -> popMode, popMode;
 
 
 mode link;
@@ -160,16 +160,16 @@ IDENTIFIER:
     Letter LetterOrDigit*
     {
         int la = _input.LA(1);
-        if (previousTokenType == HASH && la != '(') {
+        if ((previousTokenType == HASH && la != '(')
+            || (previousTokenType == DOT && Character.isWhitespace(la))) {
             _mode = inlineTagDescription;
         }
     };
 
 DOT: '.';
 HASH: '#';
-LPAREN: '(';
-RPAREN: ')' -> pushMode(inlineTagDescription);
-COMMA: ',';
+LPAREN: '(' -> pushMode(parameterList);
+SLASH: '/';
 Link_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 Link_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
 
@@ -179,6 +179,30 @@ fragment LetterOrDigit
     ;
 
 fragment Letter: [a-zA-Z$_];
+
+
+mode linkTagDescription;
+
+LinkDescription_TEXT
+    : ~[{}\r\n]+ -> type(TEXT)
+    ;
+
+LinkDescription_JAVADOC_INLINE_TAG_START:
+    '{@' { braceCounter = 1;} -> pushMode(javadocInlineTag), type(JAVADOC_INLINE_TAG_START);
+
+LinkDescription_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    ;
+
+LinkDescription_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
+
+
+mode parameterList;
+ParameterList_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
+PARAMETER_TYPE: ([a-zA-Z0-9_$] | '.' | '[' | ']')+;
+COMMA: ',';
+RPAREN: ')' -> popMode, pushMode(linkTagDescription);
+
 
 
 mode inlineTagDescription;
@@ -191,7 +215,7 @@ InlineDescription_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
     ;
 
-InlineDescription_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
+InlineDescription_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popMode;
 
 mode startOfLine;
 

@@ -1,0 +1,361 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: TEXT, text: Link1:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base]
+   |  |  |  |  |- TOKEN[type: SLASH, text: /]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Optional]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: ifPresentOrElse]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: Consumer]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: Runnable]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: NEWLINE, text: \n]
+   |  |  |     |- TOKEN[type: TEXT, text:  executes ]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |     |  |- codeInlineTag
+   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  ifPresentOrElse]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |  |     |- TOKEN[type: TEXT, text:  with a ]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |     |  |- codeInlineTag
+   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  Consumer]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |  |     |- TOKEN[type: TEXT, text:  if present, or ]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |     |  |- customInlineTag
+   |  |  |     |  |  |- TOKEN[type: CUSTOM_NAME, text: literal]
+   |  |  |     |  |  '- description
+   |  |  |     |  |     '- TOKEN[type: TEXT, text:  runs]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |  |     '- TOKEN[type: TEXT, text:  otherwise]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: module prefix, inline tags in label, simple method with reference types.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link2:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: See ]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base]
+   |  |  |  |  |- TOKEN[type: SLASH, text: /]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: List]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: Test]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  the ]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |     |  |- codeInlineTag
+   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  List]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |  |     '- TOKEN[type: TEXT, text:  interface]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: module prefix, constructor method, inline ]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- codeInlineTag
+   |  |  |  '- TOKEN[type: CODE_LITERAL, text: code]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: TEXT, text:  label.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link3:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: equals]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: Object]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  Override ]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |     |  |- codeInlineTag
+   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  equals()]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |  |     '- TOKEN[type: TEXT, text:  carefully]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: relative member reference with single parameter, inline ]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- codeInlineTag
+   |  |  |  '- TOKEN[type: CODE_LITERAL, text: code]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: TEXT, text:  in label.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link4:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Arrays]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: copyOf]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: int[]]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: int]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: java.util.Array]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  copies part of an array]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: array types in parameter list.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link5:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base]
+   |  |  |  |  |- TOKEN[type: SLASH, text: /]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: lang]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: String]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: substring]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: int]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,]
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: int]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  extract a substring from a string]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: module prefix, primitive parameters.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link6:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: logging]
+   |  |  |  |  |- TOKEN[type: SLASH, text: /]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: logging]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Logger]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: getLogger]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: String]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  get an instance via ]
+   |  |  |     '- inlineTag
+   |  |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |        |- codeInlineTag
+   |  |  |        |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |  |  |        |  '- TOKEN[type: TEXT, text:  getLogger]
+   |  |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: module prefix, inline tag in label, fully qualified class.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link7:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base]
+   |  |  |  |  |- TOKEN[type: SLASH, text: /]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: function]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Function]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: apply]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: java.util.List[][]]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  apply function to 2D list]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: multi-dimensional array as parameter, module prefix.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link8:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base]
+   |  |  |  |  |- TOKEN[type: SLASH, text: /]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: stream]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Stream]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: map]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: java.util.function.Function]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  transform stream elements]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: fully qualified single parameter, module prefix.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link9:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: Map]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Entry]
+   |  |  |  |  |- TOKEN[type: HASH, text: #]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: getKey]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: )]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  retrieve ]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |     |  |- codeInlineTag
+   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  key]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |  |     '- TOKEN[type: TEXT, text:  from entry]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Tests: nested class reference, inline tag in label.]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: Link10:]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link]
+   |  |  |  |- reference
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java]
+   |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util]
+   |  |  |  |  |- TOKEN[type: DOT, text: .]
+   |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Arrays]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  array]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
+   |  '- TOKEN[type: NEWLINE, text: \n]
+   '- TOKEN[type: EOF, text: <EOF>]
