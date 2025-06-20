@@ -1,0 +1,19 @@
+'- javadoc
+   |- mainDescription
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  '- nonTightHtmlContent
+   |  |     |- TOKEN[type: TEXT, text: This is a paragraph]
+   |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |- TOKEN[type: TAG_NAME, text: p]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     '- nonTightHtmlContent
+   |        |- TOKEN[type: TEXT, text: This is another paragraph]
+   |        '- TOKEN[type: NEWLINE, text: \n]
+   '- TOKEN[type: EOF, text: <EOF>]

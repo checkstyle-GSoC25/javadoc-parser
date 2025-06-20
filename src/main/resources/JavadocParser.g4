@@ -99,7 +99,7 @@ voidElement
 
 tight: {!ParserUtility.isNonTightTag(_input, unclosedTagNameTokens)}? htmlTagStart htmlContent htmlTagEnd;
 
-nonTight: htmlTagStart nonTightHtmlContent;
+nonTight: htmlTagStart nonTightHtmlContent?;
 
 selfClosingElement
     : TAG_OPEN TAG_NAME (htmlAttribute)* TAG_SLASH_CLOSE

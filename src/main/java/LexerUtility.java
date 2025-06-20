@@ -20,7 +20,8 @@ public final class LexerUtility {
             boolean matched = false;
             while (!unmatchedOpen.isEmpty()) {
                 Token openingTag = unmatchedOpen.pop();
-                if (openingTag.getText().equalsIgnoreCase(closingTag.getText())) {
+                if (openingTag.getText().equalsIgnoreCase(closingTag.getText())
+                        && openingTag.getTokenIndex() < closingTag.getTokenIndex()) {
                     matched = true;
                     break;
                 } else {
@@ -49,7 +50,4 @@ public final class LexerUtility {
         return previousToken == null || previousToken.getType() != JavadocParser.TAG_SLASH;
     }
 
-    public static boolean isSelfClosing(CharStream _input) {
-        return _input.LA(1) == JavadocParser.TAG_SLASH_CLOSE;
-    }
 }
