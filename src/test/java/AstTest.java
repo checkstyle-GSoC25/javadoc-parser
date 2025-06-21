@@ -128,4 +128,9 @@ public class AstTest extends AbstractTestSupport {
     public void testEmptyHtmlContent() throws IOException {
         verifyAst(getPath("emptyHtmlContent.txt"), getPath("emptyHtmlContent.javadoc"));
     }
+
+    @Test
+    public void testComplex() throws IOException {
+        verifyAst(getPath("complex.txt"), getPath("complex.javadoc"));
+    }
 }
