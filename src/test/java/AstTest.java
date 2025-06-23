@@ -123,4 +123,9 @@ public class AstTest extends AbstractTestSupport {
     public void testNonTightTags6() throws IOException {
         verifyAst(getPath("htmlNonTight6.txt"), getPath("htmlNonTight6.javadoc"));
     }
+
+    @Test
+    public void testEmptyHtmlContent() throws IOException {
+        verifyAst(getPath("emptyHtmlContent.txt"), getPath("emptyHtmlContent.javadoc"));
+    }
 }
