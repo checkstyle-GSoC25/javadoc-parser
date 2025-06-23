@@ -8,7 +8,7 @@ tokens {
     JAVADOC, LEADING_ASTERISK, NEWLINE, TEXT, WS, JAVADOC_INLINE_TAG_START, JAVADOC_INLINE_TAG_END,
     CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN_LITERAL,
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
-    TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE
+    TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS, SUPER, QUESTION
 }
 
 @header {
@@ -156,6 +156,8 @@ JAVADOC_INLINE_TAG_END: '}' {braceCounter == 1}? {braceCounter--;} -> popMode, p
 
 
 mode link;
+EXTENDS: 'extends';
+SUPER: 'super';
 IDENTIFIER:
     Letter LetterOrDigit*
     {
@@ -165,13 +167,24 @@ IDENTIFIER:
             _mode = inlineTagDescription;
         }
     };
-
+QUESTION: '?';
 DOT: '.';
 HASH: '#';
 LPAREN: '(' -> pushMode(parameterList);
 SLASH: '/';
 Link_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 Link_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
+LT: '<';
+// Switch to description mode after '>' if followed by whitespace,
+// indicating end of the type reference in {@link ...}.
+GT: '>'
+    {
+        int la = _input.LA(1);
+        if (Character.isWhitespace(la)) {
+            _mode = linkTagDescription;
+        }
+    };
+Link_COMMA: ',' -> type(COMMA);
 
 fragment LetterOrDigit
     : Letter

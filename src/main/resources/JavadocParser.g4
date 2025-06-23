@@ -52,7 +52,15 @@ reference
         | (HASH memberReference)
         ;
 
-qualifiedName: IDENTIFIER (DOT IDENTIFIER)*;
+qualifiedName: IDENTIFIER (DOT IDENTIFIER)* typeArguments?;
+
+typeArguments: LT typeArgument (COMMA typeArgument)* GT;
+
+typeArgument
+        : qualifiedName
+        | QUESTION
+        | QUESTION EXTENDS qualifiedName
+        | QUESTION SUPER qualifiedName;
 
 memberReference: IDENTIFIER (LPAREN parameterTypeList? RPAREN)?;
 

@@ -1,0 +1,143 @@
+'- javadoc
+   |- mainDescription
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
+   |  |  |- linkPlainInlineTag
+   |  |  |  |- TOKEN[type: LINKPLAIN_LITERAL, text: linkplain, line: 1, column: 4]
+   |  |  |  |- reference
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 1, column: 14]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 1, column: 18]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 1, column: 19]
+   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 1, column: 23]
+   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: Map, line: 1, column: 24]
+   |  |  |  |  |  '- typeArguments
+   |  |  |  |  |     |- TOKEN[type: LT, text: <, line: 1, column: 27]
+   |  |  |  |  |     |- typeArgument
+   |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: String, line: 1, column: 28]
+   |  |  |  |  |     |- TOKEN[type: COMMA, text: ,, line: 1, column: 34]
+   |  |  |  |  |     |- typeArgument
+   |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: List, line: 1, column: 36]
+   |  |  |  |  |     '- TOKEN[type: GT, text: >, line: 1, column: 40]
+   |  |  |  |  |- TOKEN[type: HASH, text: #, line: 1, column: 41]
+   |  |  |  |  '- memberReference
+   |  |  |  |     |- TOKEN[type: IDENTIFIER, text: put, line: 1, column: 42]
+   |  |  |  |     |- TOKEN[type: LPAREN, text: (, line: 1, column: 45]
+   |  |  |  |     |- parameterTypeList
+   |  |  |  |     |  |- TOKEN[type: PARAMETER_TYPE, text: String, line: 1, column: 46]
+   |  |  |  |     |  |- TOKEN[type: COMMA, text: ,, line: 1, column: 52]
+   |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: List, line: 1, column: 54]
+   |  |  |  |     '- TOKEN[type: RPAREN, text: ), line: 1, column: 58]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  map string to list, line: 1, column: 59]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 78]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 79]
+   |  |- TOKEN[type: TEXT, text: Refer to , line: 2, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 11]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 2, column: 13]
+   |  |  |  |- reference
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 2, column: 18]
+   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 22]
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 2, column: 23]
+   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 27]
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: function, line: 2, column: 28]
+   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 36]
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: Function, line: 2, column: 37]
+   |  |  |  |  '- typeArguments
+   |  |  |  |     |- TOKEN[type: LT, text: <, line: 2, column: 45]
+   |  |  |  |     |- typeArgument
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: T, line: 2, column: 46]
+   |  |  |  |     |- TOKEN[type: COMMA, text: ,, line: 2, column: 47]
+   |  |  |  |     |- typeArgument
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: R, line: 2, column: 49]
+   |  |  |  |     '- TOKEN[type: GT, text: >, line: 2, column: 50]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  generic function type, line: 2, column: 51]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 73]
+   |  |- TOKEN[type: TEXT, text: ., line: 2, column: 74]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 75]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 3, column: 4]
+   |  |  |  |- reference
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 3, column: 9]
+   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 3, column: 13]
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 3, column: 14]
+   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 3, column: 18]
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: Map, line: 3, column: 19]
+   |  |  |  |  '- typeArguments
+   |  |  |  |     |- TOKEN[type: LT, text: <, line: 3, column: 22]
+   |  |  |  |     |- typeArgument
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: String, line: 3, column: 23]
+   |  |  |  |     |- TOKEN[type: COMMA, text: ,, line: 3, column: 29]
+   |  |  |  |     |- typeArgument
+   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: Map, line: 3, column: 31]
+   |  |  |  |     |  '- typeArguments
+   |  |  |  |     |     |- TOKEN[type: LT, text: <, line: 3, column: 34]
+   |  |  |  |     |     |- typeArgument
+   |  |  |  |     |     |  '- TOKEN[type: IDENTIFIER, text: String, line: 3, column: 35]
+   |  |  |  |     |     |- TOKEN[type: COMMA, text: ,, line: 3, column: 41]
+   |  |  |  |     |     |- typeArgument
+   |  |  |  |     |     |  |- TOKEN[type: IDENTIFIER, text: List, line: 3, column: 43]
+   |  |  |  |     |     |  '- typeArguments
+   |  |  |  |     |     |     |- TOKEN[type: LT, text: <, line: 3, column: 47]
+   |  |  |  |     |     |     |- typeArgument
+   |  |  |  |     |     |     |  '- TOKEN[type: IDENTIFIER, text: Double, line: 3, column: 48]
+   |  |  |  |     |     |     '- TOKEN[type: GT, text: >, line: 3, column: 54]
+   |  |  |  |     |     '- TOKEN[type: GT, text: >, line: 3, column: 55]
+   |  |  |  |     '- TOKEN[type: GT, text: >, line: 3, column: 56]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  complex nested map structure, line: 3, column: 57]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 86]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 87]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
+   |  |  |- linkInlineTag
+   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 4, column: 4]
+   |  |  |  |- reference
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: com, line: 4, column: 9]
+   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 4, column: 12]
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: example, line: 4, column: 13]
+   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 4, column: 20]
+   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: MyBox, line: 4, column: 21]
+   |  |  |  |  '- typeArguments
+   |  |  |  |     |- TOKEN[type: LT, text: <, line: 4, column: 26]
+   |  |  |  |     |- typeArgument
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: T, line: 4, column: 27]
+   |  |  |  |     '- TOKEN[type: GT, text: >, line: 4, column: 28]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  a container class for T, line: 4, column: 29]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 53]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 54]
+   |  '- inlineTag
+   |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 2]
+   |     |- linkPlainInlineTag
+   |     |  |- TOKEN[type: LINKPLAIN_LITERAL, text: linkplain, line: 5, column: 4]
+   |     |  |- reference
+   |     |  |  |- qualifiedName
+   |     |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 5, column: 14]
+   |     |  |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 18]
+   |     |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 5, column: 19]
+   |     |  |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 23]
+   |     |  |  |  |- TOKEN[type: IDENTIFIER, text: concurrent, line: 5, column: 24]
+   |     |  |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 34]
+   |     |  |  |  |- TOKEN[type: IDENTIFIER, text: CompletableFuture, line: 5, column: 35]
+   |     |  |  |  '- typeArguments
+   |     |  |  |     |- TOKEN[type: LT, text: <, line: 5, column: 52]
+   |     |  |  |     |- typeArgument
+   |     |  |  |     |  '- TOKEN[type: IDENTIFIER, text: T, line: 5, column: 53]
+   |     |  |  |     '- TOKEN[type: GT, text: >, line: 5, column: 54]
+   |     |  |  |- TOKEN[type: HASH, text: #, line: 5, column: 55]
+   |     |  |  '- memberReference
+   |     |  |     |- TOKEN[type: IDENTIFIER, text: thenApply, line: 5, column: 56]
+   |     |  |     |- TOKEN[type: LPAREN, text: (, line: 5, column: 65]
+   |     |  |     |- parameterTypeList
+   |     |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: Function, line: 5, column: 66]
+   |     |  |     '- TOKEN[type: RPAREN, text: ), line: 5, column: 74]
+   |     |  '- description
+   |     |     '- TOKEN[type: TEXT, text:  chain async result, line: 5, column: 75]
+   |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 94]
+   '- TOKEN[type: EOF, text: <EOF>, line: 5, column: 95]

@@ -59,6 +59,16 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testInlineLinkTag5() throws IOException {
+        verifyAst(getPath("inlineLink5.txt"), getPath("inlineLink5.javadoc"));
+    }
+
+    @Test
+    public void testInlineLinkTag6() throws IOException {
+        verifyAst(getPath("inlineLink6.txt"), getPath("inlineLink6.javadoc"));
+    }
+
+    @Test
     public void testBlockAuthorTag() throws IOException {
         verifyAst(getPath("blockAuthor.txt"), getPath("blockAuthor.javadoc"));
     }

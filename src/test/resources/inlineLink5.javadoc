@@ -1,0 +1,5 @@
+* {@linkplain java.util.Map<String, List>#put(String, List) map string to list}
+* Refer to {@link java.util.function.Function<T, R> generic function type}.
+* {@link java.util.Map<String, Map<String, List<Double>>> complex nested map structure}
+* {@link com.example.MyBox<T> a container class for T}
+* {@linkplain java.util.concurrent.CompletableFuture<T>#thenApply(Function) chain async result}
