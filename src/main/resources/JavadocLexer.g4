@@ -8,7 +8,8 @@ tokens {
     JAVADOC, LEADING_ASTERISK, NEWLINE, TEXT, WS, JAVADOC_INLINE_TAG_START, JAVADOC_INLINE_TAG_END,
     CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN_LITERAL,
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
-    TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS, SUPER, QUESTION
+    TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
+    SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER
 }
 
 @header {
@@ -137,6 +138,7 @@ mode javadocInlineTag;
 CODE_LITERAL: 'code' -> pushMode(code);
 LINK_LITERAL : 'link'-> pushMode(link);
 LINKPLAIN_LITERAL : 'linkplain' -> pushMode(link);
+VALUE_LITERAL: 'value' -> pushMode(value);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
 mode code;
@@ -216,7 +218,16 @@ PARAMETER_TYPE: ([a-zA-Z0-9_$] | '.' | '[' | ']')+;
 COMMA: ',';
 RPAREN: ')' -> popMode, pushMode(linkTagDescription);
 
-
+mode value;
+Value_IDENTIFIER: Letter LetterOrDigit* -> type(IDENTIFIER);
+FORMAT_SPECIFIER: '%' [#+\- 0,(]* [0-9]* ('.' [0-9]+)? [a-zA-Z];
+Value_HASH: '#' -> type(HASH);
+Value_DOT: '.' -> type(DOT);
+Value_WS: [ \t]+ -> channel(WHITESPACES);
+Value_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    ;
+Value_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popMode;
 
 mode inlineTagDescription;
 

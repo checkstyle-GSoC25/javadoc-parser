@@ -37,7 +37,7 @@ javadoc
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
-     ( codeInlineTag | linkInlineTag | linkPlainInlineTag | customInlineTag)
+     ( codeInlineTag | linkInlineTag | linkPlainInlineTag | valueInlineTag | customInlineTag)
       JAVADOC_INLINE_TAG_END
     ;
 
@@ -46,6 +46,10 @@ codeInlineTag: CODE_LITERAL (TEXT|NEWLINE)*;
 linkPlainInlineTag: LINKPLAIN_LITERAL reference description?;
 
 linkInlineTag: LINK_LITERAL reference description?;
+
+valueInlineTag: VALUE_LITERAL NEWLINE* FORMAT_SPECIFIER? NEWLINE* reference?;
+
+customInlineTag: CUSTOM_NAME description?;
 
 reference
         : (moduleName=qualifiedName SLASH)? typeName=qualifiedName (HASH memberReference)?
@@ -65,8 +69,6 @@ typeArgument
 memberReference: IDENTIFIER (LPAREN parameterTypeList? RPAREN)?;
 
 parameterTypeList: PARAMETER_TYPE (COMMA PARAMETER_TYPE)*;
-
-customInlineTag: CUSTOM_NAME description?;
 
 blockTag
     : authorTag
