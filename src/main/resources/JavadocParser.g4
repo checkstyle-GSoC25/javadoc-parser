@@ -31,7 +31,7 @@ import java.util.stream.Collectors;
 }
 
 javadoc
-    : mainDescription (blockTag)* EOF
+    : mainDescription? (blockTag)* EOF
     | blockTag+ EOF
     ;
 
@@ -41,15 +41,15 @@ inlineTag
       JAVADOC_INLINE_TAG_END
     ;
 
-codeInlineTag: CODE_LITERAL (TEXT|NEWLINE)*;
+codeInlineTag: CODE_LITERAL TEXT*;
 
 linkPlainInlineTag: LINKPLAIN_LITERAL reference description?;
 
 linkInlineTag: LINK_LITERAL reference description?;
 
-valueInlineTag: VALUE_LITERAL NEWLINE* FORMAT_SPECIFIER? NEWLINE* reference?;
+valueInlineTag: VALUE_LITERAL FORMAT_SPECIFIER? reference?;
 
-inheritDocTag: INHERITDOC_LITERAL NEWLINE* superType=reference?;
+inheritDocTag: INHERITDOC_LITERAL superType=reference?;
 
 customInlineTag: CUSTOM_NAME description?;
 
@@ -92,11 +92,11 @@ parameterName: IDENTIFIER;
 
 customBlockTag: CUSTOM_NAME description;
 
-description : (TEXT | NEWLINE |inlineTag)+ ;
+description : (TEXT | inlineTag)+ ;
 
 // HTML stuff
 
-mainDescription: (NEWLINE | TEXT | inlineTag | htmlElement)+;
+mainDescription: (TEXT | inlineTag | htmlElement)+;
 
 htmlElement
     : voidElement
@@ -130,9 +130,9 @@ htmlAttribute
     ;
 
 htmlContent
-    : (TEXT | htmlElement | inlineTag | NEWLINE)+
+    : (TEXT | htmlElement | inlineTag)+
     ;
 
 nonTightHtmlContent
-    : (TEXT | inlineTag | NEWLINE)+
+    : (TEXT | inlineTag)+
     ;

@@ -31,7 +31,6 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  map string to list, line: 1, column: 59]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 78]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 79]
    |  |- TOKEN[type: TEXT, text: Refer to , line: 2, column: 2]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 11]
@@ -57,7 +56,6 @@
    |  |  |     '- TOKEN[type: TEXT, text:  generic function type, line: 2, column: 51]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 73]
    |  |- TOKEN[type: TEXT, text: ., line: 2, column: 74]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 75]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |  |  |- linkInlineTag
@@ -92,7 +90,6 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  complex nested map structure, line: 3, column: 57]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 86]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 87]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
    |  |  |- linkInlineTag
@@ -111,7 +108,6 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a container class for T, line: 4, column: 29]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 53]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 54]
    |  '- inlineTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 2]
    |     |- linkPlainInlineTag

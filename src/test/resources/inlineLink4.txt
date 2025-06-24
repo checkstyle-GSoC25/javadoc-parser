@@ -1,7 +1,6 @@
 '- javadoc
    |- mainDescription
    |  |- TOKEN[type: TEXT, text: Link1:, line: 1, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 8]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- linkInlineTag
@@ -28,7 +27,6 @@
    |  |  |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: Runnable, line: 2, column: 64]
    |  |  |  |     '- TOKEN[type: RPAREN, text: ), line: 2, column: 72]
    |  |  |  '- description
-   |  |  |     |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 73]
    |  |  |     |- TOKEN[type: TEXT, text:  executes , line: 3, column: 1]
    |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 11]
@@ -53,12 +51,8 @@
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 88]
    |  |  |     '- TOKEN[type: TEXT, text:  otherwise, line: 3, column: 89]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 99]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 100]
    |  |- TOKEN[type: TEXT, text: Tests: module prefix, inline tags in label, simple method with reference types., line: 4, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 81]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 5, column: 1]
    |  |- TOKEN[type: TEXT, text: Link2:, line: 6, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 6, column: 8]
    |  |- TOKEN[type: TEXT, text: See , line: 7, column: 2]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 6]
@@ -91,7 +85,6 @@
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 60]
    |  |  |     '- TOKEN[type: TEXT, text:  interface, line: 7, column: 61]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 71]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 7, column: 72]
    |  |- TOKEN[type: TEXT, text: Tests: module prefix, constructor method, inline , line: 8, column: 2]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 51]
@@ -99,10 +92,7 @@
    |  |  |  '- TOKEN[type: CODE_LITERAL, text: code, line: 8, column: 53]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 57]
    |  |- TOKEN[type: TEXT, text:  label., line: 8, column: 58]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 8, column: 65]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 9, column: 1]
    |  |- TOKEN[type: TEXT, text: Link3:, line: 10, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 10, column: 8]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 11, column: 2]
    |  |  |- linkInlineTag
@@ -125,7 +115,6 @@
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 49]
    |  |  |     '- TOKEN[type: TEXT, text:  carefully, line: 11, column: 50]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 60]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 11, column: 61]
    |  |- TOKEN[type: TEXT, text: Tests: relative member reference with single parameter, inline , line: 12, column: 2]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 65]
@@ -133,10 +122,7 @@
    |  |  |  '- TOKEN[type: CODE_LITERAL, text: code, line: 12, column: 67]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 12, column: 71]
    |  |- TOKEN[type: TEXT, text:  in label., line: 12, column: 72]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 12, column: 82]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 13, column: 1]
    |  |- TOKEN[type: TEXT, text: Link4:, line: 14, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 14, column: 8]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 15, column: 2]
    |  |  |- linkInlineTag
@@ -162,12 +148,8 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  copies part of an array, line: 15, column: 61]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 15, column: 85]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 15, column: 86]
    |  |- TOKEN[type: TEXT, text: Tests: array types in parameter list., line: 16, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 16, column: 39]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 17, column: 1]
    |  |- TOKEN[type: TEXT, text: Link5:, line: 18, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 18, column: 8]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 19, column: 2]
    |  |  |- linkInlineTag
@@ -196,12 +178,8 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  extract a substring from a string, line: 19, column: 55]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 19, column: 89]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 19, column: 90]
    |  |- TOKEN[type: TEXT, text: Tests: module prefix, primitive parameters., line: 20, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 20, column: 45]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 21, column: 1]
    |  |- TOKEN[type: TEXT, text: Link6:, line: 22, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 22, column: 8]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 23, column: 2]
    |  |  |- linkInlineTag
@@ -236,12 +214,8 @@
    |  |  |        |  '- TOKEN[type: TEXT, text:  getLogger, line: 23, column: 91]
    |  |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 23, column: 101]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 23, column: 102]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 23, column: 103]
    |  |- TOKEN[type: TEXT, text: Tests: module prefix, inline tag in label, fully qualified class., line: 24, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 24, column: 67]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 25, column: 1]
    |  |- TOKEN[type: TEXT, text: Link7:, line: 26, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 26, column: 8]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 27, column: 2]
    |  |  |- linkInlineTag
@@ -270,12 +244,8 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  apply function to 2D list, line: 27, column: 72]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 27, column: 98]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 27, column: 99]
    |  |- TOKEN[type: TEXT, text: Tests: multi-dimensional array as parameter, module prefix., line: 28, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 28, column: 61]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 29, column: 1]
    |  |- TOKEN[type: TEXT, text: Link8:, line: 30, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 30, column: 8]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 31, column: 2]
    |  |  |- linkInlineTag
@@ -304,12 +274,8 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  transform stream elements, line: 31, column: 75]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 31, column: 101]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 31, column: 102]
    |  |- TOKEN[type: TEXT, text: Tests: fully qualified single parameter, module prefix., line: 32, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 32, column: 57]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 33, column: 1]
    |  |- TOKEN[type: TEXT, text: Link9:, line: 34, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 34, column: 8]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 35, column: 2]
    |  |  |- linkInlineTag
@@ -338,24 +304,19 @@
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 35, column: 57]
    |  |  |     '- TOKEN[type: TEXT, text:  from entry, line: 35, column: 58]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 35, column: 69]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 35, column: 70]
    |  |- TOKEN[type: TEXT, text: Tests: nested class reference, inline tag in label., line: 36, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 36, column: 53]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 37, column: 1]
    |  |- TOKEN[type: TEXT, text: Link10:, line: 38, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 38, column: 9]
-   |  |- inlineTag
-   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 39, column: 2]
-   |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 39, column: 4]
-   |  |  |  |- reference
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 39, column: 9]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 39, column: 13]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 39, column: 14]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 39, column: 18]
-   |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Arrays, line: 39, column: 19]
-   |  |  |  '- description
-   |  |  |     '- TOKEN[type: TEXT, text:  array, line: 39, column: 25]
-   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 39, column: 31]
-   |  '- TOKEN[type: NEWLINE, text: \n, line: 39, column: 32]
+   |  '- inlineTag
+   |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 39, column: 2]
+   |     |- linkInlineTag
+   |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 39, column: 4]
+   |     |  |- reference
+   |     |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 39, column: 9]
+   |     |  |  |- TOKEN[type: DOT, text: ., line: 39, column: 13]
+   |     |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 39, column: 14]
+   |     |  |  |- TOKEN[type: DOT, text: ., line: 39, column: 18]
+   |     |  |  '- TOKEN[type: IDENTIFIER, text: Arrays, line: 39, column: 19]
+   |     |  '- description
+   |     |     '- TOKEN[type: TEXT, text:  array, line: 39, column: 25]
+   |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 39, column: 31]
    '- TOKEN[type: EOF, text: <EOF>, line: 40, column: 0]

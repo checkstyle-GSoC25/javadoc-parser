@@ -6,14 +6,12 @@
    |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 1, column: 3]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 1, column: 4]
    |  |  '- nonTightHtmlContent
-   |  |     |- TOKEN[type: TEXT, text: This is a paragraph, line: 1, column: 5]
-   |  |     '- TOKEN[type: NEWLINE, text: \n, line: 1, column: 24]
+   |  |     '- TOKEN[type: TEXT, text: This is a paragraph, line: 1, column: 5]
    |  '- htmlElement
    |     |- htmlTagStart
    |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 2, column: 2]
    |     |  |- TOKEN[type: TAG_NAME, text: p, line: 2, column: 3]
    |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 2, column: 4]
    |     '- nonTightHtmlContent
-   |        |- TOKEN[type: TEXT, text: This is another paragraph, line: 2, column: 5]
-   |        '- TOKEN[type: NEWLINE, text: \n, line: 2, column: 30]
+   |        '- TOKEN[type: TEXT, text: This is another paragraph, line: 2, column: 5]
    '- TOKEN[type: EOF, text: <EOF>, line: 3, column: 0]

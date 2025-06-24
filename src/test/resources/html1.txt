@@ -14,7 +14,6 @@
    |  |     |- TOKEN[type: TAG_NAME, text: code, line: 1, column: 28]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 1, column: 32]
    |  |- TOKEN[type: TEXT, text:  containing all elements from the specified, line: 1, column: 33]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 76]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 2, column: 2]
@@ -28,109 +27,93 @@
    |  |     |- TOKEN[type: TAG_NAME, text: code, line: 2, column: 20]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 2, column: 24]
    |  |- TOKEN[type: TEXT, text:  in the same iteration order., line: 2, column: 25]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 54]
    |  |- TOKEN[type: TEXT, text: This method is useful when you want to create a mutable copy of an existing, line: 3, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 77]
    |  |- TOKEN[type: TEXT, text: collection. For example:, line: 4, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 26]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 5, column: 2]
    |  |  |  |- TOKEN[type: TAG_NAME, text: pre, line: 5, column: 3]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 5, column: 6]
    |  |  |- htmlContent
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 5, column: 7]
-   |  |  |  |- inlineTag
-   |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 2]
-   |  |  |  |  |- codeInlineTag
-   |  |  |  |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 4]
-   |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 6, column: 8]
-   |  |  |  |  |  |- TOKEN[type: TEXT, text:  List<String> names = new ArrayList<>(createNames());, line: 7, column: 1]
-   |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 7, column: 54]
-   |  |  |  |  |  '- TOKEN[type: TEXT, text:  , line: 8, column: 1]
-   |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 2]
-   |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 8, column: 3]
+   |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 2]
+   |  |  |  |- codeInlineTag
+   |  |  |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 4]
+   |  |  |  |  |- TOKEN[type: TEXT, text:  List<String> names = new ArrayList<>(createNames());, line: 7, column: 1]
+   |  |  |  |  '- TOKEN[type: TEXT, text:  , line: 8, column: 1]
+   |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 2]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 2]
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 3]
    |  |     |- TOKEN[type: TAG_NAME, text: pre, line: 9, column: 4]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 7]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 9, column: 8]
    |  |- TOKEN[type: TEXT, text: See also:, line: 10, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 10, column: 11]
-   |  |- htmlElement
-   |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 11, column: 2]
-   |  |  |  |- TOKEN[type: TAG_NAME, text: ul, line: 11, column: 3]
-   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 11, column: 5]
-   |  |  |- htmlContent
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 11, column: 6]
-   |  |  |  |- htmlElement
-   |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 12, column: 4]
-   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 12, column: 5]
-   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 12, column: 7]
-   |  |  |  |  |- htmlContent
-   |  |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 8]
-   |  |  |  |  |  |- linkInlineTag
-   |  |  |  |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 12, column: 10]
-   |  |  |  |  |  |  '- reference
-   |  |  |  |  |  |     |- qualifiedName
-   |  |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 12, column: 15]
-   |  |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 19]
-   |  |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 12, column: 20]
-   |  |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 24]
-   |  |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Collections, line: 12, column: 25]
-   |  |  |  |  |  |     |- TOKEN[type: HASH, text: #, line: 12, column: 36]
-   |  |  |  |  |  |     '- memberReference
-   |  |  |  |  |  |        |- TOKEN[type: IDENTIFIER, text: unmodifiableList, line: 12, column: 37]
-   |  |  |  |  |  |        |- TOKEN[type: LPAREN, text: (, line: 12, column: 53]
-   |  |  |  |  |  |        |- parameterTypeList
-   |  |  |  |  |  |        |  '- TOKEN[type: PARAMETER_TYPE, text: List, line: 12, column: 54]
-   |  |  |  |  |  |        '- TOKEN[type: RPAREN, text: ), line: 12, column: 58]
-   |  |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 12, column: 59]
-   |  |  |  |  '- htmlTagEnd
-   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 12, column: 60]
-   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 12, column: 61]
-   |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 12, column: 62]
-   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 12, column: 64]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 12, column: 65]
-   |  |  |  |- htmlElement
-   |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 13, column: 4]
-   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 13, column: 5]
-   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 13, column: 7]
-   |  |  |  |  |- htmlContent
-   |  |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 13, column: 8]
-   |  |  |  |  |  |- linkInlineTag
-   |  |  |  |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 13, column: 10]
-   |  |  |  |  |  |  '- reference
-   |  |  |  |  |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 13, column: 15]
-   |  |  |  |  |  |     |- TOKEN[type: DOT, text: ., line: 13, column: 19]
-   |  |  |  |  |  |     |- TOKEN[type: IDENTIFIER, text: util, line: 13, column: 20]
-   |  |  |  |  |  |     |- TOKEN[type: DOT, text: ., line: 13, column: 24]
-   |  |  |  |  |  |     '- TOKEN[type: IDENTIFIER, text: ArrayList, line: 13, column: 25]
-   |  |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 13, column: 34]
-   |  |  |  |  '- htmlTagEnd
-   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 13, column: 35]
-   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 13, column: 36]
-   |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 13, column: 37]
-   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 13, column: 39]
-   |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 13, column: 40]
-   |  |  '- htmlTagEnd
-   |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 14, column: 2]
-   |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 14, column: 3]
-   |  |     |- TOKEN[type: TAG_NAME, text: ul, line: 14, column: 4]
-   |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 6]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 14, column: 7]
-   |  '- TOKEN[type: NEWLINE, text: \n, line: 15, column: 1]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 11, column: 2]
+   |     |  |- TOKEN[type: TAG_NAME, text: ul, line: 11, column: 3]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 11, column: 5]
+   |     |- htmlContent
+   |     |  |- htmlElement
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 12, column: 4]
+   |     |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 12, column: 5]
+   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 12, column: 7]
+   |     |  |  |- htmlContent
+   |     |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 8]
+   |     |  |  |  |- linkInlineTag
+   |     |  |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 12, column: 10]
+   |     |  |  |  |  '- reference
+   |     |  |  |  |     |- qualifiedName
+   |     |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 12, column: 15]
+   |     |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 19]
+   |     |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 12, column: 20]
+   |     |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 24]
+   |     |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Collections, line: 12, column: 25]
+   |     |  |  |  |     |- TOKEN[type: HASH, text: #, line: 12, column: 36]
+   |     |  |  |  |     '- memberReference
+   |     |  |  |  |        |- TOKEN[type: IDENTIFIER, text: unmodifiableList, line: 12, column: 37]
+   |     |  |  |  |        |- TOKEN[type: LPAREN, text: (, line: 12, column: 53]
+   |     |  |  |  |        |- parameterTypeList
+   |     |  |  |  |        |  '- TOKEN[type: PARAMETER_TYPE, text: List, line: 12, column: 54]
+   |     |  |  |  |        '- TOKEN[type: RPAREN, text: ), line: 12, column: 58]
+   |     |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 12, column: 59]
+   |     |  |  '- htmlTagEnd
+   |     |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 12, column: 60]
+   |     |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 12, column: 61]
+   |     |  |     |- TOKEN[type: TAG_NAME, text: li, line: 12, column: 62]
+   |     |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 12, column: 64]
+   |     |  '- htmlElement
+   |     |     |- htmlTagStart
+   |     |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 13, column: 4]
+   |     |     |  |- TOKEN[type: TAG_NAME, text: li, line: 13, column: 5]
+   |     |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 13, column: 7]
+   |     |     |- htmlContent
+   |     |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 13, column: 8]
+   |     |     |  |- linkInlineTag
+   |     |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 13, column: 10]
+   |     |     |  |  '- reference
+   |     |     |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 13, column: 15]
+   |     |     |  |     |- TOKEN[type: DOT, text: ., line: 13, column: 19]
+   |     |     |  |     |- TOKEN[type: IDENTIFIER, text: util, line: 13, column: 20]
+   |     |     |  |     |- TOKEN[type: DOT, text: ., line: 13, column: 24]
+   |     |     |  |     '- TOKEN[type: IDENTIFIER, text: ArrayList, line: 13, column: 25]
+   |     |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 13, column: 34]
+   |     |     '- htmlTagEnd
+   |     |        |- TOKEN[type: TAG_OPEN, text: <, line: 13, column: 35]
+   |     |        |- TOKEN[type: TAG_SLASH, text: /, line: 13, column: 36]
+   |     |        |- TOKEN[type: TAG_NAME, text: li, line: 13, column: 37]
+   |     |        '- TOKEN[type: TAG_CLOSE, text: >, line: 13, column: 39]
+   |     '- htmlTagEnd
+   |        |- TOKEN[type: TAG_OPEN, text: <, line: 14, column: 2]
+   |        |- TOKEN[type: TAG_SLASH, text: /, line: 14, column: 3]
+   |        |- TOKEN[type: TAG_NAME, text: ul, line: 14, column: 4]
+   |        '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 6]
    |- blockTag
    |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 16, column: 2]
    |  |- parameterName
    |  |  '- TOKEN[type: IDENTIFIER, text: collection, line: 16, column: 9]
    |  '- description
-   |     |- TOKEN[type: TEXT, text:  the source collection, line: 16, column: 19]
-   |     '- TOKEN[type: NEWLINE, text: \n, line: 16, column: 41]
+   |     '- TOKEN[type: TEXT, text:  the source collection, line: 16, column: 19]
    |- blockTag
    |  |- TOKEN[type: RETURN_LITERAL, text: @return, line: 17, column: 2]
    |  '- description
