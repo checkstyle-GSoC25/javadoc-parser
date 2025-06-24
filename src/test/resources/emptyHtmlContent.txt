@@ -1,0 +1,75 @@
+'- javadoc
+   |- mainDescription
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  '- nonTightHtmlContent
+   |  |     '- TOKEN[type: TEXT, text: This is a test... ]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: div]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |- htmlContent
+   |  |  |  |- htmlTagStart
+   |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |- TOKEN[type: TAG_NAME, text: span]
+   |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |- htmlContent
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: a]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |  '- htmlTagEnd
+   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /]
+   |  |  |  |     |- TOKEN[type: TAG_NAME, text: a]
+   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  '- htmlTagEnd
+   |  |  |     |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |     |- TOKEN[type: TAG_SLASH, text: /]
+   |  |  |     |- TOKEN[type: TAG_NAME, text: span]
+   |  |  |     '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: TAG_OPEN, text: <]
+   |  |     |- TOKEN[type: TAG_SLASH, text: /]
+   |  |     |- TOKEN[type: TAG_NAME, text: div]
+   |  |     '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- htmlElement
+   |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |  |  |- TOKEN[type: TAG_NAME, text: p]
+   |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |- TOKEN[type: TAG_NAME, text: div]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |- htmlContent
+   |     |  |- htmlTagStart
+   |     |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |  |- TOKEN[type: TAG_NAME, text: span]
+   |     |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |- htmlContent
+   |     |  |  |- htmlTagStart
+   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |  |  |- TOKEN[type: TAG_NAME, text: a]
+   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |  '- htmlTagEnd
+   |     |  |     |- TOKEN[type: TAG_OPEN, text: <]
+   |     |  |     |- TOKEN[type: TAG_SLASH, text: /]
+   |     |  |     |- TOKEN[type: TAG_NAME, text: a]
+   |     |  |     '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  '- htmlTagEnd
+   |     |     |- TOKEN[type: TAG_OPEN, text: <]
+   |     |     |- TOKEN[type: TAG_SLASH, text: /]
+   |     |     |- TOKEN[type: TAG_NAME, text: span]
+   |     |     '- TOKEN[type: TAG_CLOSE, text: >]
+   |     '- htmlTagEnd
+   |        |- TOKEN[type: TAG_OPEN, text: <]
+   |        |- TOKEN[type: TAG_SLASH, text: /]
+   |        |- TOKEN[type: TAG_NAME, text: div]
+   |        '- TOKEN[type: TAG_CLOSE, text: >]
+   '- TOKEN[type: EOF, text: <EOF>]

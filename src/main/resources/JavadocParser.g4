@@ -97,7 +97,7 @@ voidElement
     : {isVoidTag()}? htmlTagStart
     ;
 
-tight: {!ParserUtility.isNonTightTag(_input, unclosedTagNameTokens)}? htmlTagStart htmlContent htmlTagEnd;
+tight: {!ParserUtility.isNonTightTag(_input, unclosedTagNameTokens)}? htmlTagStart htmlContent? htmlTagEnd;
 
 nonTight: htmlTagStart nonTightHtmlContent?;
 
