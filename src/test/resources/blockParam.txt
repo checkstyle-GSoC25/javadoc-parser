@@ -1,57 +1,57 @@
 '- javadoc
    |- blockTag
-   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 1, column: 2]
    |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: name]
+   |  |  '- TOKEN[type: IDENTIFIER, text: name, line: 1, column: 9]
    |  '- description
-   |     |- TOKEN[type: TEXT, text:  the user's name]
-   |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |- TOKEN[type: TEXT, text:  the user's name, line: 1, column: 13]
+   |     '- TOKEN[type: NEWLINE, text: \n, line: 1, column: 29]
    |- blockTag
-   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 2, column: 2]
    |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: age]
+   |  |  '- TOKEN[type: IDENTIFIER, text: age, line: 2, column: 9]
    |  '- description
-   |     |- TOKEN[type: TEXT, text:  the user's age in years]
-   |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |- TOKEN[type: TEXT, text:  the user's age in years, line: 2, column: 12]
+   |     '- TOKEN[type: NEWLINE, text: \n, line: 2, column: 36]
    |- blockTag
-   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 3, column: 2]
    |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: email]
+   |  |  '- TOKEN[type: IDENTIFIER, text: email, line: 3, column: 12]
    |  '- description
-   |     |- TOKEN[type: TEXT, text: ,   the user's email address]
-   |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |- TOKEN[type: TEXT, text: ,   the user's email address, line: 3, column: 17]
+   |     '- TOKEN[type: NEWLINE, text: \n, line: 3, column: 45]
    |- blockTag
-   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 4, column: 2]
    |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: address]
+   |  |  '- TOKEN[type: IDENTIFIER, text: address, line: 4, column: 12]
    |  '- description
-   |     |- TOKEN[type: NEWLINE, text: \n]
-   |     |- TOKEN[type: TEXT, text: the user's physical address]
-   |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 19]
+   |     |- TOKEN[type: TEXT, text: the user's physical address, line: 5, column: 8]
+   |     '- TOKEN[type: NEWLINE, text: \n, line: 5, column: 35]
    |- blockTag
-   |  |- TOKEN[type: PARAM_LITERAL, text: @param]
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 6, column: 1]
    |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: mode]
+   |  |  '- TOKEN[type: IDENTIFIER, text: mode, line: 6, column: 8]
    |  '- description
-   |     |- TOKEN[type: TEXT, text:  one of ]
+   |     |- TOKEN[type: TEXT, text:  one of , line: 6, column: 12]
    |     |- inlineTag
-   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 20]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
-   |     |  |  '- TOKEN[type: TEXT, text:  "asc"]
-   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
-   |     |- TOKEN[type: TEXT, text: , ]
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 22]
+   |     |  |  '- TOKEN[type: TEXT, text:  "asc", line: 6, column: 26]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 32]
+   |     |- TOKEN[type: TEXT, text: , , line: 6, column: 33]
    |     |- inlineTag
-   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 35]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code]
-   |     |  |  '- TOKEN[type: TEXT, text:  "desc"]
-   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
-   |     |- TOKEN[type: TEXT, text: , or ]
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 37]
+   |     |  |  '- TOKEN[type: TEXT, text:  "desc", line: 6, column: 41]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 48]
+   |     |- TOKEN[type: TEXT, text: , or , line: 6, column: 49]
    |     '- inlineTag
-   |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@]
+   |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 54]
    |        |- codeInlineTag
-   |        |  |- TOKEN[type: CODE_LITERAL, text: code]
-   |        |  '- TOKEN[type: TEXT, text:  "none"]
-   |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }]
-   '- TOKEN[type: EOF, text: <EOF>]
+   |        |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 56]
+   |        |  '- TOKEN[type: TEXT, text:  "none", line: 6, column: 60]
+   |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 67]
+   '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 68]
