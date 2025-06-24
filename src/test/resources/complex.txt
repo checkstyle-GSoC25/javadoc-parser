@@ -20744,10 +20744,18 @@
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 288, column: 5]
    |  |  |- htmlContent
    |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 288, column: 6]
-   |  |  |  |- customInlineTag
-   |  |  |  |  |- TOKEN[type: CUSTOM_NAME, text: value, line: 288, column: 8]
-   |  |  |  |  '- description
-   |  |  |  |     '- TOKEN[type: TEXT, text:  java.lang.Integer#MAX_VALUE, line: 288, column: 13]
+   |  |  |  |- valueInlineTag
+   |  |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 288, column: 8]
+   |  |  |  |  '- reference
+   |  |  |  |     |- qualifiedName
+   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 288, column: 14]
+   |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 288, column: 18]
+   |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: lang, line: 288, column: 19]
+   |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 288, column: 23]
+   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Integer, line: 288, column: 24]
+   |  |  |  |     |- TOKEN[type: HASH, text: #, line: 288, column: 31]
+   |  |  |  |     '- memberReference
+   |  |  |  |        '- TOKEN[type: IDENTIFIER, text: MAX_VALUE, line: 288, column: 32]
    |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 288, column: 41]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 288, column: 42]

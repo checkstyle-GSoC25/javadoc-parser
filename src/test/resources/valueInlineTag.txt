@@ -1,0 +1,138 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: TEXT, text: Example 1: , line: 1, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  '- TOKEN[type: VALUE_LITERAL, text: value, line: 1, column: 15]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 20]
+   |  |- TOKEN[type: TEXT, text:  — refers to the value of this constant., line: 1, column: 21]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 61]
+   |  |- TOKEN[type: TEXT, text: Example 2: , line: 2, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 2, column: 15]
+   |  |  |  '- reference
+   |  |  |     |- TOKEN[type: HASH, text: #, line: 2, column: 21]
+   |  |  |     '- memberReference
+   |  |  |        '- TOKEN[type: IDENTIFIER, text: CONSTANT, line: 2, column: 22]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 30]
+   |  |- TOKEN[type: TEXT, text:  — refers to another constant in the same class., line: 2, column: 31]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 79]
+   |  |- TOKEN[type: TEXT, text: Example 3: , line: 3, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 3, column: 15]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 3, column: 21]
+   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 3, column: 24]
+   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 3, column: 25]
+   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 3, column: 32]
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 3, column: 33]
+   |  |  |     |- TOKEN[type: HASH, text: #, line: 3, column: 42]
+   |  |  |     '- memberReference
+   |  |  |        '- TOKEN[type: IDENTIFIER, text: TIMEOUT_MS, line: 3, column: 43]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 53]
+   |  |- TOKEN[type: TEXT, text:  — fully qualified constant reference., line: 3, column: 54]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 92]
+   |  |- TOKEN[type: TEXT, text: Example 4: , line: 4, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 4, column: 15]
+   |  |  |  '- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 4, column: 21]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 25]
+   |  |- TOKEN[type: TEXT, text:  — formats this constant with two decimal places., line: 4, column: 26]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 75]
+   |  |- TOKEN[type: TEXT, text: Example 5: , line: 5, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 5, column: 15]
+   |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 5, column: 21]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 5, column: 26]
+   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 5, column: 29]
+   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 5, column: 30]
+   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 5, column: 37]
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 5, column: 38]
+   |  |  |     |- TOKEN[type: HASH, text: #, line: 5, column: 47]
+   |  |  |     '- memberReference
+   |  |  |        '- TOKEN[type: IDENTIFIER, text: PI, line: 5, column: 48]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 50]
+   |  |- TOKEN[type: TEXT, text:  — formatted reference to an external constant., line: 5, column: 51]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 5, column: 98]
+   |  |- TOKEN[type: TEXT, text: Example 6: , line: 6, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 6, column: 15]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 6, column: 21]
+   |  |  |     |- TOKEN[type: HASH, text: #, line: 6, column: 30]
+   |  |  |     '- memberReference
+   |  |  |        '- TOKEN[type: IDENTIFIER, text: ENCODING, line: 6, column: 31]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 39]
+   |  |- TOKEN[type: TEXT, text:  — class reference using unqualified class name (must be imported or in same package)., line: 6, column: 40]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 6, column: 126]
+   |  |- TOKEN[type: TEXT, text: Example 7: , line: 7, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 7, column: 15]
+   |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.1f, line: 7, column: 21]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 7, column: 26]
+   |  |  |     |- TOKEN[type: HASH, text: #, line: 7, column: 35]
+   |  |  |     '- memberReference
+   |  |  |        '- TOKEN[type: IDENTIFIER, text: MEMORY_MB, line: 7, column: 36]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 45]
+   |  |- TOKEN[type: TEXT, text:  — formatted with thousands separator and one decimal place., line: 7, column: 46]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 7, column: 106]
+   |  |- TOKEN[type: TEXT, text: Example 8: , line: 8, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 8, column: 15]
+   |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 8, column: 21]
+   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 8, column: 25]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 9, column: 16]
+   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 9, column: 19]
+   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 9, column: 20]
+   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 9, column: 27]
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 9, column: 28]
+   |  |  |     |- TOKEN[type: HASH, text: #, line: 9, column: 37]
+   |  |  |     '- memberReference
+   |  |  |        '- TOKEN[type: IDENTIFIER, text: PI, line: 9, column: 38]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 9, column: 40]
+   |  |- TOKEN[type: TEXT, text:  — formatted reference to an external constant., line: 9, column: 41]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 9, column: 88]
+   |  |- TOKEN[type: TEXT, text: Example 9: , line: 10, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 10, column: 13]
+   |  |  |- valueInlineTag
+   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 10, column: 15]
+   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 10, column: 20]
+   |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 11, column: 16]
+   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 11, column: 20]
+   |  |  |  '- reference
+   |  |  |     |- qualifiedName
+   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 12, column: 16]
+   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 19]
+   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 12, column: 20]
+   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 27]
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 12, column: 28]
+   |  |  |     |- TOKEN[type: HASH, text: #, line: 12, column: 37]
+   |  |  |     '- memberReference
+   |  |  |        '- TOKEN[type: IDENTIFIER, text: PI, line: 12, column: 38]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 12, column: 40]
+   |  '- TOKEN[type: TEXT, text:  — formatted reference to an external constant., line: 12, column: 41]
+   '- TOKEN[type: EOF, text: <EOF>, line: 12, column: 88]
