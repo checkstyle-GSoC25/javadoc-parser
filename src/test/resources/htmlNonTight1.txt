@@ -1,45 +1,45 @@
 '- javadoc
    |- mainDescription
-   |  |- TOKEN[type: TEXT, text: This method does something important.]
-   |  |- TOKEN[type: NEWLINE, text: \n]
+   |  |- TOKEN[type: TEXT, text: This method does something important., line: 1, column: 2]
+   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 39]
    |  |- htmlElement
    |  |  |- htmlTagStart
-   |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
-   |  |  |  |- TOKEN[type: TAG_NAME, text: p]
-   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 2, column: 2]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 2, column: 3]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 2, column: 4]
    |  |  '- nonTightHtmlContent
-   |  |     |- TOKEN[type: NEWLINE, text: \n]
-   |  |     |- TOKEN[type: TEXT, text: This is a normal paragraph]
-   |  |     |- TOKEN[type: NEWLINE, text: \n]
-   |  |     |- TOKEN[type: NEWLINE, text: \n]
-   |  |     |- TOKEN[type: TEXT, text: Here's a list of features:]
-   |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |  |     |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 5]
+   |  |     |- TOKEN[type: TEXT, text: This is a normal paragraph, line: 3, column: 2]
+   |  |     |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 28]
+   |  |     |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 1]
+   |  |     |- TOKEN[type: TEXT, text: Here's a list of features:, line: 5, column: 2]
+   |  |     '- TOKEN[type: NEWLINE, text: \n, line: 5, column: 28]
    |  '- htmlElement
    |     |- htmlTagStart
-   |     |  |- TOKEN[type: TAG_OPEN, text: <]
-   |     |  |- TOKEN[type: TAG_NAME, text: ul]
-   |     |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 2]
+   |     |  |- TOKEN[type: TAG_NAME, text: ul, line: 6, column: 3]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 5]
    |     |- htmlContent
-   |     |  |- TOKEN[type: NEWLINE, text: \n]
+   |     |  |- TOKEN[type: NEWLINE, text: \n, line: 6, column: 6]
    |     |  |- htmlElement
    |     |  |  |- htmlTagStart
-   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <]
-   |     |  |  |  |- TOKEN[type: TAG_NAME, text: li]
-   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 4]
+   |     |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 7, column: 5]
+   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 7]
    |     |  |  '- nonTightHtmlContent
-   |     |  |     |- TOKEN[type: TEXT, text: Feature one]
-   |     |  |     '- TOKEN[type: NEWLINE, text: \n]
+   |     |  |     |- TOKEN[type: TEXT, text: Feature one, line: 7, column: 8]
+   |     |  |     '- TOKEN[type: NEWLINE, text: \n, line: 7, column: 19]
    |     |  '- htmlElement
    |     |     |- htmlTagStart
-   |     |     |  |- TOKEN[type: TAG_OPEN, text: <]
-   |     |     |  |- TOKEN[type: TAG_NAME, text: li]
-   |     |     |  '- TOKEN[type: TAG_CLOSE, text: >]
+   |     |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 4]
+   |     |     |  |- TOKEN[type: TAG_NAME, text: li, line: 8, column: 5]
+   |     |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 7]
    |     |     '- nonTightHtmlContent
-   |     |        |- TOKEN[type: TEXT, text: Feature two]
-   |     |        '- TOKEN[type: NEWLINE, text: \n]
+   |     |        |- TOKEN[type: TEXT, text: Feature two, line: 8, column: 8]
+   |     |        '- TOKEN[type: NEWLINE, text: \n, line: 8, column: 19]
    |     '- htmlTagEnd
-   |        |- TOKEN[type: TAG_OPEN, text: <]
-   |        |- TOKEN[type: TAG_SLASH, text: /]
-   |        |- TOKEN[type: TAG_NAME, text: ul]
-   |        '- TOKEN[type: TAG_CLOSE, text: >]
-   '- TOKEN[type: EOF, text: <EOF>]
+   |        |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 2]
+   |        |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 3]
+   |        |- TOKEN[type: TAG_NAME, text: ul, line: 9, column: 4]
+   |        '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 6]
+   '- TOKEN[type: EOF, text: <EOF>, line: 9, column: 7]
