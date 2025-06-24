@@ -9,7 +9,7 @@ tokens {
     CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN_LITERAL,
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
-    SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER
+    SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL
 }
 
 @header {
@@ -139,6 +139,7 @@ CODE_LITERAL: 'code' -> pushMode(code);
 LINK_LITERAL : 'link'-> pushMode(link);
 LINKPLAIN_LITERAL : 'linkplain' -> pushMode(link);
 VALUE_LITERAL: 'value' -> pushMode(value);
+INHERITDOC_LITERAL : 'inheritDoc' -> pushMode(link);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
 mode code;
@@ -187,6 +188,9 @@ GT: '>'
         }
     };
 Link_COMMA: ',' -> type(COMMA);
+Link_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    ;
 
 fragment LetterOrDigit
     : Letter

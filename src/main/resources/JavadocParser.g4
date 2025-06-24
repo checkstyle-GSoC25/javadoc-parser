@@ -37,7 +37,7 @@ javadoc
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
-     ( codeInlineTag | linkInlineTag | linkPlainInlineTag | valueInlineTag | customInlineTag)
+     ( codeInlineTag | linkInlineTag | linkPlainInlineTag | valueInlineTag | inheritDocTag | customInlineTag)
       JAVADOC_INLINE_TAG_END
     ;
 
@@ -48,6 +48,8 @@ linkPlainInlineTag: LINKPLAIN_LITERAL reference description?;
 linkInlineTag: LINK_LITERAL reference description?;
 
 valueInlineTag: VALUE_LITERAL NEWLINE* FORMAT_SPECIFIER? NEWLINE* reference?;
+
+inheritDocTag: INHERITDOC_LITERAL NEWLINE* superType=reference?;
 
 customInlineTag: CUSTOM_NAME description?;
 

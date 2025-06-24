@@ -69,6 +69,11 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testInlineInheritDoc() throws IOException {
+        verifyAst(getPath("inheritDoc.txt"), getPath("inheritDoc.javadoc"));
+    }
+
+    @Test
     public void testBlockAuthorTag() throws IOException {
         verifyAst(getPath("blockAuthor.txt"), getPath("blockAuthor.javadoc"));
     }
