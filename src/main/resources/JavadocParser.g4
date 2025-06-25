@@ -37,7 +37,13 @@ javadoc
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
-     ( codeInlineTag | linkInlineTag | linkPlainInlineTag | valueInlineTag | inheritDocTag | customInlineTag)
+     (  codeInlineTag
+        | linkInlineTag
+        | linkPlainInlineTag
+        | valueInlineTag
+        | inheritDocTag
+        | summaryInlineTag
+        | customInlineTag)
       JAVADOC_INLINE_TAG_END
     ;
 
@@ -50,6 +56,8 @@ linkInlineTag: LINK_LITERAL reference description?;
 valueInlineTag: VALUE_LITERAL FORMAT_SPECIFIER? reference?;
 
 inheritDocTag: INHERITDOC_LITERAL superType=reference?;
+
+summaryInlineTag: SUMMARY_LITERAL description?;
 
 customInlineTag: CUSTOM_NAME description?;
 
@@ -92,7 +100,7 @@ parameterName: IDENTIFIER;
 
 customBlockTag: CUSTOM_NAME description;
 
-description : (TEXT | inlineTag)+ ;
+description : (TEXT | inlineTag | htmlElement)+ ;
 
 // HTML stuff
 

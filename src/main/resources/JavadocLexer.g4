@@ -9,7 +9,7 @@ tokens {
     CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN_LITERAL,
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
-    SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL
+    SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL
 }
 
 @header {
@@ -140,6 +140,7 @@ LINK_LITERAL : 'link'-> pushMode(link);
 LINKPLAIN_LITERAL : 'linkplain' -> pushMode(link);
 VALUE_LITERAL: 'value' -> pushMode(value);
 INHERITDOC_LITERAL : 'inheritDoc' -> pushMode(link);
+SUMMARY_LITERAL : 'summary' -> pushMode(inlineTagDescription);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
 mode code;
@@ -173,7 +174,7 @@ IDENTIFIER:
         int la = _input.LA(1);
         if ((previousTokenType == HASH && la != '(')
             || (previousTokenType == DOT && Character.isWhitespace(la))) {
-            _mode = inlineTagDescription;
+            pushMode(linkTagDescription);
         }
     };
 QUESTION: '?';
@@ -182,7 +183,7 @@ HASH: '#';
 LPAREN: '(' -> pushMode(parameterList);
 SLASH: '/';
 Link_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
-Link_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
+Link_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popMode;
 LT: '<';
 // Switch to description mode after '>' if followed by whitespace,
 // indicating end of the type reference in {@link ...}.
@@ -190,7 +191,7 @@ GT: '>'
     {
         int la = _input.LA(1);
         if (Character.isWhitespace(la)) {
-            _mode = linkTagDescription;
+            pushMode(linkTagDescription);
         }
     };
 Link_COMMA: ',' -> type(COMMA);
@@ -219,7 +220,7 @@ LinkDescription_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 
-LinkDescription_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
+LinkDescription_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popMode, popMode;
 
 
 mode parameterList;
@@ -242,8 +243,17 @@ Value_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popM
 mode inlineTagDescription;
 
 InlineDescription_TEXT
-    : ~[}\r\n]+ -> type(TEXT)
+    : InlineDescription_TEXT_CHAR+ -> type(TEXT)
     ;
+
+fragment InlineDescription_TEXT_CHAR
+    : {isNormalText()}? ~[}\r\n]
+    ;
+
+InlineDescription_JAVADOC_INLINE_TAG_START
+        : '{@' { braceCounter = 1;} -> pushMode(javadocInlineTag), type(JAVADOC_INLINE_TAG_START);
+
+InlineDescription_TAG_OPEN: '<' -> pushMode(tag), type(TAG_OPEN);
 
 InlineDescription_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)

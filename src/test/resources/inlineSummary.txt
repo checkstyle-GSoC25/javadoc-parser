@@ -1,0 +1,150 @@
+'- javadoc
+   |- mainDescription
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
+   |  |  |- summaryInlineTag
+   |  |  |  |- TOKEN[type: SUMMARY_LITERAL, text: summary, line: 1, column: 4]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  , line: 1, column: 11]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 12]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
+   |  |  |- summaryInlineTag
+   |  |  |  |- TOKEN[type: SUMMARY_LITERAL, text: summary, line: 2, column: 4]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:       , line: 2, column: 11]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 17]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
+   |  |  |- summaryInlineTag
+   |  |  |  |- TOKEN[type: SUMMARY_LITERAL, text: summary, line: 3, column: 4]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  Creates a new instance of MyService., line: 3, column: 11]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 48]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
+   |  |  |- summaryInlineTag
+   |  |  |  |- TOKEN[type: SUMMARY_LITERAL, text: summary, line: 4, column: 4]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  Starts the scheduled job, line: 4, column: 11]
+   |  |  |     '- TOKEN[type: TEXT, text:  to periodically fetch new updates., line: 5, column: 1]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 36]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 2]
+   |  |  |- summaryInlineTag
+   |  |  |  |- TOKEN[type: SUMMARY_LITERAL, text: summary, line: 6, column: 4]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  A one-line summary with , line: 6, column: 11]
+   |  |  |     |- htmlElement
+   |  |  |     |  |- htmlTagStart
+   |  |  |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 36]
+   |  |  |     |  |  |- TOKEN[type: TAG_NAME, text: b, line: 6, column: 37]
+   |  |  |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 38]
+   |  |  |     |  |- htmlContent
+   |  |  |     |  |  '- TOKEN[type: TEXT, text: bold, line: 6, column: 39]
+   |  |  |     |  '- htmlTagEnd
+   |  |  |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 43]
+   |  |  |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 6, column: 44]
+   |  |  |     |     |- TOKEN[type: TAG_NAME, text: b, line: 6, column: 45]
+   |  |  |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 46]
+   |  |  |     |- TOKEN[type: TEXT, text:  and , line: 6, column: 47]
+   |  |  |     |- htmlElement
+   |  |  |     |  |- htmlTagStart
+   |  |  |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 52]
+   |  |  |     |  |  |- TOKEN[type: TAG_NAME, text: i, line: 6, column: 53]
+   |  |  |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 54]
+   |  |  |     |  |- htmlContent
+   |  |  |     |  |  '- TOKEN[type: TEXT, text: italic, line: 6, column: 55]
+   |  |  |     |  '- htmlTagEnd
+   |  |  |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 61]
+   |  |  |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 6, column: 62]
+   |  |  |     |     |- TOKEN[type: TAG_NAME, text: i, line: 6, column: 63]
+   |  |  |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 64]
+   |  |  |     '- TOKEN[type: TEXT, text:  HTML., line: 6, column: 65]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 71]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 2]
+   |  |  |- summaryInlineTag
+   |  |  |  |- TOKEN[type: SUMMARY_LITERAL, text: summary, line: 7, column: 4]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  A summary split, line: 7, column: 11]
+   |  |  |     |- TOKEN[type: TEXT, text:  over multiple lines, line: 8, column: 1]
+   |  |  |     |- TOKEN[type: TEXT, text:  with , line: 9, column: 1]
+   |  |  |     |- htmlElement
+   |  |  |     |  |- htmlTagStart
+   |  |  |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 7]
+   |  |  |     |  |  |- TOKEN[type: TAG_NAME, text: b, line: 9, column: 8]
+   |  |  |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 9]
+   |  |  |     |  |- htmlContent
+   |  |  |     |  |  '- TOKEN[type: TEXT, text: HTML, line: 9, column: 10]
+   |  |  |     |  '- htmlTagEnd
+   |  |  |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 14]
+   |  |  |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 15]
+   |  |  |     |     |- TOKEN[type: TAG_NAME, text: b, line: 9, column: 16]
+   |  |  |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 17]
+   |  |  |     |- TOKEN[type: TEXT, text:  and , line: 9, column: 18]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 9, column: 23]
+   |  |  |     |  |- codeInlineTag
+   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 9, column: 25]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  inline code, line: 9, column: 29]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 9, column: 41]
+   |  |  |     '- TOKEN[type: TEXT, text: ., line: 9, column: 42]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 9, column: 43]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 10, column: 2]
+   |  |  |- summaryInlineTag
+   |  |  |  |- TOKEN[type: SUMMARY_LITERAL, text: summary, line: 10, column: 4]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  This summary contains , line: 10, column: 11]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 10, column: 34]
+   |  |  |     |  |- codeInlineTag
+   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 10, column: 36]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  <angle brackets>, line: 10, column: 40]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 10, column: 57]
+   |  |  |     |- TOKEN[type: TEXT, text:  and uses, line: 10, column: 58]
+   |  |  |     |- TOKEN[type: TEXT, text:  , line: 11, column: 1]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 11, column: 2]
+   |  |  |     |  |- valueInlineTag
+   |  |  |     |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 11, column: 4]
+   |  |  |     |  |  '- reference
+   |  |  |     |  |     |- qualifiedName
+   |  |  |     |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 11, column: 10]
+   |  |  |     |  |     |  |- TOKEN[type: DOT, text: ., line: 11, column: 14]
+   |  |  |     |  |     |  |- TOKEN[type: IDENTIFIER, text: lang, line: 11, column: 15]
+   |  |  |     |  |     |  |- TOKEN[type: DOT, text: ., line: 11, column: 19]
+   |  |  |     |  |     |  '- TOKEN[type: IDENTIFIER, text: Math, line: 11, column: 20]
+   |  |  |     |  |     |- TOKEN[type: HASH, text: #, line: 11, column: 24]
+   |  |  |     |  |     '- memberReference
+   |  |  |     |  |        '- TOKEN[type: IDENTIFIER, text: PI, line: 11, column: 25]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 27]
+   |  |  |     '- TOKEN[type: TEXT, text:  for reference., line: 11, column: 28]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 43]
+   |  '- inlineTag
+   |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 2]
+   |     |- summaryInlineTag
+   |     |  |- TOKEN[type: SUMMARY_LITERAL, text: summary, line: 12, column: 4]
+   |     |  '- description
+   |     |     |- TOKEN[type: TEXT, text:  This summary uses , line: 12, column: 11]
+   |     |     '- inlineTag
+   |     |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 30]
+   |     |        |- linkInlineTag
+   |     |        |  |- TOKEN[type: LINK_LITERAL, text: link, line: 12, column: 32]
+   |     |        |  |- reference
+   |     |        |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 12, column: 37]
+   |     |        |  |  |- TOKEN[type: DOT, text: ., line: 12, column: 41]
+   |     |        |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 12, column: 42]
+   |     |        |  |  |- TOKEN[type: DOT, text: ., line: 12, column: 46]
+   |     |        |  |  |- TOKEN[type: IDENTIFIER, text: List, line: 12, column: 47]
+   |     |        |  |  '- typeArguments
+   |     |        |  |     |- TOKEN[type: LT, text: <, line: 12, column: 51]
+   |     |        |  |     |- typeArgument
+   |     |        |  |     |  '- TOKEN[type: IDENTIFIER, text: Integer, line: 12, column: 52]
+   |     |        |  |     '- TOKEN[type: GT, text: >, line: 12, column: 59]
+   |     |        |  '- description
+   |     |        |     '- TOKEN[type: TEXT, text:  a list of unknown type, line: 12, column: 60]
+   |     |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 12, column: 83]
+   |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 12, column: 84]
+   '- TOKEN[type: EOF, text: <EOF>, line: 12, column: 85]
