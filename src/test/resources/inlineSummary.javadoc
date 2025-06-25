@@ -1,0 +1,12 @@
+* {@summary }
+* {@summary      }
+* {@summary Creates a new instance of MyService.}
+* {@summary Starts the scheduled job
+* to periodically fetch new updates.}
+* {@summary A one-line summary with <b>bold</b> and <i>italic</i> HTML.}
+* {@summary A summary split
+* over multiple lines
+* with <b>HTML</b> and {@code inline code}.}
+* {@summary This summary contains {@code <angle brackets>} and uses
+* {@value java.lang.Math#PI} for reference.}
+* {@summary This summary uses {@link java.util.List<Integer> a list of unknown type}}
