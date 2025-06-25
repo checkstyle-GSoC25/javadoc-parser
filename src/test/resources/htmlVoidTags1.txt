@@ -1,8 +1,6 @@
 '- javadoc
    |- mainDescription
    |  |- TOKEN[type: TEXT, text: This method does something important., line: 1, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 39]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 1]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 2]
@@ -15,69 +13,57 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 3, column: 33]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 3, column: 34]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 35]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 36]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 1]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 5, column: 2]
    |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 5, column: 3]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 5, column: 4]
    |  |  |- htmlContent
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 5, column: 5]
    |  |  |  |- TOKEN[type: TEXT, text: Here's a list of features:, line: 6, column: 2]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 6, column: 28]
-   |  |  |  |- htmlElement
-   |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 2]
-   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: ul, line: 7, column: 3]
-   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 5]
-   |  |  |  |  |- htmlContent
-   |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 7, column: 6]
-   |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 4]
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 8, column: 5]
-   |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 7]
-   |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text: Feature one, line: 8, column: 8]
-   |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 19]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 8, column: 20]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 8, column: 21]
-   |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 23]
-   |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 8, column: 24]
-   |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 4]
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 9, column: 5]
-   |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 7]
-   |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text: Feature two, line: 9, column: 8]
-   |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 19]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 20]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 9, column: 21]
-   |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 23]
-   |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 9, column: 24]
-   |  |  |  |  '- htmlTagEnd
-   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 10, column: 2]
-   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 10, column: 3]
-   |  |  |  |     |- TOKEN[type: TAG_NAME, text: ul, line: 10, column: 4]
-   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 10, column: 6]
-   |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 10, column: 7]
+   |  |  |  '- htmlElement
+   |  |  |     |- htmlTagStart
+   |  |  |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 2]
+   |  |  |     |  |- TOKEN[type: TAG_NAME, text: ul, line: 7, column: 3]
+   |  |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 5]
+   |  |  |     |- htmlContent
+   |  |  |     |  |- htmlElement
+   |  |  |     |  |  |- htmlTagStart
+   |  |  |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 4]
+   |  |  |     |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 8, column: 5]
+   |  |  |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 7]
+   |  |  |     |  |  |- htmlContent
+   |  |  |     |  |  |  '- TOKEN[type: TEXT, text: Feature one, line: 8, column: 8]
+   |  |  |     |  |  '- htmlTagEnd
+   |  |  |     |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 19]
+   |  |  |     |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 8, column: 20]
+   |  |  |     |  |     |- TOKEN[type: TAG_NAME, text: li, line: 8, column: 21]
+   |  |  |     |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 23]
+   |  |  |     |  '- htmlElement
+   |  |  |     |     |- htmlTagStart
+   |  |  |     |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 4]
+   |  |  |     |     |  |- TOKEN[type: TAG_NAME, text: li, line: 9, column: 5]
+   |  |  |     |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 7]
+   |  |  |     |     |- htmlContent
+   |  |  |     |     |  '- TOKEN[type: TEXT, text: Feature two, line: 9, column: 8]
+   |  |  |     |     '- htmlTagEnd
+   |  |  |     |        |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 19]
+   |  |  |     |        |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 20]
+   |  |  |     |        |- TOKEN[type: TAG_NAME, text: li, line: 9, column: 21]
+   |  |  |     |        '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 23]
+   |  |  |     '- htmlTagEnd
+   |  |  |        |- TOKEN[type: TAG_OPEN, text: <, line: 10, column: 2]
+   |  |  |        |- TOKEN[type: TAG_SLASH, text: /, line: 10, column: 3]
+   |  |  |        |- TOKEN[type: TAG_NAME, text: ul, line: 10, column: 4]
+   |  |  |        '- TOKEN[type: TAG_CLOSE, text: >, line: 10, column: 6]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 11, column: 2]
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 11, column: 3]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 11, column: 4]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 11, column: 5]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 11, column: 6]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 12, column: 1]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 13, column: 2]
    |  |  |- TOKEN[type: TAG_NAME, text: hr, line: 13, column: 3]
    |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 13, column: 5]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 13, column: 6]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 14, column: 1]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 15, column: 2]
    |  |  |- TOKEN[type: TAG_NAME, text: img, line: 15, column: 3]
@@ -90,17 +76,14 @@
    |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 15, column: 28]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "Example image", line: 15, column: 29]
    |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 15, column: 44]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 15, column: 45]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 16, column: 2]
    |  |  |- TOKEN[type: TAG_NAME, text: br, line: 16, column: 3]
    |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 16, column: 5]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 16, column: 6]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 17, column: 2]
    |  |  |- TOKEN[type: TAG_NAME, text: br, line: 17, column: 3]
    |  |  '- TOKEN[type: TAG_SLASH_CLOSE, text: />, line: 17, column: 5]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 17, column: 7]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 18, column: 2]
    |  |  |- TOKEN[type: TAG_NAME, text: input, line: 18, column: 3]
@@ -113,7 +96,6 @@
    |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 18, column: 25]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "username", line: 18, column: 26]
    |  |  '- TOKEN[type: TAG_SLASH_CLOSE, text: />, line: 18, column: 36]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 18, column: 38]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 19, column: 2]
    |  |  |- TOKEN[type: TAG_NAME, text: meta, line: 19, column: 3]
@@ -122,7 +104,6 @@
    |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 19, column: 15]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "UTF-8", line: 19, column: 16]
    |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 19, column: 23]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 19, column: 24]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 20, column: 2]
    |  |  |- TOKEN[type: TAG_NAME, text: link, line: 20, column: 3]
@@ -135,7 +116,6 @@
    |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 20, column: 29]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "style.css", line: 20, column: 30]
    |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 20, column: 41]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 20, column: 42]
    |  '- htmlElement
    |     |- TOKEN[type: TAG_OPEN, text: <, line: 21, column: 2]
    |     |- TOKEN[type: TAG_NAME, text: area, line: 21, column: 3]

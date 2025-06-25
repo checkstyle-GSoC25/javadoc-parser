@@ -1,7 +1,7 @@
 lexer grammar JavadocLexer;
 
 channels {
-    LEADING_ASTERISKS, WHITESPACES
+    LEADING_ASTERISKS, WHITESPACES, NEWLINES
 }
 
 tokens {
@@ -107,13 +107,13 @@ LEADING_ASTERISK
 WS :   (' '|'\t')+ -> channel(WHITESPACES),  pushMode(text) ;
 
 NEWLINE
-    : '\r'? '\n' {setAfterNewline();}
+    : '\r'? '\n' {setAfterNewline();} -> channel(NEWLINES)
     ;
 
 mode text;
 
 Text_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> mode(DEFAULT_MODE), type(NEWLINE)
+    : '\r'? '\n' {setAfterNewline();} -> mode(DEFAULT_MODE), type(NEWLINE), channel(NEWLINES)
     ;
 
 TEXT
@@ -146,7 +146,7 @@ mode code;
 // TODO: Allow '}' to be treated as regular text within code blocks.
 
 Code_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 
 Code_TEXT
@@ -189,7 +189,7 @@ GT: '>'
     };
 Link_COMMA: ',' -> type(COMMA);
 Link_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 
 fragment LetterOrDigit
@@ -210,7 +210,7 @@ LinkDescription_JAVADOC_INLINE_TAG_START:
     '{@' { braceCounter = 1;} -> pushMode(javadocInlineTag), type(JAVADOC_INLINE_TAG_START);
 
 LinkDescription_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 
 LinkDescription_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), mode(text);
@@ -229,7 +229,7 @@ Value_HASH: '#' -> type(HASH);
 Value_DOT: '.' -> type(DOT);
 Value_WS: [ \t]+ -> channel(WHITESPACES);
 Value_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 Value_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popMode;
 
@@ -240,7 +240,7 @@ InlineDescription_TEXT
     ;
 
 InlineDescription_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 
 InlineDescription_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popMode;
@@ -273,7 +273,7 @@ TAG_EQUALS: '=' -> pushMode(attrValue);
 TAG_NAME: {hasSeenTagName == false}? TagNameStartChar TagNameChar* {hasSeenTagName = true;};
 TAG_ATTR_NAME: {hasSeenTagName == true}? TagNameStartChar TagNameChar*;
 Tag_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE)
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 TAG_WHITESPACE:  [ \t]+ -> type(WS), channel(WHITESPACES);
 

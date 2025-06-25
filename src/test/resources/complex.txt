@@ -12,7 +12,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 1, column: 31]
    |  |     |- TOKEN[type: TAG_NAME, text: h2, line: 1, column: 32]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 1, column: 34]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 35]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 2, column: 3]
@@ -25,7 +24,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 2, column: 69]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 2, column: 70]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 2, column: 71]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 72]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 3]
@@ -101,7 +99,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 3, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 3, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 4, column: 3]
@@ -177,7 +174,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 4, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 4, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 4, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 5, column: 3]
@@ -253,7 +249,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 5, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 5, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 5, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 5, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 3]
@@ -329,7 +324,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 6, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 6, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 6, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 3]
@@ -405,7 +399,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 7, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 7, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 7, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 3]
@@ -481,7 +474,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 8, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 8, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 8, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 3]
@@ -557,7 +549,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 9, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 9, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 10, column: 3]
@@ -633,7 +624,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 10, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 10, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 10, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 10, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 11, column: 3]
@@ -709,7 +699,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 11, column: 128]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 11, column: 129]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 11, column: 130]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 11, column: 131]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 12, column: 3]
@@ -785,7 +774,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 12, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 12, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 12, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 12, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 13, column: 3]
@@ -861,7 +849,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 13, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 13, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 13, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 13, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 14, column: 3]
@@ -937,7 +924,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 14, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 14, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 14, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 15, column: 3]
@@ -1013,7 +999,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 15, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 15, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 15, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 15, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 16, column: 3]
@@ -1089,7 +1074,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 16, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 16, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 16, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 16, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 17, column: 3]
@@ -1165,7 +1149,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 17, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 17, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 17, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 17, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 18, column: 3]
@@ -1241,7 +1224,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 18, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 18, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 18, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 18, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 19, column: 3]
@@ -1317,7 +1299,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 19, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 19, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 19, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 19, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 20, column: 3]
@@ -1393,7 +1374,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 20, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 20, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 20, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 20, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 21, column: 3]
@@ -1469,7 +1449,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 21, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 21, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 21, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 21, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 22, column: 3]
@@ -1545,7 +1524,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 22, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 22, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 22, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 22, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 23, column: 3]
@@ -1621,7 +1599,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 23, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 23, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 23, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 23, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 24, column: 3]
@@ -1697,7 +1674,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 24, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 24, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 24, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 24, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 25, column: 3]
@@ -1773,7 +1749,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 25, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 25, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 25, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 25, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 26, column: 3]
@@ -1849,7 +1824,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 26, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 26, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 26, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 26, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 27, column: 3]
@@ -1925,7 +1899,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 27, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 27, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 27, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 27, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 28, column: 3]
@@ -2001,7 +1974,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 28, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 28, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 28, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 28, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 29, column: 3]
@@ -2077,7 +2049,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 29, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 29, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 29, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 29, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 30, column: 3]
@@ -2153,7 +2124,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 30, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 30, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 30, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 30, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 31, column: 3]
@@ -2229,7 +2199,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 31, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 31, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 31, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 31, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 32, column: 3]
@@ -2305,7 +2274,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 32, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 32, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 32, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 32, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 33, column: 3]
@@ -2381,7 +2349,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 33, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 33, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 33, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 33, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 34, column: 3]
@@ -2457,7 +2424,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 34, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 34, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 34, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 34, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 35, column: 3]
@@ -2533,7 +2499,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 35, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 35, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 35, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 35, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 36, column: 3]
@@ -2609,7 +2574,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 36, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 36, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 36, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 36, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 3]
@@ -2685,7 +2649,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 37, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 37, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 37, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 38, column: 3]
@@ -2761,7 +2724,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 38, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 38, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 38, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 38, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 39, column: 3]
@@ -2837,7 +2799,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 39, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 39, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 39, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 39, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 40, column: 3]
@@ -2913,7 +2874,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 40, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 40, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 40, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 40, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 41, column: 3]
@@ -2989,7 +2949,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 41, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 41, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 41, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 41, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 42, column: 3]
@@ -3065,7 +3024,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 42, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 42, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 42, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 42, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 43, column: 3]
@@ -3141,7 +3099,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 43, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 43, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 43, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 43, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 44, column: 3]
@@ -3217,7 +3174,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 44, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 44, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 44, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 44, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 45, column: 3]
@@ -3293,7 +3249,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 45, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 45, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 45, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 45, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 3]
@@ -3369,7 +3324,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 46, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 46, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 46, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 47, column: 3]
@@ -3445,7 +3399,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 47, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 47, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 47, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 47, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 48, column: 3]
@@ -3521,7 +3474,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 48, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 48, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 48, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 48, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 49, column: 3]
@@ -3597,7 +3549,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 49, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 49, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 49, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 49, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 50, column: 3]
@@ -3673,7 +3624,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 50, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 50, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 50, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 50, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 51, column: 3]
@@ -3749,7 +3699,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 51, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 51, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 51, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 51, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 52, column: 3]
@@ -3825,7 +3774,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 52, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 52, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 52, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 52, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 53, column: 3]
@@ -3901,7 +3849,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 53, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 53, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 53, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 53, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 54, column: 3]
@@ -3977,7 +3924,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 54, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 54, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 54, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 54, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 55, column: 3]
@@ -4053,7 +3999,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 55, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 55, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 55, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 55, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 56, column: 3]
@@ -4129,7 +4074,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 56, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 56, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 56, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 56, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 57, column: 3]
@@ -4205,7 +4149,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 57, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 57, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 57, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 57, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 58, column: 3]
@@ -4281,7 +4224,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 58, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 58, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 58, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 58, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 59, column: 3]
@@ -4357,7 +4299,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 59, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 59, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 59, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 59, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 60, column: 3]
@@ -4433,7 +4374,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 60, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 60, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 60, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 60, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 61, column: 3]
@@ -4509,7 +4449,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 61, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 61, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 61, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 61, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 62, column: 3]
@@ -4585,7 +4524,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 62, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 62, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 62, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 62, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 63, column: 3]
@@ -4661,7 +4599,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 63, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 63, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 63, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 63, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 64, column: 3]
@@ -4737,7 +4674,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 64, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 64, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 64, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 64, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 65, column: 3]
@@ -4813,7 +4749,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 65, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 65, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 65, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 65, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 66, column: 3]
@@ -4889,7 +4824,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 66, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 66, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 66, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 66, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 67, column: 3]
@@ -4965,7 +4899,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 67, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 67, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 67, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 67, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 68, column: 3]
@@ -5041,7 +4974,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 68, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 68, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 68, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 68, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 69, column: 3]
@@ -5117,7 +5049,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 69, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 69, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 69, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 69, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 70, column: 3]
@@ -5193,7 +5124,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 70, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 70, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 70, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 70, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 71, column: 3]
@@ -5269,7 +5199,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 71, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 71, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 71, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 71, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 72, column: 3]
@@ -5345,7 +5274,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 72, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 72, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 72, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 72, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 73, column: 3]
@@ -5421,7 +5349,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 73, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 73, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 73, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 73, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 74, column: 3]
@@ -5497,7 +5424,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 74, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 74, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 74, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 74, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 75, column: 3]
@@ -5573,7 +5499,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 75, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 75, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 75, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 75, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 76, column: 3]
@@ -5649,7 +5574,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 76, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 76, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 76, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 76, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 77, column: 3]
@@ -5725,7 +5649,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 77, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 77, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 77, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 77, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 78, column: 3]
@@ -5801,7 +5724,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 78, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 78, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 78, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 78, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 79, column: 3]
@@ -5877,7 +5799,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 79, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 79, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 79, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 79, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 80, column: 3]
@@ -5953,7 +5874,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 80, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 80, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 80, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 80, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 81, column: 3]
@@ -6029,7 +5949,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 81, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 81, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 81, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 81, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 82, column: 3]
@@ -6105,7 +6024,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 82, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 82, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 82, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 82, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 83, column: 3]
@@ -6181,7 +6099,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 83, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 83, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 83, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 83, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 84, column: 3]
@@ -6257,7 +6174,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 84, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 84, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 84, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 84, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 85, column: 3]
@@ -6333,7 +6249,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 85, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 85, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 85, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 85, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 86, column: 3]
@@ -6409,7 +6324,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 86, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 86, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 86, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 86, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 87, column: 3]
@@ -6485,7 +6399,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 87, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 87, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 87, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 87, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 88, column: 3]
@@ -6561,7 +6474,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 88, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 88, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 88, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 88, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 89, column: 3]
@@ -6637,7 +6549,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 89, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 89, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 89, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 89, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 90, column: 3]
@@ -6713,7 +6624,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 90, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 90, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 90, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 90, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 91, column: 3]
@@ -6789,7 +6699,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 91, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 91, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 91, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 91, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 92, column: 3]
@@ -6865,7 +6774,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 92, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 92, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 92, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 92, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 93, column: 3]
@@ -6941,7 +6849,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 93, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 93, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 93, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 93, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 94, column: 3]
@@ -7017,7 +6924,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 94, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 94, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 94, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 94, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 95, column: 3]
@@ -7093,7 +6999,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 95, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 95, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 95, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 95, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 96, column: 3]
@@ -7169,7 +7074,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 96, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 96, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 96, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 96, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 97, column: 3]
@@ -7245,7 +7149,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 97, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 97, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 97, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 97, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 98, column: 3]
@@ -7321,7 +7224,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 98, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 98, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 98, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 98, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 99, column: 3]
@@ -7397,7 +7299,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 99, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 99, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 99, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 99, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 100, column: 3]
@@ -7473,7 +7374,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 100, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 100, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 100, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 100, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 101, column: 3]
@@ -7549,7 +7449,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 101, column: 131]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 101, column: 132]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 101, column: 133]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 101, column: 134]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 102, column: 3]
@@ -7625,7 +7524,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 102, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 102, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 102, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 102, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 103, column: 3]
@@ -7701,7 +7599,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 103, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 103, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 103, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 103, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 104, column: 3]
@@ -7777,7 +7674,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 104, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 104, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 104, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 104, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 105, column: 3]
@@ -7853,7 +7749,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 105, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 105, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 105, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 105, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 106, column: 3]
@@ -7929,7 +7824,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 106, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 106, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 106, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 106, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 107, column: 3]
@@ -8005,7 +7899,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 107, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 107, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 107, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 107, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 108, column: 3]
@@ -8081,7 +7974,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 108, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 108, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 108, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 108, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 109, column: 3]
@@ -8157,7 +8049,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 109, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 109, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 109, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 109, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 110, column: 3]
@@ -8233,7 +8124,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 110, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 110, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 110, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 110, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 111, column: 3]
@@ -8309,7 +8199,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 111, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 111, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 111, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 111, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 112, column: 3]
@@ -8385,7 +8274,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 112, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 112, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 112, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 112, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 113, column: 3]
@@ -8461,7 +8349,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 113, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 113, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 113, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 113, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 114, column: 3]
@@ -8537,7 +8424,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 114, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 114, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 114, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 114, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 115, column: 3]
@@ -8613,7 +8499,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 115, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 115, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 115, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 115, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 116, column: 3]
@@ -8689,7 +8574,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 116, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 116, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 116, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 116, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 117, column: 3]
@@ -8765,7 +8649,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 117, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 117, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 117, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 117, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 118, column: 3]
@@ -8841,7 +8724,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 118, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 118, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 118, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 118, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 119, column: 3]
@@ -8917,7 +8799,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 119, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 119, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 119, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 119, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 120, column: 3]
@@ -8993,7 +8874,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 120, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 120, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 120, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 120, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 121, column: 3]
@@ -9069,7 +8949,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 121, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 121, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 121, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 121, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 122, column: 3]
@@ -9145,7 +9024,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 122, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 122, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 122, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 122, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 123, column: 3]
@@ -9221,7 +9099,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 123, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 123, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 123, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 123, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 124, column: 3]
@@ -9297,7 +9174,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 124, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 124, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 124, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 124, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 125, column: 3]
@@ -9373,7 +9249,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 125, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 125, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 125, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 125, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 126, column: 3]
@@ -9449,7 +9324,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 126, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 126, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 126, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 126, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 127, column: 3]
@@ -9525,7 +9399,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 127, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 127, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 127, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 127, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 128, column: 3]
@@ -9601,7 +9474,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 128, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 128, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 128, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 128, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 129, column: 3]
@@ -9677,7 +9549,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 129, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 129, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 129, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 129, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 130, column: 3]
@@ -9753,7 +9624,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 130, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 130, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 130, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 130, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 131, column: 3]
@@ -9829,7 +9699,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 131, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 131, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 131, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 131, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 132, column: 3]
@@ -9905,7 +9774,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 132, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 132, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 132, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 132, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 133, column: 3]
@@ -9981,7 +9849,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 133, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 133, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 133, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 133, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 134, column: 3]
@@ -10057,7 +9924,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 134, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 134, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 134, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 134, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 135, column: 3]
@@ -10133,7 +9999,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 135, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 135, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 135, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 135, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 136, column: 3]
@@ -10209,7 +10074,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 136, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 136, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 136, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 136, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 137, column: 3]
@@ -10285,7 +10149,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 137, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 137, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 137, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 137, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 138, column: 3]
@@ -10361,7 +10224,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 138, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 138, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 138, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 138, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 139, column: 3]
@@ -10437,7 +10299,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 139, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 139, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 139, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 139, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 140, column: 3]
@@ -10513,7 +10374,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 140, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 140, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 140, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 140, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 141, column: 3]
@@ -10589,7 +10449,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 141, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 141, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 141, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 141, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 142, column: 3]
@@ -10665,7 +10524,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 142, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 142, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 142, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 142, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 143, column: 3]
@@ -10741,7 +10599,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 143, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 143, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 143, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 143, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 144, column: 3]
@@ -10817,7 +10674,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 144, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 144, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 144, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 144, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 145, column: 3]
@@ -10893,7 +10749,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 145, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 145, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 145, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 145, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 146, column: 3]
@@ -10969,7 +10824,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 146, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 146, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 146, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 146, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 147, column: 3]
@@ -11045,7 +10899,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 147, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 147, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 147, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 147, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 148, column: 3]
@@ -11121,7 +10974,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 148, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 148, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 148, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 148, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 149, column: 3]
@@ -11197,7 +11049,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 149, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 149, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 149, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 149, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 150, column: 3]
@@ -11273,7 +11124,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 150, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 150, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 150, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 150, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 151, column: 3]
@@ -11349,7 +11199,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 151, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 151, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 151, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 151, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 152, column: 3]
@@ -11425,7 +11274,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 152, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 152, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 152, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 152, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 153, column: 3]
@@ -11501,7 +11349,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 153, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 153, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 153, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 153, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 154, column: 3]
@@ -11577,7 +11424,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 154, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 154, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 154, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 154, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 155, column: 3]
@@ -11653,7 +11499,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 155, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 155, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 155, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 155, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 156, column: 3]
@@ -11729,7 +11574,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 156, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 156, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 156, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 156, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 157, column: 3]
@@ -11805,7 +11649,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 157, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 157, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 157, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 157, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 158, column: 3]
@@ -11881,7 +11724,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 158, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 158, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 158, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 158, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 159, column: 3]
@@ -11957,7 +11799,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 159, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 159, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 159, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 159, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 160, column: 3]
@@ -12033,7 +11874,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 160, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 160, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 160, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 160, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 161, column: 3]
@@ -12109,7 +11949,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 161, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 161, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 161, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 161, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 162, column: 3]
@@ -12185,7 +12024,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 162, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 162, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 162, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 162, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 163, column: 3]
@@ -12261,7 +12099,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 163, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 163, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 163, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 163, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 164, column: 3]
@@ -12337,7 +12174,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 164, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 164, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 164, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 164, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 165, column: 3]
@@ -12413,7 +12249,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 165, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 165, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 165, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 165, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 166, column: 3]
@@ -12489,7 +12324,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 166, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 166, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 166, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 166, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 167, column: 3]
@@ -12565,7 +12399,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 167, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 167, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 167, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 167, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 168, column: 3]
@@ -12641,7 +12474,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 168, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 168, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 168, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 168, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 169, column: 3]
@@ -12717,7 +12549,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 169, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 169, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 169, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 169, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 170, column: 3]
@@ -12793,7 +12624,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 170, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 170, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 170, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 170, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 171, column: 3]
@@ -12869,7 +12699,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 171, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 171, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 171, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 171, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 172, column: 3]
@@ -12945,7 +12774,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 172, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 172, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 172, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 172, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 173, column: 3]
@@ -13021,7 +12849,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 173, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 173, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 173, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 173, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 174, column: 3]
@@ -13097,7 +12924,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 174, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 174, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 174, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 174, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 175, column: 3]
@@ -13173,7 +12999,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 175, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 175, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 175, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 175, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 176, column: 3]
@@ -13249,7 +13074,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 176, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 176, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 176, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 176, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 177, column: 3]
@@ -13325,7 +13149,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 177, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 177, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 177, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 177, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 178, column: 3]
@@ -13401,7 +13224,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 178, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 178, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 178, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 178, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 179, column: 3]
@@ -13477,7 +13299,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 179, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 179, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 179, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 179, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 180, column: 3]
@@ -13553,7 +13374,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 180, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 180, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 180, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 180, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 181, column: 3]
@@ -13629,7 +13449,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 181, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 181, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 181, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 181, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 182, column: 3]
@@ -13705,7 +13524,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 182, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 182, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 182, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 182, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 183, column: 3]
@@ -13781,7 +13599,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 183, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 183, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 183, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 183, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 184, column: 3]
@@ -13857,7 +13674,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 184, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 184, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 184, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 184, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 185, column: 3]
@@ -13933,7 +13749,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 185, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 185, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 185, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 185, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 186, column: 3]
@@ -14009,7 +13824,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 186, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 186, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 186, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 186, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 187, column: 3]
@@ -14085,7 +13899,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 187, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 187, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 187, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 187, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 188, column: 3]
@@ -14161,7 +13974,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 188, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 188, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 188, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 188, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 189, column: 3]
@@ -14237,7 +14049,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 189, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 189, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 189, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 189, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 190, column: 3]
@@ -14313,7 +14124,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 190, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 190, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 190, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 190, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 191, column: 3]
@@ -14389,7 +14199,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 191, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 191, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 191, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 191, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 192, column: 3]
@@ -14465,7 +14274,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 192, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 192, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 192, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 192, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 193, column: 3]
@@ -14541,7 +14349,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 193, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 193, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 193, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 193, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 194, column: 3]
@@ -14617,7 +14424,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 194, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 194, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 194, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 194, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 195, column: 3]
@@ -14693,7 +14499,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 195, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 195, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 195, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 195, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 196, column: 3]
@@ -14769,7 +14574,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 196, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 196, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 196, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 196, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 197, column: 3]
@@ -14845,7 +14649,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 197, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 197, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 197, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 197, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 198, column: 3]
@@ -14921,7 +14724,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 198, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 198, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 198, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 198, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 199, column: 3]
@@ -14997,7 +14799,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 199, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 199, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 199, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 199, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 200, column: 3]
@@ -15073,7 +14874,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 200, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 200, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 200, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 200, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 201, column: 3]
@@ -15149,7 +14949,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 201, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 201, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 201, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 201, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 202, column: 3]
@@ -15225,7 +15024,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 202, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 202, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 202, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 202, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 203, column: 3]
@@ -15301,7 +15099,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 203, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 203, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 203, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 203, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 204, column: 3]
@@ -15377,7 +15174,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 204, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 204, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 204, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 204, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 205, column: 3]
@@ -15453,7 +15249,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 205, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 205, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 205, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 205, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 206, column: 3]
@@ -15529,7 +15324,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 206, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 206, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 206, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 206, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 207, column: 3]
@@ -15605,7 +15399,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 207, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 207, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 207, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 207, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 208, column: 3]
@@ -15681,7 +15474,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 208, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 208, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 208, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 208, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 209, column: 3]
@@ -15757,7 +15549,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 209, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 209, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 209, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 209, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 210, column: 3]
@@ -15833,7 +15624,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 210, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 210, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 210, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 210, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 211, column: 3]
@@ -15909,7 +15699,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 211, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 211, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 211, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 211, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 212, column: 3]
@@ -15985,7 +15774,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 212, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 212, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 212, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 212, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 213, column: 3]
@@ -16061,7 +15849,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 213, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 213, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 213, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 213, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 214, column: 3]
@@ -16137,7 +15924,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 214, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 214, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 214, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 214, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 215, column: 3]
@@ -16213,7 +15999,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 215, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 215, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 215, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 215, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 216, column: 3]
@@ -16289,7 +16074,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 216, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 216, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 216, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 216, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 217, column: 3]
@@ -16365,7 +16149,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 217, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 217, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 217, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 217, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 218, column: 3]
@@ -16441,7 +16224,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 218, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 218, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 218, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 218, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 219, column: 3]
@@ -16517,7 +16299,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 219, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 219, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 219, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 219, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 220, column: 3]
@@ -16593,7 +16374,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 220, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 220, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 220, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 220, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 221, column: 3]
@@ -16669,7 +16449,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 221, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 221, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 221, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 221, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 222, column: 3]
@@ -16745,7 +16524,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 222, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 222, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 222, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 222, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 223, column: 3]
@@ -16821,7 +16599,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 223, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 223, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 223, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 223, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 224, column: 3]
@@ -16897,7 +16674,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 224, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 224, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 224, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 224, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 225, column: 3]
@@ -16973,7 +16749,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 225, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 225, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 225, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 225, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 226, column: 3]
@@ -17049,7 +16824,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 226, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 226, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 226, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 226, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 227, column: 3]
@@ -17125,7 +16899,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 227, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 227, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 227, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 227, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 228, column: 3]
@@ -17201,7 +16974,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 228, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 228, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 228, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 228, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 229, column: 3]
@@ -17277,7 +17049,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 229, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 229, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 229, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 229, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 230, column: 3]
@@ -17353,7 +17124,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 230, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 230, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 230, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 230, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 231, column: 3]
@@ -17429,7 +17199,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 231, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 231, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 231, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 231, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 232, column: 3]
@@ -17505,7 +17274,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 232, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 232, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 232, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 232, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 233, column: 3]
@@ -17581,7 +17349,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 233, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 233, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 233, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 233, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 234, column: 3]
@@ -17657,7 +17424,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 234, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 234, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 234, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 234, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 235, column: 3]
@@ -17733,7 +17499,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 235, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 235, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 235, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 235, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 236, column: 3]
@@ -17809,7 +17574,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 236, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 236, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 236, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 236, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 237, column: 3]
@@ -17885,7 +17649,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 237, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 237, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 237, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 237, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 238, column: 3]
@@ -17961,7 +17724,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 238, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 238, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 238, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 238, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 239, column: 3]
@@ -18037,7 +17799,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 239, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 239, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 239, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 239, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 240, column: 3]
@@ -18113,7 +17874,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 240, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 240, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 240, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 240, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 241, column: 3]
@@ -18189,7 +17949,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 241, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 241, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 241, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 241, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 242, column: 3]
@@ -18265,7 +18024,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 242, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 242, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 242, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 242, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 243, column: 3]
@@ -18341,7 +18099,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 243, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 243, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 243, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 243, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 244, column: 3]
@@ -18417,7 +18174,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 244, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 244, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 244, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 244, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 245, column: 3]
@@ -18493,7 +18249,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 245, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 245, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 245, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 245, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 246, column: 3]
@@ -18569,7 +18324,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 246, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 246, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 246, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 246, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 247, column: 3]
@@ -18645,7 +18399,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 247, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 247, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 247, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 247, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 248, column: 3]
@@ -18721,7 +18474,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 248, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 248, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 248, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 248, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 249, column: 3]
@@ -18797,7 +18549,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 249, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 249, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 249, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 249, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 250, column: 3]
@@ -18873,7 +18624,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 250, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 250, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 250, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 250, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 251, column: 3]
@@ -18949,7 +18699,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 251, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 251, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 251, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 251, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 252, column: 3]
@@ -19025,7 +18774,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 252, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 252, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 252, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 252, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 253, column: 3]
@@ -19101,7 +18849,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 253, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 253, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 253, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 253, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 254, column: 3]
@@ -19177,7 +18924,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 254, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 254, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 254, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 254, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 255, column: 3]
@@ -19253,7 +18999,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 255, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 255, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 255, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 255, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 256, column: 3]
@@ -19329,7 +19074,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 256, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 256, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 256, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 256, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 257, column: 3]
@@ -19405,7 +19149,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 257, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 257, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 257, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 257, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 258, column: 3]
@@ -19481,7 +19224,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 258, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 258, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 258, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 258, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 259, column: 3]
@@ -19557,7 +19299,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 259, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 259, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 259, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 259, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 260, column: 3]
@@ -19633,7 +19374,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 260, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 260, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 260, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 260, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 261, column: 3]
@@ -19709,7 +19449,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 261, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 261, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 261, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 261, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 262, column: 3]
@@ -19785,7 +19524,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 262, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 262, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 262, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 262, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 263, column: 3]
@@ -19861,7 +19599,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 263, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 263, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 263, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 263, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 264, column: 3]
@@ -19937,7 +19674,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 264, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 264, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 264, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 264, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 265, column: 3]
@@ -20013,7 +19749,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 265, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 265, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 265, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 265, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 266, column: 3]
@@ -20089,7 +19824,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 266, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 266, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 266, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 266, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 267, column: 3]
@@ -20165,7 +19899,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 267, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 267, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 267, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 267, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 268, column: 3]
@@ -20241,7 +19974,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 268, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 268, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 268, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 268, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 269, column: 3]
@@ -20317,7 +20049,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 269, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 269, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 269, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 269, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 270, column: 3]
@@ -20393,7 +20124,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 270, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 270, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 270, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 270, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 271, column: 3]
@@ -20469,14 +20199,12 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 271, column: 134]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 271, column: 135]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 271, column: 136]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 271, column: 137]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 272, column: 3]
    |  |  |  |- TOKEN[type: TAG_NAME, text: ul, line: 272, column: 4]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 272, column: 6]
    |  |  |- htmlContent
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 272, column: 7]
    |  |  |  |- htmlElement
    |  |  |  |  |- htmlTagStart
    |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 273, column: 5]
@@ -20508,7 +20236,6 @@
    |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 273, column: 54]
    |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 273, column: 55]
    |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 273, column: 57]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 273, column: 58]
    |  |  |  |- htmlElement
    |  |  |  |  |- htmlTagStart
    |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 274, column: 5]
@@ -20541,7 +20268,6 @@
    |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 274, column: 28]
    |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 274, column: 29]
    |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 274, column: 31]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 274, column: 32]
    |  |  |  |- htmlElement
    |  |  |  |  |- htmlTagStart
    |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 275, column: 5]
@@ -20566,43 +20292,36 @@
    |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 275, column: 44]
    |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 275, column: 45]
    |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 275, column: 47]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 275, column: 48]
-   |  |  |  |- htmlElement
-   |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 276, column: 5]
-   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 276, column: 6]
-   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 276, column: 8]
-   |  |  |  |  |- htmlContent
-   |  |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 276, column: 9]
-   |  |  |  |  |  |- codeInlineTag
-   |  |  |  |  |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 276, column: 11]
-   |  |  |  |  |  |  |- TOKEN[type: TEXT, text:  Multiline string: """, line: 276, column: 15]
-   |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 276, column: 37]
-   |  |  |  |  |  |  |- TOKEN[type: TEXT, text:        line 1, line: 277, column: 2]
-   |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 277, column: 15]
-   |  |  |  |  |  |  |- TOKEN[type: TEXT, text:        line 2, line: 278, column: 2]
-   |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 278, column: 15]
-   |  |  |  |  |  |  '- TOKEN[type: TEXT, text:    """, line: 279, column: 2]
-   |  |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 279, column: 8]
-   |  |  |  |  '- htmlTagEnd
-   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 279, column: 9]
-   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 279, column: 10]
-   |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 279, column: 11]
-   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 279, column: 13]
-   |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 279, column: 14]
+   |  |  |  '- htmlElement
+   |  |  |     |- htmlTagStart
+   |  |  |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 276, column: 5]
+   |  |  |     |  |- TOKEN[type: TAG_NAME, text: li, line: 276, column: 6]
+   |  |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 276, column: 8]
+   |  |  |     |- htmlContent
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 276, column: 9]
+   |  |  |     |  |- codeInlineTag
+   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 276, column: 11]
+   |  |  |     |  |  |- TOKEN[type: TEXT, text:  Multiline string: """, line: 276, column: 15]
+   |  |  |     |  |  |- TOKEN[type: TEXT, text:        line 1, line: 277, column: 2]
+   |  |  |     |  |  |- TOKEN[type: TEXT, text:        line 2, line: 278, column: 2]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:    """, line: 279, column: 2]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 279, column: 8]
+   |  |  |     '- htmlTagEnd
+   |  |  |        |- TOKEN[type: TAG_OPEN, text: <, line: 279, column: 9]
+   |  |  |        |- TOKEN[type: TAG_SLASH, text: /, line: 279, column: 10]
+   |  |  |        |- TOKEN[type: TAG_NAME, text: li, line: 279, column: 11]
+   |  |  |        '- TOKEN[type: TAG_CLOSE, text: >, line: 279, column: 13]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 280, column: 3]
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 280, column: 4]
    |  |     |- TOKEN[type: TAG_NAME, text: ul, line: 280, column: 5]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 280, column: 7]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 280, column: 8]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 281, column: 3]
    |  |  |  |- TOKEN[type: TAG_NAME, text: table, line: 281, column: 4]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 281, column: 9]
    |  |  |- htmlContent
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 281, column: 10]
    |  |  |  |- htmlElement
    |  |  |  |  |- htmlTagStart
    |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 282, column: 5]
@@ -20615,7 +20334,6 @@
    |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 282, column: 44]
    |  |  |  |     |- TOKEN[type: TAG_NAME, text: caption, line: 282, column: 45]
    |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 282, column: 52]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 282, column: 53]
    |  |  |  |- htmlElement
    |  |  |  |  |- htmlTagStart
    |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 283, column: 5]
@@ -20645,47 +20363,44 @@
    |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 283, column: 47]
    |  |  |  |     |- TOKEN[type: TAG_NAME, text: tr, line: 283, column: 48]
    |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 283, column: 50]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 283, column: 51]
-   |  |  |  |- htmlElement
-   |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 284, column: 5]
-   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: tr, line: 284, column: 6]
-   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 284, column: 8]
-   |  |  |  |  |- htmlContent
-   |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 284, column: 9]
-   |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: td, line: 284, column: 10]
-   |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 284, column: 12]
-   |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |- TOKEN[type: TEXT, text: Row 2 , line: 284, column: 13]
-   |  |  |  |  |  |  '- inlineTag
-   |  |  |  |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 284, column: 19]
-   |  |  |  |  |  |     |- linkInlineTag
-   |  |  |  |  |  |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 284, column: 21]
-   |  |  |  |  |  |     |  '- reference
-   |  |  |  |  |  |     |     |- TOKEN[type: IDENTIFIER, text: java, line: 284, column: 26]
-   |  |  |  |  |  |     |     |- TOKEN[type: DOT, text: ., line: 284, column: 30]
-   |  |  |  |  |  |     |     |- TOKEN[type: IDENTIFIER, text: util, line: 284, column: 31]
-   |  |  |  |  |  |     |     |- TOKEN[type: DOT, text: ., line: 284, column: 35]
-   |  |  |  |  |  |     |     '- TOKEN[type: IDENTIFIER, text: Map, line: 284, column: 36]
-   |  |  |  |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 284, column: 39]
-   |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 284, column: 40]
-   |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 284, column: 41]
-   |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: td, line: 284, column: 42]
-   |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 284, column: 44]
-   |  |  |  |  '- htmlTagEnd
-   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 284, column: 45]
-   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 284, column: 46]
-   |  |  |  |     |- TOKEN[type: TAG_NAME, text: tr, line: 284, column: 47]
-   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 284, column: 49]
-   |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 284, column: 50]
+   |  |  |  '- htmlElement
+   |  |  |     |- htmlTagStart
+   |  |  |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 284, column: 5]
+   |  |  |     |  |- TOKEN[type: TAG_NAME, text: tr, line: 284, column: 6]
+   |  |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 284, column: 8]
+   |  |  |     |- htmlContent
+   |  |  |     |  |- htmlTagStart
+   |  |  |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 284, column: 9]
+   |  |  |     |  |  |- TOKEN[type: TAG_NAME, text: td, line: 284, column: 10]
+   |  |  |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 284, column: 12]
+   |  |  |     |  |- htmlContent
+   |  |  |     |  |  |- TOKEN[type: TEXT, text: Row 2 , line: 284, column: 13]
+   |  |  |     |  |  '- inlineTag
+   |  |  |     |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 284, column: 19]
+   |  |  |     |  |     |- linkInlineTag
+   |  |  |     |  |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 284, column: 21]
+   |  |  |     |  |     |  '- reference
+   |  |  |     |  |     |     |- TOKEN[type: IDENTIFIER, text: java, line: 284, column: 26]
+   |  |  |     |  |     |     |- TOKEN[type: DOT, text: ., line: 284, column: 30]
+   |  |  |     |  |     |     |- TOKEN[type: IDENTIFIER, text: util, line: 284, column: 31]
+   |  |  |     |  |     |     |- TOKEN[type: DOT, text: ., line: 284, column: 35]
+   |  |  |     |  |     |     '- TOKEN[type: IDENTIFIER, text: Map, line: 284, column: 36]
+   |  |  |     |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 284, column: 39]
+   |  |  |     |  '- htmlTagEnd
+   |  |  |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 284, column: 40]
+   |  |  |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 284, column: 41]
+   |  |  |     |     |- TOKEN[type: TAG_NAME, text: td, line: 284, column: 42]
+   |  |  |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 284, column: 44]
+   |  |  |     '- htmlTagEnd
+   |  |  |        |- TOKEN[type: TAG_OPEN, text: <, line: 284, column: 45]
+   |  |  |        |- TOKEN[type: TAG_SLASH, text: /, line: 284, column: 46]
+   |  |  |        |- TOKEN[type: TAG_NAME, text: tr, line: 284, column: 47]
+   |  |  |        '- TOKEN[type: TAG_CLOSE, text: >, line: 284, column: 49]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 285, column: 3]
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 285, column: 4]
    |  |     |- TOKEN[type: TAG_NAME, text: table, line: 285, column: 5]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 285, column: 10]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 285, column: 11]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 286, column: 3]
@@ -20723,7 +20438,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 286, column: 51]
    |  |     |- TOKEN[type: TAG_NAME, text: div, line: 286, column: 52]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 286, column: 55]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 286, column: 56]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 287, column: 3]
@@ -20736,7 +20450,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 287, column: 51]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 287, column: 52]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 287, column: 53]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 287, column: 54]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 288, column: 3]
@@ -20762,231 +20475,188 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 288, column: 43]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 288, column: 44]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 288, column: 45]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 288, column: 46]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 289, column: 2]
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 290, column: 3]
    |  |  |  |- TOKEN[type: TAG_NAME, text: div, line: 290, column: 4]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 290, column: 7]
    |  |  |- htmlContent
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 290, column: 8]
-   |  |  |  |- htmlElement
-   |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 291, column: 5]
-   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: section, line: 291, column: 6]
-   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 291, column: 13]
-   |  |  |  |  |- htmlContent
-   |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 291, column: 14]
-   |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 292, column: 7]
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: h2, line: 292, column: 8]
-   |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 292, column: 10]
-   |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text: Section Heading, line: 292, column: 11]
-   |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 292, column: 26]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 292, column: 27]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: h2, line: 292, column: 28]
-   |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 292, column: 30]
-   |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 292, column: 31]
-   |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 293, column: 7]
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: article, line: 293, column: 8]
-   |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 293, column: 15]
-   |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 293, column: 16]
-   |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 294, column: 9]
-   |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: h3, line: 294, column: 10]
-   |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 294, column: 12]
-   |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text: Article Heading, line: 294, column: 13]
-   |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 294, column: 28]
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 294, column: 29]
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: h3, line: 294, column: 30]
-   |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 294, column: 32]
-   |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 294, column: 33]
-   |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 295, column: 9]
-   |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: header, line: 295, column: 10]
-   |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 295, column: 16]
-   |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 295, column: 17]
-   |  |  |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 296, column: 11]
-   |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: nav, line: 296, column: 12]
-   |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 296, column: 15]
-   |  |  |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 296, column: 16]
-   |  |  |  |  |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 297, column: 13]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: ul, line: 297, column: 14]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 297, column: 16]
-   |  |  |  |  |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 297, column: 17]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 298, column: 15]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 298, column: 16]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 298, column: 18]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 298, column: 19]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 299, column: 17]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 299, column: 18]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlAttribute
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 299, column: 20]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 299, column: 24]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "#level1", line: 299, column: 25]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 299, column: 34]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 299, column: 35]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 300, column: 19]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: span, line: 300, column: 20]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 300, column: 24]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 300, column: 25]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 301, column: 21]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: strong, line: 301, column: 22]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 301, column: 28]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 301, column: 29]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 302, column: 23]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: em, line: 302, column: 24]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 302, column: 26]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 302, column: 27]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 303, column: 25]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: code, line: 303, column: 26]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 303, column: 30]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 303, column: 31]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- inlineTag
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 304, column: 27]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- linkInlineTag
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 304, column: 29]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- reference
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- qualifiedName
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 304, column: 34]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 304, column: 38]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 304, column: 39]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 304, column: 43]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: List, line: 304, column: 44]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: HASH, text: #, line: 304, column: 48]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     '- memberReference
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |        |- TOKEN[type: IDENTIFIER, text: size, line: 304, column: 49]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |        |- TOKEN[type: LPAREN, text: (, line: 304, column: 53]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |        '- TOKEN[type: RPAREN, text: ), line: 304, column: 54]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 304, column: 55]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TEXT, text:  — Deep content!, line: 304, column: 56]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 304, column: 72]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 305, column: 25]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 305, column: 26]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: code, line: 305, column: 27]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 305, column: 31]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 305, column: 32]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 306, column: 23]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 306, column: 24]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: em, line: 306, column: 25]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 306, column: 27]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 306, column: 28]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 307, column: 21]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 307, column: 22]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: strong, line: 307, column: 23]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 307, column: 29]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 307, column: 30]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 308, column: 19]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 308, column: 20]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: span, line: 308, column: 21]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 308, column: 25]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 308, column: 26]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 309, column: 17]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 309, column: 18]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: a, line: 309, column: 19]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 309, column: 20]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 309, column: 21]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 310, column: 15]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 310, column: 16]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 310, column: 17]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 310, column: 19]
-   |  |  |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 310, column: 20]
-   |  |  |  |  |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 311, column: 13]
-   |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 311, column: 14]
-   |  |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: ul, line: 311, column: 15]
-   |  |  |  |  |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 311, column: 17]
-   |  |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 311, column: 18]
-   |  |  |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 312, column: 11]
-   |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 312, column: 12]
-   |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: nav, line: 312, column: 13]
-   |  |  |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 312, column: 16]
-   |  |  |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 312, column: 17]
-   |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 313, column: 9]
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 313, column: 10]
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: header, line: 313, column: 11]
-   |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 313, column: 17]
-   |  |  |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 313, column: 18]
-   |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 314, column: 7]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 314, column: 8]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: article, line: 314, column: 9]
-   |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 314, column: 16]
-   |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 314, column: 17]
-   |  |  |  |  '- htmlTagEnd
-   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 315, column: 5]
-   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 315, column: 6]
-   |  |  |  |     |- TOKEN[type: TAG_NAME, text: section, line: 315, column: 7]
-   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 315, column: 14]
-   |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 315, column: 15]
+   |  |  |  |- htmlTagStart
+   |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 291, column: 5]
+   |  |  |  |  |- TOKEN[type: TAG_NAME, text: section, line: 291, column: 6]
+   |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 291, column: 13]
+   |  |  |  |- htmlContent
+   |  |  |  |  |- htmlElement
+   |  |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 292, column: 7]
+   |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: h2, line: 292, column: 8]
+   |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 292, column: 10]
+   |  |  |  |  |  |- htmlContent
+   |  |  |  |  |  |  '- TOKEN[type: TEXT, text: Section Heading, line: 292, column: 11]
+   |  |  |  |  |  '- htmlTagEnd
+   |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 292, column: 26]
+   |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 292, column: 27]
+   |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: h2, line: 292, column: 28]
+   |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 292, column: 30]
+   |  |  |  |  '- htmlElement
+   |  |  |  |     |- htmlTagStart
+   |  |  |  |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 293, column: 7]
+   |  |  |  |     |  |- TOKEN[type: TAG_NAME, text: article, line: 293, column: 8]
+   |  |  |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 293, column: 15]
+   |  |  |  |     |- htmlContent
+   |  |  |  |     |  |- htmlElement
+   |  |  |  |     |  |  |- htmlTagStart
+   |  |  |  |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 294, column: 9]
+   |  |  |  |     |  |  |  |- TOKEN[type: TAG_NAME, text: h3, line: 294, column: 10]
+   |  |  |  |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 294, column: 12]
+   |  |  |  |     |  |  |- htmlContent
+   |  |  |  |     |  |  |  '- TOKEN[type: TEXT, text: Article Heading, line: 294, column: 13]
+   |  |  |  |     |  |  '- htmlTagEnd
+   |  |  |  |     |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 294, column: 28]
+   |  |  |  |     |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 294, column: 29]
+   |  |  |  |     |  |     |- TOKEN[type: TAG_NAME, text: h3, line: 294, column: 30]
+   |  |  |  |     |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 294, column: 32]
+   |  |  |  |     |  '- htmlElement
+   |  |  |  |     |     |- htmlTagStart
+   |  |  |  |     |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 295, column: 9]
+   |  |  |  |     |     |  |- TOKEN[type: TAG_NAME, text: header, line: 295, column: 10]
+   |  |  |  |     |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 295, column: 16]
+   |  |  |  |     |     |- htmlContent
+   |  |  |  |     |     |  |- htmlTagStart
+   |  |  |  |     |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 296, column: 11]
+   |  |  |  |     |     |  |  |- TOKEN[type: TAG_NAME, text: nav, line: 296, column: 12]
+   |  |  |  |     |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 296, column: 15]
+   |  |  |  |     |     |  |- htmlContent
+   |  |  |  |     |     |  |  |- htmlTagStart
+   |  |  |  |     |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 297, column: 13]
+   |  |  |  |     |     |  |  |  |- TOKEN[type: TAG_NAME, text: ul, line: 297, column: 14]
+   |  |  |  |     |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 297, column: 16]
+   |  |  |  |     |     |  |  |- htmlContent
+   |  |  |  |     |     |  |  |  |- htmlTagStart
+   |  |  |  |     |     |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 298, column: 15]
+   |  |  |  |     |     |  |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 298, column: 16]
+   |  |  |  |     |     |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 298, column: 18]
+   |  |  |  |     |     |  |  |  |- htmlContent
+   |  |  |  |     |     |  |  |  |  |- htmlTagStart
+   |  |  |  |     |     |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 299, column: 17]
+   |  |  |  |     |     |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 299, column: 18]
+   |  |  |  |     |     |  |  |  |  |  |- htmlAttribute
+   |  |  |  |     |     |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 299, column: 20]
+   |  |  |  |     |     |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 299, column: 24]
+   |  |  |  |     |     |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "#level1", line: 299, column: 25]
+   |  |  |  |     |     |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 299, column: 34]
+   |  |  |  |     |     |  |  |  |  |- htmlContent
+   |  |  |  |     |     |  |  |  |  |  |- htmlTagStart
+   |  |  |  |     |     |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 300, column: 19]
+   |  |  |  |     |     |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: span, line: 300, column: 20]
+   |  |  |  |     |     |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 300, column: 24]
+   |  |  |  |     |     |  |  |  |  |  |- htmlContent
+   |  |  |  |     |     |  |  |  |  |  |  |- htmlTagStart
+   |  |  |  |     |     |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 301, column: 21]
+   |  |  |  |     |     |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: strong, line: 301, column: 22]
+   |  |  |  |     |     |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 301, column: 28]
+   |  |  |  |     |     |  |  |  |  |  |  |- htmlContent
+   |  |  |  |     |     |  |  |  |  |  |  |  |- htmlTagStart
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 302, column: 23]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: em, line: 302, column: 24]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 302, column: 26]
+   |  |  |  |     |     |  |  |  |  |  |  |  |- htmlContent
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |- htmlTagStart
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 303, column: 25]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: code, line: 303, column: 26]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 303, column: 30]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |- htmlContent
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |- inlineTag
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 304, column: 27]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |- linkInlineTag
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 304, column: 29]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |  '- reference
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |     |- qualifiedName
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 304, column: 34]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 304, column: 38]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 304, column: 39]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 304, column: 43]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: List, line: 304, column: 44]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |     |- TOKEN[type: HASH, text: #, line: 304, column: 48]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |     '- memberReference
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |        |- TOKEN[type: IDENTIFIER, text: size, line: 304, column: 49]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |        |- TOKEN[type: LPAREN, text: (, line: 304, column: 53]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  |        '- TOKEN[type: RPAREN, text: ), line: 304, column: 54]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 304, column: 55]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text:  — Deep content!, line: 304, column: 56]
+   |  |  |  |     |     |  |  |  |  |  |  |  |  '- htmlTagEnd
+   |  |  |  |     |     |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 305, column: 25]
+   |  |  |  |     |     |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 305, column: 26]
+   |  |  |  |     |     |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: code, line: 305, column: 27]
+   |  |  |  |     |     |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 305, column: 31]
+   |  |  |  |     |     |  |  |  |  |  |  |  '- htmlTagEnd
+   |  |  |  |     |     |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 306, column: 23]
+   |  |  |  |     |     |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 306, column: 24]
+   |  |  |  |     |     |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: em, line: 306, column: 25]
+   |  |  |  |     |     |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 306, column: 27]
+   |  |  |  |     |     |  |  |  |  |  |  '- htmlTagEnd
+   |  |  |  |     |     |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 307, column: 21]
+   |  |  |  |     |     |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 307, column: 22]
+   |  |  |  |     |     |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: strong, line: 307, column: 23]
+   |  |  |  |     |     |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 307, column: 29]
+   |  |  |  |     |     |  |  |  |  |  '- htmlTagEnd
+   |  |  |  |     |     |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 308, column: 19]
+   |  |  |  |     |     |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 308, column: 20]
+   |  |  |  |     |     |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: span, line: 308, column: 21]
+   |  |  |  |     |     |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 308, column: 25]
+   |  |  |  |     |     |  |  |  |  '- htmlTagEnd
+   |  |  |  |     |     |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 309, column: 17]
+   |  |  |  |     |     |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 309, column: 18]
+   |  |  |  |     |     |  |  |  |     |- TOKEN[type: TAG_NAME, text: a, line: 309, column: 19]
+   |  |  |  |     |     |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 309, column: 20]
+   |  |  |  |     |     |  |  |  '- htmlTagEnd
+   |  |  |  |     |     |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 310, column: 15]
+   |  |  |  |     |     |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 310, column: 16]
+   |  |  |  |     |     |  |  |     |- TOKEN[type: TAG_NAME, text: li, line: 310, column: 17]
+   |  |  |  |     |     |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 310, column: 19]
+   |  |  |  |     |     |  |  '- htmlTagEnd
+   |  |  |  |     |     |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 311, column: 13]
+   |  |  |  |     |     |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 311, column: 14]
+   |  |  |  |     |     |  |     |- TOKEN[type: TAG_NAME, text: ul, line: 311, column: 15]
+   |  |  |  |     |     |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 311, column: 17]
+   |  |  |  |     |     |  '- htmlTagEnd
+   |  |  |  |     |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 312, column: 11]
+   |  |  |  |     |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 312, column: 12]
+   |  |  |  |     |     |     |- TOKEN[type: TAG_NAME, text: nav, line: 312, column: 13]
+   |  |  |  |     |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 312, column: 16]
+   |  |  |  |     |     '- htmlTagEnd
+   |  |  |  |     |        |- TOKEN[type: TAG_OPEN, text: <, line: 313, column: 9]
+   |  |  |  |     |        |- TOKEN[type: TAG_SLASH, text: /, line: 313, column: 10]
+   |  |  |  |     |        |- TOKEN[type: TAG_NAME, text: header, line: 313, column: 11]
+   |  |  |  |     |        '- TOKEN[type: TAG_CLOSE, text: >, line: 313, column: 17]
+   |  |  |  |     '- htmlTagEnd
+   |  |  |  |        |- TOKEN[type: TAG_OPEN, text: <, line: 314, column: 7]
+   |  |  |  |        |- TOKEN[type: TAG_SLASH, text: /, line: 314, column: 8]
+   |  |  |  |        |- TOKEN[type: TAG_NAME, text: article, line: 314, column: 9]
+   |  |  |  |        '- TOKEN[type: TAG_CLOSE, text: >, line: 314, column: 16]
+   |  |  |  '- htmlTagEnd
+   |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 315, column: 5]
+   |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 315, column: 6]
+   |  |  |     |- TOKEN[type: TAG_NAME, text: section, line: 315, column: 7]
+   |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 315, column: 14]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 316, column: 3]
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 316, column: 4]
    |  |     |- TOKEN[type: TAG_NAME, text: div, line: 316, column: 5]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 316, column: 8]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 316, column: 9]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 317, column: 2]
-   |  |- TOKEN[type: TEXT, text: <!-- Javadoc comment -->, line: 318, column: 3]
-   |  '- TOKEN[type: NEWLINE, text: \n, line: 318, column: 27]
+   |  '- TOKEN[type: TEXT, text: <!-- Javadoc comment -->, line: 318, column: 3]
    |- blockTag
    |  |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 319, column: 3]
    |  '- description
-   |     |- TOKEN[type: TEXT, text:  Nobody, line: 319, column: 10]
-   |     '- TOKEN[type: NEWLINE, text: \n, line: 319, column: 17]
+   |     '- TOKEN[type: TEXT, text:  Nobody, line: 319, column: 10]
    |- blockTag
    |  |- TOKEN[type: CUSTOM_NAME, text: @version, line: 320, column: 3]
    |  '- description
-   |     |- TOKEN[type: TEXT, text:  42.0, line: 320, column: 11]
-   |     '- TOKEN[type: NEWLINE, text: \n, line: 320, column: 16]
+   |     '- TOKEN[type: TEXT, text:  42.0, line: 320, column: 11]
    |- blockTag
    |  |- TOKEN[type: CUSTOM_NAME, text: @since, line: 321, column: 3]
    |  '- description
-   |     |- TOKEN[type: TEXT, text:  forever, line: 321, column: 9]
-   |     '- TOKEN[type: NEWLINE, text: \n, line: 321, column: 17]
+   |     '- TOKEN[type: TEXT, text:  forever, line: 321, column: 9]
    |- blockTag
    |  |- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 322, column: 3]
    |  '- description

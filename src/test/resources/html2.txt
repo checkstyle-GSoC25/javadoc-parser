@@ -10,56 +10,49 @@
    |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: 3, line: 1, column: 13]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 1, column: 14]
    |  |  |- htmlContent
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 15]
-   |  |  |  |- htmlElement
+   |  |  |  |- htmlTagStart
+   |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 2, column: 2]
+   |  |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 2, column: 3]
+   |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 2, column: 4]
+   |  |  |  |- htmlContent
    |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 2, column: 2]
-   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 2, column: 3]
-   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 2, column: 4]
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 2]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: i, line: 3, column: 3]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 4]
    |  |  |  |  |- htmlContent
-   |  |  |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 5]
+   |  |  |  |  |  |- TOKEN[type: TEXT, text: Looking for , line: 3, column: 5]
    |  |  |  |  |  |- htmlElement
    |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 2]
-   |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: i, line: 3, column: 3]
-   |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 4]
+   |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 17]
+   |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 3, column: 18]
+   |  |  |  |  |  |  |  |- htmlAttribute
+   |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 3, column: 20]
+   |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 3, column: 24]
+   |  |  |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "http://www.antlr3.org", line: 3, column: 25]
+   |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 48]
    |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |- TOKEN[type: TEXT, text: Looking for , line: 3, column: 5]
-   |  |  |  |  |  |  |  |- htmlElement
-   |  |  |  |  |  |  |  |  |- htmlTagStart
-   |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 17]
-   |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 3, column: 18]
-   |  |  |  |  |  |  |  |  |  |- htmlAttribute
-   |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 3, column: 20]
-   |  |  |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 3, column: 24]
-   |  |  |  |  |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "http://www.antlr3.org", line: 3, column: 25]
-   |  |  |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 48]
-   |  |  |  |  |  |  |  |  |- htmlContent
-   |  |  |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text: ANTLR v3, line: 3, column: 49]
-   |  |  |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 57]
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 3, column: 58]
-   |  |  |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: a, line: 3, column: 59]
-   |  |  |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 60]
-   |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text: ?, line: 3, column: 61]
+   |  |  |  |  |  |  |  '- TOKEN[type: TEXT, text: ANTLR v3, line: 3, column: 49]
    |  |  |  |  |  |  '- htmlTagEnd
-   |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 62]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 3, column: 63]
-   |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: i, line: 3, column: 64]
-   |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 65]
-   |  |  |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 3, column: 66]
+   |  |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 57]
+   |  |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 3, column: 58]
+   |  |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: a, line: 3, column: 59]
+   |  |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 60]
+   |  |  |  |  |  '- TOKEN[type: TEXT, text: ?, line: 3, column: 61]
    |  |  |  |  '- htmlTagEnd
-   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 4, column: 2]
-   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 4, column: 3]
-   |  |  |  |     |- TOKEN[type: TAG_NAME, text: p, line: 4, column: 4]
-   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 4, column: 5]
-   |  |  |  '- TOKEN[type: NEWLINE, text: \n, line: 4, column: 6]
+   |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 62]
+   |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 3, column: 63]
+   |  |  |  |     |- TOKEN[type: TAG_NAME, text: i, line: 3, column: 64]
+   |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 65]
+   |  |  |  '- htmlTagEnd
+   |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 4, column: 2]
+   |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 4, column: 3]
+   |  |  |     |- TOKEN[type: TAG_NAME, text: p, line: 4, column: 4]
+   |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 4, column: 5]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 5, column: 2]
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 5, column: 3]
    |  |     |- TOKEN[type: TAG_NAME, text: font, line: 5, column: 4]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 5, column: 8]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 5, column: 9]
    |  '- htmlElement
    |     |- htmlTagStart
    |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 2]
@@ -70,7 +63,6 @@
    |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "terence", line: 6, column: 10]
    |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 19]
    |     |- htmlContent
-   |     |  |- TOKEN[type: NEWLINE, text: \n, line: 6, column: 20]
    |     |  |- htmlElement
    |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 2]
    |     |  |  |- TOKEN[type: TAG_NAME, text: img, line: 7, column: 3]
@@ -83,7 +75,6 @@
    |     |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 7, column: 35]
    |     |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "terence", line: 7, column: 36]
    |     |  |  '- TOKEN[type: TAG_SLASH_CLOSE, text: />, line: 7, column: 46]
-   |     |  |- TOKEN[type: NEWLINE, text: \n, line: 7, column: 48]
    |     |  |- htmlElement
    |     |  |  |- htmlTagStart
    |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 2]
@@ -97,9 +88,7 @@
    |     |  |     |- TOKEN[type: TAG_NAME, text: strong, line: 8, column: 24]
    |     |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 30]
    |     |  |- TOKEN[type: TEXT, text:  is the maniac behind ANTLR and has been, line: 8, column: 31]
-   |     |  |- TOKEN[type: NEWLINE, text: \n, line: 8, column: 71]
    |     |  |- TOKEN[type: TEXT, text: working on language tools since 1989. He is a professor of computer, line: 9, column: 2]
-   |     |  |- TOKEN[type: NEWLINE, text: \n, line: 9, column: 69]
    |     |  |- TOKEN[type: TEXT, text: science at the , line: 10, column: 2]
    |     |  |- htmlElement
    |     |  |  |- htmlTagStart
@@ -117,8 +106,7 @@
    |     |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 10, column: 86]
    |     |  |     |- TOKEN[type: TAG_NAME, text: a, line: 10, column: 87]
    |     |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 10, column: 88]
-   |     |  |- TOKEN[type: TEXT, text: ., line: 10, column: 89]
-   |     |  '- TOKEN[type: NEWLINE, text: \n, line: 10, column: 90]
+   |     |  '- TOKEN[type: TEXT, text: ., line: 10, column: 89]
    |     '- htmlTagEnd
    |        |- TOKEN[type: TAG_OPEN, text: <, line: 11, column: 2]
    |        |- TOKEN[type: TAG_SLASH, text: /, line: 11, column: 3]

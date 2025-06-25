@@ -11,24 +11,20 @@
    |  |  |     |- TOKEN[type: DOT, text: ., line: 1, column: 24]
    |  |  |     '- TOKEN[type: IDENTIFIER, text: List, line: 1, column: 25]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 29]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 30]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- inheritDocTag
    |  |  |  '- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 2, column: 4]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 14]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 15]
-   |  |- inlineTag
-   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
-   |  |  |- inheritDocTag
-   |  |  |  |- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 3, column: 4]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 14]
-   |  |  |  '- reference
-   |  |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 4, column: 12]
-   |  |  |     |- TOKEN[type: DOT, text: ., line: 4, column: 16]
-   |  |  |     |- TOKEN[type: IDENTIFIER, text: util, line: 4, column: 17]
-   |  |  |     |- TOKEN[type: DOT, text: ., line: 4, column: 21]
-   |  |  |     '- TOKEN[type: IDENTIFIER, text: List, line: 4, column: 22]
-   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 26]
-   |  '- TOKEN[type: NEWLINE, text: \n, line: 4, column: 27]
+   |  '- inlineTag
+   |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
+   |     |- inheritDocTag
+   |     |  |- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 3, column: 4]
+   |     |  '- reference
+   |     |     |- TOKEN[type: IDENTIFIER, text: java, line: 4, column: 12]
+   |     |     |- TOKEN[type: DOT, text: ., line: 4, column: 16]
+   |     |     |- TOKEN[type: IDENTIFIER, text: util, line: 4, column: 17]
+   |     |     |- TOKEN[type: DOT, text: ., line: 4, column: 21]
+   |     |     '- TOKEN[type: IDENTIFIER, text: List, line: 4, column: 22]
+   |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 26]
    '- TOKEN[type: EOF, text: <EOF>, line: 5, column: 0]

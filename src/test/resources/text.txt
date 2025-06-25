@@ -1,15 +1,9 @@
 '- javadoc
    |- mainDescription
    |  |- TOKEN[type: TEXT, text: If a visit method is not overridden, we should explain why we do not 'visit' the, line: 1, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 82]
    |  |- TOKEN[type: TEXT, text: parse tree at this node and construct an AST. Reasons could include that we have, line: 2, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 82]
    |  |- TOKEN[type: TEXT, text: no terminal symbols (tokens) in the corresponding production rule, or that, line: 3, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 76]
    |  |- TOKEN[type: TEXT, text: we handle the construction of this particular AST in its parent node. If we, line: 4, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 77]
    |  |- TOKEN[type: TEXT, text: have a production rule where we have terminal symbols (tokens), but we do not build, line: 5, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 5, column: 85]
-   |  |- TOKEN[type: TEXT, text: an AST from tokens in the rule context, the rule is extraneous., line: 6, column: 2]
-   |  '- TOKEN[type: NEWLINE, text: \n, line: 6, column: 65]
+   |  '- TOKEN[type: TEXT, text: an AST from tokens in the rule context, the rule is extraneous., line: 6, column: 2]
    '- TOKEN[type: EOF, text: <EOF>, line: 7, column: 0]

@@ -18,7 +18,6 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a list of unknown type, line: 1, column: 32]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 55]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 56]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- linkInlineTag
@@ -37,7 +36,6 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a list of unknown type, line: 2, column: 26]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 49]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 50]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |  |  |- linkInlineTag
@@ -59,7 +57,6 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  list of any subtype of Number, line: 3, column: 41]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 71]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 72]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
    |  |  |- linkInlineTag
@@ -81,30 +78,28 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  list of any supertype of Integer, line: 4, column: 40]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 73]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 74]
-   |  |- inlineTag
-   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 2]
-   |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 5, column: 4]
-   |  |  |  |- reference
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 5, column: 9]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 13]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 5, column: 14]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 18]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: Map, line: 5, column: 19]
-   |  |  |  |  '- typeArguments
-   |  |  |  |     |- TOKEN[type: LT, text: <, line: 5, column: 22]
-   |  |  |  |     |- typeArgument
-   |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: String, line: 5, column: 23]
-   |  |  |  |     |- TOKEN[type: COMMA, text: ,, line: 5, column: 29]
-   |  |  |  |     |- typeArgument
-   |  |  |  |     |  |- TOKEN[type: QUESTION, text: ?, line: 5, column: 31]
-   |  |  |  |     |  |- TOKEN[type: EXTENDS, text: extends, line: 5, column: 33]
-   |  |  |  |     |  '- qualifiedName
-   |  |  |  |     |     '- TOKEN[type: IDENTIFIER, text: Number, line: 5, column: 41]
-   |  |  |  |     '- TOKEN[type: GT, text: >, line: 5, column: 47]
-   |  |  |  '- description
-   |  |  |     '- TOKEN[type: TEXT, text:  map from string to numbers, line: 5, column: 48]
-   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 75]
-   |  '- TOKEN[type: NEWLINE, text: \n, line: 5, column: 76]
+   |  '- inlineTag
+   |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 2]
+   |     |- linkInlineTag
+   |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 5, column: 4]
+   |     |  |- reference
+   |     |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 5, column: 9]
+   |     |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 13]
+   |     |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 5, column: 14]
+   |     |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 18]
+   |     |  |  |- TOKEN[type: IDENTIFIER, text: Map, line: 5, column: 19]
+   |     |  |  '- typeArguments
+   |     |  |     |- TOKEN[type: LT, text: <, line: 5, column: 22]
+   |     |  |     |- typeArgument
+   |     |  |     |  '- TOKEN[type: IDENTIFIER, text: String, line: 5, column: 23]
+   |     |  |     |- TOKEN[type: COMMA, text: ,, line: 5, column: 29]
+   |     |  |     |- typeArgument
+   |     |  |     |  |- TOKEN[type: QUESTION, text: ?, line: 5, column: 31]
+   |     |  |     |  |- TOKEN[type: EXTENDS, text: extends, line: 5, column: 33]
+   |     |  |     |  '- qualifiedName
+   |     |  |     |     '- TOKEN[type: IDENTIFIER, text: Number, line: 5, column: 41]
+   |     |  |     '- TOKEN[type: GT, text: >, line: 5, column: 47]
+   |     |  '- description
+   |     |     '- TOKEN[type: TEXT, text:  map from string to numbers, line: 5, column: 48]
+   |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 75]
    '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 0]

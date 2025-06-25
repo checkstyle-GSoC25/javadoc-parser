@@ -37,7 +37,6 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 1, column: 49]
    |  |     |- TOKEN[type: TAG_NAME, text: div, line: 1, column: 50]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 1, column: 53]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 54]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 2, column: 2]
    |  |  |- TOKEN[type: TAG_NAME, text: p, line: 2, column: 3]

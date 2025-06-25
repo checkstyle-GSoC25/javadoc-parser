@@ -1,19 +1,14 @@
 '- javadoc
    |- mainDescription
    |  |- TOKEN[type: TEXT, text: This is a code example of inline tag code., line: 1, column: 2]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 44]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- codeInlineTag
    |  |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 2, column: 4]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 2, column: 8]
    |  |  |  |- TOKEN[type: TEXT, text:     int x = 3 * 5;, line: 3, column: 1]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 3, column: 19]
    |  |  |  |- TOKEN[type: TEXT, text:     int y = 10 * 6;, line: 4, column: 1]
-   |  |  |  |- TOKEN[type: NEWLINE, text: \n, line: 4, column: 20]
    |  |  |  '- TOKEN[type: TEXT, text:    , line: 5, column: 1]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 4]
    |  |- TOKEN[type: TEXT, text:  int is the variable type, line: 5, column: 5]
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 5, column: 30]
    |  '- TOKEN[type: TEXT, text: x is variable name., line: 6, column: 2]
    '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 21]

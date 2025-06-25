@@ -1,5 +1,2 @@
 '- javadoc
-   |- mainDescription
-   |  |- TOKEN[type: NEWLINE, text: \n, line: 1, column: 1]
-   |  '- TOKEN[type: NEWLINE, text: \n, line: 2, column: 1]
    '- TOKEN[type: EOF, text: <EOF>, line: 3, column: 1]
