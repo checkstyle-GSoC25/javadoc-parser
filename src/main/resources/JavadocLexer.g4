@@ -149,13 +149,18 @@ Code_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 
-Code_TEXT
-    :   ( ~[{}\r\n]
-        | '{' {braceCounter++;}
-        | '}' {braceCounter != 1}? {braceCounter--;})+  -> type(TEXT)
+fragment Code_TEXT_FRAGMENT
+    :   ( ~[{}\r\n] )+
     ;
 
-JAVADOC_INLINE_TAG_END: '}' {braceCounter == 1}? {braceCounter--;} -> popMode, popMode;
+Code_TEXT
+    : (
+        Code_TEXT_FRAGMENT? '{' ( Code_TEXT | Code_TEXT_FRAGMENT | Code_NEWLINE )* '}' Code_TEXT_FRAGMENT?
+      | Code_TEXT_FRAGMENT
+      )  -> type(TEXT)
+    ;
+
+JAVADOC_INLINE_TAG_END: '}' -> popMode, popMode;
 
 
 mode link;
