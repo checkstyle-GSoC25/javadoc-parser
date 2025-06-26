@@ -143,20 +143,26 @@ INHERITDOC_LITERAL : 'inheritDoc' -> pushMode(link);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
 mode code;
-// TODO: Allow '}' to be treated as regular text within code blocks.
 
 Code_NEWLINE
-    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
+    : '\r'? '\n' { setAfterNewline(); } -> type(NEWLINE), channel(NEWLINES), pushMode(startOfLine)
+    ;
+
+Code_LBRACE
+    : '{' { braceCounter++; } -> type(TEXT)
+    ;
+
+Code_RBRACE
+    : '}' { braceCounter > 1 }? { braceCounter--; } -> type(TEXT)
+    ;
+
+JAVADOC_INLINE_TAG_END
+    : '}' { braceCounter == 1 }? { braceCounter--; } -> popMode, popMode
     ;
 
 Code_TEXT
-    :   ( ~[{}\r\n]
-        | '{' {braceCounter++;}
-        | '}' {braceCounter != 1}? {braceCounter--;})+  -> type(TEXT)
+    : ~[{}\r\n]+ -> type(TEXT)
     ;
-
-JAVADOC_INLINE_TAG_END: '}' {braceCounter == 1}? {braceCounter--;} -> popMode, popMode;
-
 
 mode link;
 EXTENDS: 'extends';
