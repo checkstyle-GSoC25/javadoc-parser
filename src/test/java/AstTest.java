@@ -153,4 +153,9 @@ public class AstTest extends AbstractTestSupport {
     public void testValueTag() throws IOException {
         verifyAst(getPath("valueInlineTag.txt"), getPath("valueInlineTag.javadoc"));
     }
+
+    @Test
+    public void testTagEnd() throws IOException {
+        verifyAst(getPath("tagEnd.txt"), getPath("tagEnd.javadoc"));
+    }
 }
