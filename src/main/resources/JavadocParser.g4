@@ -42,9 +42,9 @@ inlineTag
         | linkInlineTag
         | linkPlainInlineTag
         | valueInlineTag
-        | inheritDocTag
+        | inheritDocInlineTag
         | summaryInlineTag
-        | systemPropertyTag
+        | systemPropertyInlineTag
         | customInlineTag)
       JAVADOC_INLINE_TAG_END
     ;
@@ -57,11 +57,11 @@ linkInlineTag: LINK_LITERAL reference description?;
 
 valueInlineTag: VALUE_LITERAL FORMAT_SPECIFIER? reference?;
 
-inheritDocTag: INHERITDOC_LITERAL superType=reference?;
+inheritDocInlineTag: INHERITDOC_LITERAL superType=reference?;
 
 summaryInlineTag: SUMMARY_LITERAL description?;
 
-systemPropertyTag: SYSTEM_PROPERTY propertyName?;
+systemPropertyInlineTag: SYSTEM_PROPERTY propertyName?;
 
 customInlineTag: CUSTOM_NAME description?;
 
