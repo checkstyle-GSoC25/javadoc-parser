@@ -35,3 +35,5 @@ gen/
 
 target/
 /src/main/resources/JavadocLexer.tokens
+
+/src/main/resources/input.javadoc
