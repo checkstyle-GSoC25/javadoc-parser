@@ -37,12 +37,14 @@ javadoc
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
-     (  codeInlineTag
+     (
+         codeInlineTag
         | linkInlineTag
         | linkPlainInlineTag
         | valueInlineTag
         | inheritDocTag
         | summaryInlineTag
+        | systemPropertyTag
         | customInlineTag)
       JAVADOC_INLINE_TAG_END
     ;
@@ -58,6 +60,8 @@ valueInlineTag: VALUE_LITERAL FORMAT_SPECIFIER? reference?;
 inheritDocTag: INHERITDOC_LITERAL superType=reference?;
 
 summaryInlineTag: SUMMARY_LITERAL description?;
+
+systemPropertyTag: SYSTEM_PROPERTY propertyName?;
 
 customInlineTag: CUSTOM_NAME description?;
 
@@ -79,6 +83,8 @@ typeArgument
 memberReference: IDENTIFIER (LPAREN parameterTypeList? RPAREN)?;
 
 parameterTypeList: PARAMETER_TYPE (COMMA PARAMETER_TYPE)*;
+
+propertyName: IDENTIFIER (DOT IDENTIFIER)*;
 
 blockTag
     : authorTag
