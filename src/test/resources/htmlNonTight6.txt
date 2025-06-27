@@ -425,8 +425,8 @@
    |  |  |  |- TOKEN[type: TEXT, text:  with , line: 46, column: 57]
    |  |  |  |- inlineTag
    |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 46, column: 63]
-   |  |  |  |  |- customInlineTag
-   |  |  |  |  |  |- TOKEN[type: CUSTOM_NAME, text: literal, line: 46, column: 65]
+   |  |  |  |  |- literalInlineTag
+   |  |  |  |  |  |- TOKEN[type: LITERAL, text: literal, line: 46, column: 65]
    |  |  |  |  |  '- description
    |  |  |  |  |     '- TOKEN[type: TEXT, text:  @Annotation, line: 46, column: 72]
    |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 46, column: 84]
