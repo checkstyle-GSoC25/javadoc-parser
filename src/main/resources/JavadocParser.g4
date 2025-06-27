@@ -45,6 +45,7 @@ inlineTag
         | summaryInlineTag
         | systemPropertyInlineTag
         | indexInlineTag
+        | returnInlineTag
         | customInlineTag)
       JAVADOC_INLINE_TAG_END
     ;
@@ -64,6 +65,8 @@ summaryInlineTag: SUMMARY_LITERAL description?;
 systemPropertyInlineTag: SYSTEM_PROPERTY propertyName?;
 
 indexInlineTag: INDEX INDEX_TERM description?;
+
+returnInlineTag: RETURN description?;
 
 customInlineTag: CUSTOM_NAME description?;
 
