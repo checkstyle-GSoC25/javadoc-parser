@@ -44,8 +44,8 @@
    |  |  |     |- TOKEN[type: TEXT, text:  if present, or , line: 3, column: 58]
    |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 74]
-   |  |  |     |  |- customInlineTag
-   |  |  |     |  |  |- TOKEN[type: CUSTOM_NAME, text: literal, line: 3, column: 76]
+   |  |  |     |  |- literalInlineTag
+   |  |  |     |  |  |- TOKEN[type: LITERAL, text: literal, line: 3, column: 76]
    |  |  |     |  |  '- description
    |  |  |     |  |     '- TOKEN[type: TEXT, text:  runs, line: 3, column: 83]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 88]

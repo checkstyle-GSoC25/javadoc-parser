@@ -20348,22 +20348,10 @@
    |  |  |  |  |  |  |- TOKEN[type: TEXT, text: Row 1 , line: 283, column: 13]
    |  |  |  |  |  |  '- inlineTag
    |  |  |  |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 283, column: 19]
-   |  |  |  |  |  |     |- customInlineTag
-   |  |  |  |  |  |     |  |- TOKEN[type: CUSTOM_NAME, text: literal, line: 283, column: 21]
+   |  |  |  |  |  |     |- literalInlineTag
+   |  |  |  |  |  |     |  |- TOKEN[type: LITERAL, text: literal, line: 283, column: 21]
    |  |  |  |  |  |     |  '- description
-   |  |  |  |  |  |     |     |- TOKEN[type: TEXT, text:  , line: 283, column: 28]
-   |  |  |  |  |  |     |     '- htmlElement
-   |  |  |  |  |  |     |        |- htmlTagStart
-   |  |  |  |  |  |     |        |  |- TOKEN[type: TAG_OPEN, text: <, line: 283, column: 29]
-   |  |  |  |  |  |     |        |  |- TOKEN[type: TAG_NAME, text: b, line: 283, column: 30]
-   |  |  |  |  |  |     |        |  '- TOKEN[type: TAG_CLOSE, text: >, line: 283, column: 31]
-   |  |  |  |  |  |     |        |- htmlContent
-   |  |  |  |  |  |     |        |  '- TOKEN[type: TEXT, text: bold, line: 283, column: 32]
-   |  |  |  |  |  |     |        '- htmlTagEnd
-   |  |  |  |  |  |     |           |- TOKEN[type: TAG_OPEN, text: <, line: 283, column: 36]
-   |  |  |  |  |  |     |           |- TOKEN[type: TAG_SLASH, text: /, line: 283, column: 37]
-   |  |  |  |  |  |     |           |- TOKEN[type: TAG_NAME, text: b, line: 283, column: 38]
-   |  |  |  |  |  |     |           '- TOKEN[type: TAG_CLOSE, text: >, line: 283, column: 39]
+   |  |  |  |  |  |     |     '- TOKEN[type: TEXT, text:  <b>bold</b>, line: 283, column: 28]
    |  |  |  |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 283, column: 40]
    |  |  |  |  |  '- htmlTagEnd
    |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 283, column: 41]

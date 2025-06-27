@@ -145,6 +145,7 @@ SUMMARY_LITERAL : 'summary' -> pushMode(inlineTagDescription);
 SYSTEM_PROPERTY: 'systemProperty' -> pushMode(value);
 INDEX: 'index' -> pushMode(indexTerm);
 RETURN: 'return' -> pushMode(inlineTagDescription);
+LITERAL: 'literal' -> pushMode(plainTextTag);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
 mode plainTextTag;
