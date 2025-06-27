@@ -10,7 +10,7 @@ tokens {
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
     SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL, SYSTEM_PROPERTY,
-    INDEX, INDEX_TERM
+    INDEX, INDEX_TERM, RETURN
 }
 
 @header {
@@ -144,6 +144,7 @@ INHERITDOC_LITERAL : 'inheritDoc' -> pushMode(link);
 SUMMARY_LITERAL : 'summary' -> pushMode(inlineTagDescription);
 SYSTEM_PROPERTY: 'systemProperty' -> pushMode(value);
 INDEX: 'index' -> pushMode(indexTerm);
+RETURN: 'return' -> pushMode(inlineTagDescription);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
 mode plainTextTag;

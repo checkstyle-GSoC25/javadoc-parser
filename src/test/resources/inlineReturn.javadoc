@@ -1,0 +1,6 @@
+* {@return {@code true} if the arguments are equal to each other
+* and {@code false} otherwise}
+* {@return a Version for major, minor versions}
+* {@return the code used by the {@link Opcode#NEWARRAY newarray} instruction to create an array
+* of this component type, or {@code -1} if this type is not supported by {@code newarray}}
+* {@return {@inheritDoc}}
