@@ -1,0 +1,50 @@
+ * This class demonstrates a full-scale Javadoc parsing stress test.
+ *
+ * <h4>🚨 Extreme Cases in One Comment 🚨</h4>
+ *
+ *
+ * <script>
+ * const config = { alertOn: true };
+ * // comment here
+ * function greet(name) { alert("Hi, " + name + "}"); }
+ * </script>
+ *
+ * @return Always returns madness
+ * @throws IllegalArgumentException if something is null
+ * @throws NullPointerException     if null sneaks in
+ * @apiNote Handles edge cases like {@code Map<String, List<int[]>>}, {@literal <html>}, and
+ * {@code {1 + 2 * (3 + 4}} and @ symbols inside {@code @NotAnAnnotation}.
+ * @implNote Implementation uses streams:
+ * {@code
+ * return data.stream()
+ * .filter(d -> d != null)
+ * .map(d -> d.trim())
+ * .collect(Collectors.toList());
+ * }
+ *
+ * <dl>
+ *   <dt>Unicode Term</dt>
+ *   <dd>⚙️ {@link #unicodeMethod()} and {@linkplain #legacyMethod()} testing</dd>
+ * </dl>
+ * @apiUser library-consumers
+ * @apiUser internal-only
+ * @serial This class supports Java object serialization.
+ * @serialField serialNumber long the serial number of this madness
+ * @serialData The bytes: {@code [0x01, 0x02, 0x03]} encoded in UTF-8
+ *
+ * <table summary="Mixed content">
+ *   <tr><td>{@value SERIAL_ID}</td><td>{@literal &lt;magic&gt;}</td></tr>
+ *   <tr><td><code>{@link #doEverything()}</code></td><td>Call this if you're brave</td></tr>
+ * </table>
+ * <p>
+ * <!-- Embedded HTML comment with tricky stuff: --> <b>unclosed tag <i>mixed</b>
+ * <p>
+ * Markdown-style:
+ * - List item one {@index indexTerm}
+ * - List with inline `code` and {@code {weird {nested}} braces}
+ * {@snippet for (int i = 0; i < 10; i++) { System.out.print(i + " "); }}
+ * @see <a href="https://example.com/?q={@code madness}">Query Link</a>
+ * @see #legacyMethod()
+ * @see java.util.stream.Stream#map(java.util.function.Function)
+ * @since 9.9.9-beta🔥
+ * @deprecated This API is no longer maintained. See {@link #doEverything()} instead.

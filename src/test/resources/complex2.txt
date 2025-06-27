@@ -1,0 +1,402 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: TEXT, text: This class demonstrates a full-scale Javadoc parsing stress test., line: 1, column: 3]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 3]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: h4, line: 3, column: 4]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 6]
+   |  |  |- htmlContent
+   |  |  |  '- TOKEN[type: TEXT, text: 🚨 Extreme Cases in One Comment 🚨, line: 3, column: 7]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 39]
+   |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 3, column: 40]
+   |  |     |- TOKEN[type: TAG_NAME, text: h4, line: 3, column: 41]
+   |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 43]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 3]
+   |     |  |- TOKEN[type: TAG_NAME, text: script, line: 6, column: 4]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 10]
+   |     |- htmlContent
+   |     |  |- TOKEN[type: TEXT, text: const config = { alertOn: true };, line: 7, column: 3]
+   |     |  |- TOKEN[type: TEXT, text: // comment here, line: 8, column: 3]
+   |     |  '- TOKEN[type: TEXT, text: function greet(name) { alert("Hi, " + name + "}"); }, line: 9, column: 3]
+   |     '- htmlTagEnd
+   |        |- TOKEN[type: TAG_OPEN, text: <, line: 10, column: 3]
+   |        |- TOKEN[type: TAG_SLASH, text: /, line: 10, column: 4]
+   |        |- TOKEN[type: TAG_NAME, text: script, line: 10, column: 5]
+   |        '- TOKEN[type: TAG_CLOSE, text: >, line: 10, column: 11]
+   |- blockTag
+   |  |- TOKEN[type: RETURN_LITERAL, text: @return, line: 12, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  Always returns madness, line: 12, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @throws, line: 13, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  IllegalArgumentException if something is null, line: 13, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @throws, line: 14, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  NullPointerException     if null sneaks in, line: 14, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @apiNote, line: 15, column: 3]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  Handles edge cases like , line: 15, column: 11]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 15, column: 36]
+   |     |  |- codeInlineTag
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 15, column: 38]
+   |     |  |  '- TOKEN[type: TEXT, text:  Map<String, List<int[]>>, line: 15, column: 42]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 15, column: 67]
+   |     |- TOKEN[type: TEXT, text: , , line: 15, column: 68]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 15, column: 70]
+   |     |  |- literalInlineTag
+   |     |  |  |- TOKEN[type: LITERAL, text: literal, line: 15, column: 72]
+   |     |  |  '- description
+   |     |  |     '- TOKEN[type: TEXT, text:  <html>, line: 15, column: 79]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 15, column: 86]
+   |     |- TOKEN[type: TEXT, text: , and, line: 15, column: 87]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 16, column: 3]
+   |     |  |- codeInlineTag
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 16, column: 5]
+   |     |  |  |- TOKEN[type: TEXT, text:  , line: 16, column: 9]
+   |     |  |  |- TOKEN[type: TEXT, text: {, line: 16, column: 10]
+   |     |  |  |- TOKEN[type: TEXT, text: 1 + 2 * (3 + 4, line: 16, column: 11]
+   |     |  |  '- TOKEN[type: TEXT, text: }, line: 16, column: 25]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 16, column: 26]
+   |     |- TOKEN[type: TEXT, text:  and @ symbols inside , line: 16, column: 27]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 16, column: 49]
+   |     |  |- codeInlineTag
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 16, column: 51]
+   |     |  |  '- TOKEN[type: TEXT, text:  @NotAnAnnotation, line: 16, column: 55]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 16, column: 72]
+   |     '- TOKEN[type: TEXT, text: ., line: 16, column: 73]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @implNote, line: 17, column: 3]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  Implementation uses streams:, line: 17, column: 12]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 18, column: 3]
+   |     |  |- codeInlineTag
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 18, column: 5]
+   |     |  |  |- TOKEN[type: TEXT, text:  return data.stream(), line: 19, column: 2]
+   |     |  |  |- TOKEN[type: TEXT, text:  .filter(d -> d != null), line: 20, column: 2]
+   |     |  |  |- TOKEN[type: TEXT, text:  .map(d -> d.trim()), line: 21, column: 2]
+   |     |  |  |- TOKEN[type: TEXT, text:  .collect(Collectors.toList());, line: 22, column: 2]
+   |     |  |  '- TOKEN[type: TEXT, text:  , line: 23, column: 2]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 23, column: 3]
+   |     '- htmlElement
+   |        |- htmlTagStart
+   |        |  |- TOKEN[type: TAG_OPEN, text: <, line: 25, column: 3]
+   |        |  |- TOKEN[type: TAG_NAME, text: dl, line: 25, column: 4]
+   |        |  '- TOKEN[type: TAG_CLOSE, text: >, line: 25, column: 6]
+   |        |- htmlContent
+   |        |  |- htmlElement
+   |        |  |  |- htmlTagStart
+   |        |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 26, column: 5]
+   |        |  |  |  |- TOKEN[type: TAG_NAME, text: dt, line: 26, column: 6]
+   |        |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 26, column: 8]
+   |        |  |  |- htmlContent
+   |        |  |  |  '- TOKEN[type: TEXT, text: Unicode Term, line: 26, column: 9]
+   |        |  |  '- htmlTagEnd
+   |        |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 26, column: 21]
+   |        |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 26, column: 22]
+   |        |  |     |- TOKEN[type: TAG_NAME, text: dt, line: 26, column: 23]
+   |        |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 26, column: 25]
+   |        |  '- htmlElement
+   |        |     |- htmlTagStart
+   |        |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 27, column: 5]
+   |        |     |  |- TOKEN[type: TAG_NAME, text: dd, line: 27, column: 6]
+   |        |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 27, column: 8]
+   |        |     |- htmlContent
+   |        |     |  |- TOKEN[type: TEXT, text: ⚙️ , line: 27, column: 9]
+   |        |     |  |- inlineTag
+   |        |     |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 27, column: 12]
+   |        |     |  |  |- linkInlineTag
+   |        |     |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 27, column: 14]
+   |        |     |  |  |  '- reference
+   |        |     |  |  |     |- TOKEN[type: HASH, text: #, line: 27, column: 19]
+   |        |     |  |  |     '- memberReference
+   |        |     |  |  |        |- TOKEN[type: IDENTIFIER, text: unicodeMethod, line: 27, column: 20]
+   |        |     |  |  |        |- TOKEN[type: LPAREN, text: (, line: 27, column: 33]
+   |        |     |  |  |        '- TOKEN[type: RPAREN, text: ), line: 27, column: 34]
+   |        |     |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 27, column: 35]
+   |        |     |  |- TOKEN[type: TEXT, text:  and , line: 27, column: 36]
+   |        |     |  |- inlineTag
+   |        |     |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 27, column: 41]
+   |        |     |  |  |- linkPlainInlineTag
+   |        |     |  |  |  |- TOKEN[type: LINKPLAIN_LITERAL, text: linkplain, line: 27, column: 43]
+   |        |     |  |  |  '- reference
+   |        |     |  |  |     |- TOKEN[type: HASH, text: #, line: 27, column: 53]
+   |        |     |  |  |     '- memberReference
+   |        |     |  |  |        |- TOKEN[type: IDENTIFIER, text: legacyMethod, line: 27, column: 54]
+   |        |     |  |  |        |- TOKEN[type: LPAREN, text: (, line: 27, column: 66]
+   |        |     |  |  |        '- TOKEN[type: RPAREN, text: ), line: 27, column: 67]
+   |        |     |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 27, column: 68]
+   |        |     |  '- TOKEN[type: TEXT, text:  testing, line: 27, column: 69]
+   |        |     '- htmlTagEnd
+   |        |        |- TOKEN[type: TAG_OPEN, text: <, line: 27, column: 77]
+   |        |        |- TOKEN[type: TAG_SLASH, text: /, line: 27, column: 78]
+   |        |        |- TOKEN[type: TAG_NAME, text: dd, line: 27, column: 79]
+   |        |        '- TOKEN[type: TAG_CLOSE, text: >, line: 27, column: 81]
+   |        '- htmlTagEnd
+   |           |- TOKEN[type: TAG_OPEN, text: <, line: 28, column: 3]
+   |           |- TOKEN[type: TAG_SLASH, text: /, line: 28, column: 4]
+   |           |- TOKEN[type: TAG_NAME, text: dl, line: 28, column: 5]
+   |           '- TOKEN[type: TAG_CLOSE, text: >, line: 28, column: 7]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @apiUser, line: 29, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  library-consumers, line: 29, column: 11]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @apiUser, line: 30, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  internal-only, line: 30, column: 11]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @serial, line: 31, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  This class supports Java object serialization., line: 31, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @serialField, line: 32, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  serialNumber long the serial number of this madness, line: 32, column: 15]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @serialData, line: 33, column: 3]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  The bytes: , line: 33, column: 14]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 33, column: 26]
+   |     |  |- codeInlineTag
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 33, column: 28]
+   |     |  |  '- TOKEN[type: TEXT, text:  [0x01, 0x02, 0x03], line: 33, column: 32]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 33, column: 51]
+   |     |- TOKEN[type: TEXT, text:  encoded in UTF-8, line: 33, column: 52]
+   |     |- htmlElement
+   |     |  |- htmlTagStart
+   |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 35, column: 3]
+   |     |  |  |- TOKEN[type: TAG_NAME, text: table, line: 35, column: 4]
+   |     |  |  |- htmlAttribute
+   |     |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: summary, line: 35, column: 10]
+   |     |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 35, column: 17]
+   |     |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "Mixed content", line: 35, column: 18]
+   |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 35, column: 33]
+   |     |  |- htmlContent
+   |     |  |  |- htmlElement
+   |     |  |  |  |- htmlTagStart
+   |     |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 36, column: 5]
+   |     |  |  |  |  |- TOKEN[type: TAG_NAME, text: tr, line: 36, column: 6]
+   |     |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 36, column: 8]
+   |     |  |  |  |- htmlContent
+   |     |  |  |  |  |- htmlElement
+   |     |  |  |  |  |  |- htmlTagStart
+   |     |  |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 36, column: 9]
+   |     |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: td, line: 36, column: 10]
+   |     |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 36, column: 12]
+   |     |  |  |  |  |  |- htmlContent
+   |     |  |  |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 36, column: 13]
+   |     |  |  |  |  |  |  |- valueInlineTag
+   |     |  |  |  |  |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 36, column: 15]
+   |     |  |  |  |  |  |  |  '- reference
+   |     |  |  |  |  |  |  |     '- TOKEN[type: IDENTIFIER, text: SERIAL_ID, line: 36, column: 21]
+   |     |  |  |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 36, column: 30]
+   |     |  |  |  |  |  '- htmlTagEnd
+   |     |  |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 36, column: 31]
+   |     |  |  |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 36, column: 32]
+   |     |  |  |  |  |     |- TOKEN[type: TAG_NAME, text: td, line: 36, column: 33]
+   |     |  |  |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 36, column: 35]
+   |     |  |  |  |  '- htmlElement
+   |     |  |  |  |     |- htmlTagStart
+   |     |  |  |  |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 36, column: 36]
+   |     |  |  |  |     |  |- TOKEN[type: TAG_NAME, text: td, line: 36, column: 37]
+   |     |  |  |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 36, column: 39]
+   |     |  |  |  |     |- htmlContent
+   |     |  |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 36, column: 40]
+   |     |  |  |  |     |  |- literalInlineTag
+   |     |  |  |  |     |  |  |- TOKEN[type: LITERAL, text: literal, line: 36, column: 42]
+   |     |  |  |  |     |  |  '- description
+   |     |  |  |  |     |  |     '- TOKEN[type: TEXT, text:  &lt;magic&gt;, line: 36, column: 49]
+   |     |  |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 36, column: 63]
+   |     |  |  |  |     '- htmlTagEnd
+   |     |  |  |  |        |- TOKEN[type: TAG_OPEN, text: <, line: 36, column: 64]
+   |     |  |  |  |        |- TOKEN[type: TAG_SLASH, text: /, line: 36, column: 65]
+   |     |  |  |  |        |- TOKEN[type: TAG_NAME, text: td, line: 36, column: 66]
+   |     |  |  |  |        '- TOKEN[type: TAG_CLOSE, text: >, line: 36, column: 68]
+   |     |  |  |  '- htmlTagEnd
+   |     |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 36, column: 69]
+   |     |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 36, column: 70]
+   |     |  |  |     |- TOKEN[type: TAG_NAME, text: tr, line: 36, column: 71]
+   |     |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 36, column: 73]
+   |     |  |  '- htmlElement
+   |     |  |     |- htmlTagStart
+   |     |  |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 5]
+   |     |  |     |  |- TOKEN[type: TAG_NAME, text: tr, line: 37, column: 6]
+   |     |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 8]
+   |     |  |     |- htmlContent
+   |     |  |     |  |- htmlElement
+   |     |  |     |  |  |- htmlTagStart
+   |     |  |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 9]
+   |     |  |     |  |  |  |- TOKEN[type: TAG_NAME, text: td, line: 37, column: 10]
+   |     |  |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 12]
+   |     |  |     |  |  |- htmlContent
+   |     |  |     |  |  |  |- htmlTagStart
+   |     |  |     |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 13]
+   |     |  |     |  |  |  |  |- TOKEN[type: TAG_NAME, text: code, line: 37, column: 14]
+   |     |  |     |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 18]
+   |     |  |     |  |  |  |- htmlContent
+   |     |  |     |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 37, column: 19]
+   |     |  |     |  |  |  |  |- linkInlineTag
+   |     |  |     |  |  |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 37, column: 21]
+   |     |  |     |  |  |  |  |  '- reference
+   |     |  |     |  |  |  |  |     |- TOKEN[type: HASH, text: #, line: 37, column: 26]
+   |     |  |     |  |  |  |  |     '- memberReference
+   |     |  |     |  |  |  |  |        |- TOKEN[type: IDENTIFIER, text: doEverything, line: 37, column: 27]
+   |     |  |     |  |  |  |  |        |- TOKEN[type: LPAREN, text: (, line: 37, column: 39]
+   |     |  |     |  |  |  |  |        '- TOKEN[type: RPAREN, text: ), line: 37, column: 40]
+   |     |  |     |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 37, column: 41]
+   |     |  |     |  |  |  '- htmlTagEnd
+   |     |  |     |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 42]
+   |     |  |     |  |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 37, column: 43]
+   |     |  |     |  |  |     |- TOKEN[type: TAG_NAME, text: code, line: 37, column: 44]
+   |     |  |     |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 48]
+   |     |  |     |  |  '- htmlTagEnd
+   |     |  |     |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 49]
+   |     |  |     |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 37, column: 50]
+   |     |  |     |  |     |- TOKEN[type: TAG_NAME, text: td, line: 37, column: 51]
+   |     |  |     |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 53]
+   |     |  |     |  '- htmlElement
+   |     |  |     |     |- htmlTagStart
+   |     |  |     |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 54]
+   |     |  |     |     |  |- TOKEN[type: TAG_NAME, text: td, line: 37, column: 55]
+   |     |  |     |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 57]
+   |     |  |     |     |- htmlContent
+   |     |  |     |     |  '- TOKEN[type: TEXT, text: Call this if you're brave, line: 37, column: 58]
+   |     |  |     |     '- htmlTagEnd
+   |     |  |     |        |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 83]
+   |     |  |     |        |- TOKEN[type: TAG_SLASH, text: /, line: 37, column: 84]
+   |     |  |     |        |- TOKEN[type: TAG_NAME, text: td, line: 37, column: 85]
+   |     |  |     |        '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 87]
+   |     |  |     '- htmlTagEnd
+   |     |  |        |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 88]
+   |     |  |        |- TOKEN[type: TAG_SLASH, text: /, line: 37, column: 89]
+   |     |  |        |- TOKEN[type: TAG_NAME, text: tr, line: 37, column: 90]
+   |     |  |        '- TOKEN[type: TAG_CLOSE, text: >, line: 37, column: 92]
+   |     |  '- htmlTagEnd
+   |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 38, column: 3]
+   |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 38, column: 4]
+   |     |     |- TOKEN[type: TAG_NAME, text: table, line: 38, column: 5]
+   |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 38, column: 10]
+   |     |- htmlElement
+   |     |  |- htmlTagStart
+   |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 39, column: 3]
+   |     |  |  |- TOKEN[type: TAG_NAME, text: p, line: 39, column: 4]
+   |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 39, column: 5]
+   |     |  '- nonTightHtmlContent
+   |     |     '- TOKEN[type: TEXT, text: <!-- Embedded HTML comment with tricky stuff: --> , line: 40, column: 3]
+   |     |- htmlElement
+   |     |  |- htmlTagStart
+   |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 40, column: 53]
+   |     |  |  |- TOKEN[type: TAG_NAME, text: b, line: 40, column: 54]
+   |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 40, column: 55]
+   |     |  |- htmlContent
+   |     |  |  |- TOKEN[type: TEXT, text: unclosed tag , line: 40, column: 56]
+   |     |  |  '- htmlElement
+   |     |  |     |- htmlTagStart
+   |     |  |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 40, column: 69]
+   |     |  |     |  |- TOKEN[type: TAG_NAME, text: i, line: 40, column: 70]
+   |     |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 40, column: 71]
+   |     |  |     '- nonTightHtmlContent
+   |     |  |        '- TOKEN[type: TEXT, text: mixed, line: 40, column: 72]
+   |     |  '- htmlTagEnd
+   |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 40, column: 77]
+   |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 40, column: 78]
+   |     |     |- TOKEN[type: TAG_NAME, text: b, line: 40, column: 79]
+   |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 40, column: 80]
+   |     '- htmlElement
+   |        |- htmlTagStart
+   |        |  |- TOKEN[type: TAG_OPEN, text: <, line: 41, column: 3]
+   |        |  |- TOKEN[type: TAG_NAME, text: p, line: 41, column: 4]
+   |        |  '- TOKEN[type: TAG_CLOSE, text: >, line: 41, column: 5]
+   |        '- nonTightHtmlContent
+   |           |- TOKEN[type: TEXT, text: Markdown-style:, line: 42, column: 3]
+   |           |- TOKEN[type: TEXT, text: - List item one , line: 43, column: 3]
+   |           |- inlineTag
+   |           |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 43, column: 19]
+   |           |  |- indexInlineTag
+   |           |  |  |- TOKEN[type: INDEX, text: index, line: 43, column: 21]
+   |           |  |  '- TOKEN[type: INDEX_TERM, text: indexTerm, line: 43, column: 27]
+   |           |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 43, column: 36]
+   |           |- TOKEN[type: TEXT, text: - List with inline `code` and , line: 44, column: 3]
+   |           |- inlineTag
+   |           |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 44, column: 33]
+   |           |  |- codeInlineTag
+   |           |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 44, column: 35]
+   |           |  |  |- TOKEN[type: TEXT, text:  , line: 44, column: 39]
+   |           |  |  |- TOKEN[type: TEXT, text: {, line: 44, column: 40]
+   |           |  |  |- TOKEN[type: TEXT, text: weird , line: 44, column: 41]
+   |           |  |  |- TOKEN[type: TEXT, text: {, line: 44, column: 47]
+   |           |  |  |- TOKEN[type: TEXT, text: nested, line: 44, column: 48]
+   |           |  |  |- TOKEN[type: TEXT, text: }, line: 44, column: 54]
+   |           |  |  |- TOKEN[type: TEXT, text: }, line: 44, column: 55]
+   |           |  |  '- TOKEN[type: TEXT, text:  braces, line: 44, column: 56]
+   |           |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 44, column: 63]
+   |           |- inlineTag
+   |           |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 45, column: 3]
+   |           |  |- customInlineTag
+   |           |  |  |- TOKEN[type: CUSTOM_NAME, text: snippet, line: 45, column: 5]
+   |           |  |  '- description
+   |           |  |     '- TOKEN[type: TEXT, text:  for (int i = 0; i < 10; i++) { System.out.print(i + " "); , line: 45, column: 12]
+   |           |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 45, column: 71]
+   |           '- TOKEN[type: TEXT, text: }, line: 45, column: 72]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @see, line: 46, column: 3]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  , line: 46, column: 7]
+   |     '- htmlElement
+   |        |- htmlTagStart
+   |        |  |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 8]
+   |        |  |- TOKEN[type: TAG_NAME, text: a, line: 46, column: 9]
+   |        |  |- htmlAttribute
+   |        |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 46, column: 11]
+   |        |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 46, column: 15]
+   |        |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com/?q={@code madness}", line: 46, column: 16]
+   |        |  '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 56]
+   |        |- htmlContent
+   |        |  '- TOKEN[type: TEXT, text: Query Link, line: 46, column: 57]
+   |        '- htmlTagEnd
+   |           |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 67]
+   |           |- TOKEN[type: TAG_SLASH, text: /, line: 46, column: 68]
+   |           |- TOKEN[type: TAG_NAME, text: a, line: 46, column: 69]
+   |           '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 70]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @see, line: 47, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  #legacyMethod(), line: 47, column: 7]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @see, line: 48, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  java.util.stream.Stream#map(java.util.function.Function), line: 48, column: 7]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @since, line: 49, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  9.9.9-beta🔥, line: 49, column: 9]
+   |- blockTag
+   |  |- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 50, column: 3]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  This API is no longer maintained. See , line: 50, column: 14]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 50, column: 53]
+   |     |  |- linkInlineTag
+   |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 50, column: 55]
+   |     |  |  '- reference
+   |     |  |     |- TOKEN[type: HASH, text: #, line: 50, column: 60]
+   |     |  |     '- memberReference
+   |     |  |        |- TOKEN[type: IDENTIFIER, text: doEverything, line: 50, column: 61]
+   |     |  |        |- TOKEN[type: LPAREN, text: (, line: 50, column: 73]
+   |     |  |        '- TOKEN[type: RPAREN, text: ), line: 50, column: 74]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 50, column: 75]
+   |     '- TOKEN[type: TEXT, text:  instead., line: 50, column: 76]
+   '- TOKEN[type: EOF, text: <EOF>, line: 50, column: 85]
