@@ -79,6 +79,11 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testSystemPropertyTag() throws IOException {
+        verifyAst(getPath("systemPropertyTag.txt"), getPath("systemPropertyTag.javadoc"));
+    }
+
+    @Test
     public void testBlockAuthorTag() throws IOException {
         verifyAst(getPath("blockAuthor.txt"), getPath("blockAuthor.javadoc"));
     }
