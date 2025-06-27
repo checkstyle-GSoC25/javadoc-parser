@@ -9,7 +9,8 @@ tokens {
     CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN_LITERAL,
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, TAG_EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
-    SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL, SYSTEM_PROPERTY
+    SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL, SYSTEM_PROPERTY,
+    INDEX, INDEX_TERM
 }
 
 @header {
@@ -135,16 +136,17 @@ TAG_OPEN: '<' -> pushMode(tag);
 
 mode javadocInlineTag;
 
-CODE_LITERAL: 'code' -> pushMode(code);
+CODE_LITERAL: 'code' -> pushMode(plainTextTag);
 LINK_LITERAL : 'link'-> pushMode(link);
 LINKPLAIN_LITERAL : 'linkplain' -> pushMode(link);
 VALUE_LITERAL: 'value' -> pushMode(value);
 INHERITDOC_LITERAL : 'inheritDoc' -> pushMode(link);
 SUMMARY_LITERAL : 'summary' -> pushMode(inlineTagDescription);
 SYSTEM_PROPERTY: 'systemProperty' -> pushMode(value);
+INDEX: 'index' -> pushMode(indexTerm);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
-mode code;
+mode plainTextTag;
 
 Code_NEWLINE
     : '\r'? '\n' { setAfterNewline(); } -> type(NEWLINE), channel(NEWLINES), pushMode(startOfLine)
@@ -261,6 +263,23 @@ InlineDescription_NEWLINE
     ;
 
 InlineDescription_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popMode;
+
+mode indexTerm;
+INDEX_TERM
+    :
+      (
+        '"' (~["\r\n}])+ '"'
+        | ~[ \t\r\n"}]+
+      ) -> popMode, pushMode(plainTextTag)
+    ;
+
+IndexTerm_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
+    ;
+
+IndexTerm_WS
+    : [ \t]+ -> channel(WHITESPACES)
+    ;
 
 mode startOfLine;
 

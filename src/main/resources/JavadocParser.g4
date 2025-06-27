@@ -37,14 +37,14 @@ javadoc
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
-     (
-         codeInlineTag
+     (    codeInlineTag
         | linkInlineTag
         | linkPlainInlineTag
         | valueInlineTag
         | inheritDocInlineTag
         | summaryInlineTag
         | systemPropertyInlineTag
+        | indexInlineTag
         | customInlineTag)
       JAVADOC_INLINE_TAG_END
     ;
@@ -62,6 +62,8 @@ inheritDocInlineTag: INHERITDOC_LITERAL superType=reference?;
 summaryInlineTag: SUMMARY_LITERAL description?;
 
 systemPropertyInlineTag: SYSTEM_PROPERTY propertyName?;
+
+indexInlineTag: INDEX INDEX_TERM description?;
 
 customInlineTag: CUSTOM_NAME description?;
 
