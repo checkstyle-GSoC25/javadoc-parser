@@ -10,7 +10,7 @@ tokens {
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
     SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL, SYSTEM_PROPERTY,
-    INDEX, INDEX_TERM, RETURN
+    INDEX, INDEX_TERM, RETURN, SNIPPET, SNIPPET_ATTR_NAME, COLON
 }
 
 @header {
@@ -146,6 +146,7 @@ SYSTEM_PROPERTY: 'systemProperty' -> pushMode(value);
 INDEX: 'index' -> pushMode(indexTerm);
 RETURN: 'return' -> pushMode(inlineTagDescription);
 LITERAL: 'literal' -> pushMode(plainTextTag);
+SNIPPET: 'snippet' -> pushMode(snippetAttribute);
 CUSTOM_NAME:  [a-zA-Z0-9:._-]+ -> pushMode(inlineTagDescription);
 
 mode plainTextTag;
@@ -168,6 +169,18 @@ JAVADOC_INLINE_TAG_END
 
 Code_TEXT
     : ~[{}\r\n]+ -> type(TEXT)
+    ;
+
+mode snippetAttribute;
+SNIPPET_ATTR_NAME: Letter LetterOrDigit*;
+SNIPPET_EQUALS: '=' -> type(EQUALS), pushMode(attrValue);
+COLON: ':' -> popMode, pushMode(plainTextTag);
+SnippetAttribute_NEWLINE
+    : '\r'? '\n' { setAfterNewline(); } -> type(NEWLINE), channel(NEWLINES), pushMode(startOfLine)
+    ;
+SnippetArrtibute_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
+SnippetAttribute_JAVADOC_INLINE_TAG_END
+    : '}'{ braceCounter--; } -> type(JAVADOC_INLINE_TAG_END), popMode, popMode
     ;
 
 mode link;

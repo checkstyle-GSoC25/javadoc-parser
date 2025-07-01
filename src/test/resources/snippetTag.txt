@@ -1,0 +1,217 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: TEXT, text: Demonstration of "snippet" tag usage in various forms., line: 1, column: 2]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 2]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 3, column: 3]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 4]
+   |  |  '- nonTightHtmlContent
+   |  |     |- TOKEN[type: TEXT, text: ✅ 1. Basic usage – external file:, line: 3, column: 5]
+   |  |     '- inlineTag
+   |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
+   |  |        |- snippetInlineTag
+   |  |        |  |- TOKEN[type: SNIPPET, text: snippet, line: 4, column: 4]
+   |  |        |  '- snippetAttribute
+   |  |        |     |- TOKEN[type: SNIPPET_ATTR_NAME, text: file, line: 4, column: 12]
+   |  |        |     |- TOKEN[type: EQUALS, text: =, line: 4, column: 16]
+   |  |        |     '- TOKEN[type: ATTRIBUTE_VALUE, text: "Example.java", line: 4, column: 17]
+   |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 31]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 2]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 6, column: 3]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 4]
+   |  |  '- nonTightHtmlContent
+   |  |     |- TOKEN[type: TEXT, text: ✅ 2. Inline code body :, line: 6, column: 5]
+   |  |     '- inlineTag
+   |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 2]
+   |  |        |- snippetInlineTag
+   |  |        |  |- TOKEN[type: SNIPPET, text: snippet, line: 7, column: 4]
+   |  |        |  |- TOKEN[type: COLON, text: :, line: 7, column: 12]
+   |  |        |  '- snippetBody
+   |  |        |     |- TOKEN[type: TEXT, text:      System.out.println("Hello, world!");, line: 8, column: 1]
+   |  |        |     '- TOKEN[type: TEXT, text:  , line: 9, column: 1]
+   |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 9, column: 2]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 11, column: 2]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 11, column: 3]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 11, column: 4]
+   |  |  '- nonTightHtmlContent
+   |  |     |- TOKEN[type: TEXT, text: ✅ 3. With multiple attributes:, line: 11, column: 5]
+   |  |     '- inlineTag
+   |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 2]
+   |  |        |- snippetInlineTag
+   |  |        |  |- TOKEN[type: SNIPPET, text: snippet, line: 12, column: 4]
+   |  |        |  |- snippetAttribute
+   |  |        |  |  |- TOKEN[type: SNIPPET_ATTR_NAME, text: lang, line: 12, column: 12]
+   |  |        |  |  |- TOKEN[type: EQUALS, text: =, line: 12, column: 16]
+   |  |        |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: java , line: 12, column: 17]
+   |  |        |  |- snippetAttribute
+   |  |        |  |  |- TOKEN[type: SNIPPET_ATTR_NAME, text: class, line: 12, column: 22]
+   |  |        |  |  |- TOKEN[type: EQUALS, text: =, line: 12, column: 27]
+   |  |        |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: highlighted , line: 12, column: 28]
+   |  |        |  |- TOKEN[type: COLON, text: :, line: 12, column: 40]
+   |  |        |  '- snippetBody
+   |  |        |     |- TOKEN[type: TEXT, text:      int result = Math.addExact(1, 2);, line: 13, column: 1]
+   |  |        |     '- TOKEN[type: TEXT, text:  , line: 14, column: 1]
+   |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 14, column: 2]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 16, column: 2]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 16, column: 3]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 16, column: 4]
+   |  |  '- nonTightHtmlContent
+   |  |     |- TOKEN[type: TEXT, text: ✅ 4. File with region attribute (external code block):, line: 16, column: 5]
+   |  |     '- inlineTag
+   |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 17, column: 2]
+   |  |        |- snippetInlineTag
+   |  |        |  |- TOKEN[type: SNIPPET, text: snippet, line: 17, column: 4]
+   |  |        |  |- snippetAttribute
+   |  |        |  |  |- TOKEN[type: SNIPPET_ATTR_NAME, text: file, line: 17, column: 12]
+   |  |        |  |  |- TOKEN[type: EQUALS, text: =, line: 17, column: 16]
+   |  |        |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "Calculator.java", line: 17, column: 17]
+   |  |        |  '- snippetAttribute
+   |  |        |     |- TOKEN[type: SNIPPET_ATTR_NAME, text: region, line: 17, column: 35]
+   |  |        |     |- TOKEN[type: EQUALS, text: =, line: 17, column: 41]
+   |  |        |     '- TOKEN[type: ATTRIBUTE_VALUE, text: addMethod, line: 17, column: 42]
+   |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 17, column: 51]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 19, column: 2]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 19, column: 3]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 19, column: 4]
+   |  |  '- nonTightHtmlContent
+   |  |     |- TOKEN[type: TEXT, text: ✅ 5. Real usage from OpenJDK – file-based snippet:, line: 19, column: 5]
+   |  |     '- inlineTag
+   |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 20, column: 2]
+   |  |        |- snippetInlineTag
+   |  |        |  |- TOKEN[type: SNIPPET, text: snippet, line: 20, column: 4]
+   |  |        |  |- snippetAttribute
+   |  |        |  |  |- TOKEN[type: SNIPPET_ATTR_NAME, text: file, line: 20, column: 12]
+   |  |        |  |  |- TOKEN[type: EQUALS, text: =, line: 20, column: 16]
+   |  |        |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "doc-files/BitSetSample.java", line: 20, column: 17]
+   |  |        |  '- snippetAttribute
+   |  |        |     |- TOKEN[type: SNIPPET_ATTR_NAME, text: region, line: 20, column: 47]
+   |  |        |     |- TOKEN[type: EQUALS, text: =, line: 20, column: 53]
+   |  |        |     '- TOKEN[type: ATTRIBUTE_VALUE, text: DocGet, line: 20, column: 54]
+   |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 20, column: 60]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 22, column: 2]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: p, line: 22, column: 3]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 22, column: 4]
+   |  |  |- htmlContent
+   |  |  |  |- TOKEN[type: TEXT, text: ✅ 6. Real usage from OpenJDK – inline try-with-resources:, line: 22, column: 5]
+   |  |  |  |- inlineTag
+   |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 23, column: 2]
+   |  |  |  |  |- snippetInlineTag
+   |  |  |  |  |  |- TOKEN[type: SNIPPET, text: snippet, line: 23, column: 4]
+   |  |  |  |  |  |- snippetAttribute
+   |  |  |  |  |  |  |- TOKEN[type: SNIPPET_ATTR_NAME, text: lang, line: 23, column: 12]
+   |  |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 23, column: 16]
+   |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: java , line: 23, column: 17]
+   |  |  |  |  |  |- TOKEN[type: COLON, text: :, line: 23, column: 22]
+   |  |  |  |  |  '- snippetBody
+   |  |  |  |  |     |- TOKEN[type: TEXT, text:    try (InputStream in = new FileInputStream("file.txt")) , line: 24, column: 1]
+   |  |  |  |  |     |- TOKEN[type: TEXT, text: {, line: 24, column: 59]
+   |  |  |  |  |     |- TOKEN[type: TEXT, text:        // read from file, line: 25, column: 1]
+   |  |  |  |  |     |- TOKEN[type: TEXT, text:    , line: 26, column: 1]
+   |  |  |  |  |     |- TOKEN[type: TEXT, text: }, line: 26, column: 4]
+   |  |  |  |  |     '- TOKEN[type: TEXT, text:  , line: 27, column: 1]
+   |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 27, column: 2]
+   |  |  |  |- TOKEN[type: TEXT, text: ==========, line: 28, column: 2]
+   |  |  |  |- inlineTag
+   |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 29, column: 2]
+   |  |  |  |  |- snippetInlineTag
+   |  |  |  |  |  |- TOKEN[type: SNIPPET, text: snippet, line: 29, column: 4]
+   |  |  |  |  |  |- snippetAttribute
+   |  |  |  |  |  |  |- TOKEN[type: SNIPPET_ATTR_NAME, text: id, line: 29, column: 12]
+   |  |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 29, column: 14]
+   |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "entry-point", line: 29, column: 15]
+   |  |  |  |  |  |- snippetAttribute
+   |  |  |  |  |  |  |- TOKEN[type: SNIPPET_ATTR_NAME, text: lang, line: 29, column: 29]
+   |  |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 29, column: 33]
+   |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: java , line: 29, column: 34]
+   |  |  |  |  |  |- TOKEN[type: COLON, text: :, line: 29, column: 39]
+   |  |  |  |  |  '- snippetBody
+   |  |  |  |  |     |- TOKEN[type: TEXT, text:     public boolean run(DocletEnvironment environment) // @highlight substring="run", line: 30, column: 1]
+   |  |  |  |  |     '- TOKEN[type: TEXT, text:  , line: 31, column: 1]
+   |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 31, column: 2]
+   |  |  |  |- TOKEN[type: TEXT, text: =====, line: 32, column: 2]
+   |  |  |  '- inlineTag
+   |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 33, column: 2]
+   |  |  |     |- snippetInlineTag
+   |  |  |     |  |- TOKEN[type: SNIPPET, text: snippet, line: 33, column: 4]
+   |  |  |     |  |- TOKEN[type: COLON, text: :, line: 33, column: 12]
+   |  |  |     |  '- snippetBody
+   |  |  |     |     |- TOKEN[type: TEXT, text:  package com.example;, line: 34, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:  @Name("example.LogMessage"), line: 36, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:  @Label("Log Message"), line: 37, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:  @StackFilter("com.example.Logger::log"), line: 38, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:  class LogMessage extends Event , line: 39, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text: {, line: 39, column: 33]
+   |  |  |     |     |- TOKEN[type: TEXT, text:      @Label("Message"), line: 40, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:      String message;, line: 41, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:  , line: 42, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text: }, line: 42, column: 2]
+   |  |  |     |     |- TOKEN[type: TEXT, text:  public class Logger , line: 44, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text: {, line: 44, column: 22]
+   |  |  |     |     |- TOKEN[type: TEXT, text:      public static void log(String message) , line: 46, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text: {, line: 46, column: 45]
+   |  |  |     |     |- TOKEN[type: TEXT, text:          System.out.print(Instant.now() + " : " + message);, line: 47, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:          LogMessage event = new LogMessage();, line: 48, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:          event.message = message;, line: 49, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:          event.commit();, line: 50, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text:      , line: 51, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text: }, line: 51, column: 6]
+   |  |  |     |     |- TOKEN[type: TEXT, text:  , line: 52, column: 1]
+   |  |  |     |     |- TOKEN[type: TEXT, text: }, line: 52, column: 2]
+   |  |  |     |     '- TOKEN[type: TEXT, text:  , line: 53, column: 1]
+   |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 53, column: 2]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 54, column: 2]
+   |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 54, column: 3]
+   |  |     |- TOKEN[type: TAG_NAME, text: p, line: 54, column: 4]
+   |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 54, column: 5]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 55, column: 2]
+   |  |  |- snippetInlineTag
+   |  |  |  |- TOKEN[type: SNIPPET, text: snippet, line: 55, column: 4]
+   |  |  |  '- snippetAttribute
+   |  |  |     |- TOKEN[type: SNIPPET_ATTR_NAME, text: file, line: 55, column: 12]
+   |  |  |     |- TOKEN[type: EQUALS, text: =, line: 55, column: 16]
+   |  |  |     '- TOKEN[type: ATTRIBUTE_VALUE, text: "Example.java", line: 55, column: 17]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 55, column: 31]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 56, column: 2]
+   |  |  |- snippetInlineTag
+   |  |  |  |- TOKEN[type: SNIPPET, text: snippet, line: 56, column: 4]
+   |  |  |  |- TOKEN[type: COLON, text: :, line: 56, column: 12]
+   |  |  |  '- snippetBody
+   |  |  |     |- TOKEN[type: TEXT, text:    , line: 57, column: 1]
+   |  |  |     |- TOKEN[type: TEXT, text: {, line: 57, column: 4]
+   |  |  |     |- TOKEN[type: TEXT, text: @snippet lang=java : System.out.println("nested?"); , line: 57, column: 5]
+   |  |  |     |- TOKEN[type: TEXT, text: }, line: 57, column: 57]
+   |  |  |     '- TOKEN[type: TEXT, text:  , line: 58, column: 1]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 58, column: 2]
+   |  '- inlineTag
+   |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 60, column: 2]
+   |     |- snippetInlineTag
+   |     |  |- TOKEN[type: SNIPPET, text: snippet, line: 60, column: 4]
+   |     |  |- TOKEN[type: COLON, text: :, line: 60, column: 12]
+   |     |  '- snippetBody
+   |     |     |- TOKEN[type: TEXT, text:    /**, line: 61, column: 1]
+   |     |     |- TOKEN[type: TEXT, text:     * , line: 62, column: 1]
+   |     |     |- TOKEN[type: TEXT, text: {, line: 62, column: 7]
+   |     |     |- TOKEN[type: TEXT, text: @link Object, line: 62, column: 8]
+   |     |     |- TOKEN[type: TEXT, text: }, line: 62, column: 20]
+   |     |     |- TOKEN[type: TEXT, text:     * , line: 63, column: 1]
+   |     |     |- TOKEN[type: TEXT, text: {, line: 63, column: 7]
+   |     |     |- TOKEN[type: TEXT, text: @code int x = 5;, line: 63, column: 8]
+   |     |     |- TOKEN[type: TEXT, text: }, line: 63, column: 24]
+   |     |     |- TOKEN[type: TEXT, text:     *\/, line: 64, column: 1]
+   |     |     '- TOKEN[type: TEXT, text:  , line: 65, column: 1]
+   |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 65, column: 2]
+   '- TOKEN[type: EOF, text: <EOF>, line: 65, column: 3]

@@ -47,6 +47,7 @@ inlineTag
         | indexInlineTag
         | returnInlineTag
         | literalInlineTag
+        | snippetInlineTag
         | customInlineTag)
       JAVADOC_INLINE_TAG_END
     ;
@@ -71,6 +72,8 @@ returnInlineTag: RETURN description?;
 
 literalInlineTag: LITERAL description?;
 
+snippetInlineTag: SNIPPET snippetAttributes+=snippetAttribute* (COLON snippetBody)?;
+
 customInlineTag: CUSTOM_NAME description?;
 
 reference
@@ -93,6 +96,14 @@ memberReference: IDENTIFIER (LPAREN parameterTypeList? RPAREN)?;
 parameterTypeList: PARAMETER_TYPE (COMMA PARAMETER_TYPE)*;
 
 propertyName: IDENTIFIER (DOT IDENTIFIER)*;
+
+snippetAttribute
+    : SNIPPET_ATTR_NAME EQUALS ATTRIBUTE_VALUE
+    ;
+
+snippetBody
+    : TEXT+
+    ;
 
 blockTag
     : authorTag
