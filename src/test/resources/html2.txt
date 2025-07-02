@@ -6,7 +6,7 @@
    |  |  |  |- TOKEN[type: TAG_NAME, text: font, line: 1, column: 3]
    |  |  |  |- htmlAttribute
    |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: size, line: 1, column: 8]
-   |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 1, column: 12]
+   |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 1, column: 12]
    |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: 3, line: 1, column: 13]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 1, column: 14]
    |  |  |- htmlContent
@@ -27,7 +27,7 @@
    |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 3, column: 18]
    |  |  |  |  |  |  |  |- htmlAttribute
    |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 3, column: 20]
-   |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 3, column: 24]
+   |  |  |  |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 3, column: 24]
    |  |  |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "http://www.antlr3.org", line: 3, column: 25]
    |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 48]
    |  |  |  |  |  |  |- htmlContent
@@ -59,7 +59,7 @@
    |     |  |- TOKEN[type: TAG_NAME, text: div, line: 6, column: 3]
    |     |  |- htmlAttribute
    |     |  |  |- TOKEN[type: TAG_ATTR_NAME, text: id, line: 6, column: 7]
-   |     |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 6, column: 9]
+   |     |  |  |- TOKEN[type: EQUALS, text: =, line: 6, column: 9]
    |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "terence", line: 6, column: 10]
    |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 19]
    |     |- htmlContent
@@ -68,11 +68,11 @@
    |     |  |  |- TOKEN[type: TAG_NAME, text: img, line: 7, column: 3]
    |     |  |  |- htmlAttribute
    |     |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: src, line: 7, column: 7]
-   |     |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 7, column: 10]
+   |     |  |  |  |- TOKEN[type: EQUALS, text: =, line: 7, column: 10]
    |     |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "images/terence.jpg", line: 7, column: 11]
    |     |  |  |- htmlAttribute
    |     |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: alt, line: 7, column: 32]
-   |     |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 7, column: 35]
+   |     |  |  |  |- TOKEN[type: EQUALS, text: =, line: 7, column: 35]
    |     |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "terence", line: 7, column: 36]
    |     |  |  '- TOKEN[type: TAG_SLASH_CLOSE, text: />, line: 7, column: 46]
    |     |  |- htmlElement
@@ -96,7 +96,7 @@
    |     |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 10, column: 18]
    |     |  |  |  |- htmlAttribute
    |     |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 10, column: 20]
-   |     |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 10, column: 24]
+   |     |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 10, column: 24]
    |     |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "http://www.cs.usfca.edu/~parrt", line: 10, column: 25]
    |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 10, column: 57]
    |     |  |  |- htmlContent

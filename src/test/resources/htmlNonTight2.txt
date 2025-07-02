@@ -52,11 +52,11 @@
    |  |  |  |  |- TOKEN[type: TAG_NAME, text: img, line: 7, column: 49]
    |  |  |  |  |- htmlAttribute
    |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: src, line: 7, column: 53]
-   |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 7, column: 56]
+   |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 7, column: 56]
    |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "icon.png", line: 7, column: 57]
    |  |  |  |  |- htmlAttribute
    |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: alt, line: 7, column: 68]
-   |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 7, column: 71]
+   |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 7, column: 71]
    |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "icon", line: 7, column: 72]
    |  |  |  |  '- TOKEN[type: TAG_SLASH_CLOSE, text: />, line: 7, column: 78]
    |  |  |  |- TOKEN[type: TEXT, text:  icon, line: 7, column: 80]
