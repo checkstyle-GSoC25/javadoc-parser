@@ -99,6 +99,11 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testCustomInlineTag() throws IOException {
+        verifyAst(getPath("customInlineTag.txt"), getPath("customInlineTag.javadoc"));
+    }
+
+    @Test
     public void testBlockAuthorTag() throws IOException {
         verifyAst(getPath("blockAuthor.txt"), getPath("blockAuthor.javadoc"));
     }
