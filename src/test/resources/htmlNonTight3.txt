@@ -7,7 +7,7 @@
    |     |  |- TOKEN[type: TAG_NAME, text: html, line: 3, column: 3]
    |     |  |- htmlAttribute
    |     |  |  |- TOKEN[type: TAG_ATTR_NAME, text: lang, line: 3, column: 8]
-   |     |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 3, column: 12]
+   |     |  |  |- TOKEN[type: EQUALS, text: =, line: 3, column: 12]
    |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "en", line: 3, column: 13]
    |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 17]
    |     |- htmlContent
@@ -22,7 +22,7 @@
    |     |  |  |  |  |- TOKEN[type: TAG_NAME, text: meta, line: 5, column: 3]
    |     |  |  |  |  |- htmlAttribute
    |     |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: charset, line: 5, column: 8]
-   |     |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 5, column: 15]
+   |     |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 5, column: 15]
    |     |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "UTF-8", line: 5, column: 16]
    |     |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 5, column: 23]
    |     |  |  |  |- htmlElement
@@ -42,11 +42,11 @@
    |     |  |  |  |  |- TOKEN[type: TAG_NAME, text: link, line: 7, column: 3]
    |     |  |  |  |  |- htmlAttribute
    |     |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: rel, line: 7, column: 8]
-   |     |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 7, column: 11]
+   |     |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 7, column: 11]
    |     |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "stylesheet", line: 7, column: 12]
    |     |  |  |  |  |- htmlAttribute
    |     |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 7, column: 25]
-   |     |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 7, column: 29]
+   |     |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 7, column: 29]
    |     |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "styles.css", line: 7, column: 30]
    |     |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 42]
    |     |  |  |  |- htmlElement
@@ -54,11 +54,11 @@
    |     |  |  |  |  |- TOKEN[type: TAG_NAME, text: meta, line: 8, column: 3]
    |     |  |  |  |  |- htmlAttribute
    |     |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: name, line: 8, column: 8]
-   |     |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 8, column: 12]
+   |     |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 8, column: 12]
    |     |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "viewport", line: 8, column: 13]
    |     |  |  |  |  |- htmlAttribute
    |     |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: content, line: 8, column: 24]
-   |     |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 8, column: 31]
+   |     |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 8, column: 31]
    |     |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "width=device-width, initial-scale=1.0", line: 8, column: 32]
    |     |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 71]
    |     |  |  |  '- htmlElement
@@ -66,7 +66,7 @@
    |     |  |  |     |- TOKEN[type: TAG_NAME, text: script, line: 9, column: 3]
    |     |  |  |     |- htmlAttribute
    |     |  |  |     |  |- TOKEN[type: TAG_ATTR_NAME, text: src, line: 9, column: 10]
-   |     |  |  |     |  |- TOKEN[type: TAG_EQUALS, text: =, line: 9, column: 13]
+   |     |  |  |     |  |- TOKEN[type: EQUALS, text: =, line: 9, column: 13]
    |     |  |  |     |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "script.js", line: 9, column: 14]
    |     |  |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 25]
    |     |  |  '- htmlTagEnd
@@ -181,7 +181,7 @@
    |     |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: option, line: 30, column: 3]
    |     |  |  |  |  |  |  |  |- htmlAttribute
    |     |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: value, line: 30, column: 10]
-   |     |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 30, column: 15]
+   |     |  |  |  |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 30, column: 15]
    |     |  |  |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "1", line: 30, column: 16]
    |     |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 30, column: 19]
    |     |  |  |  |  |  |  '- nonTightHtmlContent
@@ -192,7 +192,7 @@
    |     |  |  |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: option, line: 31, column: 3]
    |     |  |  |  |  |  |  |  |- htmlAttribute
    |     |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: value, line: 31, column: 10]
-   |     |  |  |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 31, column: 15]
+   |     |  |  |  |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 31, column: 15]
    |     |  |  |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "2", line: 31, column: 16]
    |     |  |  |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 31, column: 19]
    |     |  |  |  |  |  |  '- nonTightHtmlContent
@@ -203,7 +203,7 @@
    |     |  |  |  |  |     |  |- TOKEN[type: TAG_NAME, text: option, line: 32, column: 3]
    |     |  |  |  |  |     |  |- htmlAttribute
    |     |  |  |  |  |     |  |  |- TOKEN[type: TAG_ATTR_NAME, text: value, line: 32, column: 10]
-   |     |  |  |  |  |     |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 32, column: 15]
+   |     |  |  |  |  |     |  |  |- TOKEN[type: EQUALS, text: =, line: 32, column: 15]
    |     |  |  |  |  |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "3", line: 32, column: 16]
    |     |  |  |  |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 32, column: 19]
    |     |  |  |  |  |     '- nonTightHtmlContent
@@ -224,7 +224,7 @@
    |     |  |  |     |  |  |- TOKEN[type: TAG_NAME, text: custom-box, line: 36, column: 3]
    |     |  |  |     |  |  |- htmlAttribute
    |     |  |  |     |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: data-info, line: 36, column: 14]
-   |     |  |  |     |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 36, column: 23]
+   |     |  |  |     |  |  |  |- TOKEN[type: EQUALS, text: =, line: 36, column: 23]
    |     |  |  |     |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "yes", line: 36, column: 24]
    |     |  |  |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 36, column: 29]
    |     |  |  |     |  |- htmlContent

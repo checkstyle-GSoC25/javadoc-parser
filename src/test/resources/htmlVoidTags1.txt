@@ -69,11 +69,11 @@
    |  |  |- TOKEN[type: TAG_NAME, text: img, line: 15, column: 3]
    |  |  |- htmlAttribute
    |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: src, line: 15, column: 7]
-   |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 15, column: 10]
+   |  |  |  |- TOKEN[type: EQUALS, text: =, line: 15, column: 10]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "example.png", line: 15, column: 11]
    |  |  |- htmlAttribute
    |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: alt, line: 15, column: 25]
-   |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 15, column: 28]
+   |  |  |  |- TOKEN[type: EQUALS, text: =, line: 15, column: 28]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "Example image", line: 15, column: 29]
    |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 15, column: 44]
    |  |- htmlElement
@@ -89,11 +89,11 @@
    |  |  |- TOKEN[type: TAG_NAME, text: input, line: 18, column: 3]
    |  |  |- htmlAttribute
    |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: type, line: 18, column: 9]
-   |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 18, column: 13]
+   |  |  |  |- TOKEN[type: EQUALS, text: =, line: 18, column: 13]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "text", line: 18, column: 14]
    |  |  |- htmlAttribute
    |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: name, line: 18, column: 21]
-   |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 18, column: 25]
+   |  |  |  |- TOKEN[type: EQUALS, text: =, line: 18, column: 25]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "username", line: 18, column: 26]
    |  |  '- TOKEN[type: TAG_SLASH_CLOSE, text: />, line: 18, column: 36]
    |  |- htmlElement
@@ -101,7 +101,7 @@
    |  |  |- TOKEN[type: TAG_NAME, text: meta, line: 19, column: 3]
    |  |  |- htmlAttribute
    |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: charset, line: 19, column: 8]
-   |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 19, column: 15]
+   |  |  |  |- TOKEN[type: EQUALS, text: =, line: 19, column: 15]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "UTF-8", line: 19, column: 16]
    |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 19, column: 23]
    |  |- htmlElement
@@ -109,11 +109,11 @@
    |  |  |- TOKEN[type: TAG_NAME, text: link, line: 20, column: 3]
    |  |  |- htmlAttribute
    |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: rel, line: 20, column: 8]
-   |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 20, column: 11]
+   |  |  |  |- TOKEN[type: EQUALS, text: =, line: 20, column: 11]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "stylesheet", line: 20, column: 12]
    |  |  |- htmlAttribute
    |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 20, column: 25]
-   |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 20, column: 29]
+   |  |  |  |- TOKEN[type: EQUALS, text: =, line: 20, column: 29]
    |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "style.css", line: 20, column: 30]
    |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 20, column: 41]
    |  '- htmlElement
@@ -121,19 +121,19 @@
    |     |- TOKEN[type: TAG_NAME, text: area, line: 21, column: 3]
    |     |- htmlAttribute
    |     |  |- TOKEN[type: TAG_ATTR_NAME, text: shape, line: 21, column: 8]
-   |     |  |- TOKEN[type: TAG_EQUALS, text: =, line: 21, column: 13]
+   |     |  |- TOKEN[type: EQUALS, text: =, line: 21, column: 13]
    |     |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "rect", line: 21, column: 14]
    |     |- htmlAttribute
    |     |  |- TOKEN[type: TAG_ATTR_NAME, text: coords, line: 21, column: 21]
-   |     |  |- TOKEN[type: TAG_EQUALS, text: =, line: 21, column: 27]
+   |     |  |- TOKEN[type: EQUALS, text: =, line: 21, column: 27]
    |     |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "34,44,270,350", line: 21, column: 28]
    |     |- htmlAttribute
    |     |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 21, column: 44]
-   |     |  |- TOKEN[type: TAG_EQUALS, text: =, line: 21, column: 48]
+   |     |  |- TOKEN[type: EQUALS, text: =, line: 21, column: 48]
    |     |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "link.html", line: 21, column: 49]
    |     |- htmlAttribute
    |     |  |- TOKEN[type: TAG_ATTR_NAME, text: alt, line: 21, column: 61]
-   |     |  |- TOKEN[type: TAG_EQUALS, text: =, line: 21, column: 64]
+   |     |  |- TOKEN[type: EQUALS, text: =, line: 21, column: 64]
    |     |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "Link", line: 21, column: 65]
    |     '- TOKEN[type: TAG_CLOSE, text: >, line: 21, column: 71]
    '- TOKEN[type: EOF, text: <EOF>, line: 21, column: 72]

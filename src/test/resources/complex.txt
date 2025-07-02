@@ -20542,7 +20542,7 @@
    |  |  |  |     |     |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 299, column: 18]
    |  |  |  |     |     |  |  |  |  |  |- htmlAttribute
    |  |  |  |     |     |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 299, column: 20]
-   |  |  |  |     |     |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 299, column: 24]
+   |  |  |  |     |     |  |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 299, column: 24]
    |  |  |  |     |     |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "#level1", line: 299, column: 25]
    |  |  |  |     |     |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 299, column: 34]
    |  |  |  |     |     |  |  |  |  |- htmlContent

@@ -219,11 +219,11 @@
    |  |  |     |     |  |- TOKEN[type: TAG_NAME, text: a, line: 21, column: 27]
    |  |  |     |     |  |- htmlAttribute
    |  |  |     |     |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 21, column: 29]
-   |  |  |     |     |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 21, column: 33]
+   |  |  |     |     |  |  |- TOKEN[type: EQUALS, text: =, line: 21, column: 33]
    |  |  |     |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com", line: 21, column: 34]
    |  |  |     |     |  |- htmlAttribute
    |  |  |     |     |  |  |- TOKEN[type: TAG_ATTR_NAME, text: target, line: 21, column: 56]
-   |  |  |     |     |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 21, column: 62]
+   |  |  |     |     |  |  |- TOKEN[type: EQUALS, text: =, line: 21, column: 62]
    |  |  |     |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "_blank", line: 21, column: 63]
    |  |  |     |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 21, column: 71]
    |  |  |     |     |- htmlContent
@@ -412,7 +412,7 @@
    |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: span, line: 46, column: 15]
    |  |  |  |  |  |- htmlAttribute
    |  |  |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: style, line: 46, column: 20]
-   |  |  |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 46, column: 25]
+   |  |  |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 46, column: 25]
    |  |  |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "color:green", line: 46, column: 26]
    |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 39]
    |  |  |  |  |- htmlContent

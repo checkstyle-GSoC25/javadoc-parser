@@ -181,7 +181,7 @@
    |     |  |  |- TOKEN[type: TAG_NAME, text: table, line: 35, column: 4]
    |     |  |  |- htmlAttribute
    |     |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: summary, line: 35, column: 10]
-   |     |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 35, column: 17]
+   |     |  |  |  |- TOKEN[type: EQUALS, text: =, line: 35, column: 17]
    |     |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "Mixed content", line: 35, column: 18]
    |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 35, column: 33]
    |     |  |- htmlContent
@@ -361,7 +361,7 @@
    |        |  |- TOKEN[type: TAG_NAME, text: a, line: 46, column: 9]
    |        |  |- htmlAttribute
    |        |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 46, column: 11]
-   |        |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 46, column: 15]
+   |        |  |  |- TOKEN[type: EQUALS, text: =, line: 46, column: 15]
    |        |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com/?q={@code madness}", line: 46, column: 16]
    |        |  '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 56]
    |        |- htmlContent

@@ -65,7 +65,7 @@
    |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 3, column: 31]
    |  |  |  |- htmlAttribute
    |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 3, column: 33]
-   |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 3, column: 37]
+   |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 3, column: 37]
    |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: https://example.com, line: 3, column: 38]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 57]
    |  |  |- htmlContent
@@ -227,11 +227,11 @@
    |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 28, column: 26]
    |  |  |  |- htmlAttribute
    |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 28, column: 28]
-   |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 28, column: 32]
+   |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 28, column: 32]
    |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: 'https://example.org', line: 28, column: 33]
    |  |  |  |- htmlAttribute
    |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: target, line: 28, column: 55]
-   |  |  |  |  |- TOKEN[type: TAG_EQUALS, text: =, line: 28, column: 61]
+   |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 28, column: 61]
    |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "_blank", line: 28, column: 62]
    |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 28, column: 70]
    |  |  |- htmlContent
