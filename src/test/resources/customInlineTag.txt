@@ -1,0 +1,63 @@
+'- javadoc
+   |- mainDescription
+   |  |- TOKEN[type: TEXT, text: Processes the incoming data stream and applies configured rules., line: 1, column: 2]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
+   |  |  |- customInlineTag
+   |  |  |  |- TOKEN[type: CUSTOM_NAME, text: highlight, line: 3, column: 4]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  This method is critical for pipeline integrity., line: 3, column: 13]
+   |  |  |     |- TOKEN[type: TEXT, text:  It ensures , line: 4, column: 1]
+   |  |  |     |- htmlElement
+   |  |  |     |  |- htmlTagStart
+   |  |  |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 4, column: 13]
+   |  |  |     |  |  |- TOKEN[type: TAG_NAME, text: b, line: 4, column: 14]
+   |  |  |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 4, column: 15]
+   |  |  |     |  |- htmlContent
+   |  |  |     |  |  '- TOKEN[type: TEXT, text: data validation, line: 4, column: 16]
+   |  |  |     |  '- htmlTagEnd
+   |  |  |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 4, column: 31]
+   |  |  |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 4, column: 32]
+   |  |  |     |     |- TOKEN[type: TAG_NAME, text: b, line: 4, column: 33]
+   |  |  |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 4, column: 34]
+   |  |  |     '- TOKEN[type: TEXT, text:  and transformation., line: 4, column: 35]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 55]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 2]
+   |  |  |- customInlineTag
+   |  |  |  |- TOKEN[type: CUSTOM_NAME, text: linkToTicket, line: 6, column: 4]
+   |  |  |  '- description
+   |  |  |     '- TOKEN[type: TEXT, text:  DEV-1452, line: 6, column: 16]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 25]
+   |  |- TOKEN[type: TEXT, text:  – Tracks the issue related to pipeline stalls., line: 6, column: 26]
+   |  |- inlineTag
+   |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 2]
+   |  |  |- customInlineTag
+   |  |  |  |- TOKEN[type: CUSTOM_NAME, text: apiNote, line: 8, column: 4]
+   |  |  |  '- description
+   |  |  |     |- TOKEN[type: TEXT, text:  Designed to be used with , line: 8, column: 11]
+   |  |  |     |- inlineTag
+   |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 37]
+   |  |  |     |  |- customInlineTag
+   |  |  |     |  |  |- TOKEN[type: CUSTOM_NAME, text: secure, line: 8, column: 39]
+   |  |  |     |  |  '- description
+   |  |  |     |  |     '- TOKEN[type: TEXT, text:  authenticated sources only, line: 8, column: 45]
+   |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 72]
+   |  |  |     '- TOKEN[type: TEXT, text: ., line: 8, column: 73]
+   |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 74]
+   |  '- inlineTag
+   |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 10, column: 2]
+   |     |- customInlineTag
+   |     |  |- TOKEN[type: CUSTOM_NAME, text: todo, line: 10, column: 4]
+   |     |  '- description
+   |     |     |- TOKEN[type: TEXT, text:  Refactor to support , line: 10, column: 8]
+   |     |     |- inlineTag
+   |     |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 10, column: 29]
+   |     |     |  |- customInlineTag
+   |     |     |  |  |- TOKEN[type: CUSTOM_NAME, text: highlight, line: 10, column: 31]
+   |     |     |  |  '- description
+   |     |     |  |     '- TOKEN[type: TEXT, text:  streaming mode, line: 10, column: 40]
+   |     |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 10, column: 55]
+   |     |     '- TOKEN[type: TEXT, text:  for large datasets., line: 10, column: 56]
+   |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 10, column: 76]
+   '- TOKEN[type: EOF, text: <EOF>, line: 11, column: 0]
