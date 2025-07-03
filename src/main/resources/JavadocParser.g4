@@ -110,6 +110,8 @@ blockTag
     | deprecatedTag
     | returnTag
     | parameterTag
+    | throwsTag
+    | exceptionTag
     | customBlockTag
     ;
 
@@ -121,7 +123,13 @@ returnTag: RETURN_LITERAL description?;
 
 parameterTag: PARAM_LITERAL PARAMETER_NAME description?;
 
+throwsTag: THROWS exceptionName=identifier description?;
+
+exceptionTag: EXCEPTION exceptionName=identifier description?;
+
 customBlockTag: CUSTOM_NAME description;
+
+identifier: IDENTIFIER;
 
 description : (TEXT | inlineTag | htmlElement)+ ;
 
