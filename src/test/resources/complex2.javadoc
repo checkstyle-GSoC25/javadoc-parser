@@ -42,7 +42,7 @@
  * Markdown-style:
  * - List item one {@index indexTerm}
  * - List with inline `code` and {@code {weird {nested}} braces}
- * {@snippet for (int i = 0; i < 10; i++) { System.out.print(i + " "); }}
+ * {@snippet : for (int i = 0; i < 10; i++) { System.out.print(i + " "); }}
  * @see <a href="https://example.com/?q={@code madness}">Query Link</a>
  * @see #legacyMethod()
  * @see java.util.stream.Stream#map(java.util.function.Function)

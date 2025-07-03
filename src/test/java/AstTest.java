@@ -104,6 +104,11 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testInlineSnippet() throws IOException {
+        verifyAst(getPath("snippetTag.txt"), getPath("snippetTag.javadoc"));
+    }
+
+    @Test
     public void testBlockAuthorTag() throws IOException {
         verifyAst(getPath("blockAuthor.txt"), getPath("blockAuthor.javadoc"));
     }

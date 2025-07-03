@@ -343,14 +343,17 @@
    |           |  |  |- TOKEN[type: TEXT, text: }, line: 44, column: 55]
    |           |  |  '- TOKEN[type: TEXT, text:  braces, line: 44, column: 56]
    |           |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 44, column: 63]
-   |           |- inlineTag
-   |           |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 45, column: 3]
-   |           |  |- customInlineTag
-   |           |  |  |- TOKEN[type: CUSTOM_NAME, text: snippet, line: 45, column: 5]
-   |           |  |  '- description
-   |           |  |     '- TOKEN[type: TEXT, text:  for (int i = 0; i < 10; i++) { System.out.print(i + " "); , line: 45, column: 12]
-   |           |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 45, column: 71]
-   |           '- TOKEN[type: TEXT, text: }, line: 45, column: 72]
+   |           '- inlineTag
+   |              |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 45, column: 3]
+   |              |- snippetInlineTag
+   |              |  |- TOKEN[type: SNIPPET, text: snippet, line: 45, column: 5]
+   |              |  |- TOKEN[type: COLON, text: :, line: 45, column: 13]
+   |              |  '- snippetBody
+   |              |     |- TOKEN[type: TEXT, text:  for (int i = 0; i < 10; i++) , line: 45, column: 14]
+   |              |     |- TOKEN[type: TEXT, text: {, line: 45, column: 44]
+   |              |     |- TOKEN[type: TEXT, text:  System.out.print(i + " "); , line: 45, column: 45]
+   |              |     '- TOKEN[type: TEXT, text: }, line: 45, column: 73]
+   |              '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 45, column: 74]
    |- blockTag
    |  |- TOKEN[type: CUSTOM_NAME, text: @see, line: 46, column: 3]
    |  '- description
