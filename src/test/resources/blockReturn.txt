@@ -40,7 +40,9 @@
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 20]
    |     '- TOKEN[type: TEXT, text:  otherwise., line: 4, column: 21]
    |- blockTag
-   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 5, column: 2]
+   |  '- TOKEN[type: RETURN_LITERAL, text: @return, line: 5, column: 2]
+   |- blockTag
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 6, column: 2]
    |  '- description
-   |     '- TOKEN[type: TEXT, text:  John Doe, line: 5, column: 9]
-   '- TOKEN[type: EOF, text: <EOF>, line: 5, column: 18]
+   |     '- TOKEN[type: TEXT, text:  John Doe, line: 6, column: 9]
+   '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 18]
