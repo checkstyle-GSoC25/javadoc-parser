@@ -1,0 +1,49 @@
+'- javadoc
+   |- blockTag
+   |  |- TOKEN[type: THROWS, text: @throws, line: 1, column: 2]
+   |  |- identifier
+   |  |  '- TOKEN[type: IDENTIFIER, text: IOException, line: 1, column: 10]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  if the file cannot be read., line: 1, column: 21]
+   |- blockTag
+   |  |- TOKEN[type: THROWS, text: @throws, line: 2, column: 2]
+   |  |- identifier
+   |  |  '- TOKEN[type: IDENTIFIER, text: NullPointerException, line: 2, column: 10]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text: if the input file is null., line: 3, column: 6]
+   |- blockTag
+   |  |- TOKEN[type: THROWS, text: @throws, line: 4, column: 2]
+   |  |- identifier
+   |  |  '- TOKEN[type: IDENTIFIER, text: NullPointerException, line: 5, column: 6]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text: if the input file is null., line: 6, column: 6]
+   |- blockTag
+   |  |- TOKEN[type: EXCEPTION, text: @exception, line: 7, column: 2]
+   |  |- identifier
+   |  |  '- TOKEN[type: IDENTIFIER, text: IllegalStateException, line: 7, column: 13]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  when called in an invalid state, line: 7, column: 34]
+   |- blockTag
+   |  |- TOKEN[type: EXCEPTION, text: @exception, line: 8, column: 2]
+   |  |- identifier
+   |  |  '- TOKEN[type: IDENTIFIER, text: UnexpectedErrorException, line: 9, column: 6]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  if something very unexpected happens., line: 9, column: 30]
+   |- blockTag
+   |  |- TOKEN[type: EXCEPTION, text: @exception, line: 10, column: 2]
+   |  |- identifier
+   |  |  '- TOKEN[type: IDENTIFIER, text: CustomUncheckedException, line: 10, column: 13]
+   |  '- description
+   |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 11, column: 10]
+   |     |- inheritDocInlineTag
+   |     |  '- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 11, column: 12]
+   |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 22]
+   |- blockTag
+   |  |- TOKEN[type: THROWS, text: @throws, line: 12, column: 2]
+   |  '- identifier
+   |     '- TOKEN[type: IDENTIFIER, text: IOException, line: 12, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: EXCEPTION, text: @exception, line: 13, column: 2]
+   |  '- identifier
+   |     '- TOKEN[type: IDENTIFIER, text: SecurityException, line: 13, column: 13]
+   '- TOKEN[type: EOF, text: <EOF>, line: 13, column: 30]

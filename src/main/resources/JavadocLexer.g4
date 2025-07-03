@@ -10,7 +10,7 @@ tokens {
     AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
     SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL, SYSTEM_PROPERTY,
-    INDEX, INDEX_TERM, RETURN, SNIPPET, SNIPPET_ATTR_NAME, COLON, PARAMETER_NAME
+    INDEX, INDEX_TERM, RETURN, SNIPPET, SNIPPET_ATTR_NAME, COLON, EXCEPTION, THROWS, PARAMETER_NAME
 }
 
 @header {
@@ -307,7 +307,17 @@ AUTHOR_LITERAL: 'author' -> pushMode(text);
 DEPRECATED_LITERAL : 'deprecated' -> pushMode(text);
 RETURN_LITERAL: 'return' -> pushMode(text);
 PARAM_LITERAL: 'param' -> pushMode(parameterName);
+EXCEPTION: 'exception' -> pushMode(exceptionName);
+THROWS: 'throws' -> pushMode(exceptionName);
 BlockTag_CUSTOM_NAME: [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(text);
+
+
+mode exceptionName;
+EXCEPTION_NAME: ([a-zA-Z0-9_$] | '.')+ -> type(IDENTIFIER), mode(text);
+ExceptionName_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
+    ;
+ExceptionName_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 
 mode parameterName;
 PARAMETER_NAME: [a-zA-Z0-9<>_$]+ -> mode(text);
