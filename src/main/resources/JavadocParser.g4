@@ -104,7 +104,7 @@ blockTag
 
 authorTag: AUTHOR_LITERAL description;
 
-deprecatedTag: DEPRECATED_LITERAL description;
+deprecatedTag: DEPRECATED_LITERAL description?;
 
 returnTag: RETURN_LITERAL description;
 

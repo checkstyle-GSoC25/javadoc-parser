@@ -109,6 +109,11 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testBlockDeprecatedTag() throws IOException {
+        verifyAst(getPath("blockDeprecated.txt"), getPath("blockDeprecated.javadoc"));
+    }
+
+    @Test
     public void testBlockReturnTag() throws IOException {
         verifyAst(getPath("blockReturn.txt"), getPath("blockReturn.javadoc"));
     }
