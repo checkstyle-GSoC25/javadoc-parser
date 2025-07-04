@@ -1,32 +1,27 @@
 '- javadoc
    |- blockTag
    |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 1, column: 2]
-   |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: name, line: 1, column: 9]
+   |  |- TOKEN[type: PARAMETER_NAME, text: name, line: 1, column: 9]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  the user's name, line: 1, column: 13]
    |- blockTag
    |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 2, column: 2]
-   |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: age, line: 2, column: 9]
+   |  |- TOKEN[type: PARAMETER_NAME, text: age, line: 2, column: 9]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  the user's age in years, line: 2, column: 12]
    |- blockTag
    |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 3, column: 2]
-   |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: email, line: 3, column: 12]
+   |  |- TOKEN[type: PARAMETER_NAME, text: email, line: 3, column: 12]
    |  '- description
    |     '- TOKEN[type: TEXT, text: ,   the user's email address, line: 3, column: 17]
    |- blockTag
    |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 4, column: 2]
-   |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: address, line: 4, column: 12]
+   |  |- TOKEN[type: PARAMETER_NAME, text: address, line: 4, column: 12]
    |  '- description
    |     '- TOKEN[type: TEXT, text: the user's physical address, line: 5, column: 8]
    |- blockTag
    |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 6, column: 1]
-   |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: mode, line: 6, column: 8]
+   |  |- TOKEN[type: PARAMETER_NAME, text: mode, line: 6, column: 8]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  one of , line: 6, column: 12]
    |     |- inlineTag
@@ -49,4 +44,25 @@
    |        |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 56]
    |        |  '- TOKEN[type: TEXT, text:  "none", line: 6, column: 60]
    |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 67]
-   '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 68]
+   |- blockTag
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 7, column: 2]
+   |  |- TOKEN[type: PARAMETER_NAME, text: c, line: 7, column: 10]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text: int specifying a character to be written, line: 8, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 9, column: 2]
+   |  |- TOKEN[type: PARAMETER_NAME, text: <E>, line: 9, column: 9]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  Type of component elements, line: 9, column: 12]
+   |- blockTag
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 10, column: 2]
+   |  |- TOKEN[type: PARAMETER_NAME, text: <T>, line: 10, column: 9]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text: the type of the element being magnified, line: 11, column: 12]
+   |- blockTag
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 12, column: 2]
+   |  '- TOKEN[type: PARAMETER_NAME, text: <R>, line: 12, column: 9]
+   |- blockTag
+   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 13, column: 2]
+   |  '- TOKEN[type: PARAMETER_NAME, text: x, line: 13, column: 9]
+   '- TOKEN[type: EOF, text: <EOF>, line: 13, column: 10]

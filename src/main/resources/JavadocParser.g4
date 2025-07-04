@@ -119,9 +119,7 @@ deprecatedTag: DEPRECATED_LITERAL description?;
 
 returnTag: RETURN_LITERAL description?;
 
-parameterTag: PARAM_LITERAL parameterName description;
-
-parameterName: IDENTIFIER;
+parameterTag: PARAM_LITERAL PARAMETER_NAME description?;
 
 customBlockTag: CUSTOM_NAME description;
 
