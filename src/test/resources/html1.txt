@@ -110,8 +110,7 @@
    |        '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 6]
    |- blockTag
    |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 16, column: 2]
-   |  |- parameterName
-   |  |  '- TOKEN[type: IDENTIFIER, text: collection, line: 16, column: 9]
+   |  |- TOKEN[type: PARAMETER_NAME, text: collection, line: 16, column: 9]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  the source collection, line: 16, column: 19]
    |- blockTag
