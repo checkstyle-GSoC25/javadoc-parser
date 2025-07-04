@@ -387,7 +387,7 @@
    |  '- description
    |     '- TOKEN[type: TEXT, text:  java.util.stream.Stream#map(java.util.function.Function), line: 48, column: 7]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @since, line: 49, column: 3]
+   |  |- TOKEN[type: SINCE, text: @since, line: 49, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  9.9.9-beta🔥, line: 49, column: 9]
    |- blockTag
