@@ -27,7 +27,7 @@ import org.antlr.v4.runtime.Token;
     private int previousTokenType = 0;
     private Token previousToken = null;
     private boolean afterNewline = true;
-    private boolean isJavadocTag = true;
+    private boolean isJavadocBlockTag = true;
     private boolean hasSeenTagName = false;
     private int braceCounter = 0;
 
@@ -45,22 +45,22 @@ import org.antlr.v4.runtime.Token;
     public boolean isNormalText() {
         int nextChar = _input.LA(1);
         int afterNextChar = _input.LA(2);
-        boolean isJavadocTag = isJavadocTag();
+        boolean isJavadocBlockTag = isJavadocBlockTag();
         boolean isHtmlTag = nextChar == '<'
                     && (Character.isLetter(afterNextChar) || afterNextChar == '/');
 
         boolean isInlineTag = nextChar == '{' && afterNextChar == '@';
-        return !isJavadocTag && !isHtmlTag && !isInlineTag;
+        return !isJavadocBlockTag && !isHtmlTag && !isInlineTag;
     }
 
-    public boolean isJavadocTag() {
+    public boolean isJavadocBlockTag() {
         if (previousToken == null) {
             return true;
         }
         int nextChar = _input.LA(1);
 
-        return (previousTokenType == WS || previousTokenType == LEADING_ASTERISK)
-                        && nextChar == '@';
+        return (previousTokenType == WS || previousTokenType == LEADING_ASTERISK
+                || previousTokenType == NEWLINE) && nextChar == '@';
     }
 
 //    public int nextNonWhitespaceChar() {
@@ -112,6 +112,10 @@ NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> channel(NEWLINES)
     ;
 
+BLOCK_TAG_ENTRY
+    : {isJavadocBlockTag()}? '@' -> pushMode(blockTag), more
+    ;
+
 mode text;
 
 Text_NEWLINE
@@ -126,8 +130,8 @@ fragment TEXT_CHAR
     : {isNormalText()}? ~[\r\n]
     ;
 
-BLOCK_TAG_ENTRY
-    : {isJavadocTag()}? '@' -> pushMode(blockTag), more
+BLOCK_TAG_ENTRY2
+    : {isJavadocBlockTag()}? '@' -> pushMode(blockTag), more
     ;
 
 JAVADOC_INLINE_TAG_START: '{@' { braceCounter = 1;} -> pushMode(javadocInlineTag);
