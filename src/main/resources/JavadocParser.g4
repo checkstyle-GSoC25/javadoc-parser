@@ -112,12 +112,15 @@ blockTag
     | parameterTag
     | throwsTag
     | exceptionTag
+    | sinceTag
     | customBlockTag
     ;
 
 authorTag: AUTHOR_LITERAL description;
 
 deprecatedTag: DEPRECATED_LITERAL description?;
+
+sinceTag: SINCE description?;
 
 returnTag: RETURN_LITERAL description?;
 

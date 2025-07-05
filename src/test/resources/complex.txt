@@ -20654,7 +20654,7 @@
    |  '- description
    |     '- TOKEN[type: TEXT, text:  42.0, line: 320, column: 11]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @since, line: 321, column: 3]
+   |  |- TOKEN[type: SINCE, text: @since, line: 321, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  forever, line: 321, column: 9]
    |- blockTag

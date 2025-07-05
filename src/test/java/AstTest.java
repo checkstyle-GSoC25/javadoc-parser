@@ -134,6 +134,11 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testBlockSinceTag() throws IOException {
+        verifyAst(getPath("blockSince.txt"), getPath("blockSince.javadoc"));
+    }
+
+    @Test
     public void testHTML1() throws IOException {
         verifyAst(getPath("html1.txt"), getPath("html1.javadoc"));
     }
