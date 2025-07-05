@@ -113,6 +113,7 @@ blockTag
     | throwsTag
     | exceptionTag
     | sinceTag
+    | versionTag
     | customBlockTag
     ;
 
@@ -129,6 +130,8 @@ parameterTag: PARAM_LITERAL PARAMETER_NAME description?;
 throwsTag: THROWS exceptionName=identifier description?;
 
 exceptionTag: EXCEPTION exceptionName=identifier description?;
+
+versionTag: VERSION description?;
 
 customBlockTag: CUSTOM_NAME description;
 

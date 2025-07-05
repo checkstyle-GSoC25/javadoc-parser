@@ -1,0 +1,54 @@
+'- javadoc
+   |- blockTag
+   |  |- TOKEN[type: VERSION, text: @version, line: 1, column: 2]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  1.0, line: 1, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: VERSION, text: @version, line: 2, column: 2]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text: 1.1, line: 3, column: 8]
+   |- blockTag
+   |  |- TOKEN[type: VERSION, text: @version, line: 4, column: 2]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  2.0-beta, line: 4, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: VERSION, text: @version, line: 5, column: 2]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  2024.07.05, line: 5, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: VERSION, text: @version, line: 6, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  , line: 6, column: 10]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 11]
+   |     |  |- linkInlineTag
+   |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 6, column: 13]
+   |     |  |  '- reference
+   |     |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 6, column: 18]
+   |     |  |     |- TOKEN[type: DOT, text: ., line: 6, column: 22]
+   |     |  |     |- TOKEN[type: IDENTIFIER, text: util, line: 6, column: 23]
+   |     |  |     |- TOKEN[type: DOT, text: ., line: 6, column: 27]
+   |     |  |     '- TOKEN[type: IDENTIFIER, text: List, line: 6, column: 28]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 32]
+   |     '- TOKEN[type: TEXT, text:  v3.1, line: 6, column: 33]
+   |- blockTag
+   |  |- TOKEN[type: VERSION, text: @version, line: 7, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  , line: 7, column: 10]
+   |     '- htmlElement
+   |        |- htmlTagStart
+   |        |  |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 11]
+   |        |  |- TOKEN[type: TAG_NAME, text: a, line: 7, column: 12]
+   |        |  |- htmlAttribute
+   |        |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 7, column: 14]
+   |        |  |  |- TOKEN[type: EQUALS, text: =, line: 7, column: 18]
+   |        |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com", line: 7, column: 19]
+   |        |  '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 40]
+   |        |- htmlContent
+   |        |  '- TOKEN[type: TEXT, text: v2.1 Docs, line: 7, column: 41]
+   |        '- htmlTagEnd
+   |           |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 50]
+   |           |- TOKEN[type: TAG_SLASH, text: /, line: 7, column: 51]
+   |           |- TOKEN[type: TAG_NAME, text: a, line: 7, column: 52]
+   |           '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 53]
+   '- TOKEN[type: EOF, text: <EOF>, line: 7, column: 54]

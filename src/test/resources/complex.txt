@@ -20650,7 +20650,7 @@
    |  '- description
    |     '- TOKEN[type: TEXT, text:  Nobody, line: 319, column: 10]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @version, line: 320, column: 3]
+   |  |- TOKEN[type: VERSION, text: @version, line: 320, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  42.0, line: 320, column: 11]
    |- blockTag
