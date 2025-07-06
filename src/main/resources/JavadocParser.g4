@@ -35,10 +35,84 @@ import java.util.stream.Collectors;
 }
 
 javadoc
-    : mainDescription? blockTag* EOF
-    | blockTag+ EOF
+    : description? blockTag* EOF
     ;
 
+// Block tags
+blockTag
+    : authorTag
+    | deprecatedTag
+    | returnTag
+    | parameterTag
+    | throwsTag
+    | exceptionTag
+    | sinceTag
+    | versionTag
+    | seeTag
+    | hiddenTag
+    | usesTag
+    | providesTag
+    | serialTag
+    | serialDataTag
+    | serialFieldTag
+    | customBlockTag
+    ;
+
+authorTag
+    : tagName=AUTHOR_LITERAL description?
+    ;
+
+deprecatedTag
+    : tagName=DEPRECATED_LITERAL description?
+    ;
+
+returnTag
+    : tagName=RETURN_LITERAL description?
+    ;
+
+parameterTag
+    : tagName=PARAM_LITERAL paramName=PARAMETER_NAME description?
+    ;
+
+throwsTag
+    : tagName=THROWS exceptionName=identifier description?
+    ;
+
+exceptionTag
+    : tagName=EXCEPTION exceptionName=identifier description?
+    ;
+
+sinceTag
+    : tagName=SINCE description?
+    ;
+
+versionTag
+    : tagName=VERSION description?
+    ;
+
+seeTag
+    : SEE STRING_LITERAL
+    | SEE reference description?
+    | SEE htmlElement description?
+    ;
+
+hiddenTag: LITERAL_HIDDEN description?;
+
+usesTag: USES serviceType=qualifiedIdentifier description?;
+
+providesTag: PROVIDES serviceType=qualifiedIdentifier description?;
+
+serialTag: SERIAL description?;
+
+serialDataTag: SERIAL_DATA description?;
+
+serialFieldTag: SERIAL_FIELD fieldName=IDENTIFIER FIELD_TYPE  description?;
+
+customBlockTag
+    : tagName=CUSTOM_NAME description?
+    ;
+
+// Inline tags
 inlineTag
     : JAVADOC_INLINE_TAG_START
       ( codeInlineTag
@@ -58,7 +132,7 @@ inlineTag
     ;
 
 codeInlineTag
-    : CODE_LITERAL TEXT*
+    : CODE_LITERAL inlineText?
     ;
 
 linkPlainInlineTag
@@ -105,9 +179,10 @@ customInlineTag
     : CUSTOM_NAME description?
     ;
 
+// Components
 reference
-    : (moduleName=qualifiedName SLASH)? typeName=qualifiedName (HASH memberReference)?
-    | HASH memberReference
+    : HASH memberReference
+    | (module=qualifiedName SLASH)? type=qualifiedName (HASH memberReference)?
     ;
 
 qualifiedName
@@ -145,96 +220,38 @@ snippetBody
     : TEXT+
     ;
 
-blockTag
-    : authorTag
-    | deprecatedTag
-    | returnTag
-    | parameterTag
-    | throwsTag
-    | exceptionTag
-    | sinceTag
-    | versionTag
-    | seeTag
-    | hiddenTag
-    | usesTag
-    | providesTag
-    | serialTag
-    | serialDataTag
-    | serialFieldTag
-    | customBlockTag
-    ;
-
-authorTag: AUTHOR_LITERAL description?;
-
-deprecatedTag
-    : DEPRECATED_LITERAL description?
-    ;
-
-hiddenTag: LITERAL_HIDDEN description?;
-
-sinceTag: SINCE description?;
-
-returnTag
-    : RETURN_LITERAL description?
-    ;
-
-parameterTag
-    : PARAM_LITERAL PARAMETER_NAME description?
-    ;
-
-throwsTag: THROWS exceptionName=qualifiedIdentifier description?;
-
-exceptionTag: EXCEPTION exceptionName=qualifiedIdentifier description?;
-
-usesTag: USES serviceType=qualifiedIdentifier description?;
-
-providesTag: PROVIDES serviceType=qualifiedIdentifier description?;
-
-versionTag
-    : VERSION description?
-    ;
-
-seeTag
-    : SEE STRING_LITERAL
-    | SEE reference description?
-    | SEE htmlElement description?
-    ;
-
-customBlockTag: CUSTOM_NAME description?;
-
-serialTag: SERIAL description?;
-
-serialDataTag: SERIAL_DATA description?;
-
-serialFieldTag: SERIAL_FIELD fieldName=IDENTIFIER FIELD_TYPE  description?;
-
 qualifiedIdentifier: IDENTIFIER;
+
+identifier
+    : IDENTIFIER
+    ;
+
+inlineText
+    : TEXT+
+    ;
 
 description
     : (TEXT | inlineTag | htmlElement)+
     ;
 
-mainDescription
-    : (TEXT | inlineTag | htmlElement)+
-    ;
-
+// HTML Elements
 htmlElement
     : voidElement
     | selfClosingElement
-    | tight
-    | nonTight
+    | tightElement
+    | nonTightElement
     ;
 
 voidElement
     : { isVoidTag() }? htmlTagStart
     ;
 
-tight
+tightElement
     : { !ParserUtility.isNonTightTag(_input, unclosedTagNameTokens) }?
       htmlTagStart htmlContent? htmlTagEnd
     ;
 
-nonTight
+nonTightElement
     : htmlTagStart nonTightHtmlContent?
     ;
 

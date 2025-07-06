@@ -1,5 +1,5 @@
 '- javadoc
-   |- mainDescription
+   |- description
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 1, column: 2]
@@ -201,7 +201,8 @@
    |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 26, column: 18]
    |  |  |  |  |- codeInlineTag
    |  |  |  |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 26, column: 20]
-   |  |  |  |  |  '- TOKEN[type: TEXT, text:  int x = 42;, line: 26, column: 24]
+   |  |  |  |  |  '- inlineText
+   |  |  |  |  |     '- TOKEN[type: TEXT, text:  int x = 42;, line: 26, column: 24]
    |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 26, column: 36]
    |  |  |  |- TOKEN[type: TEXT, text:  and , line: 26, column: 37]
    |  |  |  '- inlineTag

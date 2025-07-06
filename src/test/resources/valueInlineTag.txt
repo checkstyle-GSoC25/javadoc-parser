@@ -1,14 +1,14 @@
 '- javadoc
-   |- mainDescription
+   |- description
    |  |- TOKEN[type: TEXT, text: Example 1: , line: 1, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 13]
    |  |  |- valueInlineTag
    |  |  |  '- TOKEN[type: VALUE_LITERAL, text: value, line: 1, column: 15]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 20]
    |  |- TOKEN[type: TEXT, text:  — refers to the value of this constant., line: 1, column: 21]
    |  |- TOKEN[type: TEXT, text: Example 2: , line: 2, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 13]
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 2, column: 15]
@@ -19,7 +19,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 30]
    |  |- TOKEN[type: TEXT, text:  — refers to another constant in the same class., line: 2, column: 31]
    |  |- TOKEN[type: TEXT, text: Example 3: , line: 3, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 13]
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 3, column: 15]
@@ -36,7 +36,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 53]
    |  |- TOKEN[type: TEXT, text:  — fully qualified constant reference., line: 3, column: 54]
    |  |- TOKEN[type: TEXT, text: Example 4: , line: 4, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 13]
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 4, column: 15]
@@ -44,7 +44,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 25]
    |  |- TOKEN[type: TEXT, text:  — formats this constant with two decimal places., line: 4, column: 26]
    |  |- TOKEN[type: TEXT, text: Example 5: , line: 5, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 13]
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 5, column: 15]
@@ -62,7 +62,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 50]
    |  |- TOKEN[type: TEXT, text:  — formatted reference to an external constant., line: 5, column: 51]
    |  |- TOKEN[type: TEXT, text: Example 6: , line: 6, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 13]
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 6, column: 15]
@@ -75,7 +75,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 39]
    |  |- TOKEN[type: TEXT, text:  — class reference using unqualified class name (must be imported or in same package)., line: 6, column: 40]
    |  |- TOKEN[type: TEXT, text: Example 7: , line: 7, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 13]
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 7, column: 15]
@@ -89,7 +89,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 45]
    |  |- TOKEN[type: TEXT, text:  — formatted with thousands separator and one decimal place., line: 7, column: 46]
    |  |- TOKEN[type: TEXT, text: Example 8: , line: 8, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 13]
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 8, column: 15]
@@ -107,7 +107,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 9, column: 40]
    |  |- TOKEN[type: TEXT, text:  — formatted reference to an external constant., line: 9, column: 41]
    |  |- TOKEN[type: TEXT, text: Example 9: , line: 10, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 10, column: 13]
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 10, column: 15]

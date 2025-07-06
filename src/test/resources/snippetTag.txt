@@ -1,5 +1,5 @@
 '- javadoc
-   |- mainDescription
+   |- description
    |  |- TOKEN[type: TEXT, text: Demonstration of "snippet" tag usage in various forms., line: 1, column: 2]
    |  |- htmlElement
    |  |  |- htmlTagStart
@@ -175,7 +175,7 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 54, column: 3]
    |  |     |- TOKEN[type: TAG_NAME, text: p, line: 54, column: 4]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 54, column: 5]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 55, column: 2]
    |  |  |- snippetInlineTag
    |  |  |  |- TOKEN[type: SNIPPET, text: snippet, line: 55, column: 4]
@@ -184,7 +184,7 @@
    |  |  |     |- TOKEN[type: EQUALS, text: =, line: 55, column: 16]
    |  |  |     '- TOKEN[type: ATTRIBUTE_VALUE, text: "Example.java", line: 55, column: 17]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 55, column: 31]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 56, column: 2]
    |  |  |- snippetInlineTag
    |  |  |  |- TOKEN[type: SNIPPET, text: snippet, line: 56, column: 4]
@@ -196,7 +196,7 @@
    |  |  |     |- TOKEN[type: TEXT, text: }, line: 57, column: 57]
    |  |  |     '- TOKEN[type: TEXT, text:  , line: 58, column: 1]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 58, column: 2]
-   |  '- inlineTag
+   |  '- structuredTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 60, column: 2]
    |     |- snippetInlineTag
    |     |  |- TOKEN[type: SNIPPET, text: snippet, line: 60, column: 4]

@@ -1,12 +1,12 @@
 '- javadoc
-   |- blockTag
+   |- description
    |  |- TOKEN[type: SINCE, text: @since, line: 1, column: 2]
    |  '- description
-   |     '- TOKEN[type: TEXT, text:  4.0-beta, line: 1, column: 8]
-   |- blockTag
-   |  |- TOKEN[type: SINCE, text: @since, line: 2, column: 2]
-   |  '- description
-   |     '- TOKEN[type: TEXT, text:  1.8, line: 2, column: 8]
-   |- blockTag
-   |  '- TOKEN[type: SINCE, text: @since, line: 3, column: 2]
+   |     |- TOKEN[type: TEXT, text:  4.0-beta, line: 1, column: 8]
+   |     '- structuredTag
+   |        |- TOKEN[type: SINCE, text: @since, line: 2, column: 2]
+   |        '- description
+   |           |- TOKEN[type: TEXT, text:  1.8, line: 2, column: 8]
+   |           '- structuredTag
+   |              '- TOKEN[type: SINCE, text: @since, line: 3, column: 2]
    '- TOKEN[type: EOF, text: <EOF>, line: 3, column: 8]

@@ -1,6 +1,6 @@
 '- javadoc
-   |- mainDescription
-   |  |- inlineTag
+   |- description
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 1, column: 4]
@@ -17,7 +17,7 @@
    |  |  |        |- TOKEN[type: LPAREN, text: (, line: 1, column: 37]
    |  |  |        '- TOKEN[type: RPAREN, text: ), line: 1, column: 38]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 39]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 2, column: 4]
@@ -30,7 +30,7 @@
    |  |  |        |- TOKEN[type: LPAREN, text: (, line: 2, column: 25]
    |  |  |        '- TOKEN[type: RPAREN, text: ), line: 2, column: 26]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 27]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 3, column: 4]
@@ -45,7 +45,7 @@
    |  |  |        |  '- TOKEN[type: PARAMETER_TYPE, text: int, line: 3, column: 26]
    |  |  |        '- TOKEN[type: RPAREN, text: ), line: 3, column: 29]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 30]
-   |  '- inlineTag
+   |  '- structuredTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
    |     |- linkInlineTag
    |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 4, column: 4]

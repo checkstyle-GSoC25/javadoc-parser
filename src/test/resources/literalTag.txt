@@ -1,13 +1,13 @@
 '- javadoc
-   |- mainDescription
-   |  |- inlineTag
+   |- description
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- literalInlineTag
    |  |  |  |- TOKEN[type: LITERAL, text: literal, line: 1, column: 4]
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  @Override, line: 1, column: 11]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 21]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- literalInlineTag
    |  |  |  |- TOKEN[type: LITERAL, text: literal, line: 2, column: 4]
@@ -49,14 +49,14 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 5, column: 3]
    |  |     |- TOKEN[type: TAG_NAME, text: ul, line: 5, column: 4]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 5, column: 6]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 2]
    |  |  |- literalInlineTag
    |  |  |  |- TOKEN[type: LITERAL, text: literal, line: 6, column: 4]
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  java.sql, line: 6, column: 11]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 20]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 2]
    |  |  |- literalInlineTag
    |  |  |  |- TOKEN[type: LITERAL, text: literal, line: 7, column: 4]
@@ -66,7 +66,7 @@
    |  |  |     |- TOKEN[type: TEXT, text: @code code, line: 7, column: 13]
    |  |  |     '- TOKEN[type: TEXT, text: }, line: 7, column: 23]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 24]
-   |  '- inlineTag
+   |  '- structuredTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 2]
    |     |- literalInlineTag
    |     |  |- TOKEN[type: LITERAL, text: literal, line: 8, column: 4]

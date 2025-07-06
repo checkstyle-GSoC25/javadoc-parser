@@ -1,41 +1,43 @@
 '- javadoc
-   |- mainDescription
-   |  |- inlineTag
+   |- description
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- returnInlineTag
    |  |  |  |- TOKEN[type: RETURN, text: return, line: 1, column: 4]
    |  |  |  '- description
    |  |  |     |- TOKEN[type: TEXT, text:  , line: 1, column: 10]
-   |  |  |     |- inlineTag
+   |  |  |     |- structuredTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 11]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 1, column: 13]
-   |  |  |     |  |  '- TOKEN[type: TEXT, text:  true, line: 1, column: 17]
+   |  |  |     |  |  '- inlineText
+   |  |  |     |  |     '- TOKEN[type: TEXT, text:  true, line: 1, column: 17]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 22]
    |  |  |     |- TOKEN[type: TEXT, text:  if the arguments are equal to each other, line: 1, column: 23]
    |  |  |     |- TOKEN[type: TEXT, text:  and , line: 2, column: 1]
-   |  |  |     |- inlineTag
+   |  |  |     |- structuredTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 6]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 2, column: 8]
-   |  |  |     |  |  '- TOKEN[type: TEXT, text:  false, line: 2, column: 12]
+   |  |  |     |  |  '- inlineText
+   |  |  |     |  |     '- TOKEN[type: TEXT, text:  false, line: 2, column: 12]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 18]
    |  |  |     '- TOKEN[type: TEXT, text:  otherwise, line: 2, column: 19]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 29]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |  |  |- returnInlineTag
    |  |  |  |- TOKEN[type: RETURN, text: return, line: 3, column: 4]
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a Version for major, minor versions, line: 3, column: 10]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 46]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
    |  |  |- returnInlineTag
    |  |  |  |- TOKEN[type: RETURN, text: return, line: 4, column: 4]
    |  |  |  '- description
    |  |  |     |- TOKEN[type: TEXT, text:  the code used by the , line: 4, column: 10]
-   |  |  |     |- inlineTag
+   |  |  |     |- structuredTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 32]
    |  |  |     |  |- linkInlineTag
    |  |  |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 4, column: 34]
@@ -50,27 +52,29 @@
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 63]
    |  |  |     |- TOKEN[type: TEXT, text:  instruction to create an array, line: 4, column: 64]
    |  |  |     |- TOKEN[type: TEXT, text:  of this component type, or , line: 5, column: 1]
-   |  |  |     |- inlineTag
+   |  |  |     |- structuredTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 29]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 5, column: 31]
-   |  |  |     |  |  '- TOKEN[type: TEXT, text:  -1, line: 5, column: 35]
+   |  |  |     |  |  '- inlineText
+   |  |  |     |  |     '- TOKEN[type: TEXT, text:  -1, line: 5, column: 35]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 38]
    |  |  |     |- TOKEN[type: TEXT, text:  if this type is not supported by , line: 5, column: 39]
-   |  |  |     '- inlineTag
+   |  |  |     '- structuredTag
    |  |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 73]
    |  |  |        |- codeInlineTag
    |  |  |        |  |- TOKEN[type: CODE_LITERAL, text: code, line: 5, column: 75]
-   |  |  |        |  '- TOKEN[type: TEXT, text:  newarray, line: 5, column: 79]
+   |  |  |        |  '- inlineText
+   |  |  |        |     '- TOKEN[type: TEXT, text:  newarray, line: 5, column: 79]
    |  |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 88]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 89]
-   |  '- inlineTag
+   |  '- structuredTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 2]
    |     |- returnInlineTag
    |     |  |- TOKEN[type: RETURN, text: return, line: 6, column: 4]
    |     |  '- description
    |     |     |- TOKEN[type: TEXT, text:  , line: 6, column: 10]
-   |     |     '- inlineTag
+   |     |     '- structuredTag
    |     |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 11]
    |     |        |- inheritDocInlineTag
    |     |        |  '- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 6, column: 13]

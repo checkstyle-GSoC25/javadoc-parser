@@ -1,5 +1,5 @@
 '- javadoc
-   |- mainDescription
+   |- description
    |  |- TOKEN[type: TEXT, text: If a visit method is not overridden, we should explain why we do not 'visit' the, line: 1, column: 2]
    |  |- TOKEN[type: TEXT, text: parse tree at this node and construct an AST. Reasons could include that we have, line: 2, column: 2]
    |  |- TOKEN[type: TEXT, text: no terminal symbols (tokens) in the corresponding production rule, or that, line: 3, column: 2]
