@@ -115,12 +115,15 @@ blockTag
     | sinceTag
     | versionTag
     | seeTag
+    | hiddenTag
     | customBlockTag
     ;
 
 authorTag: AUTHOR_LITERAL description;
 
 deprecatedTag: DEPRECATED_LITERAL description?;
+
+hiddenTag: LITERAL_HIDDEN description?;
 
 sinceTag: SINCE description?;
 
