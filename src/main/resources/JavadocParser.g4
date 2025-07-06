@@ -9,7 +9,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 }
 
-
 @parser::members {
     private static final Set<String> VOID_TAGS = Set.of(
         "area", "base", "basefont", "br", "col", "frame", "hr",
@@ -25,77 +24,118 @@ import java.util.stream.Collectors;
 
     public JavadocParser(CommonTokenStream tokens, Set<SimpleToken> unclosed) {
         super(tokens);
-        _interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
+        _interp = new ParserATNSimulator(
+            this,
+            _ATN,
+            _decisionToDFA,
+            _sharedContextCache
+        );
         this.unclosedTagNameTokens = unclosed;
     }
 }
 
 javadoc
-    : mainDescription? (blockTag)* EOF
+    : mainDescription? blockTag* EOF
     | blockTag+ EOF
     ;
 
 inlineTag
     : JAVADOC_INLINE_TAG_START
-     (    codeInlineTag
-        | linkInlineTag
-        | linkPlainInlineTag
-        | valueInlineTag
-        | inheritDocInlineTag
-        | summaryInlineTag
-        | systemPropertyInlineTag
-        | indexInlineTag
-        | returnInlineTag
-        | literalInlineTag
-        | snippetInlineTag
-        | customInlineTag)
+      ( codeInlineTag
+      | linkInlineTag
+      | linkPlainInlineTag
+      | valueInlineTag
+      | inheritDocInlineTag
+      | summaryInlineTag
+      | systemPropertyInlineTag
+      | indexInlineTag
+      | returnInlineTag
+      | literalInlineTag
+      | snippetInlineTag
+      | customInlineTag
+      )
       JAVADOC_INLINE_TAG_END
     ;
 
-codeInlineTag: CODE_LITERAL TEXT*;
+codeInlineTag
+    : CODE_LITERAL TEXT*
+    ;
 
-linkPlainInlineTag: LINKPLAIN_LITERAL reference description?;
+linkPlainInlineTag
+    : LINKPLAIN_LITERAL reference description?
+    ;
 
-linkInlineTag: LINK_LITERAL reference description?;
+linkInlineTag
+    : LINK_LITERAL reference description?
+    ;
 
-valueInlineTag: VALUE_LITERAL FORMAT_SPECIFIER? reference?;
+valueInlineTag
+    : VALUE_LITERAL FORMAT_SPECIFIER? reference?
+    ;
 
-inheritDocInlineTag: INHERITDOC_LITERAL superType=reference?;
+inheritDocInlineTag
+    : INHERITDOC_LITERAL reference?
+    ;
 
-summaryInlineTag: SUMMARY_LITERAL description?;
+summaryInlineTag
+    : SUMMARY_LITERAL description?
+    ;
 
-systemPropertyInlineTag: SYSTEM_PROPERTY propertyName?;
+systemPropertyInlineTag
+    : SYSTEM_PROPERTY propertyName?
+    ;
 
-indexInlineTag: INDEX INDEX_TERM description?;
+indexInlineTag
+    : INDEX INDEX_TERM description?
+    ;
 
-returnInlineTag: RETURN description?;
+returnInlineTag
+    : RETURN description?
+    ;
 
-literalInlineTag: LITERAL description?;
+literalInlineTag
+    : LITERAL description?
+    ;
 
-snippetInlineTag: SNIPPET snippetAttributes+=snippetAttribute* (COLON snippetBody)?;
+snippetInlineTag
+    : SNIPPET snippetAttributes+=snippetAttribute* (COLON snippetBody)?
+    ;
 
-customInlineTag: CUSTOM_NAME description?;
+customInlineTag
+    : CUSTOM_NAME description?
+    ;
 
 reference
-        : (moduleName=qualifiedName SLASH)? typeName=qualifiedName (HASH memberReference)?
-        | (HASH memberReference)
-        ;
+    : (moduleName=qualifiedName SLASH)? typeName=qualifiedName (HASH memberReference)?
+    | HASH memberReference
+    ;
 
-qualifiedName: IDENTIFIER (DOT IDENTIFIER)* typeArguments?;
+qualifiedName
+    : IDENTIFIER (DOT IDENTIFIER)* typeArguments?
+    ;
 
-typeArguments: LT typeArgument (COMMA typeArgument)* GT;
+typeArguments
+    : LT typeArgument (COMMA typeArgument)* GT
+    ;
 
 typeArgument
-        : qualifiedName
-        | QUESTION
-        | QUESTION EXTENDS qualifiedName
-        | QUESTION SUPER qualifiedName;
+    : qualifiedName
+    | QUESTION
+    | QUESTION EXTENDS qualifiedName
+    | QUESTION SUPER qualifiedName
+    ;
 
-memberReference: IDENTIFIER (LPAREN parameterTypeList? RPAREN)?;
+memberReference
+    : IDENTIFIER (LPAREN parameterTypeList? RPAREN)?
+    ;
 
-parameterTypeList: PARAMETER_TYPE (COMMA PARAMETER_TYPE)*;
+parameterTypeList
+    : PARAMETER_TYPE (COMMA PARAMETER_TYPE)*
+    ;
 
-propertyName: IDENTIFIER (DOT IDENTIFIER)*;
+propertyName
+    : IDENTIFIER (DOT IDENTIFIER)*
+    ;
 
 snippetAttribute
     : SNIPPET_ATTR_NAME EQUALS ATTRIBUTE_VALUE
@@ -126,15 +166,21 @@ blockTag
 
 authorTag: AUTHOR_LITERAL description?;
 
-deprecatedTag: DEPRECATED_LITERAL description?;
+deprecatedTag
+    : DEPRECATED_LITERAL description?
+    ;
 
 hiddenTag: LITERAL_HIDDEN description?;
 
 sinceTag: SINCE description?;
 
-returnTag: RETURN_LITERAL description?;
+returnTag
+    : RETURN_LITERAL description?
+    ;
 
-parameterTag: PARAM_LITERAL PARAMETER_NAME description?;
+parameterTag
+    : PARAM_LITERAL PARAMETER_NAME description?
+    ;
 
 throwsTag: THROWS exceptionName=qualifiedIdentifier description?;
 
@@ -144,7 +190,9 @@ usesTag: USES serviceType=qualifiedIdentifier description?;
 
 providesTag: PROVIDES serviceType=qualifiedIdentifier description?;
 
-versionTag: VERSION description?;
+versionTag
+    : VERSION description?
+    ;
 
 seeTag
     : SEE STRING_LITERAL
@@ -162,11 +210,13 @@ serialFieldTag: SERIAL_FIELD fieldName=IDENTIFIER FIELD_TYPE  description?;
 
 qualifiedIdentifier: IDENTIFIER;
 
-description : (TEXT | inlineTag | htmlElement)+ ;
+description
+    : (TEXT | inlineTag | htmlElement)+
+    ;
 
-// HTML stuff
-
-mainDescription: (TEXT | inlineTag | htmlElement)+;
+mainDescription
+    : (TEXT | inlineTag | htmlElement)+
+    ;
 
 htmlElement
     : voidElement
@@ -176,19 +226,24 @@ htmlElement
     ;
 
 voidElement
-    : {isVoidTag()}? htmlTagStart
+    : { isVoidTag() }? htmlTagStart
     ;
 
-tight: {!ParserUtility.isNonTightTag(_input, unclosedTagNameTokens)}? htmlTagStart htmlContent? htmlTagEnd;
+tight
+    : { !ParserUtility.isNonTightTag(_input, unclosedTagNameTokens) }?
+      htmlTagStart htmlContent? htmlTagEnd
+    ;
 
-nonTight: htmlTagStart nonTightHtmlContent?;
+nonTight
+    : htmlTagStart nonTightHtmlContent?
+    ;
 
 selfClosingElement
-    : TAG_OPEN TAG_NAME (htmlAttribute)* TAG_SLASH_CLOSE
+    : TAG_OPEN TAG_NAME htmlAttribute* TAG_SLASH_CLOSE
     ;
 
 htmlTagStart
-    : TAG_OPEN TAG_NAME (htmlAttribute)* TAG_CLOSE
+    : TAG_OPEN TAG_NAME htmlAttribute* TAG_CLOSE
     ;
 
 htmlTagEnd
