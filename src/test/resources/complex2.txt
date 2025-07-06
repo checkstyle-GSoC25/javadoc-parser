@@ -359,33 +359,49 @@
    |              |     '- TOKEN[type: TEXT, text: }, line: 45, column: 73]
    |              '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 45, column: 74]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @see, line: 46, column: 3]
-   |  '- description
-   |     |- TOKEN[type: TEXT, text:  , line: 46, column: 7]
-   |     '- htmlElement
-   |        |- htmlTagStart
-   |        |  |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 8]
-   |        |  |- TOKEN[type: TAG_NAME, text: a, line: 46, column: 9]
-   |        |  |- htmlAttribute
-   |        |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 46, column: 11]
-   |        |  |  |- TOKEN[type: EQUALS, text: =, line: 46, column: 15]
-   |        |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com/?q={@code madness}", line: 46, column: 16]
-   |        |  '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 56]
-   |        |- htmlContent
-   |        |  '- TOKEN[type: TEXT, text: Query Link, line: 46, column: 57]
-   |        '- htmlTagEnd
-   |           |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 67]
-   |           |- TOKEN[type: TAG_SLASH, text: /, line: 46, column: 68]
-   |           |- TOKEN[type: TAG_NAME, text: a, line: 46, column: 69]
-   |           '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 70]
+   |  |- TOKEN[type: SEE, text: @see, line: 46, column: 3]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 9]
+   |     |  |- TOKEN[type: TAG_NAME, text: a, line: 46, column: 10]
+   |     |  |- htmlAttribute
+   |     |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 46, column: 12]
+   |     |  |  |- TOKEN[type: EQUALS, text: =, line: 46, column: 16]
+   |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com/?q={@code madness}", line: 46, column: 17]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 57]
+   |     |- htmlContent
+   |     |  '- TOKEN[type: TEXT, text: Query Link, line: 46, column: 58]
+   |     '- htmlTagEnd
+   |        |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 68]
+   |        |- TOKEN[type: TAG_SLASH, text: /, line: 46, column: 69]
+   |        |- TOKEN[type: TAG_NAME, text: a, line: 46, column: 70]
+   |        '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 71]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @see, line: 47, column: 3]
-   |  '- description
-   |     '- TOKEN[type: TEXT, text:  #legacyMethod(), line: 47, column: 7]
+   |  |- TOKEN[type: SEE, text: @see, line: 47, column: 3]
+   |  '- reference
+   |     |- TOKEN[type: HASH, text: #, line: 47, column: 8]
+   |     '- memberReference
+   |        |- TOKEN[type: IDENTIFIER, text: legacyMethod, line: 47, column: 9]
+   |        |- TOKEN[type: LPAREN, text: (, line: 47, column: 21]
+   |        '- TOKEN[type: RPAREN, text: ), line: 47, column: 22]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @see, line: 48, column: 3]
-   |  '- description
-   |     '- TOKEN[type: TEXT, text:  java.util.stream.Stream#map(java.util.function.Function), line: 48, column: 7]
+   |  |- TOKEN[type: SEE, text: @see, line: 48, column: 3]
+   |  '- reference
+   |     |- qualifiedName
+   |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 48, column: 8]
+   |     |  |- TOKEN[type: DOT, text: ., line: 48, column: 12]
+   |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 48, column: 13]
+   |     |  |- TOKEN[type: DOT, text: ., line: 48, column: 17]
+   |     |  |- TOKEN[type: IDENTIFIER, text: stream, line: 48, column: 18]
+   |     |  |- TOKEN[type: DOT, text: ., line: 48, column: 24]
+   |     |  '- TOKEN[type: IDENTIFIER, text: Stream, line: 48, column: 25]
+   |     |- TOKEN[type: HASH, text: #, line: 48, column: 31]
+   |     '- memberReference
+   |        |- TOKEN[type: IDENTIFIER, text: map, line: 48, column: 32]
+   |        |- TOKEN[type: LPAREN, text: (, line: 48, column: 35]
+   |        |- parameterTypeList
+   |        |  '- TOKEN[type: PARAMETER_TYPE, text: java.util.function.Function, line: 48, column: 36]
+   |        '- TOKEN[type: RPAREN, text: ), line: 48, column: 63]
    |- blockTag
    |  |- TOKEN[type: SINCE, text: @since, line: 49, column: 3]
    |  '- description

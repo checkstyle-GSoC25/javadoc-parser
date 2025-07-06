@@ -1,0 +1,178 @@
+'- javadoc
+   |- mainDescription
+   |  '- TOKEN[type: TEXT, text: This method does something., line: 1, column: 2]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 3, column: 2]
+   |  '- reference
+   |     |- TOKEN[type: IDENTIFIER, text: java, line: 3, column: 7]
+   |     |- TOKEN[type: DOT, text: ., line: 3, column: 11]
+   |     |- TOKEN[type: IDENTIFIER, text: lang, line: 3, column: 12]
+   |     |- TOKEN[type: DOT, text: ., line: 3, column: 16]
+   |     '- TOKEN[type: IDENTIFIER, text: String, line: 3, column: 17]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 4, column: 2]
+   |  |- reference
+   |  |  |- qualifiedName
+   |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 4, column: 7]
+   |  |  |  |- TOKEN[type: DOT, text: ., line: 4, column: 11]
+   |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 4, column: 12]
+   |  |  |  |- TOKEN[type: DOT, text: ., line: 4, column: 16]
+   |  |  |  '- TOKEN[type: IDENTIFIER, text: List, line: 4, column: 17]
+   |  |  |- TOKEN[type: HASH, text: #, line: 4, column: 21]
+   |  |  '- memberReference
+   |  |     |- TOKEN[type: IDENTIFIER, text: add, line: 4, column: 22]
+   |  |     |- TOKEN[type: LPAREN, text: (, line: 4, column: 25]
+   |  |     |- parameterTypeList
+   |  |     |  '- TOKEN[type: PARAMETER_TYPE, text: Object, line: 4, column: 26]
+   |  |     '- TOKEN[type: RPAREN, text: ), line: 4, column: 32]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  adds to list, line: 4, column: 33]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 5, column: 2]
+   |  '- reference
+   |     |- qualifiedName
+   |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 5, column: 7]
+   |     |  |- TOKEN[type: DOT, text: ., line: 5, column: 11]
+   |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 5, column: 12]
+   |     |  |- TOKEN[type: DOT, text: ., line: 5, column: 16]
+   |     |  '- TOKEN[type: IDENTIFIER, text: Map, line: 5, column: 17]
+   |     |- TOKEN[type: HASH, text: #, line: 5, column: 20]
+   |     '- memberReference
+   |        |- TOKEN[type: IDENTIFIER, text: put, line: 5, column: 21]
+   |        |- TOKEN[type: LPAREN, text: (, line: 5, column: 24]
+   |        |- parameterTypeList
+   |        |  |- TOKEN[type: PARAMETER_TYPE, text: Object, line: 5, column: 25]
+   |        |  |- TOKEN[type: COMMA, text: ,, line: 5, column: 31]
+   |        |  '- TOKEN[type: PARAMETER_TYPE, text: Object, line: 5, column: 33]
+   |        '- TOKEN[type: RPAREN, text: ), line: 5, column: 39]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 6, column: 2]
+   |  '- reference
+   |     '- TOKEN[type: IDENTIFIER, text: String, line: 6, column: 7]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 7, column: 2]
+   |  '- TOKEN[type: STRING_LITERAL, text: "GoF Design Patterns", line: 7, column: 7]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 8, column: 2]
+   |  '- htmlElement
+   |     |- htmlTagStart
+   |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 8]
+   |     |  |- TOKEN[type: TAG_NAME, text: a, line: 8, column: 9]
+   |     |  |- htmlAttribute
+   |     |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 8, column: 11]
+   |     |  |  |- TOKEN[type: EQUALS, text: =, line: 8, column: 15]
+   |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com", line: 8, column: 16]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 37]
+   |     |- htmlContent
+   |     |  '- TOKEN[type: TEXT, text: External Resource, line: 8, column: 38]
+   |     '- htmlTagEnd
+   |        |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 55]
+   |        |- TOKEN[type: TAG_SLASH, text: /, line: 8, column: 56]
+   |        |- TOKEN[type: TAG_NAME, text: a, line: 8, column: 57]
+   |        '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 58]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 9, column: 2]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 8]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 9, column: 9]
+   |  |  |  |- htmlAttribute
+   |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 9, column: 11]
+   |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 9, column: 15]
+   |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com", line: 9, column: 16]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 37]
+   |  |  |- htmlContent
+   |  |  |  '- TOKEN[type: TEXT, text: External Resource, line: 9, column: 38]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 55]
+   |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 56]
+   |  |     |- TOKEN[type: TAG_NAME, text: a, line: 9, column: 57]
+   |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 58]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text: this is html, line: 9, column: 59]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 10, column: 2]
+   |  '- reference
+   |     |- TOKEN[type: HASH, text: #, line: 10, column: 7]
+   |     '- memberReference
+   |        '- TOKEN[type: IDENTIFIER, text: setObject, line: 10, column: 8]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 11, column: 2]
+   |  |- reference
+   |  |  |- qualifiedName
+   |  |  |  '- TOKEN[type: IDENTIFIER, text: Field, line: 11, column: 7]
+   |  |  |- TOKEN[type: HASH, text: #, line: 11, column: 12]
+   |  |  '- memberReference
+   |  |     |- TOKEN[type: IDENTIFIER, text: type, line: 11, column: 13]
+   |  |     |- TOKEN[type: LPAREN, text: (, line: 11, column: 17]
+   |  |     '- TOKEN[type: RPAREN, text: ), line: 11, column: 18]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  Field.type() - for usage examples, line: 11, column: 19]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 12, column: 2]
+   |  '- reference
+   |     |- qualifiedName
+   |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 12, column: 11]
+   |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 15]
+   |     |  |- TOKEN[type: IDENTIFIER, text: lang, line: 12, column: 16]
+   |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 20]
+   |     |  '- TOKEN[type: IDENTIFIER, text: System, line: 12, column: 21]
+   |     |- TOKEN[type: HASH, text: #, line: 12, column: 27]
+   |     '- memberReference
+   |        |- TOKEN[type: IDENTIFIER, text: getProperty, line: 12, column: 28]
+   |        |- TOKEN[type: LPAREN, text: (, line: 12, column: 39]
+   |        |- parameterTypeList
+   |        |  |- TOKEN[type: PARAMETER_TYPE, text: java.lang.String, line: 12, column: 40]
+   |        |  |- TOKEN[type: COMMA, text: ,, line: 12, column: 56]
+   |        |  '- TOKEN[type: PARAMETER_TYPE, text: java.lang.String, line: 12, column: 58]
+   |        '- TOKEN[type: RPAREN, text: ), line: 12, column: 74]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 13, column: 2]
+   |  '- reference
+   |     |- TOKEN[type: HASH, text: #, line: 13, column: 7]
+   |     '- memberReference
+   |        |- TOKEN[type: IDENTIFIER, text: invoke, line: 13, column: 8]
+   |        |- TOKEN[type: LPAREN, text: (, line: 13, column: 14]
+   |        |- parameterTypeList
+   |        |  |- TOKEN[type: PARAMETER_TYPE, text: Remote, line: 13, column: 15]
+   |        |  |- TOKEN[type: COMMA, text: ,, line: 13, column: 21]
+   |        |  |- TOKEN[type: PARAMETER_TYPE, text: java.lang.reflect.Method, line: 13, column: 22]
+   |        |  |- TOKEN[type: COMMA, text: ,, line: 13, column: 46]
+   |        |  |- TOKEN[type: PARAMETER_TYPE, text: Object[], line: 13, column: 47]
+   |        |  |- TOKEN[type: COMMA, text: ,, line: 13, column: 55]
+   |        |  '- TOKEN[type: PARAMETER_TYPE, text: long, line: 13, column: 56]
+   |        '- TOKEN[type: RPAREN, text: ), line: 13, column: 60]
+   |- blockTag
+   |  |- TOKEN[type: SEE, text: @see, line: 14, column: 2]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 14, column: 8]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: a, line: 14, column: 9]
+   |  |  |  |- htmlAttribute
+   |  |  |  |  |- TOKEN[type: TAG_ATTR_NAME, text: href, line: 14, column: 11]
+   |  |  |  |  |- TOKEN[type: EQUALS, text: =, line: 14, column: 15]
+   |  |  |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "https://example.com", line: 14, column: 16]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 37]
+   |  |  |- htmlContent
+   |  |  |  '- TOKEN[type: TEXT, text: External Resource, line: 14, column: 38]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 14, column: 55]
+   |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 14, column: 56]
+   |  |     |- TOKEN[type: TAG_NAME, text: a, line: 14, column: 57]
+   |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 58]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  This is , line: 14, column: 59]
+   |     |- htmlElement
+   |     |  |- htmlTagStart
+   |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 14, column: 68]
+   |     |  |  |- TOKEN[type: TAG_NAME, text: code, line: 14, column: 69]
+   |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 73]
+   |     |  |- htmlContent
+   |     |  |  '- TOKEN[type: TEXT, text: code, line: 14, column: 74]
+   |     |  '- htmlTagEnd
+   |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 14, column: 78]
+   |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 14, column: 79]
+   |     |     |- TOKEN[type: TAG_NAME, text: code, line: 14, column: 80]
+   |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 84]
+   |     '- TOKEN[type: TEXT, text:  in the link, line: 14, column: 85]
+   '- TOKEN[type: EOF, text: <EOF>, line: 14, column: 97]

@@ -114,6 +114,7 @@ blockTag
     | exceptionTag
     | sinceTag
     | versionTag
+    | seeTag
     | customBlockTag
     ;
 
@@ -132,6 +133,12 @@ throwsTag: THROWS exceptionName=identifier description?;
 exceptionTag: EXCEPTION exceptionName=identifier description?;
 
 versionTag: VERSION description?;
+
+seeTag
+    : SEE STRING_LITERAL
+    | SEE reference description?
+    | SEE htmlElement description?
+    ;
 
 customBlockTag: CUSTOM_NAME description;
 
