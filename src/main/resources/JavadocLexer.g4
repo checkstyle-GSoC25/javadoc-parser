@@ -11,7 +11,7 @@ tokens {
     TAG_SLASH, EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
     SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL, SYSTEM_PROPERTY,
     INDEX, INDEX_TERM, RETURN, SNIPPET, SNIPPET_ATTR_NAME, COLON, EXCEPTION, THROWS, PARAMETER_NAME, SINCE,
-    VERSION
+    VERSION, SEE, STRING_LITERAL
 }
 
 @header {
@@ -316,8 +316,33 @@ EXCEPTION: 'exception' -> pushMode(exceptionName);
 THROWS: 'throws' -> pushMode(exceptionName);
 SINCE: 'since' -> pushMode(text);
 VERSION: 'version' -> pushMode(text);
+SEE: 'see' -> pushMode(see);
 BlockTag_CUSTOM_NAME: [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(text);
 
+mode see;
+STRING_LITERAL: '"' .*? '"' -> mode(text);
+See_TAG_OPEN: '<' {_input.seek(_input.index() - 1);} -> skip, mode(text);
+See_IDENTIFIER: Letter LetterOrDigit*
+    {
+        int la = _input.LA(1);
+        if (Character.isWhitespace(la) || la == '\n' || la == '\r') {
+            _mode = text;
+        }
+    } -> type(IDENTIFIER);
+
+See_HASH: '#' -> type(HASH);
+See_DOT: '.' -> type(DOT);
+See_LPAREN: '(' -> type(LPAREN), pushMode(seeParameterList);
+See_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
+    ;
+See_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
+
+mode seeParameterList;
+SeeParameterList_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
+SeeParameterList_PARAMETER_TYPE: ([a-zA-Z0-9_$] | '.' | '[' | ']')+ -> type(PARAMETER_TYPE);
+SeeParameterList_COMMA: ',' -> type(COMMA);
+See_RPAREN: ')' -> type(RPAREN), mode(text);
 
 mode exceptionName;
 EXCEPTION_NAME: ([a-zA-Z0-9_$] | '.')+ -> type(IDENTIFIER), mode(text);
