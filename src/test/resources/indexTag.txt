@@ -1,7 +1,7 @@
 '- javadoc
-   |- mainDescription
+   |- description
    |  |- TOKEN[type: TEXT, text: This algorithm uses , line: 1, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 22]
    |  |  |- indexInlineTag
    |  |  |  |- TOKEN[type: INDEX, text: index, line: 1, column: 24]
@@ -11,7 +11,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 49]
    |  |- TOKEN[type: TEXT, text: ., line: 1, column: 50]
    |  |- TOKEN[type: TEXT, text: It also improves , line: 2, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 19]
    |  |  |- indexInlineTag
    |  |  |  |- TOKEN[type: INDEX, text: index, line: 2, column: 21]
@@ -21,7 +21,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 70]
    |  |- TOKEN[type: TEXT, text: ., line: 2, column: 71]
    |  |- TOKEN[type: TEXT, text: In this toolkit, we use the , line: 3, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 30]
    |  |  |- indexInlineTag
    |  |  |  |- TOKEN[type: INDEX, text: index, line: 3, column: 32]
@@ -31,7 +31,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 82]
    |  |- TOKEN[type: TEXT, text: ., line: 3, column: 83]
    |  |- TOKEN[type: TEXT, text: This algorithm uses , line: 4, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 22]
    |  |  |- indexInlineTag
    |  |  |  |- TOKEN[type: INDEX, text: index, line: 4, column: 24]
@@ -39,7 +39,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 33]
    |  |- TOKEN[type: TEXT, text: ., line: 4, column: 34]
    |  |- TOKEN[type: TEXT, text: It also improves , line: 5, column: 2]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 19]
    |  |  |- indexInlineTag
    |  |  |  |- TOKEN[type: INDEX, text: index, line: 5, column: 21]

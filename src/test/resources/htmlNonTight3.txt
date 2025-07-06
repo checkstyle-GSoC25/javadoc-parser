@@ -1,5 +1,5 @@
 '- javadoc
-   |- mainDescription
+   |- description
    |  |- TOKEN[type: TEXT, text: Complex HTML test case embedded in Javadoc., line: 1, column: 2]
    |  '- htmlElement
    |     |- htmlTagStart

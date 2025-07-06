@@ -1,6 +1,6 @@
 '- javadoc
-   |- mainDescription
-   |  |- inlineTag
+   |- description
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 1, column: 4]
@@ -18,7 +18,7 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a list of unknown type, line: 1, column: 32]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 55]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 2, column: 4]
@@ -36,7 +36,7 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a list of unknown type, line: 2, column: 26]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 49]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 3, column: 4]
@@ -57,7 +57,7 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  list of any subtype of Number, line: 3, column: 41]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 71]
-   |  |- inlineTag
+   |  |- structuredTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 4, column: 4]
@@ -78,7 +78,7 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  list of any supertype of Integer, line: 4, column: 40]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 73]
-   |  '- inlineTag
+   |  '- structuredTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 2]
    |     |- linkInlineTag
    |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 5, column: 4]

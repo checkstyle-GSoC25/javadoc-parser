@@ -1,5 +1,5 @@
 '- javadoc
-   |- mainDescription
+   |- description
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 2, column: 2]
@@ -54,7 +54,8 @@
    |  |  |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 8]
    |  |  |  |  |  |- codeInlineTag
    |  |  |  |  |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 7, column: 10]
-   |  |  |  |  |  |  '- TOKEN[type: TEXT, text:  Map&lt;String, List&lt;Integer&gt;&gt;, line: 7, column: 14]
+   |  |  |  |  |  |  '- inlineText
+   |  |  |  |  |  |     '- TOKEN[type: TEXT, text:  Map&lt;String, List&lt;Integer&gt;&gt;, line: 7, column: 14]
    |  |  |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 53]
    |  |  |  |  '- htmlTagEnd
    |  |  |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 54]
@@ -189,7 +190,8 @@
    |  |  |  |  |     |     |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 18, column: 37]
    |  |  |  |  |     |     |     |- codeInlineTag
    |  |  |  |  |     |     |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 18, column: 39]
-   |  |  |  |  |     |     |     |  '- TOKEN[type: TEXT, text:  List<String>, line: 18, column: 43]
+   |  |  |  |  |     |     |     |  '- inlineText
+   |  |  |  |  |     |     |     |     '- TOKEN[type: TEXT, text:  List<String>, line: 18, column: 43]
    |  |  |  |  |     |     |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 18, column: 56]
    |  |  |  |  |     |     '- htmlTagEnd
    |  |  |  |  |     |        |- TOKEN[type: TAG_OPEN, text: <, line: 18, column: 57]
@@ -355,20 +357,21 @@
    |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 33, column: 7]
    |  |  |  |- codeInlineTag
    |  |  |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 33, column: 9]
-   |  |  |  |  |- TOKEN[type: TEXT, text:  public class Example , line: 34, column: 1]
-   |  |  |  |  |- TOKEN[type: TEXT, text: {, line: 34, column: 23]
-   |  |  |  |  |- TOKEN[type: TEXT, text:      public void method() , line: 35, column: 1]
-   |  |  |  |  |- TOKEN[type: TEXT, text: {, line: 35, column: 27]
-   |  |  |  |  |- TOKEN[type: TEXT, text:          if (x > 0 && y < 5) , line: 36, column: 1]
-   |  |  |  |  |- TOKEN[type: TEXT, text: {, line: 36, column: 30]
-   |  |  |  |  |- TOKEN[type: TEXT, text:              System.out.println("Valid & tricky!");, line: 37, column: 1]
-   |  |  |  |  |- TOKEN[type: TEXT, text:          , line: 38, column: 1]
-   |  |  |  |  |- TOKEN[type: TEXT, text: }, line: 38, column: 10]
-   |  |  |  |  |- TOKEN[type: TEXT, text:      , line: 39, column: 1]
-   |  |  |  |  |- TOKEN[type: TEXT, text: }, line: 39, column: 6]
-   |  |  |  |  |- TOKEN[type: TEXT, text:  , line: 40, column: 1]
-   |  |  |  |  |- TOKEN[type: TEXT, text: }, line: 40, column: 2]
-   |  |  |  |  '- TOKEN[type: TEXT, text:  , line: 41, column: 1]
+   |  |  |  |  '- inlineText
+   |  |  |  |     |- TOKEN[type: TEXT, text:  public class Example , line: 34, column: 1]
+   |  |  |  |     |- TOKEN[type: TEXT, text: {, line: 34, column: 23]
+   |  |  |  |     |- TOKEN[type: TEXT, text:      public void method() , line: 35, column: 1]
+   |  |  |  |     |- TOKEN[type: TEXT, text: {, line: 35, column: 27]
+   |  |  |  |     |- TOKEN[type: TEXT, text:          if (x > 0 && y < 5) , line: 36, column: 1]
+   |  |  |  |     |- TOKEN[type: TEXT, text: {, line: 36, column: 30]
+   |  |  |  |     |- TOKEN[type: TEXT, text:              System.out.println("Valid & tricky!");, line: 37, column: 1]
+   |  |  |  |     |- TOKEN[type: TEXT, text:          , line: 38, column: 1]
+   |  |  |  |     |- TOKEN[type: TEXT, text: }, line: 38, column: 10]
+   |  |  |  |     |- TOKEN[type: TEXT, text:      , line: 39, column: 1]
+   |  |  |  |     |- TOKEN[type: TEXT, text: }, line: 39, column: 6]
+   |  |  |  |     |- TOKEN[type: TEXT, text:  , line: 40, column: 1]
+   |  |  |  |     |- TOKEN[type: TEXT, text: }, line: 40, column: 2]
+   |  |  |  |     '- TOKEN[type: TEXT, text:  , line: 41, column: 1]
    |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 41, column: 2]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 41, column: 3]

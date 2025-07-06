@@ -1,5 +1,5 @@
 '- javadoc
-   |- mainDescription
+   |- description
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 1, column: 2]
