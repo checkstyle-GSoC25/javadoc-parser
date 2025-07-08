@@ -116,6 +116,8 @@ blockTag
     | versionTag
     | seeTag
     | hiddenTag
+    | usesTag
+    | providesTag
     | customBlockTag
     ;
 
@@ -131,9 +133,13 @@ returnTag: RETURN_LITERAL description?;
 
 parameterTag: PARAM_LITERAL PARAMETER_NAME description?;
 
-throwsTag: THROWS exceptionName=identifier description?;
+throwsTag: THROWS exceptionName=qualifiedIdentifier description?;
 
-exceptionTag: EXCEPTION exceptionName=identifier description?;
+exceptionTag: EXCEPTION exceptionName=qualifiedIdentifier description?;
+
+usesTag: USES serviceType=qualifiedIdentifier description?;
+
+providesTag: PROVIDES serviceType=qualifiedIdentifier description?;
 
 versionTag: VERSION description?;
 
@@ -145,7 +151,7 @@ seeTag
 
 customBlockTag: CUSTOM_NAME description;
 
-identifier: IDENTIFIER;
+qualifiedIdentifier: IDENTIFIER;
 
 description : (TEXT | inlineTag | htmlElement)+ ;
 
