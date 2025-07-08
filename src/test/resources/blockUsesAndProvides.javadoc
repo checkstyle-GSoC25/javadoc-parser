@@ -1,0 +1,4 @@
+* @uses testpkgmdlB.TestClassInModuleB With a test description for uses.
+* @provides testpkg2mdlB.TestInterface2InModuleB
+* @provides testpkgmdlB.TestClassInModuleB With a test description for provides.
+* @uses com.sun.net.httpserver.spi.HttpServerProvider

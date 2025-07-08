@@ -33,13 +33,13 @@
    |     '- TOKEN[type: TEXT, text:  Always returns madness, line: 12, column: 10]
    |- blockTag
    |  |- TOKEN[type: THROWS, text: @throws, line: 13, column: 3]
-   |  |- identifier
+   |  |- qualifiedIdentifier
    |  |  '- TOKEN[type: IDENTIFIER, text: IllegalArgumentException, line: 13, column: 11]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  if something is null, line: 13, column: 35]
    |- blockTag
    |  |- TOKEN[type: THROWS, text: @throws, line: 14, column: 3]
-   |  |- identifier
+   |  |- qualifiedIdentifier
    |  |  '- TOKEN[type: IDENTIFIER, text: NullPointerException, line: 14, column: 11]
    |  '- description
    |     '- TOKEN[type: TEXT, text:      if null sneaks in, line: 14, column: 31]

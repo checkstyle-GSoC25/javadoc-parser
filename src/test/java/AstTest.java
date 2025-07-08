@@ -149,6 +149,11 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testBlockUsesAndProvidesTags() throws IOException {
+        verifyAst(getPath("blockUsesAndProvides.txt"), getPath("blockUsesAndProvides.javadoc"));
+    }
+
+    @Test
     public void testBlockTagLocation() throws IOException {
         verifyAst(getPath("blockTagLocation.txt"), getPath("blockTagLocation.javadoc"));
     }

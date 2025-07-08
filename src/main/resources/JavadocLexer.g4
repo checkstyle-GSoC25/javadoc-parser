@@ -312,12 +312,14 @@ AUTHOR_LITERAL: 'author' -> pushMode(text);
 DEPRECATED_LITERAL : 'deprecated' -> pushMode(text);
 RETURN_LITERAL: 'return' -> pushMode(text);
 PARAM_LITERAL: 'param' -> pushMode(parameterName);
-EXCEPTION: 'exception' -> pushMode(exceptionName);
-THROWS: 'throws' -> pushMode(exceptionName);
+EXCEPTION: 'exception' -> pushMode(qualifiedIdentifier);
+THROWS: 'throws' -> pushMode(qualifiedIdentifier);
 SINCE: 'since' -> pushMode(text);
 VERSION: 'version' -> pushMode(text);
 SEE: 'see' -> pushMode(see);
 LITERAL_HIDDEN: 'hidden' -> pushMode(text);
+USES: 'uses' -> pushMode(qualifiedIdentifier);
+PROVIDES: 'provides' -> pushMode(qualifiedIdentifier);
 BlockTag_CUSTOM_NAME: [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(text);
 
 mode see;
@@ -345,12 +347,12 @@ SeeParameterList_PARAMETER_TYPE: ([a-zA-Z0-9_$] | '.' | '[' | ']')+ -> type(PARA
 SeeParameterList_COMMA: ',' -> type(COMMA);
 See_RPAREN: ')' -> type(RPAREN), mode(text);
 
-mode exceptionName;
-EXCEPTION_NAME: ([a-zA-Z0-9_$] | '.')+ -> type(IDENTIFIER), mode(text);
-ExceptionName_NEWLINE
+mode qualifiedIdentifier;
+DOTTED_IDENTIFIER: ([a-zA-Z0-9_$] | '.')+ -> type(IDENTIFIER), mode(text);
+DottedIdentifier_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
-ExceptionName_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
+DottedIdentifier_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 
 mode parameterName;
 PARAMETER_NAME: [a-zA-Z0-9<>_$]+ -> mode(text);
