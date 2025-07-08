@@ -119,7 +119,7 @@ blockTag
     | customBlockTag
     ;
 
-authorTag: AUTHOR_LITERAL description;
+authorTag: AUTHOR_LITERAL description?;
 
 deprecatedTag: DEPRECATED_LITERAL description?;
 

@@ -14,4 +14,6 @@
    |  |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 5, column: 1]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  mohamed, line: 5, column: 8]
-   '- TOKEN[type: EOF, text: <EOF>, line: 5, column: 16]
+   |- blockTag
+   |  '- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 6, column: 2]
+   '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 9]
