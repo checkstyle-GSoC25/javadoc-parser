@@ -149,7 +149,7 @@ seeTag
     | SEE htmlElement description?
     ;
 
-customBlockTag: CUSTOM_NAME description;
+customBlockTag: CUSTOM_NAME description?;
 
 qualifiedIdentifier: IDENTIFIER;
 

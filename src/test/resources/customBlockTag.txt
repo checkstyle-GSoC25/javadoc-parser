@@ -1,0 +1,45 @@
+'- javadoc
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @apiNote, line: 1, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  This method uses the same rules as , line: 1, column: 10]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 46]
+   |     |  |- linkInlineTag
+   |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 1, column: 48]
+   |     |  |  '- reference
+   |     |  |     |- qualifiedName
+   |     |  |     |  '- TOKEN[type: IDENTIFIER, text: Math, line: 1, column: 53]
+   |     |  |     |- TOKEN[type: HASH, text: #, line: 1, column: 57]
+   |     |  |     '- memberReference
+   |     |  |        '- TOKEN[type: IDENTIFIER, text: max, line: 1, column: 58]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 61]
+   |     '- TOKEN[type: TEXT, text: ., line: 1, column: 62]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @implSpec, line: 2, column: 2]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  This implementation returns a read-only iterator., line: 2, column: 11]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @customTag, line: 3, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  This method is optimized for , line: 3, column: 12]
+   |     |- htmlElement
+   |     |  |- htmlTagStart
+   |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 42]
+   |     |  |  |- TOKEN[type: TAG_NAME, text: i, line: 3, column: 43]
+   |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 44]
+   |     |  |- htmlContent
+   |     |  |  '- TOKEN[type: TEXT, text:  parallel execution , line: 3, column: 45]
+   |     |  '- htmlTagEnd
+   |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 65]
+   |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 3, column: 66]
+   |     |     |- TOKEN[type: TAG_NAME, text: i, line: 3, column: 67]
+   |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 68]
+   |     '- TOKEN[type: TEXT, text:  in production., line: 3, column: 69]
+   |- blockTag
+   |  |- TOKEN[type: CUSTOM_NAME, text: @reviewedBy, line: 4, column: 2]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  John Smith on 2025-07-01, line: 4, column: 13]
+   |- blockTag
+   |  '- TOKEN[type: CUSTOM_NAME, text: @test, line: 5, column: 2]
+   '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 0]
