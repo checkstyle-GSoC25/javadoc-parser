@@ -1,0 +1,65 @@
+'- javadoc
+   |- blockTag
+   |  |- TOKEN[type: SERIAL, text: @serial, line: 1, column: 2]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  Duration of this lease., line: 1, column: 9]
+   |- blockTag
+   |  '- TOKEN[type: SERIAL, text: @serial, line: 2, column: 2]
+   |- blockTag
+   |  |- TOKEN[type: SERIAL, text: @serial, line: 3, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  The , line: 3, column: 9]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 14]
+   |     |  |- codeInlineTag
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 3, column: 16]
+   |     |  |  '- TOKEN[type: TEXT, text:  SQLException, line: 3, column: 20]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 33]
+   |     '- TOKEN[type: TEXT, text:  the driver is about to throw to the application., line: 3, column: 34]
+   |- blockTag
+   |  |- TOKEN[type: SERIAL, text: @serial, line: 4, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  String identifying the other file or , line: 4, column: 9]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 47]
+   |     |  |- codeInlineTag
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 4, column: 49]
+   |     |  |  '- TOKEN[type: TEXT, text:  null, line: 4, column: 53]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 58]
+   |     |- TOKEN[type: TEXT, text:  if there isn't, line: 4, column: 59]
+   |     '- TOKEN[type: TEXT, text: another file or if not known., line: 5, column: 3]
+   |- blockTag
+   |  |- TOKEN[type: SERIAL_DATA, text: @serialData, line: 6, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  The value returned by , line: 6, column: 13]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 36]
+   |     |  |- codeInlineTag
+   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 38]
+   |     |  |  '- TOKEN[type: TEXT, text:  getTime(), line: 6, column: 42]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 52]
+   |     |- TOKEN[type: TEXT, text: is emitted (long).  This represents the offset from, line: 7, column: 14]
+   |     '- TOKEN[type: TEXT, text: January 1, 1970, 00:00:00 GMT in milliseconds., line: 8, column: 14]
+   |- blockTag
+   |  |- TOKEN[type: SERIAL_DATA, text: @serialData, line: 9, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  The , line: 9, column: 13]
+   |     |- htmlElement
+   |     |  |- htmlTagStart
+   |     |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 18]
+   |     |  |  |- TOKEN[type: TAG_NAME, text: i, line: 9, column: 19]
+   |     |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 20]
+   |     |  |- htmlContent
+   |     |  |  '- TOKEN[type: TEXT, text: size, line: 9, column: 21]
+   |     |  '- htmlTagEnd
+   |     |     |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 25]
+   |     |     |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 26]
+   |     |     |- TOKEN[type: TAG_NAME, text: i, line: 9, column: 27]
+   |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 28]
+   |     |- TOKEN[type: TEXT, text:  of the enum map (the number of key-value, line: 9, column: 29]
+   |     |- TOKEN[type: TEXT, text: mappings) is emitted (int), followed by the key (Object), line: 10, column: 14]
+   |     |- TOKEN[type: TEXT, text: and value (Object) for each key-value mapping represented, line: 11, column: 14]
+   |     '- TOKEN[type: TEXT, text: by the enum map., line: 12, column: 14]
+   |- blockTag
+   |  '- TOKEN[type: SERIAL_DATA, text: @serialData, line: 13, column: 2]
+   '- TOKEN[type: EOF, text: <EOF>, line: 13, column: 13]

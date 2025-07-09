@@ -118,6 +118,8 @@ blockTag
     | hiddenTag
     | usesTag
     | providesTag
+    | serialTag
+    | serialDataTag
     | customBlockTag
     ;
 
@@ -150,6 +152,11 @@ seeTag
     ;
 
 customBlockTag: CUSTOM_NAME description?;
+
+serialTag: SERIAL description?;
+
+serialDataTag: SERIAL_DATA description?;
+
 
 qualifiedIdentifier: IDENTIFIER;
 

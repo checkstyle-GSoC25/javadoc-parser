@@ -174,6 +174,11 @@ public class AstTest extends AbstractTestSupport {
     }
 
     @Test
+    public void testSerialAndSerialDataTags() throws IOException {
+        verifyAst(getPath("serialAndSerialData.txt"), getPath("serialAndSerialData.javadoc"));
+    }
+
+    @Test
     public void testHTML2() throws IOException {
         verifyAst(getPath("html2.txt"), getPath("html2.javadoc"));
     }
