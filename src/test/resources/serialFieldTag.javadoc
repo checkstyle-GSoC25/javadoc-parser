@@ -1,0 +1,9 @@
+* @serialField type String The notification type.
+*              A string expressed in a dot notation similar to Java properties.
+*              An example of a notification type is com.sun.management.gc.notification
+* @serialField name String Role name
+* @serialField isWritable boolean Write access mode: {@code true} if role is writable
+* @serialField tab         Hashtable
+*      deprecated, for forward compatibility only
+* @serialField bits long[]
+* @serialField perms java.util.Hashtable

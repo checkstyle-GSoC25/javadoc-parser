@@ -165,9 +165,11 @@
    |  '- description
    |     '- TOKEN[type: TEXT, text:  This class supports Java object serialization., line: 31, column: 10]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @serialField, line: 32, column: 3]
+   |  |- TOKEN[type: SERIAL_FIELD, text: @serialField, line: 32, column: 3]
+   |  |- TOKEN[type: IDENTIFIER, text: serialNumber, line: 32, column: 16]
+   |  |- TOKEN[type: FIELD_TYPE, text: long, line: 32, column: 29]
    |  '- description
-   |     '- TOKEN[type: TEXT, text:  serialNumber long the serial number of this madness, line: 32, column: 15]
+   |     '- TOKEN[type: TEXT, text:  the serial number of this madness, line: 32, column: 33]
    |- blockTag
    |  |- TOKEN[type: SERIAL_DATA, text: @serialData, line: 33, column: 3]
    |  '- description

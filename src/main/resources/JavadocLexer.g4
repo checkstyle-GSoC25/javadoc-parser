@@ -11,7 +11,7 @@ tokens {
     TAG_SLASH, EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
     SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL, SYSTEM_PROPERTY,
     INDEX, INDEX_TERM, RETURN, SNIPPET, SNIPPET_ATTR_NAME, COLON, EXCEPTION, THROWS, PARAMETER_NAME, SINCE,
-    VERSION, SEE, STRING_LITERAL, LITERAL_HIDDEN, SERIAL, SERIAL_DATA
+    VERSION, SEE, STRING_LITERAL, LITERAL_HIDDEN, SERIAL, SERIAL_DATA, SERIAL_FIELD, FIELD_TYPE
 }
 
 @header {
@@ -322,7 +322,19 @@ USES: 'uses' -> pushMode(qualifiedIdentifier);
 PROVIDES: 'provides' -> pushMode(qualifiedIdentifier);
 SERIAL: 'serial' -> pushMode(text);
 SERIAL_DATA: 'serialData' -> pushMode(text);
+SERIAL_FIELD: 'serialField' -> pushMode(fieldName);
 BlockTag_CUSTOM_NAME: [a-zA-Z0-9:._-]+ -> type(CUSTOM_NAME), pushMode(text);
+
+mode fieldName;
+FieldName_IDENTIFIER: Letter LetterOrDigit* -> type(IDENTIFIER), pushMode(fieldType);
+FieldName_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
+FieldName_NEWLINE
+    : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
+    ;
+
+mode fieldType;
+FieldType_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
+FIELD_TYPE: ([a-zA-Z0-9_$] | '.' | '[' | ']')+ -> mode(text);
 
 mode see;
 STRING_LITERAL: '"' .*? '"' -> mode(text);
