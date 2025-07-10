@@ -120,6 +120,7 @@ blockTag
     | providesTag
     | serialTag
     | serialDataTag
+    | serialFieldTag
     | customBlockTag
     ;
 
@@ -157,6 +158,7 @@ serialTag: SERIAL description?;
 
 serialDataTag: SERIAL_DATA description?;
 
+serialFieldTag: SERIAL_FIELD fieldName=IDENTIFIER FIELD_TYPE  description?;
 
 qualifiedIdentifier: IDENTIFIER;
 
