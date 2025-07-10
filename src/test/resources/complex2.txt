@@ -161,7 +161,7 @@
    |  '- description
    |     '- TOKEN[type: TEXT, text:  internal-only, line: 30, column: 11]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @serial, line: 31, column: 3]
+   |  |- TOKEN[type: SERIAL, text: @serial, line: 31, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  This class supports Java object serialization., line: 31, column: 10]
    |- blockTag
@@ -169,7 +169,7 @@
    |  '- description
    |     '- TOKEN[type: TEXT, text:  serialNumber long the serial number of this madness, line: 32, column: 15]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @serialData, line: 33, column: 3]
+   |  |- TOKEN[type: SERIAL_DATA, text: @serialData, line: 33, column: 3]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  The bytes: , line: 33, column: 14]
    |     |- inlineTag
