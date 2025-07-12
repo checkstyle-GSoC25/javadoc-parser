@@ -1,19 +1,19 @@
 '- javadoc
-   |- description
-   |  |- TOKEN[type: TEXT, text: Usage of author block tag., line: 1, column: 2]
-   |  '- structuredTag
-   |     |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 2, column: 2]
-   |     '- description
-   |        |- TOKEN[type: TEXT, text:  mohamed mahfouz, line: 2, column: 9]
-   |        '- structuredTag
-   |           |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 3, column: 2]
-   |           '- description
-   |              |- TOKEN[type: TEXT, text:  mohamed, line: 3, column: 9]
-   |              |- TOKEN[type: TEXT, text: mohamed mahfouz, line: 4, column: 8]
-   |              '- structuredTag
-   |                 |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 5, column: 1]
-   |                 '- description
-   |                    |- TOKEN[type: TEXT, text:  mohamed, line: 5, column: 8]
-   |                    '- structuredTag
-   |                       '- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 6, column: 2]
+   |- mainDescription
+   |  '- TOKEN[type: TEXT, text: Usage of author block tag., line: 1, column: 2]
+   |- blockTag
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 2, column: 2]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  mohamed mahfouz, line: 2, column: 9]
+   |- blockTag
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 3, column: 2]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  mohamed, line: 3, column: 9]
+   |     '- TOKEN[type: TEXT, text: mohamed mahfouz, line: 4, column: 8]
+   |- blockTag
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 5, column: 1]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  mohamed, line: 5, column: 8]
+   |- blockTag
+   |  '- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 6, column: 2]
    '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 9]

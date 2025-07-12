@@ -1,5 +1,5 @@
 '- javadoc
-   |- description
+   |- mainDescription
    |  |- TOKEN[type: TEXT, text: Demonstrates complex HTML cases in Javadoc., line: 1, column: 2]
    |  |- htmlElement
    |  |  |- htmlTagStart

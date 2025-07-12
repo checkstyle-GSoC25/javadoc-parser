@@ -1,5 +1,5 @@
 '- javadoc
-   |- description
+   |- mainDescription
    |  |- TOKEN[type: TEXT, text: This method does something important., line: 1, column: 2]
    |  |- htmlElement
    |  |  |- htmlTagStart

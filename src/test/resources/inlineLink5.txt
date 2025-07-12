@@ -1,6 +1,6 @@
 '- javadoc
-   |- description
-   |  |- structuredTag
+   |- mainDescription
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- linkPlainInlineTag
    |  |  |  |- TOKEN[type: LINKPLAIN_LITERAL, text: linkplain, line: 1, column: 4]
@@ -32,7 +32,7 @@
    |  |  |     '- TOKEN[type: TEXT, text:  map string to list, line: 1, column: 59]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 78]
    |  |- TOKEN[type: TEXT, text: Refer to , line: 2, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 11]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 2, column: 13]
@@ -56,7 +56,7 @@
    |  |  |     '- TOKEN[type: TEXT, text:  generic function type, line: 2, column: 51]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 73]
    |  |- TOKEN[type: TEXT, text: ., line: 2, column: 74]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 3, column: 4]
@@ -90,7 +90,7 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  complex nested map structure, line: 3, column: 57]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 86]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 4, column: 4]
@@ -108,7 +108,7 @@
    |  |  |  '- description
    |  |  |     '- TOKEN[type: TEXT, text:  a container class for T, line: 4, column: 29]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 53]
-   |  '- structuredTag
+   |  '- inlineTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 2]
    |     |- linkPlainInlineTag
    |     |  |- TOKEN[type: LINKPLAIN_LITERAL, text: linkplain, line: 5, column: 4]

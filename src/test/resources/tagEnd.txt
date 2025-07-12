@@ -1,12 +1,11 @@
 '- javadoc
-   |- description
+   |- mainDescription
    |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |- codeInlineTag
    |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 1, column: 4]
-   |  |  '- inlineText
-   |  |     |- TOKEN[type: TEXT, text:  , line: 1, column: 8]
-   |  |     |- TOKEN[type: TEXT, text: {, line: 1, column: 9]
-   |  |     |- TOKEN[type: TEXT, text: int x;, line: 1, column: 10]
-   |  |     '- TOKEN[type: TEXT, text: }, line: 1, column: 16]
+   |  |  |- TOKEN[type: TEXT, text:  , line: 1, column: 8]
+   |  |  |- TOKEN[type: TEXT, text: {, line: 1, column: 9]
+   |  |  |- TOKEN[type: TEXT, text: int x;, line: 1, column: 10]
+   |  |  '- TOKEN[type: TEXT, text: }, line: 1, column: 16]
    |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 17]
    '- TOKEN[type: EOF, text: <EOF>, line: 1, column: 18]

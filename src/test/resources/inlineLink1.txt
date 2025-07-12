@@ -1,13 +1,13 @@
 '- javadoc
-   |- description
-   |  |- structuredTag
+   |- mainDescription
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 1, column: 4]
    |  |  |  '- reference
    |  |  |     '- TOKEN[type: IDENTIFIER, text: MyClass, line: 1, column: 9]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 16]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 2, column: 4]
@@ -18,7 +18,7 @@
    |  |  |     |- TOKEN[type: DOT, text: ., line: 2, column: 20]
    |  |  |     '- TOKEN[type: IDENTIFIER, text: MyClass, line: 2, column: 21]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 28]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 3, column: 4]
@@ -29,7 +29,7 @@
    |  |  |     '- memberReference
    |  |  |        '- TOKEN[type: IDENTIFIER, text: myMethod, line: 3, column: 17]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 25]
-   |  '- structuredTag
+   |  '- inlineTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
    |     |- linkInlineTag
    |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 4, column: 4]

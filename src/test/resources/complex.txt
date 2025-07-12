@@ -1,5 +1,5 @@
 '- javadoc
-   |- description
+   |- mainDescription
    |  |- htmlElement
    |  |  |- htmlTagStart
    |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 1, column: 3]
@@ -92,8 +92,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 3, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 1;, line: 3, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 1;, line: 3, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 3, column: 127]
@@ -168,8 +167,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 4, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 2;, line: 4, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 2;, line: 4, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 4, column: 127]
@@ -244,8 +242,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 5, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 3;, line: 5, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 3;, line: 5, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 5, column: 127]
@@ -320,8 +317,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 4;, line: 6, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 4;, line: 6, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 127]
@@ -396,8 +392,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 7, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 5;, line: 7, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 5;, line: 7, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 127]
@@ -472,8 +467,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 8, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 6;, line: 8, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 6;, line: 8, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 127]
@@ -548,8 +542,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 9, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 9, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 7;, line: 9, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 7;, line: 9, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 9, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 127]
@@ -624,8 +617,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 10, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 10, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 8;, line: 10, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 8;, line: 10, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 10, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 10, column: 127]
@@ -700,8 +692,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 11, column: 109]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 11, column: 111]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 9;, line: 11, column: 115]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 9;, line: 11, column: 115]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 126]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 11, column: 127]
@@ -776,8 +767,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 12, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 10;, line: 12, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 10;, line: 12, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 12, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 12, column: 130]
@@ -852,8 +842,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 13, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 13, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 11;, line: 13, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 11;, line: 13, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 13, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 13, column: 130]
@@ -928,8 +917,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 14, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 14, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 12;, line: 14, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 12;, line: 14, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 14, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 14, column: 130]
@@ -1004,8 +992,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 15, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 15, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 13;, line: 15, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 13;, line: 15, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 15, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 15, column: 130]
@@ -1080,8 +1067,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 16, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 16, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 14;, line: 16, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 14;, line: 16, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 16, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 16, column: 130]
@@ -1156,8 +1142,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 17, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 17, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 15;, line: 17, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 15;, line: 17, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 17, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 17, column: 130]
@@ -1232,8 +1217,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 18, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 18, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 16;, line: 18, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 16;, line: 18, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 18, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 18, column: 130]
@@ -1308,8 +1292,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 19, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 19, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 17;, line: 19, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 17;, line: 19, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 19, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 19, column: 130]
@@ -1384,8 +1367,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 20, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 20, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 18;, line: 20, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 18;, line: 20, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 20, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 20, column: 130]
@@ -1460,8 +1442,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 21, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 21, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 19;, line: 21, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 19;, line: 21, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 21, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 21, column: 130]
@@ -1536,8 +1517,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 22, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 22, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 20;, line: 22, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 20;, line: 22, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 22, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 22, column: 130]
@@ -1612,8 +1592,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 23, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 23, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 21;, line: 23, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 21;, line: 23, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 23, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 23, column: 130]
@@ -1688,8 +1667,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 24, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 24, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 22;, line: 24, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 22;, line: 24, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 24, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 24, column: 130]
@@ -1764,8 +1742,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 25, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 25, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 23;, line: 25, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 23;, line: 25, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 25, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 25, column: 130]
@@ -1840,8 +1817,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 26, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 26, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 24;, line: 26, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 24;, line: 26, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 26, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 26, column: 130]
@@ -1916,8 +1892,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 27, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 27, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 25;, line: 27, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 25;, line: 27, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 27, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 27, column: 130]
@@ -1992,8 +1967,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 28, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 28, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 26;, line: 28, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 26;, line: 28, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 28, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 28, column: 130]
@@ -2068,8 +2042,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 29, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 29, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 27;, line: 29, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 27;, line: 29, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 29, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 29, column: 130]
@@ -2144,8 +2117,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 30, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 30, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 28;, line: 30, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 28;, line: 30, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 30, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 30, column: 130]
@@ -2220,8 +2192,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 31, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 31, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 29;, line: 31, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 29;, line: 31, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 31, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 31, column: 130]
@@ -2296,8 +2267,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 32, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 32, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 30;, line: 32, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 30;, line: 32, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 32, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 32, column: 130]
@@ -2372,8 +2342,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 33, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 33, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 31;, line: 33, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 31;, line: 33, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 33, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 33, column: 130]
@@ -2448,8 +2417,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 34, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 34, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 32;, line: 34, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 32;, line: 34, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 34, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 34, column: 130]
@@ -2524,8 +2492,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 35, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 35, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 33;, line: 35, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 33;, line: 35, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 35, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 35, column: 130]
@@ -2600,8 +2567,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 36, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 36, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 34;, line: 36, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 34;, line: 36, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 36, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 36, column: 130]
@@ -2676,8 +2642,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 37, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 37, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 35;, line: 37, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 35;, line: 37, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 37, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 37, column: 130]
@@ -2752,8 +2717,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 38, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 38, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 36;, line: 38, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 36;, line: 38, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 38, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 38, column: 130]
@@ -2828,8 +2792,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 39, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 39, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 37;, line: 39, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 37;, line: 39, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 39, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 39, column: 130]
@@ -2904,8 +2867,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 40, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 40, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 38;, line: 40, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 38;, line: 40, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 40, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 40, column: 130]
@@ -2980,8 +2942,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 41, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 41, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 39;, line: 41, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 39;, line: 41, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 41, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 41, column: 130]
@@ -3056,8 +3017,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 42, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 42, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 40;, line: 42, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 40;, line: 42, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 42, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 42, column: 130]
@@ -3132,8 +3092,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 43, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 43, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 41;, line: 43, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 41;, line: 43, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 43, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 43, column: 130]
@@ -3208,8 +3167,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 44, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 44, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 42;, line: 44, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 42;, line: 44, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 44, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 44, column: 130]
@@ -3284,8 +3242,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 45, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 45, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 43;, line: 45, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 43;, line: 45, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 45, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 45, column: 130]
@@ -3360,8 +3317,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 46, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 46, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 44;, line: 46, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 44;, line: 46, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 46, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 130]
@@ -3436,8 +3392,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 47, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 47, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 45;, line: 47, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 45;, line: 47, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 47, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 47, column: 130]
@@ -3512,8 +3467,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 48, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 48, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 46;, line: 48, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 46;, line: 48, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 48, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 48, column: 130]
@@ -3588,8 +3542,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 49, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 49, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 47;, line: 49, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 47;, line: 49, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 49, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 49, column: 130]
@@ -3664,8 +3617,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 50, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 50, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 48;, line: 50, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 48;, line: 50, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 50, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 50, column: 130]
@@ -3740,8 +3692,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 51, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 51, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 49;, line: 51, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 49;, line: 51, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 51, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 51, column: 130]
@@ -3816,8 +3767,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 52, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 52, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 50;, line: 52, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 50;, line: 52, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 52, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 52, column: 130]
@@ -3892,8 +3842,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 53, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 53, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 51;, line: 53, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 51;, line: 53, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 53, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 53, column: 130]
@@ -3968,8 +3917,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 54, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 54, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 52;, line: 54, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 52;, line: 54, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 54, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 54, column: 130]
@@ -4044,8 +3992,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 55, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 55, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 53;, line: 55, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 53;, line: 55, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 55, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 55, column: 130]
@@ -4120,8 +4067,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 56, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 56, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 54;, line: 56, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 54;, line: 56, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 56, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 56, column: 130]
@@ -4196,8 +4142,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 57, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 57, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 55;, line: 57, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 55;, line: 57, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 57, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 57, column: 130]
@@ -4272,8 +4217,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 58, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 58, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 56;, line: 58, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 56;, line: 58, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 58, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 58, column: 130]
@@ -4348,8 +4292,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 59, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 59, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 57;, line: 59, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 57;, line: 59, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 59, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 59, column: 130]
@@ -4424,8 +4367,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 60, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 60, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 58;, line: 60, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 58;, line: 60, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 60, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 60, column: 130]
@@ -4500,8 +4442,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 61, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 61, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 59;, line: 61, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 59;, line: 61, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 61, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 61, column: 130]
@@ -4576,8 +4517,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 62, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 62, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 60;, line: 62, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 60;, line: 62, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 62, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 62, column: 130]
@@ -4652,8 +4592,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 63, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 63, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 61;, line: 63, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 61;, line: 63, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 63, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 63, column: 130]
@@ -4728,8 +4667,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 64, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 64, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 62;, line: 64, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 62;, line: 64, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 64, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 64, column: 130]
@@ -4804,8 +4742,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 65, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 65, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 63;, line: 65, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 63;, line: 65, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 65, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 65, column: 130]
@@ -4880,8 +4817,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 66, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 66, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 64;, line: 66, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 64;, line: 66, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 66, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 66, column: 130]
@@ -4956,8 +4892,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 67, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 67, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 65;, line: 67, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 65;, line: 67, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 67, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 67, column: 130]
@@ -5032,8 +4967,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 68, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 68, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 66;, line: 68, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 66;, line: 68, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 68, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 68, column: 130]
@@ -5108,8 +5042,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 69, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 69, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 67;, line: 69, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 67;, line: 69, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 69, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 69, column: 130]
@@ -5184,8 +5117,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 70, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 70, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 68;, line: 70, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 68;, line: 70, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 70, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 70, column: 130]
@@ -5260,8 +5192,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 71, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 71, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 69;, line: 71, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 69;, line: 71, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 71, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 71, column: 130]
@@ -5336,8 +5267,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 72, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 72, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 70;, line: 72, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 70;, line: 72, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 72, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 72, column: 130]
@@ -5412,8 +5342,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 73, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 73, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 71;, line: 73, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 71;, line: 73, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 73, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 73, column: 130]
@@ -5488,8 +5417,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 74, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 74, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 72;, line: 74, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 72;, line: 74, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 74, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 74, column: 130]
@@ -5564,8 +5492,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 75, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 75, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 73;, line: 75, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 73;, line: 75, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 75, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 75, column: 130]
@@ -5640,8 +5567,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 76, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 76, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 74;, line: 76, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 74;, line: 76, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 76, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 76, column: 130]
@@ -5716,8 +5642,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 77, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 77, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 75;, line: 77, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 75;, line: 77, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 77, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 77, column: 130]
@@ -5792,8 +5717,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 78, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 78, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 76;, line: 78, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 76;, line: 78, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 78, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 78, column: 130]
@@ -5868,8 +5792,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 79, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 79, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 77;, line: 79, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 77;, line: 79, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 79, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 79, column: 130]
@@ -5944,8 +5867,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 80, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 80, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 78;, line: 80, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 78;, line: 80, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 80, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 80, column: 130]
@@ -6020,8 +5942,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 81, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 81, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 79;, line: 81, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 79;, line: 81, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 81, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 81, column: 130]
@@ -6096,8 +6017,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 82, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 82, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 80;, line: 82, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 80;, line: 82, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 82, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 82, column: 130]
@@ -6172,8 +6092,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 83, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 83, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 81;, line: 83, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 81;, line: 83, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 83, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 83, column: 130]
@@ -6248,8 +6167,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 84, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 84, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 82;, line: 84, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 82;, line: 84, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 84, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 84, column: 130]
@@ -6324,8 +6242,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 85, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 85, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 83;, line: 85, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 83;, line: 85, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 85, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 85, column: 130]
@@ -6400,8 +6317,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 86, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 86, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 84;, line: 86, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 84;, line: 86, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 86, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 86, column: 130]
@@ -6476,8 +6392,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 87, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 87, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 85;, line: 87, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 85;, line: 87, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 87, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 87, column: 130]
@@ -6552,8 +6467,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 88, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 88, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 86;, line: 88, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 86;, line: 88, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 88, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 88, column: 130]
@@ -6628,8 +6542,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 89, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 89, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 87;, line: 89, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 87;, line: 89, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 89, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 89, column: 130]
@@ -6704,8 +6617,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 90, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 90, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 88;, line: 90, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 88;, line: 90, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 90, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 90, column: 130]
@@ -6780,8 +6692,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 91, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 91, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 89;, line: 91, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 89;, line: 91, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 91, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 91, column: 130]
@@ -6856,8 +6767,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 92, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 92, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 90;, line: 92, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 90;, line: 92, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 92, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 92, column: 130]
@@ -6932,8 +6842,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 93, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 93, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 91;, line: 93, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 91;, line: 93, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 93, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 93, column: 130]
@@ -7008,8 +6917,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 94, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 94, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 92;, line: 94, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 92;, line: 94, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 94, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 94, column: 130]
@@ -7084,8 +6992,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 95, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 95, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 93;, line: 95, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 93;, line: 95, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 95, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 95, column: 130]
@@ -7160,8 +7067,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 96, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 96, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 94;, line: 96, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 94;, line: 96, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 96, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 96, column: 130]
@@ -7236,8 +7142,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 97, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 97, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 95;, line: 97, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 95;, line: 97, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 97, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 97, column: 130]
@@ -7312,8 +7217,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 98, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 98, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 96;, line: 98, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 96;, line: 98, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 98, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 98, column: 130]
@@ -7388,8 +7292,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 99, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 99, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 97;, line: 99, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 97;, line: 99, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 99, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 99, column: 130]
@@ -7464,8 +7367,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 100, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 100, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 98;, line: 100, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 98;, line: 100, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 100, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 100, column: 130]
@@ -7540,8 +7442,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 101, column: 111]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 101, column: 113]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 99;, line: 101, column: 117]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 99;, line: 101, column: 117]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 101, column: 129]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 101, column: 130]
@@ -7616,8 +7517,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 102, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 102, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 100;, line: 102, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 100;, line: 102, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 102, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 102, column: 133]
@@ -7692,8 +7592,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 103, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 103, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 101;, line: 103, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 101;, line: 103, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 103, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 103, column: 133]
@@ -7768,8 +7667,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 104, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 104, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 102;, line: 104, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 102;, line: 104, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 104, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 104, column: 133]
@@ -7844,8 +7742,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 105, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 105, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 103;, line: 105, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 103;, line: 105, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 105, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 105, column: 133]
@@ -7920,8 +7817,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 106, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 106, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 104;, line: 106, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 104;, line: 106, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 106, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 106, column: 133]
@@ -7996,8 +7892,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 107, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 107, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 105;, line: 107, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 105;, line: 107, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 107, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 107, column: 133]
@@ -8072,8 +7967,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 108, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 108, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 106;, line: 108, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 106;, line: 108, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 108, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 108, column: 133]
@@ -8148,8 +8042,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 109, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 109, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 107;, line: 109, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 107;, line: 109, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 109, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 109, column: 133]
@@ -8224,8 +8117,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 110, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 110, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 108;, line: 110, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 108;, line: 110, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 110, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 110, column: 133]
@@ -8300,8 +8192,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 111, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 111, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 109;, line: 111, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 109;, line: 111, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 111, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 111, column: 133]
@@ -8376,8 +8267,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 112, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 112, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 110;, line: 112, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 110;, line: 112, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 112, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 112, column: 133]
@@ -8452,8 +8342,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 113, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 113, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 111;, line: 113, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 111;, line: 113, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 113, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 113, column: 133]
@@ -8528,8 +8417,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 114, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 114, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 112;, line: 114, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 112;, line: 114, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 114, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 114, column: 133]
@@ -8604,8 +8492,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 115, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 115, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 113;, line: 115, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 113;, line: 115, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 115, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 115, column: 133]
@@ -8680,8 +8567,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 116, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 116, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 114;, line: 116, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 114;, line: 116, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 116, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 116, column: 133]
@@ -8756,8 +8642,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 117, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 117, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 115;, line: 117, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 115;, line: 117, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 117, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 117, column: 133]
@@ -8832,8 +8717,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 118, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 118, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 116;, line: 118, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 116;, line: 118, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 118, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 118, column: 133]
@@ -8908,8 +8792,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 119, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 119, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 117;, line: 119, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 117;, line: 119, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 119, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 119, column: 133]
@@ -8984,8 +8867,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 120, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 120, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 118;, line: 120, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 118;, line: 120, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 120, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 120, column: 133]
@@ -9060,8 +8942,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 121, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 121, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 119;, line: 121, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 119;, line: 121, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 121, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 121, column: 133]
@@ -9136,8 +9017,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 122, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 122, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 120;, line: 122, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 120;, line: 122, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 122, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 122, column: 133]
@@ -9212,8 +9092,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 123, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 123, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 121;, line: 123, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 121;, line: 123, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 123, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 123, column: 133]
@@ -9288,8 +9167,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 124, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 124, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 122;, line: 124, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 122;, line: 124, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 124, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 124, column: 133]
@@ -9364,8 +9242,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 125, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 125, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 123;, line: 125, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 123;, line: 125, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 125, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 125, column: 133]
@@ -9440,8 +9317,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 126, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 126, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 124;, line: 126, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 124;, line: 126, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 126, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 126, column: 133]
@@ -9516,8 +9392,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 127, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 127, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 125;, line: 127, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 125;, line: 127, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 127, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 127, column: 133]
@@ -9592,8 +9467,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 128, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 128, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 126;, line: 128, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 126;, line: 128, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 128, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 128, column: 133]
@@ -9668,8 +9542,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 129, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 129, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 127;, line: 129, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 127;, line: 129, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 129, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 129, column: 133]
@@ -9744,8 +9617,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 130, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 130, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 128;, line: 130, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 128;, line: 130, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 130, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 130, column: 133]
@@ -9820,8 +9692,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 131, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 131, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 129;, line: 131, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 129;, line: 131, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 131, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 131, column: 133]
@@ -9896,8 +9767,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 132, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 132, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 130;, line: 132, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 130;, line: 132, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 132, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 132, column: 133]
@@ -9972,8 +9842,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 133, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 133, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 131;, line: 133, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 131;, line: 133, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 133, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 133, column: 133]
@@ -10048,8 +9917,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 134, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 134, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 132;, line: 134, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 132;, line: 134, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 134, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 134, column: 133]
@@ -10124,8 +9992,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 135, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 135, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 133;, line: 135, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 133;, line: 135, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 135, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 135, column: 133]
@@ -10200,8 +10067,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 136, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 136, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 134;, line: 136, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 134;, line: 136, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 136, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 136, column: 133]
@@ -10276,8 +10142,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 137, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 137, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 135;, line: 137, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 135;, line: 137, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 137, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 137, column: 133]
@@ -10352,8 +10217,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 138, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 138, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 136;, line: 138, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 136;, line: 138, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 138, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 138, column: 133]
@@ -10428,8 +10292,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 139, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 139, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 137;, line: 139, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 137;, line: 139, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 139, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 139, column: 133]
@@ -10504,8 +10367,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 140, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 140, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 138;, line: 140, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 138;, line: 140, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 140, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 140, column: 133]
@@ -10580,8 +10442,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 141, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 141, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 139;, line: 141, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 139;, line: 141, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 141, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 141, column: 133]
@@ -10656,8 +10517,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 142, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 142, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 140;, line: 142, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 140;, line: 142, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 142, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 142, column: 133]
@@ -10732,8 +10592,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 143, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 143, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 141;, line: 143, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 141;, line: 143, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 143, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 143, column: 133]
@@ -10808,8 +10667,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 144, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 144, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 142;, line: 144, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 142;, line: 144, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 144, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 144, column: 133]
@@ -10884,8 +10742,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 145, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 145, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 143;, line: 145, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 143;, line: 145, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 145, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 145, column: 133]
@@ -10960,8 +10817,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 146, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 146, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 144;, line: 146, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 144;, line: 146, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 146, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 146, column: 133]
@@ -11036,8 +10892,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 147, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 147, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 145;, line: 147, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 145;, line: 147, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 147, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 147, column: 133]
@@ -11112,8 +10967,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 148, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 148, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 146;, line: 148, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 146;, line: 148, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 148, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 148, column: 133]
@@ -11188,8 +11042,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 149, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 149, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 147;, line: 149, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 147;, line: 149, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 149, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 149, column: 133]
@@ -11264,8 +11117,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 150, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 150, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 148;, line: 150, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 148;, line: 150, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 150, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 150, column: 133]
@@ -11340,8 +11192,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 151, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 151, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 149;, line: 151, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 149;, line: 151, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 151, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 151, column: 133]
@@ -11416,8 +11267,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 152, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 152, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 150;, line: 152, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 150;, line: 152, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 152, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 152, column: 133]
@@ -11492,8 +11342,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 153, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 153, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 151;, line: 153, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 151;, line: 153, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 153, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 153, column: 133]
@@ -11568,8 +11417,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 154, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 154, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 152;, line: 154, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 152;, line: 154, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 154, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 154, column: 133]
@@ -11644,8 +11492,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 155, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 155, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 153;, line: 155, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 153;, line: 155, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 155, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 155, column: 133]
@@ -11720,8 +11567,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 156, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 156, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 154;, line: 156, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 154;, line: 156, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 156, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 156, column: 133]
@@ -11796,8 +11642,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 157, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 157, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 155;, line: 157, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 155;, line: 157, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 157, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 157, column: 133]
@@ -11872,8 +11717,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 158, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 158, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 156;, line: 158, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 156;, line: 158, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 158, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 158, column: 133]
@@ -11948,8 +11792,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 159, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 159, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 157;, line: 159, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 157;, line: 159, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 159, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 159, column: 133]
@@ -12024,8 +11867,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 160, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 160, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 158;, line: 160, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 158;, line: 160, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 160, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 160, column: 133]
@@ -12100,8 +11942,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 161, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 161, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 159;, line: 161, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 159;, line: 161, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 161, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 161, column: 133]
@@ -12176,8 +12017,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 162, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 162, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 160;, line: 162, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 160;, line: 162, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 162, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 162, column: 133]
@@ -12252,8 +12092,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 163, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 163, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 161;, line: 163, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 161;, line: 163, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 163, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 163, column: 133]
@@ -12328,8 +12167,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 164, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 164, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 162;, line: 164, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 162;, line: 164, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 164, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 164, column: 133]
@@ -12404,8 +12242,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 165, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 165, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 163;, line: 165, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 163;, line: 165, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 165, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 165, column: 133]
@@ -12480,8 +12317,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 166, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 166, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 164;, line: 166, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 164;, line: 166, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 166, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 166, column: 133]
@@ -12556,8 +12392,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 167, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 167, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 165;, line: 167, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 165;, line: 167, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 167, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 167, column: 133]
@@ -12632,8 +12467,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 168, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 168, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 166;, line: 168, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 166;, line: 168, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 168, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 168, column: 133]
@@ -12708,8 +12542,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 169, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 169, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 167;, line: 169, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 167;, line: 169, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 169, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 169, column: 133]
@@ -12784,8 +12617,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 170, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 170, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 168;, line: 170, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 168;, line: 170, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 170, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 170, column: 133]
@@ -12860,8 +12692,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 171, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 171, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 169;, line: 171, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 169;, line: 171, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 171, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 171, column: 133]
@@ -12936,8 +12767,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 172, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 172, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 170;, line: 172, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 170;, line: 172, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 172, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 172, column: 133]
@@ -13012,8 +12842,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 173, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 173, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 171;, line: 173, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 171;, line: 173, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 173, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 173, column: 133]
@@ -13088,8 +12917,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 174, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 174, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 172;, line: 174, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 172;, line: 174, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 174, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 174, column: 133]
@@ -13164,8 +12992,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 175, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 175, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 173;, line: 175, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 173;, line: 175, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 175, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 175, column: 133]
@@ -13240,8 +13067,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 176, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 176, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 174;, line: 176, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 174;, line: 176, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 176, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 176, column: 133]
@@ -13316,8 +13142,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 177, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 177, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 175;, line: 177, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 175;, line: 177, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 177, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 177, column: 133]
@@ -13392,8 +13217,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 178, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 178, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 176;, line: 178, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 176;, line: 178, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 178, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 178, column: 133]
@@ -13468,8 +13292,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 179, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 179, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 177;, line: 179, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 177;, line: 179, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 179, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 179, column: 133]
@@ -13544,8 +13367,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 180, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 180, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 178;, line: 180, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 178;, line: 180, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 180, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 180, column: 133]
@@ -13620,8 +13442,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 181, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 181, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 179;, line: 181, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 179;, line: 181, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 181, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 181, column: 133]
@@ -13696,8 +13517,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 182, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 182, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 180;, line: 182, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 180;, line: 182, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 182, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 182, column: 133]
@@ -13772,8 +13592,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 183, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 183, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 181;, line: 183, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 181;, line: 183, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 183, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 183, column: 133]
@@ -13848,8 +13667,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 184, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 184, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 182;, line: 184, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 182;, line: 184, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 184, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 184, column: 133]
@@ -13924,8 +13742,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 185, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 185, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 183;, line: 185, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 183;, line: 185, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 185, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 185, column: 133]
@@ -14000,8 +13817,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 186, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 186, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 184;, line: 186, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 184;, line: 186, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 186, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 186, column: 133]
@@ -14076,8 +13892,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 187, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 187, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 185;, line: 187, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 185;, line: 187, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 187, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 187, column: 133]
@@ -14152,8 +13967,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 188, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 188, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 186;, line: 188, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 186;, line: 188, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 188, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 188, column: 133]
@@ -14228,8 +14042,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 189, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 189, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 187;, line: 189, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 187;, line: 189, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 189, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 189, column: 133]
@@ -14304,8 +14117,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 190, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 190, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 188;, line: 190, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 188;, line: 190, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 190, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 190, column: 133]
@@ -14380,8 +14192,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 191, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 191, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 189;, line: 191, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 189;, line: 191, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 191, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 191, column: 133]
@@ -14456,8 +14267,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 192, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 192, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 190;, line: 192, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 190;, line: 192, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 192, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 192, column: 133]
@@ -14532,8 +14342,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 193, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 193, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 191;, line: 193, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 191;, line: 193, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 193, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 193, column: 133]
@@ -14608,8 +14417,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 194, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 194, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 192;, line: 194, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 192;, line: 194, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 194, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 194, column: 133]
@@ -14684,8 +14492,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 195, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 195, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 193;, line: 195, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 193;, line: 195, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 195, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 195, column: 133]
@@ -14760,8 +14567,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 196, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 196, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 194;, line: 196, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 194;, line: 196, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 196, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 196, column: 133]
@@ -14836,8 +14642,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 197, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 197, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 195;, line: 197, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 195;, line: 197, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 197, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 197, column: 133]
@@ -14912,8 +14717,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 198, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 198, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 196;, line: 198, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 196;, line: 198, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 198, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 198, column: 133]
@@ -14988,8 +14792,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 199, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 199, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 197;, line: 199, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 197;, line: 199, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 199, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 199, column: 133]
@@ -15064,8 +14867,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 200, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 200, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 198;, line: 200, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 198;, line: 200, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 200, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 200, column: 133]
@@ -15140,8 +14942,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 201, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 201, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 199;, line: 201, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 199;, line: 201, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 201, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 201, column: 133]
@@ -15216,8 +15017,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 202, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 202, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 200;, line: 202, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 200;, line: 202, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 202, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 202, column: 133]
@@ -15292,8 +15092,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 203, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 203, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 201;, line: 203, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 201;, line: 203, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 203, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 203, column: 133]
@@ -15368,8 +15167,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 204, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 204, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 202;, line: 204, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 202;, line: 204, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 204, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 204, column: 133]
@@ -15444,8 +15242,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 205, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 205, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 203;, line: 205, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 203;, line: 205, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 205, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 205, column: 133]
@@ -15520,8 +15317,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 206, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 206, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 204;, line: 206, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 204;, line: 206, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 206, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 206, column: 133]
@@ -15596,8 +15392,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 207, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 207, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 205;, line: 207, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 205;, line: 207, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 207, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 207, column: 133]
@@ -15672,8 +15467,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 208, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 208, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 206;, line: 208, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 206;, line: 208, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 208, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 208, column: 133]
@@ -15748,8 +15542,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 209, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 209, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 207;, line: 209, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 207;, line: 209, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 209, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 209, column: 133]
@@ -15824,8 +15617,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 210, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 210, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 208;, line: 210, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 208;, line: 210, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 210, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 210, column: 133]
@@ -15900,8 +15692,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 211, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 211, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 209;, line: 211, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 209;, line: 211, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 211, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 211, column: 133]
@@ -15976,8 +15767,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 212, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 212, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 210;, line: 212, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 210;, line: 212, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 212, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 212, column: 133]
@@ -16052,8 +15842,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 213, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 213, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 211;, line: 213, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 211;, line: 213, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 213, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 213, column: 133]
@@ -16128,8 +15917,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 214, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 214, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 212;, line: 214, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 212;, line: 214, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 214, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 214, column: 133]
@@ -16204,8 +15992,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 215, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 215, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 213;, line: 215, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 213;, line: 215, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 215, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 215, column: 133]
@@ -16280,8 +16067,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 216, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 216, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 214;, line: 216, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 214;, line: 216, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 216, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 216, column: 133]
@@ -16356,8 +16142,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 217, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 217, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 215;, line: 217, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 215;, line: 217, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 217, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 217, column: 133]
@@ -16432,8 +16217,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 218, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 218, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 216;, line: 218, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 216;, line: 218, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 218, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 218, column: 133]
@@ -16508,8 +16292,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 219, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 219, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 217;, line: 219, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 217;, line: 219, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 219, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 219, column: 133]
@@ -16584,8 +16367,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 220, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 220, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 218;, line: 220, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 218;, line: 220, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 220, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 220, column: 133]
@@ -16660,8 +16442,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 221, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 221, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 219;, line: 221, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 219;, line: 221, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 221, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 221, column: 133]
@@ -16736,8 +16517,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 222, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 222, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 220;, line: 222, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 220;, line: 222, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 222, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 222, column: 133]
@@ -16812,8 +16592,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 223, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 223, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 221;, line: 223, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 221;, line: 223, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 223, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 223, column: 133]
@@ -16888,8 +16667,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 224, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 224, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 222;, line: 224, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 222;, line: 224, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 224, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 224, column: 133]
@@ -16964,8 +16742,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 225, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 225, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 223;, line: 225, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 223;, line: 225, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 225, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 225, column: 133]
@@ -17040,8 +16817,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 226, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 226, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 224;, line: 226, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 224;, line: 226, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 226, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 226, column: 133]
@@ -17116,8 +16892,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 227, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 227, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 225;, line: 227, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 225;, line: 227, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 227, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 227, column: 133]
@@ -17192,8 +16967,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 228, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 228, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 226;, line: 228, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 226;, line: 228, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 228, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 228, column: 133]
@@ -17268,8 +17042,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 229, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 229, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 227;, line: 229, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 227;, line: 229, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 229, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 229, column: 133]
@@ -17344,8 +17117,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 230, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 230, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 228;, line: 230, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 228;, line: 230, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 230, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 230, column: 133]
@@ -17420,8 +17192,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 231, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 231, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 229;, line: 231, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 229;, line: 231, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 231, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 231, column: 133]
@@ -17496,8 +17267,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 232, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 232, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 230;, line: 232, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 230;, line: 232, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 232, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 232, column: 133]
@@ -17572,8 +17342,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 233, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 233, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 231;, line: 233, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 231;, line: 233, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 233, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 233, column: 133]
@@ -17648,8 +17417,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 234, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 234, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 232;, line: 234, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 232;, line: 234, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 234, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 234, column: 133]
@@ -17724,8 +17492,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 235, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 235, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 233;, line: 235, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 233;, line: 235, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 235, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 235, column: 133]
@@ -17800,8 +17567,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 236, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 236, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 234;, line: 236, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 234;, line: 236, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 236, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 236, column: 133]
@@ -17876,8 +17642,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 237, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 237, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 235;, line: 237, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 235;, line: 237, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 237, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 237, column: 133]
@@ -17952,8 +17717,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 238, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 238, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 236;, line: 238, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 236;, line: 238, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 238, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 238, column: 133]
@@ -18028,8 +17792,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 239, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 239, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 237;, line: 239, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 237;, line: 239, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 239, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 239, column: 133]
@@ -18104,8 +17867,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 240, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 240, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 238;, line: 240, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 238;, line: 240, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 240, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 240, column: 133]
@@ -18180,8 +17942,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 241, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 241, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 239;, line: 241, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 239;, line: 241, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 241, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 241, column: 133]
@@ -18256,8 +18017,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 242, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 242, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 240;, line: 242, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 240;, line: 242, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 242, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 242, column: 133]
@@ -18332,8 +18092,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 243, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 243, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 241;, line: 243, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 241;, line: 243, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 243, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 243, column: 133]
@@ -18408,8 +18167,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 244, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 244, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 242;, line: 244, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 242;, line: 244, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 244, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 244, column: 133]
@@ -18484,8 +18242,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 245, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 245, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 243;, line: 245, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 243;, line: 245, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 245, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 245, column: 133]
@@ -18560,8 +18317,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 246, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 246, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 244;, line: 246, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 244;, line: 246, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 246, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 246, column: 133]
@@ -18636,8 +18392,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 247, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 247, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 245;, line: 247, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 245;, line: 247, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 247, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 247, column: 133]
@@ -18712,8 +18467,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 248, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 248, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 246;, line: 248, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 246;, line: 248, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 248, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 248, column: 133]
@@ -18788,8 +18542,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 249, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 249, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 247;, line: 249, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 247;, line: 249, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 249, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 249, column: 133]
@@ -18864,8 +18617,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 250, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 250, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 248;, line: 250, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 248;, line: 250, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 250, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 250, column: 133]
@@ -18940,8 +18692,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 251, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 251, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 249;, line: 251, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 249;, line: 251, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 251, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 251, column: 133]
@@ -19016,8 +18767,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 252, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 252, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 250;, line: 252, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 250;, line: 252, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 252, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 252, column: 133]
@@ -19092,8 +18842,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 253, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 253, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 251;, line: 253, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 251;, line: 253, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 253, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 253, column: 133]
@@ -19168,8 +18917,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 254, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 254, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 252;, line: 254, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 252;, line: 254, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 254, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 254, column: 133]
@@ -19244,8 +18992,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 255, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 255, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 253;, line: 255, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 253;, line: 255, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 255, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 255, column: 133]
@@ -19320,8 +19067,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 256, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 256, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 254;, line: 256, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 254;, line: 256, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 256, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 256, column: 133]
@@ -19396,8 +19142,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 257, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 257, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 255;, line: 257, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 255;, line: 257, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 257, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 257, column: 133]
@@ -19472,8 +19217,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 258, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 258, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 256;, line: 258, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 256;, line: 258, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 258, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 258, column: 133]
@@ -19548,8 +19292,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 259, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 259, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 257;, line: 259, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 257;, line: 259, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 259, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 259, column: 133]
@@ -19624,8 +19367,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 260, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 260, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 258;, line: 260, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 258;, line: 260, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 260, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 260, column: 133]
@@ -19700,8 +19442,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 261, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 261, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 259;, line: 261, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 259;, line: 261, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 261, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 261, column: 133]
@@ -19776,8 +19517,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 262, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 262, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 260;, line: 262, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 260;, line: 262, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 262, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 262, column: 133]
@@ -19852,8 +19592,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 263, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 263, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 261;, line: 263, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 261;, line: 263, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 263, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 263, column: 133]
@@ -19928,8 +19667,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 264, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 264, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 262;, line: 264, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 262;, line: 264, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 264, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 264, column: 133]
@@ -20004,8 +19742,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 265, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 265, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 263;, line: 265, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 263;, line: 265, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 265, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 265, column: 133]
@@ -20080,8 +19817,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 266, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 266, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 264;, line: 266, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 264;, line: 266, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 266, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 266, column: 133]
@@ -20156,8 +19892,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 267, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 267, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 265;, line: 267, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 265;, line: 267, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 267, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 267, column: 133]
@@ -20232,8 +19967,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 268, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 268, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 266;, line: 268, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 266;, line: 268, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 268, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 268, column: 133]
@@ -20308,8 +20042,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 269, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 269, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 267;, line: 269, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 267;, line: 269, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 269, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 269, column: 133]
@@ -20384,8 +20117,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 270, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 270, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 268;, line: 270, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 268;, line: 270, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 270, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 270, column: 133]
@@ -20460,8 +20192,7 @@
    |  |  |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 271, column: 113]
    |  |  |     |- codeInlineTag
    |  |  |     |  |- TOKEN[type: CODE_LITERAL, text: code, line: 271, column: 115]
-   |  |  |     |  '- inlineText
-   |  |  |     |     '- TOKEN[type: TEXT, text:  int x = 269;, line: 271, column: 119]
+   |  |  |     |  '- TOKEN[type: TEXT, text:  int x = 269;, line: 271, column: 119]
    |  |  |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 271, column: 132]
    |  |  '- htmlTagEnd
    |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 271, column: 133]
@@ -20570,11 +20301,10 @@
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 276, column: 9]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 276, column: 11]
-   |  |  |     |  |  '- inlineText
-   |  |  |     |  |     |- TOKEN[type: TEXT, text:  Multiline string: """, line: 276, column: 15]
-   |  |  |     |  |     |- TOKEN[type: TEXT, text:        line 1, line: 277, column: 2]
-   |  |  |     |  |     |- TOKEN[type: TEXT, text:        line 2, line: 278, column: 2]
-   |  |  |     |  |     '- TOKEN[type: TEXT, text:    """, line: 279, column: 2]
+   |  |  |     |  |  |- TOKEN[type: TEXT, text:  Multiline string: """, line: 276, column: 15]
+   |  |  |     |  |  |- TOKEN[type: TEXT, text:        line 1, line: 277, column: 2]
+   |  |  |     |  |  |- TOKEN[type: TEXT, text:        line 2, line: 278, column: 2]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:    """, line: 279, column: 2]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 279, column: 8]
    |  |  |     '- htmlTagEnd
    |  |  |        |- TOKEN[type: TAG_OPEN, text: <, line: 279, column: 9]
@@ -20914,33 +20644,33 @@
    |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 316, column: 4]
    |  |     |- TOKEN[type: TAG_NAME, text: div, line: 316, column: 5]
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 316, column: 8]
-   |  |- TOKEN[type: TEXT, text: <!-- Javadoc comment -->, line: 318, column: 3]
-   |  '- structuredTag
-   |     |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 319, column: 3]
-   |     '- description
-   |        |- TOKEN[type: TEXT, text:  Nobody, line: 319, column: 10]
-   |        '- structuredTag
-   |           |- TOKEN[type: VERSION, text: @version, line: 320, column: 3]
-   |           '- description
-   |              |- TOKEN[type: TEXT, text:  42.0, line: 320, column: 11]
-   |              '- structuredTag
-   |                 |- TOKEN[type: SINCE, text: @since, line: 321, column: 3]
-   |                 '- description
-   |                    |- TOKEN[type: TEXT, text:  forever, line: 321, column: 9]
-   |                    '- structuredTag
-   |                       |- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 322, column: 3]
-   |                       '- description
-   |                          |- TOKEN[type: TEXT, text:  Use , line: 322, column: 14]
-   |                          |- structuredTag
-   |                          |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 322, column: 19]
-   |                          |  |- linkInlineTag
-   |                          |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 322, column: 21]
-   |                          |  |  '- reference
-   |                          |  |     |- TOKEN[type: HASH, text: #, line: 322, column: 26]
-   |                          |  |     '- memberReference
-   |                          |  |        |- TOKEN[type: IDENTIFIER, text: newMethod, line: 322, column: 27]
-   |                          |  |        |- TOKEN[type: LPAREN, text: (, line: 322, column: 36]
-   |                          |  |        '- TOKEN[type: RPAREN, text: ), line: 322, column: 37]
-   |                          |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 322, column: 38]
-   |                          '- TOKEN[type: TEXT, text:  instead., line: 322, column: 39]
+   |  '- TOKEN[type: TEXT, text: <!-- Javadoc comment -->, line: 318, column: 3]
+   |- blockTag
+   |  |- TOKEN[type: AUTHOR_LITERAL, text: @author, line: 319, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  Nobody, line: 319, column: 10]
+   |- blockTag
+   |  |- TOKEN[type: VERSION, text: @version, line: 320, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  42.0, line: 320, column: 11]
+   |- blockTag
+   |  |- TOKEN[type: SINCE, text: @since, line: 321, column: 3]
+   |  '- description
+   |     '- TOKEN[type: TEXT, text:  forever, line: 321, column: 9]
+   |- blockTag
+   |  |- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 322, column: 3]
+   |  '- description
+   |     |- TOKEN[type: TEXT, text:  Use , line: 322, column: 14]
+   |     |- inlineTag
+   |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 322, column: 19]
+   |     |  |- linkInlineTag
+   |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 322, column: 21]
+   |     |  |  '- reference
+   |     |  |     |- TOKEN[type: HASH, text: #, line: 322, column: 26]
+   |     |  |     '- memberReference
+   |     |  |        |- TOKEN[type: IDENTIFIER, text: newMethod, line: 322, column: 27]
+   |     |  |        |- TOKEN[type: LPAREN, text: (, line: 322, column: 36]
+   |     |  |        '- TOKEN[type: RPAREN, text: ), line: 322, column: 37]
+   |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 322, column: 38]
+   |     '- TOKEN[type: TEXT, text:  instead., line: 322, column: 39]
    '- TOKEN[type: EOF, text: <EOF>, line: 322, column: 48]
