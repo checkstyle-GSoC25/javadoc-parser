@@ -35,7 +35,11 @@ import java.util.stream.Collectors;
 }
 
 javadoc
-    : description? blockTag* EOF
+    : mainDescription? blockTag* EOF
+    ;
+
+mainDescription
+    : (TEXT | inlineTag | htmlElement)+
     ;
 
 // Block tags
@@ -75,11 +79,11 @@ parameterTag
     ;
 
 throwsTag
-    : tagName=THROWS exceptionName=identifier description?
+    : tagName=THROWS exceptionName=qualifiedIdentifier description?
     ;
 
 exceptionTag
-    : tagName=EXCEPTION exceptionName=identifier description?
+    : tagName=EXCEPTION exceptionName=qualifiedIdentifier description?
     ;
 
 sinceTag
@@ -132,7 +136,7 @@ inlineTag
     ;
 
 codeInlineTag
-    : CODE_LITERAL inlineText?
+    : CODE_LITERAL TEXT*
     ;
 
 linkPlainInlineTag
@@ -221,14 +225,6 @@ snippetBody
     ;
 
 qualifiedIdentifier: IDENTIFIER;
-
-identifier
-    : IDENTIFIER
-    ;
-
-inlineText
-    : TEXT+
-    ;
 
 description
     : (TEXT | inlineTag | htmlElement)+

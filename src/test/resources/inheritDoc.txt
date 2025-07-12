@@ -1,6 +1,6 @@
 '- javadoc
-   |- description
-   |  |- structuredTag
+   |- mainDescription
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- inheritDocInlineTag
    |  |  |  |- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 1, column: 4]
@@ -11,12 +11,12 @@
    |  |  |     |- TOKEN[type: DOT, text: ., line: 1, column: 24]
    |  |  |     '- TOKEN[type: IDENTIFIER, text: List, line: 1, column: 25]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 29]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- inheritDocInlineTag
    |  |  |  '- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 2, column: 4]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 14]
-   |  '- structuredTag
+   |  '- inlineTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |     |- inheritDocInlineTag
    |     |  |- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 3, column: 4]

@@ -1,5 +1,5 @@
 '- javadoc
-   |- description
+   |- mainDescription
    |  |- TOKEN[type: TEXT, text: Example with angle brackets: 5 < 10 and 10 > 5. , line: 1, column: 2]
    |  |- htmlElement
    |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 1, column: 50]

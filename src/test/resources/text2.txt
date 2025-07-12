@@ -1,5 +1,5 @@
 '- javadoc
-   |- description
+   |- mainDescription
    |  |- TOKEN[type: TEXT, text: int z = 5 * 3, line: 1, column: 2]
    |  |- TOKEN[type: TEXT, text: mohamad, line: 2, column: 2]
    |  '- TOKEN[type: TEXT, text: @gmail.com, line: 2, column: 9]

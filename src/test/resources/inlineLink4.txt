@@ -1,7 +1,7 @@
 '- javadoc
-   |- description
+   |- mainDescription
    |  |- TOKEN[type: TEXT, text: Link1:, line: 1, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 2, column: 4]
@@ -28,23 +28,21 @@
    |  |  |  |     '- TOKEN[type: RPAREN, text: ), line: 2, column: 72]
    |  |  |  '- description
    |  |  |     |- TOKEN[type: TEXT, text:  executes , line: 3, column: 1]
-   |  |  |     |- structuredTag
+   |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 11]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 3, column: 13]
-   |  |  |     |  |  '- inlineText
-   |  |  |     |  |     '- TOKEN[type: TEXT, text:  ifPresentOrElse, line: 3, column: 17]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  ifPresentOrElse, line: 3, column: 17]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 33]
    |  |  |     |- TOKEN[type: TEXT, text:  with a , line: 3, column: 34]
-   |  |  |     |- structuredTag
+   |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 42]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 3, column: 44]
-   |  |  |     |  |  '- inlineText
-   |  |  |     |  |     '- TOKEN[type: TEXT, text:  Consumer, line: 3, column: 48]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  Consumer, line: 3, column: 48]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 57]
    |  |  |     |- TOKEN[type: TEXT, text:  if present, or , line: 3, column: 58]
-   |  |  |     |- structuredTag
+   |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 74]
    |  |  |     |  |- literalInlineTag
    |  |  |     |  |  |- TOKEN[type: LITERAL, text: literal, line: 3, column: 76]
@@ -56,7 +54,7 @@
    |  |- TOKEN[type: TEXT, text: Tests: module prefix, inline tags in label, simple method with reference types., line: 4, column: 2]
    |  |- TOKEN[type: TEXT, text: Link2:, line: 6, column: 2]
    |  |- TOKEN[type: TEXT, text: See , line: 7, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 6]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 7, column: 8]
@@ -79,24 +77,23 @@
    |  |  |  |     '- TOKEN[type: RPAREN, text: ), line: 7, column: 43]
    |  |  |  '- description
    |  |  |     |- TOKEN[type: TEXT, text:  the , line: 7, column: 44]
-   |  |  |     |- structuredTag
+   |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 49]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 7, column: 51]
-   |  |  |     |  |  '- inlineText
-   |  |  |     |  |     '- TOKEN[type: TEXT, text:  List, line: 7, column: 55]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  List, line: 7, column: 55]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 60]
    |  |  |     '- TOKEN[type: TEXT, text:  interface, line: 7, column: 61]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 71]
    |  |- TOKEN[type: TEXT, text: Tests: module prefix, constructor method, inline , line: 8, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 51]
    |  |  |- codeInlineTag
    |  |  |  '- TOKEN[type: CODE_LITERAL, text: code, line: 8, column: 53]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 57]
    |  |- TOKEN[type: TEXT, text:  label., line: 8, column: 58]
    |  |- TOKEN[type: TEXT, text: Link3:, line: 10, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 11, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 11, column: 4]
@@ -110,24 +107,23 @@
    |  |  |  |     '- TOKEN[type: RPAREN, text: ), line: 11, column: 23]
    |  |  |  '- description
    |  |  |     |- TOKEN[type: TEXT, text:  Override , line: 11, column: 24]
-   |  |  |     |- structuredTag
+   |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 11, column: 34]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 11, column: 36]
-   |  |  |     |  |  '- inlineText
-   |  |  |     |  |     '- TOKEN[type: TEXT, text:  equals(), line: 11, column: 40]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  equals(), line: 11, column: 40]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 49]
    |  |  |     '- TOKEN[type: TEXT, text:  carefully, line: 11, column: 50]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 60]
    |  |- TOKEN[type: TEXT, text: Tests: relative member reference with single parameter, inline , line: 12, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 65]
    |  |  |- codeInlineTag
    |  |  |  '- TOKEN[type: CODE_LITERAL, text: code, line: 12, column: 67]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 12, column: 71]
    |  |- TOKEN[type: TEXT, text:  in label., line: 12, column: 72]
    |  |- TOKEN[type: TEXT, text: Link4:, line: 14, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 15, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 15, column: 4]
@@ -154,7 +150,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 15, column: 85]
    |  |- TOKEN[type: TEXT, text: Tests: array types in parameter list., line: 16, column: 2]
    |  |- TOKEN[type: TEXT, text: Link5:, line: 18, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 19, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 19, column: 4]
@@ -184,7 +180,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 19, column: 89]
    |  |- TOKEN[type: TEXT, text: Tests: module prefix, primitive parameters., line: 20, column: 2]
    |  |- TOKEN[type: TEXT, text: Link6:, line: 22, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 23, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 23, column: 4]
@@ -211,17 +207,16 @@
    |  |  |  |     '- TOKEN[type: RPAREN, text: ), line: 23, column: 63]
    |  |  |  '- description
    |  |  |     |- TOKEN[type: TEXT, text:  get an instance via , line: 23, column: 64]
-   |  |  |     '- structuredTag
+   |  |  |     '- inlineTag
    |  |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 23, column: 85]
    |  |  |        |- codeInlineTag
    |  |  |        |  |- TOKEN[type: CODE_LITERAL, text: code, line: 23, column: 87]
-   |  |  |        |  '- inlineText
-   |  |  |        |     '- TOKEN[type: TEXT, text:  getLogger, line: 23, column: 91]
+   |  |  |        |  '- TOKEN[type: TEXT, text:  getLogger, line: 23, column: 91]
    |  |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 23, column: 101]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 23, column: 102]
    |  |- TOKEN[type: TEXT, text: Tests: module prefix, inline tag in label, fully qualified class., line: 24, column: 2]
    |  |- TOKEN[type: TEXT, text: Link7:, line: 26, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 27, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 27, column: 4]
@@ -251,7 +246,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 27, column: 98]
    |  |- TOKEN[type: TEXT, text: Tests: multi-dimensional array as parameter, module prefix., line: 28, column: 2]
    |  |- TOKEN[type: TEXT, text: Link8:, line: 30, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 31, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 31, column: 4]
@@ -281,7 +276,7 @@
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 31, column: 101]
    |  |- TOKEN[type: TEXT, text: Tests: fully qualified single parameter, module prefix., line: 32, column: 2]
    |  |- TOKEN[type: TEXT, text: Link9:, line: 34, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 35, column: 2]
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 35, column: 4]
@@ -301,18 +296,17 @@
    |  |  |  |     '- TOKEN[type: RPAREN, text: ), line: 35, column: 36]
    |  |  |  '- description
    |  |  |     |- TOKEN[type: TEXT, text:  retrieve , line: 35, column: 37]
-   |  |  |     |- structuredTag
+   |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 35, column: 47]
    |  |  |     |  |- codeInlineTag
    |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 35, column: 49]
-   |  |  |     |  |  '- inlineText
-   |  |  |     |  |     '- TOKEN[type: TEXT, text:  key, line: 35, column: 53]
+   |  |  |     |  |  '- TOKEN[type: TEXT, text:  key, line: 35, column: 53]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 35, column: 57]
    |  |  |     '- TOKEN[type: TEXT, text:  from entry, line: 35, column: 58]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 35, column: 69]
    |  |- TOKEN[type: TEXT, text: Tests: nested class reference, inline tag in label., line: 36, column: 2]
    |  |- TOKEN[type: TEXT, text: Link10:, line: 38, column: 2]
-   |  '- structuredTag
+   |  '- inlineTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 39, column: 2]
    |     |- linkInlineTag
    |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 39, column: 4]

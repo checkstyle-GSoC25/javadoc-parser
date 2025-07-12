@@ -1,7 +1,7 @@
 '- javadoc
-   |- description
+   |- mainDescription
    |  |- TOKEN[type: TEXT, text: Returns the value of the , line: 1, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 27]
    |  |  |- systemPropertyInlineTag
    |  |  |  |- TOKEN[type: SYSTEM_PROPERTY, text: systemProperty, line: 1, column: 29]
@@ -15,7 +15,7 @@
    |  |- TOKEN[type: TEXT, text:  system property,, line: 1, column: 59]
    |  |- TOKEN[type: TEXT, text: which specifies the default temporary file directory., line: 2, column: 2]
    |  |- TOKEN[type: TEXT, text: Returns the value of the , line: 3, column: 2]
-   |  |- structuredTag
+   |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 27]
    |  |  |- systemPropertyInlineTag
    |  |  |  |- TOKEN[type: SYSTEM_PROPERTY, text: systemProperty, line: 3, column: 29]
