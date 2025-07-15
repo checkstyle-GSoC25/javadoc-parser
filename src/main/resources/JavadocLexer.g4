@@ -28,6 +28,7 @@ import org.antlr.v4.runtime.Token;
     private boolean isJavadocBlockTag = true;
     private boolean hasSeenTagName = false;
     private int braceCounter = 0;
+    private boolean inSeeReferencePart = false;
 
     private final Deque<Token> openTagNameTokens = new ArrayDeque<>();
     private final Deque<Token> closeTagNameTokens = new ArrayDeque<>();
@@ -173,7 +174,15 @@ mode parameterList;
 ParameterList_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
 PARAMETER_TYPE: ([a-zA-Z0-9_$] | '.' | '[' | ']')+;
 COMMA: ',';
-RPAREN: ')' -> popMode, pushMode(linkTagDescription);
+RPAREN: ')' {
+      if (inSeeReferencePart) {
+          mode(text);
+          inSeeReferencePart = false;
+      } else {
+          popMode();
+          pushMode(linkTagDescription);
+      }
+  };
 
 mode value;
 Value_IDENTIFIER: Letter LetterOrDigit* -> type(IDENTIFIER);
@@ -210,7 +219,7 @@ EXCEPTION: 'exception' -> pushMode(qualifiedIdentifier);
 THROWS: 'throws' -> pushMode(qualifiedIdentifier);
 SINCE: 'since' -> pushMode(text);
 VERSION: 'version' -> pushMode(text);
-SEE: 'see' -> pushMode(see);
+SEE: 'see' {inSeeReferencePart = true;} -> pushMode(see);
 LITERAL_HIDDEN: 'hidden' -> pushMode(text);
 USES: 'uses' -> pushMode(qualifiedIdentifier);
 PROVIDES: 'provides' -> pushMode(qualifiedIdentifier);
@@ -243,17 +252,11 @@ See_IDENTIFIER: Letter LetterOrDigit*
 
 See_HASH: '#' -> type(HASH);
 See_DOT: '.' -> type(DOT);
-See_LPAREN: '(' -> type(LPAREN), pushMode(seeParameterList);
+See_LPAREN: '(' -> type(LPAREN), pushMode(parameterList);
 See_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(startOfLine), type(NEWLINE), channel(NEWLINES)
     ;
 See_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
-
-mode seeParameterList;
-SeeParameterList_WS: [ \t]+ -> type(WS), channel(WHITESPACES);
-SeeParameterList_PARAMETER_TYPE: ([a-zA-Z0-9_$] | '.' | '[' | ']')+ -> type(PARAMETER_TYPE);
-SeeParameterList_COMMA: ',' -> type(COMMA);
-See_RPAREN: ')' -> type(RPAREN), mode(text);
 
 mode qualifiedIdentifier;
 DOTTED_IDENTIFIER: ([a-zA-Z0-9_$] | '.')+ -> type(IDENTIFIER), mode(text);
