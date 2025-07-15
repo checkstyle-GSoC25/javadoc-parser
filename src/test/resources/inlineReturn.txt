@@ -9,7 +9,7 @@
    |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 11]
    |  |  |     |  |- codeInlineTag
-   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 1, column: 13]
+   |  |  |     |  |  |- TOKEN[type: CODE, text: code, line: 1, column: 13]
    |  |  |     |  |  '- TOKEN[type: TEXT, text:  true, line: 1, column: 17]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 22]
    |  |  |     |- TOKEN[type: TEXT, text:  if the arguments are equal to each other, line: 1, column: 23]
@@ -17,7 +17,7 @@
    |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 6]
    |  |  |     |  |- codeInlineTag
-   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 2, column: 8]
+   |  |  |     |  |  |- TOKEN[type: CODE, text: code, line: 2, column: 8]
    |  |  |     |  |  '- TOKEN[type: TEXT, text:  false, line: 2, column: 12]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 18]
    |  |  |     '- TOKEN[type: TEXT, text:  otherwise, line: 2, column: 19]
@@ -38,7 +38,7 @@
    |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 32]
    |  |  |     |  |- linkInlineTag
-   |  |  |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 4, column: 34]
+   |  |  |     |  |  |- TOKEN[type: LINK, text: link, line: 4, column: 34]
    |  |  |     |  |  |- reference
    |  |  |     |  |  |  |- qualifiedName
    |  |  |     |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Opcode, line: 4, column: 39]
@@ -53,14 +53,14 @@
    |  |  |     |- inlineTag
    |  |  |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 29]
    |  |  |     |  |- codeInlineTag
-   |  |  |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 5, column: 31]
+   |  |  |     |  |  |- TOKEN[type: CODE, text: code, line: 5, column: 31]
    |  |  |     |  |  '- TOKEN[type: TEXT, text:  -1, line: 5, column: 35]
    |  |  |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 38]
    |  |  |     |- TOKEN[type: TEXT, text:  if this type is not supported by , line: 5, column: 39]
    |  |  |     '- inlineTag
    |  |  |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 73]
    |  |  |        |- codeInlineTag
-   |  |  |        |  |- TOKEN[type: CODE_LITERAL, text: code, line: 5, column: 75]
+   |  |  |        |  |- TOKEN[type: CODE, text: code, line: 5, column: 75]
    |  |  |        |  '- TOKEN[type: TEXT, text:  newarray, line: 5, column: 79]
    |  |  |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 88]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 89]
@@ -73,7 +73,7 @@
    |     |     '- inlineTag
    |     |        |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 11]
    |     |        |- inheritDocInlineTag
-   |     |        |  '- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 6, column: 13]
+   |     |        |  '- TOKEN[type: INHERIT_DOC, text: inheritDoc, line: 6, column: 13]
    |     |        '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 23]
    |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 24]
    '- TOKEN[type: EOF, text: <EOF>, line: 7, column: 0]

@@ -6,7 +6,7 @@
    |     |- inlineTag
    |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 46]
    |     |  |- linkInlineTag
-   |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 1, column: 48]
+   |     |  |  |- TOKEN[type: LINK, text: link, line: 1, column: 48]
    |     |  |  '- reference
    |     |  |     |- qualifiedName
    |     |  |     |  '- TOKEN[type: IDENTIFIER, text: Math, line: 1, column: 53]

@@ -12,7 +12,7 @@
    |     |- inlineTag
    |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 14]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 3, column: 16]
+   |     |  |  |- TOKEN[type: CODE, text: code, line: 3, column: 16]
    |     |  |  '- TOKEN[type: TEXT, text:  SQLException, line: 3, column: 20]
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 33]
    |     '- TOKEN[type: TEXT, text:  the driver is about to throw to the application., line: 3, column: 34]
@@ -23,7 +23,7 @@
    |     |- inlineTag
    |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 47]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 4, column: 49]
+   |     |  |  |- TOKEN[type: CODE, text: code, line: 4, column: 49]
    |     |  |  '- TOKEN[type: TEXT, text:  null, line: 4, column: 53]
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 58]
    |     |- TOKEN[type: TEXT, text:  if there isn't, line: 4, column: 59]
@@ -35,7 +35,7 @@
    |     |- inlineTag
    |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 36]
    |     |  |- codeInlineTag
-   |     |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 38]
+   |     |  |  |- TOKEN[type: CODE, text: code, line: 6, column: 38]
    |     |  |  '- TOKEN[type: TEXT, text:  getTime(), line: 6, column: 42]
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 52]
    |     |- TOKEN[type: TEXT, text: is emitted (long).  This represents the offset from, line: 7, column: 14]

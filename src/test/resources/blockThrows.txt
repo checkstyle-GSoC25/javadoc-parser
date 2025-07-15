@@ -36,7 +36,7 @@
    |  '- description
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 11, column: 10]
    |     |- inheritDocInlineTag
-   |     |  '- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 11, column: 12]
+   |     |  '- TOKEN[type: INHERIT_DOC, text: inheritDoc, line: 11, column: 12]
    |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 11, column: 22]
    |- blockTag
    |  |- TOKEN[type: THROWS, text: @throws, line: 12, column: 2]

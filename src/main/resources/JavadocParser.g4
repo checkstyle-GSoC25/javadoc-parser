@@ -63,19 +63,19 @@ blockTag
     ;
 
 authorTag
-    : tagName=AUTHOR_LITERAL description?
+    : tagName=AUTHOR description?
     ;
 
 deprecatedTag
-    : tagName=DEPRECATED_LITERAL description?
+    : tagName=DEPRECATED description?
     ;
 
 returnTag
-    : tagName=RETURN_LITERAL description?
+    : tagName=RETURN description?
     ;
 
 parameterTag
-    : tagName=PARAM_LITERAL paramName=PARAMETER_NAME description?
+    : tagName=PARAM paramName=PARAMETER_NAME description?
     ;
 
 throwsTag
@@ -95,22 +95,22 @@ versionTag
     ;
 
 seeTag
-    : SEE STRING_LITERAL
-    | SEE reference description?
-    | SEE htmlElement description?
+    : tagName=SEE STRING_LITERAL
+    | tagName=SEE reference description?
+    | tagName=SEE htmlElement description?
     ;
 
-hiddenTag: LITERAL_HIDDEN description?;
+hiddenTag: tagName=LITERAL_HIDDEN description?;
 
-usesTag: USES serviceType=qualifiedIdentifier description?;
+usesTag: tagName=USES serviceType=qualifiedIdentifier description?;
 
-providesTag: PROVIDES serviceType=qualifiedIdentifier description?;
+providesTag: tagName=PROVIDES serviceType=qualifiedIdentifier description?;
 
-serialTag: SERIAL description?;
+serialTag: tagName=SERIAL description?;
 
-serialDataTag: SERIAL_DATA description?;
+serialDataTag: tagName=SERIAL_DATA description?;
 
-serialFieldTag: SERIAL_FIELD fieldName=IDENTIFIER FIELD_TYPE  description?;
+serialFieldTag: tagName=SERIAL_FIELD fieldName=IDENTIFIER FIELD_TYPE  description?;
 
 customBlockTag
     : tagName=CUSTOM_NAME description?
@@ -136,51 +136,51 @@ inlineTag
     ;
 
 codeInlineTag
-    : CODE_LITERAL TEXT*
+    : tagName=CODE TEXT*
     ;
 
 linkPlainInlineTag
-    : LINKPLAIN_LITERAL reference description?
+    : tagName=LINKPLAIN reference description?
     ;
 
 linkInlineTag
-    : LINK_LITERAL reference description?
+    : tagName=LINK reference description?
     ;
 
 valueInlineTag
-    : VALUE_LITERAL FORMAT_SPECIFIER? reference?
+    : tagName=VALUE FORMAT_SPECIFIER? reference?
     ;
 
 inheritDocInlineTag
-    : INHERITDOC_LITERAL reference?
+    : tagName=INHERIT_DOC reference?
     ;
 
 summaryInlineTag
-    : SUMMARY_LITERAL description?
+    : tagName=SUMMARY description?
     ;
 
 systemPropertyInlineTag
-    : SYSTEM_PROPERTY propertyName?
+    : tagName=SYSTEM_PROPERTY propertyName?
     ;
 
 indexInlineTag
-    : INDEX INDEX_TERM description?
+    : tagName=INDEX INDEX_TERM description?
     ;
 
 returnInlineTag
-    : RETURN description?
+    : tagName=RETURN description?
     ;
 
 literalInlineTag
-    : LITERAL description?
+    : tagName=LITERAL description?
     ;
 
 snippetInlineTag
-    : SNIPPET snippetAttributes+=snippetAttribute* (COLON snippetBody)?
+    : tagName=SNIPPET snippetAttributes+=snippetAttribute* (COLON snippetBody)?
     ;
 
 customInlineTag
-    : CUSTOM_NAME description?
+    : tagName=CUSTOM_NAME description?
     ;
 
 // Components
