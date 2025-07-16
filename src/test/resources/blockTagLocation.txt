@@ -5,29 +5,36 @@
    |  |- TOKEN[type: TEXT, text: Use the ", line: 2, column: 2]
    |  '- TOKEN[type: TEXT, text: @version" tag wisely., line: 2, column: 11]
    |- blockTag
-   |  '- TOKEN[type: VERSION, text: @version, line: 3, column: 1]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 3, column: 1]
+   |  '- TOKEN[type: VERSION, text: version, line: 3, column: 2]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 4, column: 5]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 4, column: 5]
+   |  |- TOKEN[type: VERSION, text: version, line: 4, column: 6]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  3.0, line: 4, column: 13]
    |- blockTag
-   |  |- TOKEN[type: SINCE, text: @since, line: 5, column: 4]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 5, column: 4]
+   |  |- TOKEN[type: SINCE, text: since, line: 5, column: 5]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  1.0, line: 5, column: 10]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 6, column: 14]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 6, column: 14]
+   |  |- TOKEN[type: VERSION, text: version, line: 6, column: 15]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  4.2, line: 6, column: 22]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 7, column: 13]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 7, column: 13]
+   |  |- TOKEN[type: VERSION, text: version, line: 7, column: 14]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  4.2, line: 7, column: 21]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 8, column: 0]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 8, column: 0]
+   |  |- TOKEN[type: VERSION, text: version, line: 8, column: 1]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  5.0, line: 8, column: 8]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 9, column: 1]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 9, column: 1]
+   |  |- TOKEN[type: VERSION, text: version, line: 9, column: 2]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  6.0, line: 9, column: 9]
    |     |- htmlElement

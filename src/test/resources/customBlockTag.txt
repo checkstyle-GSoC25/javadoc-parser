@@ -1,6 +1,7 @@
 '- javadoc
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @apiNote, line: 1, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 1, column: 2]
+   |  |- TOKEN[type: CUSTOM_NAME, text: apiNote, line: 1, column: 3]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  This method uses the same rules as , line: 1, column: 10]
    |     |- inlineTag
@@ -16,11 +17,13 @@
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 61]
    |     '- TOKEN[type: TEXT, text: ., line: 1, column: 62]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @implSpec, line: 2, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 2, column: 2]
+   |  |- TOKEN[type: CUSTOM_NAME, text: implSpec, line: 2, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  This implementation returns a read-only iterator., line: 2, column: 11]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @customTag, line: 3, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 3, column: 2]
+   |  |- TOKEN[type: CUSTOM_NAME, text: customTag, line: 3, column: 3]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  This method is optimized for , line: 3, column: 12]
    |     |- htmlElement
@@ -37,9 +40,11 @@
    |     |     '- TOKEN[type: TAG_CLOSE, text: >, line: 3, column: 68]
    |     '- TOKEN[type: TEXT, text:  in production., line: 3, column: 69]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @reviewedBy, line: 4, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 4, column: 2]
+   |  |- TOKEN[type: CUSTOM_NAME, text: reviewedBy, line: 4, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  John Smith on 2025-07-01, line: 4, column: 13]
    |- blockTag
-   |  '- TOKEN[type: CUSTOM_NAME, text: @test, line: 5, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 5, column: 2]
+   |  '- TOKEN[type: CUSTOM_NAME, text: test, line: 5, column: 3]
    '- TOKEN[type: EOF, text: <EOF>, line: 6, column: 0]

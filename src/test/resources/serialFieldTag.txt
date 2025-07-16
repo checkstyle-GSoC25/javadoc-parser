@@ -1,6 +1,7 @@
 '- javadoc
    |- blockTag
-   |  |- TOKEN[type: SERIAL_FIELD, text: @serialField, line: 1, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 1, column: 2]
+   |  |- TOKEN[type: SERIAL_FIELD, text: serialField, line: 1, column: 3]
    |  |- TOKEN[type: IDENTIFIER, text: type, line: 1, column: 15]
    |  |- TOKEN[type: FIELD_TYPE, text: String, line: 1, column: 20]
    |  '- description
@@ -8,13 +9,15 @@
    |     |- TOKEN[type: TEXT, text: A string expressed in a dot notation similar to Java properties., line: 2, column: 15]
    |     '- TOKEN[type: TEXT, text: An example of a notification type is com.sun.management.gc.notification, line: 3, column: 15]
    |- blockTag
-   |  |- TOKEN[type: SERIAL_FIELD, text: @serialField, line: 4, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 4, column: 2]
+   |  |- TOKEN[type: SERIAL_FIELD, text: serialField, line: 4, column: 3]
    |  |- TOKEN[type: IDENTIFIER, text: name, line: 4, column: 15]
    |  |- TOKEN[type: FIELD_TYPE, text: String, line: 4, column: 20]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  Role name, line: 4, column: 26]
    |- blockTag
-   |  |- TOKEN[type: SERIAL_FIELD, text: @serialField, line: 5, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 5, column: 2]
+   |  |- TOKEN[type: SERIAL_FIELD, text: serialField, line: 5, column: 3]
    |  |- TOKEN[type: IDENTIFIER, text: isWritable, line: 5, column: 15]
    |  |- TOKEN[type: FIELD_TYPE, text: boolean, line: 5, column: 26]
    |  '- description
@@ -27,17 +30,20 @@
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 5, column: 64]
    |     '- TOKEN[type: TEXT, text:  if role is writable, line: 5, column: 65]
    |- blockTag
-   |  |- TOKEN[type: SERIAL_FIELD, text: @serialField, line: 6, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 6, column: 2]
+   |  |- TOKEN[type: SERIAL_FIELD, text: serialField, line: 6, column: 3]
    |  |- TOKEN[type: IDENTIFIER, text: tab, line: 6, column: 15]
    |  |- TOKEN[type: FIELD_TYPE, text: Hashtable, line: 6, column: 27]
    |  '- description
    |     '- TOKEN[type: TEXT, text: deprecated, for forward compatibility only, line: 7, column: 7]
    |- blockTag
-   |  |- TOKEN[type: SERIAL_FIELD, text: @serialField, line: 8, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 8, column: 2]
+   |  |- TOKEN[type: SERIAL_FIELD, text: serialField, line: 8, column: 3]
    |  |- TOKEN[type: IDENTIFIER, text: bits, line: 8, column: 15]
    |  '- TOKEN[type: FIELD_TYPE, text: long[], line: 8, column: 20]
    |- blockTag
-   |  |- TOKEN[type: SERIAL_FIELD, text: @serialField, line: 9, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 9, column: 2]
+   |  |- TOKEN[type: SERIAL_FIELD, text: serialField, line: 9, column: 3]
    |  |- TOKEN[type: IDENTIFIER, text: perms, line: 9, column: 15]
    |  '- TOKEN[type: FIELD_TYPE, text: java.util.Hashtable, line: 9, column: 21]
    '- TOKEN[type: EOF, text: <EOF>, line: 9, column: 40]

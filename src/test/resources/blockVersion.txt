@@ -1,22 +1,27 @@
 '- javadoc
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 1, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 1, column: 2]
+   |  |- TOKEN[type: VERSION, text: version, line: 1, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  1.0, line: 1, column: 10]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 2, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 2, column: 2]
+   |  |- TOKEN[type: VERSION, text: version, line: 2, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text: 1.1, line: 3, column: 8]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 4, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 4, column: 2]
+   |  |- TOKEN[type: VERSION, text: version, line: 4, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  2.0-beta, line: 4, column: 10]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 5, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 5, column: 2]
+   |  |- TOKEN[type: VERSION, text: version, line: 5, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  2024.07.05, line: 5, column: 10]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 6, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 6, column: 2]
+   |  |- TOKEN[type: VERSION, text: version, line: 6, column: 3]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  , line: 6, column: 10]
    |     |- inlineTag
@@ -32,7 +37,8 @@
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 32]
    |     '- TOKEN[type: TEXT, text:  v3.1, line: 6, column: 33]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 7, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 7, column: 2]
+   |  |- TOKEN[type: VERSION, text: version, line: 7, column: 3]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  , line: 7, column: 10]
    |     '- htmlElement
