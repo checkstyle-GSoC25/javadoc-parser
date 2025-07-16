@@ -37,7 +37,7 @@
    |  |  |- htmlContent
    |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 2]
    |  |  |  |- codeInlineTag
-   |  |  |  |  |- TOKEN[type: CODE_LITERAL, text: code, line: 6, column: 4]
+   |  |  |  |  |- TOKEN[type: CODE, text: code, line: 6, column: 4]
    |  |  |  |  |- TOKEN[type: TEXT, text:  List<String> names = new ArrayList<>(createNames());, line: 7, column: 1]
    |  |  |  |  '- TOKEN[type: TEXT, text:  , line: 8, column: 1]
    |  |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 2]
@@ -61,7 +61,7 @@
    |     |  |  |- htmlContent
    |     |  |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 12, column: 8]
    |     |  |  |  |- linkInlineTag
-   |     |  |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 12, column: 10]
+   |     |  |  |  |  |- TOKEN[type: LINK, text: link, line: 12, column: 10]
    |     |  |  |  |  '- reference
    |     |  |  |  |     |- qualifiedName
    |     |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 12, column: 15]
@@ -90,7 +90,7 @@
    |     |     |- htmlContent
    |     |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 13, column: 8]
    |     |     |  |- linkInlineTag
-   |     |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 13, column: 10]
+   |     |     |  |  |- TOKEN[type: LINK, text: link, line: 13, column: 10]
    |     |     |  |  '- reference
    |     |     |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 13, column: 15]
    |     |     |  |     |- TOKEN[type: DOT, text: ., line: 13, column: 19]
@@ -109,12 +109,12 @@
    |        |- TOKEN[type: TAG_NAME, text: ul, line: 14, column: 4]
    |        '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 6]
    |- blockTag
-   |  |- TOKEN[type: PARAM_LITERAL, text: @param, line: 16, column: 2]
+   |  |- TOKEN[type: PARAM, text: @param, line: 16, column: 2]
    |  |- TOKEN[type: PARAMETER_NAME, text: collection, line: 16, column: 9]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  the source collection, line: 16, column: 19]
    |- blockTag
-   |  |- TOKEN[type: RETURN_LITERAL, text: @return, line: 17, column: 2]
+   |  |- TOKEN[type: RETURN, text: @return, line: 17, column: 2]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  a new mutable list containing the elements of the collection, line: 17, column: 9]
    '- TOKEN[type: EOF, text: <EOF>, line: 17, column: 70]

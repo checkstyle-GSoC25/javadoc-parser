@@ -6,10 +6,10 @@ channels {
 
 tokens {
     JAVADOC, LEADING_ASTERISK, NEWLINE, TEXT, WS, JAVADOC_INLINE_TAG_START, JAVADOC_INLINE_TAG_END,
-    CODE_LITERAL, LINK_LITERAL, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN_LITERAL,
-    AUTHOR_LITERAL, DEPRECATED_LITERAL, RETURN_LITERAL, PARAM_LITERAL, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
+    CODE, LINK, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN,
+    AUTHOR, DEPRECATED, RETURN, PARAM, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
-    SUPER, QUESTION, VALUE_LITERAL, FORMAT_SPECIFIER, INHERITDOC_LITERAL, SUMMARY_LITERAL, SYSTEM_PROPERTY,
+    SUPER, QUESTION, VALUE, FORMAT_SPECIFIER, INHERIT_DOC, SUMMARY, SYSTEM_PROPERTY,
     INDEX, INDEX_TERM, RETURN, SNIPPET, SNIPPET_ATTR_NAME, COLON, EXCEPTION, THROWS, PARAMETER_NAME, SINCE,
     VERSION, SEE, STRING_LITERAL, LITERAL_HIDDEN, SERIAL, SERIAL_DATA, SERIAL_FIELD, FIELD_TYPE
 }
@@ -108,12 +108,12 @@ TAG_OPEN: '<' -> pushMode(tag);
 fragment TEXT_CHAR: {isNormalText()}? ~[\r\n];
 
 mode javadocInlineTag;
-CODE_LITERAL: 'code' -> pushMode(plainTextTag);
-LINK_LITERAL: 'link'-> pushMode(link);
-LINKPLAIN_LITERAL: 'linkplain' -> pushMode(link);
-VALUE_LITERAL: 'value' -> pushMode(value);
-INHERITDOC_LITERAL: 'inheritDoc' -> pushMode(link);
-SUMMARY_LITERAL: 'summary' -> pushMode(inlineTagDescription);
+CODE: 'code' -> pushMode(plainTextTag);
+LINK: 'link'-> pushMode(link);
+LINKPLAIN: 'linkplain' -> pushMode(link);
+VALUE: 'value' -> pushMode(value);
+INHERIT_DOC: 'inheritDoc' -> pushMode(link);
+SUMMARY: 'summary' -> pushMode(inlineTagDescription);
 SYSTEM_PROPERTY: 'systemProperty' -> pushMode(value);
 INDEX: 'index' -> pushMode(indexTerm);
 RETURN: 'return' -> pushMode(inlineTagDescription);
@@ -202,10 +202,10 @@ mode startOfLine;
 StartOfLine_LEADING_ASTERISK: [ \t]* '*' -> channel(LEADING_ASTERISKS), popMode, type(LEADING_ASTERISK);
 
 mode blockTag;
-AUTHOR_LITERAL: 'author' -> pushMode(text);
-DEPRECATED_LITERAL: 'deprecated' -> pushMode(text);
-RETURN_LITERAL: 'return' -> pushMode(text);
-PARAM_LITERAL: 'param' -> pushMode(parameterName);
+AUTHOR: 'author' -> pushMode(text);
+DEPRECATED: 'deprecated' -> pushMode(text);
+RETURN_BLOCK_TAG: 'return' -> type(RETURN), pushMode(text);
+PARAM: 'param' -> pushMode(parameterName);
 EXCEPTION: 'exception' -> pushMode(qualifiedIdentifier);
 THROWS: 'throws' -> pushMode(qualifiedIdentifier);
 SINCE: 'since' -> pushMode(text);

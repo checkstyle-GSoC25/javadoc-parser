@@ -4,14 +4,14 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  '- TOKEN[type: VALUE_LITERAL, text: value, line: 1, column: 15]
+   |  |  |  '- TOKEN[type: VALUE, text: value, line: 1, column: 15]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 20]
    |  |- TOKEN[type: TEXT, text:  — refers to the value of this constant., line: 1, column: 21]
    |  |- TOKEN[type: TEXT, text: Example 2: , line: 2, column: 2]
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 2, column: 15]
+   |  |  |  |- TOKEN[type: VALUE, text: value, line: 2, column: 15]
    |  |  |  '- reference
    |  |  |     |- TOKEN[type: HASH, text: #, line: 2, column: 21]
    |  |  |     '- memberReference
@@ -22,7 +22,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 3, column: 15]
+   |  |  |  |- TOKEN[type: VALUE, text: value, line: 3, column: 15]
    |  |  |  '- reference
    |  |  |     |- qualifiedName
    |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 3, column: 21]
@@ -39,7 +39,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 4, column: 15]
+   |  |  |  |- TOKEN[type: VALUE, text: value, line: 4, column: 15]
    |  |  |  '- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 4, column: 21]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 4, column: 25]
    |  |- TOKEN[type: TEXT, text:  — formats this constant with two decimal places., line: 4, column: 26]
@@ -47,7 +47,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 5, column: 15]
+   |  |  |  |- TOKEN[type: VALUE, text: value, line: 5, column: 15]
    |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 5, column: 21]
    |  |  |  '- reference
    |  |  |     |- qualifiedName
@@ -65,7 +65,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 6, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 6, column: 15]
+   |  |  |  |- TOKEN[type: VALUE, text: value, line: 6, column: 15]
    |  |  |  '- reference
    |  |  |     |- qualifiedName
    |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 6, column: 21]
@@ -78,7 +78,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 7, column: 15]
+   |  |  |  |- TOKEN[type: VALUE, text: value, line: 7, column: 15]
    |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.1f, line: 7, column: 21]
    |  |  |  '- reference
    |  |  |     |- qualifiedName
@@ -92,7 +92,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 8, column: 15]
+   |  |  |  |- TOKEN[type: VALUE, text: value, line: 8, column: 15]
    |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 8, column: 21]
    |  |  |  '- reference
    |  |  |     |- qualifiedName
@@ -110,7 +110,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 10, column: 13]
    |  |  |- valueInlineTag
-   |  |  |  |- TOKEN[type: VALUE_LITERAL, text: value, line: 10, column: 15]
+   |  |  |  |- TOKEN[type: VALUE, text: value, line: 10, column: 15]
    |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 11, column: 16]
    |  |  |  '- reference
    |  |  |     |- qualifiedName

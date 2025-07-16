@@ -3,7 +3,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 1, column: 4]
+   |  |  |  |- TOKEN[type: LINK, text: link, line: 1, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 1, column: 9]
    |  |  |  |  |- TOKEN[type: DOT, text: ., line: 1, column: 13]
@@ -21,7 +21,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 2, column: 4]
+   |  |  |  |- TOKEN[type: LINK, text: link, line: 2, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 2, column: 9]
    |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 13]
@@ -39,7 +39,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 3, column: 4]
+   |  |  |  |- TOKEN[type: LINK, text: link, line: 3, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 3, column: 9]
    |  |  |  |  |- TOKEN[type: DOT, text: ., line: 3, column: 13]
@@ -60,7 +60,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 4, column: 2]
    |  |  |- linkInlineTag
-   |  |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 4, column: 4]
+   |  |  |  |- TOKEN[type: LINK, text: link, line: 4, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 4, column: 9]
    |  |  |  |  |- TOKEN[type: DOT, text: ., line: 4, column: 13]
@@ -81,7 +81,7 @@
    |  '- inlineTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 5, column: 2]
    |     |- linkInlineTag
-   |     |  |- TOKEN[type: LINK_LITERAL, text: link, line: 5, column: 4]
+   |     |  |- TOKEN[type: LINK, text: link, line: 5, column: 4]
    |     |  |- reference
    |     |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 5, column: 9]
    |     |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 13]

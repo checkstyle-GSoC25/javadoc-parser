@@ -2,26 +2,26 @@
    |- mainDescription
    |  '- TOKEN[type: TEXT, text: Usage of deprecated block tag., line: 1, column: 2]
    |- blockTag
-   |  |- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 2, column: 2]
+   |  |- TOKEN[type: DEPRECATED, text: @deprecated, line: 2, column: 2]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  This method is obsolete., line: 2, column: 13]
    |- blockTag
-   |  |- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 3, column: 2]
+   |  |- TOKEN[type: DEPRECATED, text: @deprecated, line: 3, column: 2]
    |  '- description
    |     '- TOKEN[type: TEXT, text: Use the new method instead., line: 4, column: 6]
    |- blockTag
-   |  |- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 5, column: 2]
+   |  |- TOKEN[type: DEPRECATED, text: @deprecated, line: 5, column: 2]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  Don't use., line: 5, column: 13]
    |- blockTag
-   |  |- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 6, column: 2]
+   |  |- TOKEN[type: DEPRECATED, text: @deprecated, line: 6, column: 2]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  This method is outdated., line: 6, column: 13]
    |     |- TOKEN[type: TEXT, text: Use , line: 7, column: 6]
    |     |- inlineTag
    |     |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 7, column: 10]
    |     |  |- linkInlineTag
-   |     |  |  |- TOKEN[type: LINK_LITERAL, text: link, line: 7, column: 12]
+   |     |  |  |- TOKEN[type: LINK, text: link, line: 7, column: 12]
    |     |  |  '- reference
    |     |  |     |- TOKEN[type: HASH, text: #, line: 7, column: 17]
    |     |  |     '- memberReference
@@ -31,5 +31,5 @@
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 29]
    |     '- TOKEN[type: TEXT, text:  for better performance and flexibility., line: 7, column: 30]
    |- blockTag
-   |  '- TOKEN[type: DEPRECATED_LITERAL, text: @deprecated, line: 8, column: 2]
+   |  '- TOKEN[type: DEPRECATED, text: @deprecated, line: 8, column: 2]
    '- TOKEN[type: EOF, text: <EOF>, line: 8, column: 13]

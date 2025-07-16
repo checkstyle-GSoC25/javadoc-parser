@@ -3,7 +3,7 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 2]
    |  |  |- inheritDocInlineTag
-   |  |  |  |- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 1, column: 4]
+   |  |  |  |- TOKEN[type: INHERIT_DOC, text: inheritDoc, line: 1, column: 4]
    |  |  |  '- reference
    |  |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 1, column: 15]
    |  |  |     |- TOKEN[type: DOT, text: ., line: 1, column: 19]
@@ -14,12 +14,12 @@
    |  |- inlineTag
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 2, column: 2]
    |  |  |- inheritDocInlineTag
-   |  |  |  '- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 2, column: 4]
+   |  |  |  '- TOKEN[type: INHERIT_DOC, text: inheritDoc, line: 2, column: 4]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 2, column: 14]
    |  '- inlineTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 2]
    |     |- inheritDocInlineTag
-   |     |  |- TOKEN[type: INHERITDOC_LITERAL, text: inheritDoc, line: 3, column: 4]
+   |     |  |- TOKEN[type: INHERIT_DOC, text: inheritDoc, line: 3, column: 4]
    |     |  '- reference
    |     |     |- TOKEN[type: IDENTIFIER, text: java, line: 4, column: 12]
    |     |     |- TOKEN[type: DOT, text: ., line: 4, column: 16]
