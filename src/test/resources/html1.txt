@@ -109,12 +109,14 @@
    |        |- TOKEN[type: TAG_NAME, text: ul, line: 14, column: 4]
    |        '- TOKEN[type: TAG_CLOSE, text: >, line: 14, column: 6]
    |- blockTag
-   |  |- TOKEN[type: PARAM, text: @param, line: 16, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 16, column: 2]
+   |  |- TOKEN[type: PARAM, text: param, line: 16, column: 3]
    |  |- TOKEN[type: PARAMETER_NAME, text: collection, line: 16, column: 9]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  the source collection, line: 16, column: 19]
    |- blockTag
-   |  |- TOKEN[type: RETURN, text: @return, line: 17, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 17, column: 2]
+   |  |- TOKEN[type: RETURN, text: return, line: 17, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  a new mutable list containing the elements of the collection, line: 17, column: 9]
    '- TOKEN[type: EOF, text: <EOF>, line: 17, column: 70]

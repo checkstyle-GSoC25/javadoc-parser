@@ -28,23 +28,27 @@
    |        |- TOKEN[type: TAG_NAME, text: script, line: 10, column: 5]
    |        '- TOKEN[type: TAG_CLOSE, text: >, line: 10, column: 11]
    |- blockTag
-   |  |- TOKEN[type: RETURN, text: @return, line: 12, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 12, column: 3]
+   |  |- TOKEN[type: RETURN, text: return, line: 12, column: 4]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  Always returns madness, line: 12, column: 10]
    |- blockTag
-   |  |- TOKEN[type: THROWS, text: @throws, line: 13, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 13, column: 3]
+   |  |- TOKEN[type: THROWS, text: throws, line: 13, column: 4]
    |  |- qualifiedIdentifier
    |  |  '- TOKEN[type: IDENTIFIER, text: IllegalArgumentException, line: 13, column: 11]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  if something is null, line: 13, column: 35]
    |- blockTag
-   |  |- TOKEN[type: THROWS, text: @throws, line: 14, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 14, column: 3]
+   |  |- TOKEN[type: THROWS, text: throws, line: 14, column: 4]
    |  |- qualifiedIdentifier
    |  |  '- TOKEN[type: IDENTIFIER, text: NullPointerException, line: 14, column: 11]
    |  '- description
    |     '- TOKEN[type: TEXT, text:      if null sneaks in, line: 14, column: 31]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @apiNote, line: 15, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 15, column: 3]
+   |  |- TOKEN[type: CUSTOM_NAME, text: apiNote, line: 15, column: 4]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  Handles edge cases like , line: 15, column: 11]
    |     |- inlineTag
@@ -80,7 +84,8 @@
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 16, column: 72]
    |     '- TOKEN[type: TEXT, text: ., line: 16, column: 73]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @implNote, line: 17, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 17, column: 3]
+   |  |- TOKEN[type: CUSTOM_NAME, text: implNote, line: 17, column: 4]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  Implementation uses streams:, line: 17, column: 12]
    |     |- inlineTag
@@ -153,25 +158,30 @@
    |           |- TOKEN[type: TAG_NAME, text: dl, line: 28, column: 5]
    |           '- TOKEN[type: TAG_CLOSE, text: >, line: 28, column: 7]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @apiUser, line: 29, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 29, column: 3]
+   |  |- TOKEN[type: CUSTOM_NAME, text: apiUser, line: 29, column: 4]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  library-consumers, line: 29, column: 11]
    |- blockTag
-   |  |- TOKEN[type: CUSTOM_NAME, text: @apiUser, line: 30, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 30, column: 3]
+   |  |- TOKEN[type: CUSTOM_NAME, text: apiUser, line: 30, column: 4]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  internal-only, line: 30, column: 11]
    |- blockTag
-   |  |- TOKEN[type: SERIAL, text: @serial, line: 31, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 31, column: 3]
+   |  |- TOKEN[type: SERIAL, text: serial, line: 31, column: 4]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  This class supports Java object serialization., line: 31, column: 10]
    |- blockTag
-   |  |- TOKEN[type: SERIAL_FIELD, text: @serialField, line: 32, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 32, column: 3]
+   |  |- TOKEN[type: SERIAL_FIELD, text: serialField, line: 32, column: 4]
    |  |- TOKEN[type: IDENTIFIER, text: serialNumber, line: 32, column: 16]
    |  |- TOKEN[type: FIELD_TYPE, text: long, line: 32, column: 29]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  the serial number of this madness, line: 32, column: 33]
    |- blockTag
-   |  |- TOKEN[type: SERIAL_DATA, text: @serialData, line: 33, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 33, column: 3]
+   |  |- TOKEN[type: SERIAL_DATA, text: serialData, line: 33, column: 4]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  The bytes: , line: 33, column: 14]
    |     |- inlineTag
@@ -361,7 +371,8 @@
    |              |     '- TOKEN[type: TEXT, text: }, line: 45, column: 73]
    |              '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 45, column: 74]
    |- blockTag
-   |  |- TOKEN[type: SEE, text: @see, line: 46, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 46, column: 3]
+   |  |- TOKEN[type: SEE, text: see, line: 46, column: 4]
    |  '- htmlElement
    |     |- htmlTagStart
    |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 46, column: 9]
@@ -379,7 +390,8 @@
    |        |- TOKEN[type: TAG_NAME, text: a, line: 46, column: 70]
    |        '- TOKEN[type: TAG_CLOSE, text: >, line: 46, column: 71]
    |- blockTag
-   |  |- TOKEN[type: SEE, text: @see, line: 47, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 47, column: 3]
+   |  |- TOKEN[type: SEE, text: see, line: 47, column: 4]
    |  '- reference
    |     |- TOKEN[type: HASH, text: #, line: 47, column: 8]
    |     '- memberReference
@@ -387,7 +399,8 @@
    |        |- TOKEN[type: LPAREN, text: (, line: 47, column: 21]
    |        '- TOKEN[type: RPAREN, text: ), line: 47, column: 22]
    |- blockTag
-   |  |- TOKEN[type: SEE, text: @see, line: 48, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 48, column: 3]
+   |  |- TOKEN[type: SEE, text: see, line: 48, column: 4]
    |  '- reference
    |     |- qualifiedName
    |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 48, column: 8]
@@ -405,11 +418,13 @@
    |        |  '- TOKEN[type: PARAMETER_TYPE, text: java.util.function.Function, line: 48, column: 36]
    |        '- TOKEN[type: RPAREN, text: ), line: 48, column: 63]
    |- blockTag
-   |  |- TOKEN[type: SINCE, text: @since, line: 49, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 49, column: 3]
+   |  |- TOKEN[type: SINCE, text: since, line: 49, column: 4]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  9.9.9-beta🔥, line: 49, column: 9]
    |- blockTag
-   |  |- TOKEN[type: DEPRECATED, text: @deprecated, line: 50, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 50, column: 3]
+   |  |- TOKEN[type: DEPRECATED, text: deprecated, line: 50, column: 4]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  This API is no longer maintained. See , line: 50, column: 14]
    |     |- inlineTag

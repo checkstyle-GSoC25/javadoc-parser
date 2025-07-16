@@ -11,7 +11,7 @@ tokens {
     TAG_SLASH, EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
     SUPER, QUESTION, VALUE, FORMAT_SPECIFIER, INHERIT_DOC, SUMMARY, SYSTEM_PROPERTY,
     INDEX, INDEX_TERM, RETURN, SNIPPET, SNIPPET_ATTR_NAME, COLON, EXCEPTION, THROWS, PARAMETER_NAME, SINCE,
-    VERSION, SEE, STRING_LITERAL, LITERAL_HIDDEN, SERIAL, SERIAL_DATA, SERIAL_FIELD, FIELD_TYPE
+    VERSION, SEE, STRING_LITERAL, LITERAL_HIDDEN, SERIAL, SERIAL_DATA, SERIAL_FIELD, FIELD_TYPE, AT_SIGN
 }
 
 @header {
@@ -96,14 +96,14 @@ NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> channel(NEWLINES)
     ;
 
-BLOCK_TAG_ENTRY
-    : {isJavadocBlockTag()}? '@' -> pushMode(BLOCK_TAG), more
+AT_SIGN
+    : {isJavadocBlockTag()}? '@' -> pushMode(BLOCK_TAG)
     ;
 
 mode TEXT_MODE;
 Text_NEWLINE: '\r'? '\n' {setAfterNewline();} -> mode(DEFAULT_MODE), type(NEWLINE), channel(NEWLINES);
 TEXT: TEXT_CHAR+;
-BLOCK_TAG_ENTRY2: {isJavadocBlockTag()}? '@' -> pushMode(BLOCK_TAG), more;
+AT_SIGN2: {isJavadocBlockTag()}? '@' -> type(AT_SIGN), pushMode(BLOCK_TAG);
 JAVADOC_INLINE_TAG_START: '{@' { braceCounter = 1;} -> pushMode(JAVADOC_INLINE_TAG);
 TAG_OPEN: '<' -> pushMode(TAG);
 fragment TEXT_CHAR: {isNormalText()}? ~[\r\n];

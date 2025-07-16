@@ -1,22 +1,26 @@
 '- javadoc
    |- blockTag
-   |  |- TOKEN[type: USES, text: @uses, line: 1, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 1, column: 2]
+   |  |- TOKEN[type: USES, text: uses, line: 1, column: 3]
    |  |- qualifiedIdentifier
    |  |  '- TOKEN[type: IDENTIFIER, text: testpkgmdlB.TestClassInModuleB, line: 1, column: 8]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  With a test description for uses., line: 1, column: 38]
    |- blockTag
-   |  |- TOKEN[type: PROVIDES, text: @provides, line: 2, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 2, column: 2]
+   |  |- TOKEN[type: PROVIDES, text: provides, line: 2, column: 3]
    |  '- qualifiedIdentifier
    |     '- TOKEN[type: IDENTIFIER, text: testpkg2mdlB.TestInterface2InModuleB, line: 2, column: 12]
    |- blockTag
-   |  |- TOKEN[type: PROVIDES, text: @provides, line: 3, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 3, column: 2]
+   |  |- TOKEN[type: PROVIDES, text: provides, line: 3, column: 3]
    |  |- qualifiedIdentifier
    |  |  '- TOKEN[type: IDENTIFIER, text: testpkgmdlB.TestClassInModuleB, line: 3, column: 12]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  With a test description for provides., line: 3, column: 42]
    |- blockTag
-   |  |- TOKEN[type: USES, text: @uses, line: 4, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 4, column: 2]
+   |  |- TOKEN[type: USES, text: uses, line: 4, column: 3]
    |  '- qualifiedIdentifier
    |     '- TOKEN[type: IDENTIFIER, text: com.sun.net.httpserver.spi.HttpServerProvider, line: 4, column: 8]
    '- TOKEN[type: EOF, text: <EOF>, line: 4, column: 53]

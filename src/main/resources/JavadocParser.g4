@@ -63,57 +63,59 @@ blockTag
     ;
 
 authorTag
-    : tagName=AUTHOR description?
+    : AT_SIGN tagName=AUTHOR description?
     ;
 
 deprecatedTag
-    : tagName=DEPRECATED description?
+    : AT_SIGN tagName=DEPRECATED description?
     ;
 
 returnTag
-    : tagName=RETURN description?
+    : AT_SIGN tagName=RETURN description?
     ;
 
 parameterTag
-    : tagName=PARAM paramName=PARAMETER_NAME description?
+    : AT_SIGN tagName=PARAM paramName=PARAMETER_NAME description?
     ;
 
 throwsTag
-    : tagName=THROWS exceptionName=qualifiedIdentifier description?
+    : AT_SIGN tagName=THROWS exceptionName=qualifiedIdentifier description?
     ;
 
 exceptionTag
-    : tagName=EXCEPTION exceptionName=qualifiedIdentifier description?
+    : AT_SIGN tagName=EXCEPTION exceptionName=qualifiedIdentifier description?
     ;
 
 sinceTag
-    : tagName=SINCE description?
+    : AT_SIGN tagName=SINCE description?
     ;
 
 versionTag
-    : tagName=VERSION description?
+    : AT_SIGN tagName=VERSION description?
     ;
 
 seeTag
-    : tagName=SEE STRING_LITERAL
-    | tagName=SEE reference description?
-    | tagName=SEE htmlElement description?
+    : AT_SIGN
+     ( tagName=SEE STRING_LITERAL
+     | tagName=SEE reference description?
+     | tagName=SEE htmlElement description?
+     )
     ;
 
-hiddenTag: tagName=LITERAL_HIDDEN description?;
+hiddenTag: AT_SIGN tagName=LITERAL_HIDDEN description?;
 
-usesTag: tagName=USES serviceType=qualifiedIdentifier description?;
+usesTag: AT_SIGN tagName=USES serviceType=qualifiedIdentifier description?;
 
-providesTag: tagName=PROVIDES serviceType=qualifiedIdentifier description?;
+providesTag: AT_SIGN tagName=PROVIDES serviceType=qualifiedIdentifier description?;
 
-serialTag: tagName=SERIAL description?;
+serialTag: AT_SIGN tagName=SERIAL description?;
 
-serialDataTag: tagName=SERIAL_DATA description?;
+serialDataTag: AT_SIGN tagName=SERIAL_DATA description?;
 
-serialFieldTag: tagName=SERIAL_FIELD fieldName=IDENTIFIER FIELD_TYPE  description?;
+serialFieldTag: AT_SIGN tagName=SERIAL_FIELD fieldName=IDENTIFIER FIELD_TYPE  description?;
 
 customBlockTag
-    : tagName=CUSTOM_NAME description?
+    : AT_SIGN tagName=CUSTOM_NAME description?
     ;
 
 // Inline tags

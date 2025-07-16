@@ -20646,19 +20646,23 @@
    |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 316, column: 8]
    |  '- TOKEN[type: TEXT, text: <!-- Javadoc comment -->, line: 318, column: 3]
    |- blockTag
-   |  |- TOKEN[type: AUTHOR, text: @author, line: 319, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 319, column: 3]
+   |  |- TOKEN[type: AUTHOR, text: author, line: 319, column: 4]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  Nobody, line: 319, column: 10]
    |- blockTag
-   |  |- TOKEN[type: VERSION, text: @version, line: 320, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 320, column: 3]
+   |  |- TOKEN[type: VERSION, text: version, line: 320, column: 4]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  42.0, line: 320, column: 11]
    |- blockTag
-   |  |- TOKEN[type: SINCE, text: @since, line: 321, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 321, column: 3]
+   |  |- TOKEN[type: SINCE, text: since, line: 321, column: 4]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  forever, line: 321, column: 9]
    |- blockTag
-   |  |- TOKEN[type: DEPRECATED, text: @deprecated, line: 322, column: 3]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 322, column: 3]
+   |  |- TOKEN[type: DEPRECATED, text: deprecated, line: 322, column: 4]
    |  '- description
    |     |- TOKEN[type: TEXT, text:  Use , line: 322, column: 14]
    |     |- inlineTag

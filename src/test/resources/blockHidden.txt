@@ -2,9 +2,11 @@
    |- mainDescription
    |  '- TOKEN[type: TEXT, text: Utility class for internal use., line: 1, column: 2]
    |- blockTag
-   |  '- TOKEN[type: LITERAL_HIDDEN, text: @hidden, line: 2, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 2, column: 2]
+   |  '- TOKEN[type: LITERAL_HIDDEN, text: hidden, line: 2, column: 3]
    |- blockTag
-   |  |- TOKEN[type: LITERAL_HIDDEN, text: @hidden, line: 3, column: 2]
+   |  |- TOKEN[type: AT_SIGN, text: @, line: 3, column: 2]
+   |  |- TOKEN[type: LITERAL_HIDDEN, text: hidden, line: 3, column: 3]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  because I am ashamed of this crappy implementation :(, line: 3, column: 9]
    '- TOKEN[type: EOF, text: <EOF>, line: 3, column: 63]
