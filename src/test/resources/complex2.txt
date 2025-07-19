@@ -35,14 +35,14 @@
    |- blockTag
    |  |- TOKEN[type: AT_SIGN, text: @, line: 13, column: 3]
    |  |- TOKEN[type: THROWS, text: throws, line: 13, column: 4]
-   |  |- qualifiedIdentifier
+   |  |- qualifiedName
    |  |  '- TOKEN[type: IDENTIFIER, text: IllegalArgumentException, line: 13, column: 11]
    |  '- description
    |     '- TOKEN[type: TEXT, text:  if something is null, line: 13, column: 35]
    |- blockTag
    |  |- TOKEN[type: AT_SIGN, text: @, line: 14, column: 3]
    |  |- TOKEN[type: THROWS, text: throws, line: 14, column: 4]
-   |  |- qualifiedIdentifier
+   |  |- qualifiedName
    |  |  '- TOKEN[type: IDENTIFIER, text: NullPointerException, line: 14, column: 11]
    |  '- description
    |     '- TOKEN[type: TEXT, text:      if null sneaks in, line: 14, column: 31]
@@ -402,14 +402,8 @@
    |  |- TOKEN[type: AT_SIGN, text: @, line: 48, column: 3]
    |  |- TOKEN[type: SEE, text: see, line: 48, column: 4]
    |  '- reference
-   |     |- qualifiedName
-   |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 48, column: 8]
-   |     |  |- TOKEN[type: DOT, text: ., line: 48, column: 12]
-   |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 48, column: 13]
-   |     |  |- TOKEN[type: DOT, text: ., line: 48, column: 17]
-   |     |  |- TOKEN[type: IDENTIFIER, text: stream, line: 48, column: 18]
-   |     |  |- TOKEN[type: DOT, text: ., line: 48, column: 24]
-   |     |  '- TOKEN[type: IDENTIFIER, text: Stream, line: 48, column: 25]
+   |     |- typeName
+   |     |  '- TOKEN[type: IDENTIFIER, text: java.util.stream.Stream, line: 48, column: 8]
    |     |- TOKEN[type: HASH, text: #, line: 48, column: 31]
    |     '- memberReference
    |        |- TOKEN[type: IDENTIFIER, text: map, line: 48, column: 32]

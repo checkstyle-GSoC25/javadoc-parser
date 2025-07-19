@@ -79,11 +79,11 @@ parameterTag
     ;
 
 throwsTag
-    : AT_SIGN tagName=THROWS exceptionName=qualifiedIdentifier description?
+    : AT_SIGN tagName=THROWS exceptionName=qualifiedName description?
     ;
 
 exceptionTag
-    : AT_SIGN tagName=EXCEPTION exceptionName=qualifiedIdentifier description?
+    : AT_SIGN tagName=EXCEPTION exceptionName=qualifiedName description?
     ;
 
 sinceTag
@@ -104,9 +104,9 @@ seeTag
 
 hiddenTag: AT_SIGN tagName=LITERAL_HIDDEN description?;
 
-usesTag: AT_SIGN tagName=USES serviceType=qualifiedIdentifier description?;
+usesTag: AT_SIGN tagName=USES serviceType=qualifiedName description?;
 
-providesTag: AT_SIGN tagName=PROVIDES serviceType=qualifiedIdentifier description?;
+providesTag: AT_SIGN tagName=PROVIDES serviceType=qualifiedName description?;
 
 serialTag: AT_SIGN tagName=SERIAL description?;
 
@@ -162,7 +162,7 @@ summaryInlineTag
     ;
 
 systemPropertyInlineTag
-    : tagName=SYSTEM_PROPERTY propertyName?
+    : tagName=SYSTEM_PROPERTY propertyName=qualifiedName?
     ;
 
 indexInlineTag
@@ -188,11 +188,15 @@ customInlineTag
 // Components
 reference
     : HASH memberReference
-    | (module=qualifiedName SLASH)? type=qualifiedName (HASH memberReference)?
+    | (module=qualifiedName SLASH)? type=typeName (HASH memberReference)?
+    ;
+
+typeName:
+    | qualifiedName typeArguments?
     ;
 
 qualifiedName
-    : IDENTIFIER (DOT IDENTIFIER)* typeArguments?
+    : IDENTIFIER
     ;
 
 typeArguments
@@ -200,10 +204,10 @@ typeArguments
     ;
 
 typeArgument
-    : qualifiedName
+    : typeName
     | QUESTION
-    | QUESTION EXTENDS qualifiedName
-    | QUESTION SUPER qualifiedName
+    | QUESTION EXTENDS typeName
+    | QUESTION SUPER typeName
     ;
 
 memberReference
@@ -214,10 +218,6 @@ parameterTypeList
     : PARAMETER_TYPE (COMMA PARAMETER_TYPE)*
     ;
 
-propertyName
-    : IDENTIFIER (DOT IDENTIFIER)*
-    ;
-
 snippetAttribute
     : SNIPPET_ATTR_NAME EQUALS ATTRIBUTE_VALUE
     ;
@@ -225,8 +225,6 @@ snippetAttribute
 snippetBody
     : TEXT+
     ;
-
-qualifiedIdentifier: IDENTIFIER;
 
 description
     : (TEXT | inlineTag | htmlElement)+

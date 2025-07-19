@@ -5,12 +5,8 @@
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 1, column: 27]
    |  |  |- systemPropertyInlineTag
    |  |  |  |- TOKEN[type: SYSTEM_PROPERTY, text: systemProperty, line: 1, column: 29]
-   |  |  |  '- propertyName
-   |  |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 1, column: 44]
-   |  |  |     |- TOKEN[type: DOT, text: ., line: 1, column: 48]
-   |  |  |     |- TOKEN[type: IDENTIFIER, text: io, line: 1, column: 49]
-   |  |  |     |- TOKEN[type: DOT, text: ., line: 1, column: 51]
-   |  |  |     '- TOKEN[type: IDENTIFIER, text: tmpdir, line: 1, column: 52]
+   |  |  |  '- qualifiedName
+   |  |  |     '- TOKEN[type: IDENTIFIER, text: java.io.tmpdir, line: 1, column: 44]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 1, column: 58]
    |  |- TOKEN[type: TEXT, text:  system property,, line: 1, column: 59]
    |  |- TOKEN[type: TEXT, text: which specifies the default temporary file directory., line: 2, column: 2]
@@ -19,7 +15,7 @@
    |  |  |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 3, column: 27]
    |  |  |- systemPropertyInlineTag
    |  |  |  |- TOKEN[type: SYSTEM_PROPERTY, text: systemProperty, line: 3, column: 29]
-   |  |  |  '- propertyName
+   |  |  |  '- qualifiedName
    |  |  |     '- TOKEN[type: IDENTIFIER, text: java, line: 3, column: 44]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 3, column: 48]
    |  |- TOKEN[type: TEXT, text:  system property,, line: 3, column: 49]

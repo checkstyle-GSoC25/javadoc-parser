@@ -67,14 +67,8 @@
    |  |  |  |  |- linkInlineTag
    |  |  |  |  |  |- TOKEN[type: LINK, text: link, line: 8, column: 4]
    |  |  |  |  |  '- reference
-   |  |  |  |  |     |- qualifiedName
-   |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 8, column: 9]
-   |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 8, column: 13]
-   |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 8, column: 14]
-   |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 8, column: 18]
-   |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: function, line: 8, column: 19]
-   |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 8, column: 27]
-   |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Function, line: 8, column: 28]
+   |  |  |  |  |     |- typeName
+   |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: java.util.function.Function, line: 8, column: 9]
    |  |  |  |  |     |- TOKEN[type: HASH, text: #, line: 8, column: 36]
    |  |  |  |  |     '- memberReference
    |  |  |  |  |        '- TOKEN[type: IDENTIFIER, text: Function, line: 8, column: 37]
@@ -85,14 +79,8 @@
    |  |  |  |  |- linkPlainInlineTag
    |  |  |  |  |  |- TOKEN[type: LINKPLAIN, text: linkplain, line: 9, column: 4]
    |  |  |  |  |  '- reference
-   |  |  |  |  |     |- qualifiedName
-   |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 9, column: 14]
-   |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 9, column: 18]
-   |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 9, column: 19]
-   |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 9, column: 23]
-   |  |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: stream, line: 9, column: 24]
-   |  |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 9, column: 30]
-   |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Stream, line: 9, column: 31]
+   |  |  |  |  |     |- typeName
+   |  |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: java.util.stream.Stream, line: 9, column: 14]
    |  |  |  |  |     |- TOKEN[type: HASH, text: #, line: 9, column: 37]
    |  |  |  |  |     '- memberReference
    |  |  |  |  |        '- TOKEN[type: IDENTIFIER, text: Stream, line: 9, column: 38]
