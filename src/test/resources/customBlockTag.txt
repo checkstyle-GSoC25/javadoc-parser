@@ -9,7 +9,7 @@
    |     |  |- linkInlineTag
    |     |  |  |- TOKEN[type: LINK, text: link, line: 1, column: 48]
    |     |  |  '- reference
-   |     |  |     |- qualifiedName
+   |     |  |     |- typeName
    |     |  |     |  '- TOKEN[type: IDENTIFIER, text: Math, line: 1, column: 53]
    |     |  |     |- TOKEN[type: HASH, text: #, line: 1, column: 57]
    |     |  |     '- memberReference

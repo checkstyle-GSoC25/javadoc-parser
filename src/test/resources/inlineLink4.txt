@@ -7,16 +7,10 @@
    |  |  |  |- TOKEN[type: LINK, text: link, line: 2, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 2, column: 9]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 13]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base, line: 2, column: 14]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.base, line: 2, column: 9]
    |  |  |  |  |- TOKEN[type: SLASH, text: /, line: 2, column: 18]
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 2, column: 19]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 23]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 2, column: 24]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 28]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Optional, line: 2, column: 29]
+   |  |  |  |  |- typeName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.Optional, line: 2, column: 19]
    |  |  |  |  |- TOKEN[type: HASH, text: #, line: 2, column: 37]
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: ifPresentOrElse, line: 2, column: 38]
@@ -60,16 +54,10 @@
    |  |  |  |- TOKEN[type: LINK, text: link, line: 7, column: 8]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 7, column: 13]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 7, column: 17]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base, line: 7, column: 18]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.base, line: 7, column: 13]
    |  |  |  |  |- TOKEN[type: SLASH, text: /, line: 7, column: 22]
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 7, column: 23]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 7, column: 27]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 7, column: 28]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 7, column: 32]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: List, line: 7, column: 33]
+   |  |  |  |  |- typeName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.List, line: 7, column: 23]
    |  |  |  |  |- TOKEN[type: HASH, text: #, line: 7, column: 37]
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: Test, line: 7, column: 38]
@@ -128,12 +116,8 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 15, column: 4]
    |  |  |  |- reference
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 15, column: 9]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 15, column: 13]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 15, column: 14]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 15, column: 18]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Arrays, line: 15, column: 19]
+   |  |  |  |  |- typeName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.Arrays, line: 15, column: 9]
    |  |  |  |  |- TOKEN[type: HASH, text: #, line: 15, column: 25]
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: copyOf, line: 15, column: 26]
@@ -156,16 +140,10 @@
    |  |  |  |- TOKEN[type: LINK, text: link, line: 19, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 19, column: 9]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 19, column: 13]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base, line: 19, column: 14]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.base, line: 19, column: 9]
    |  |  |  |  |- TOKEN[type: SLASH, text: /, line: 19, column: 18]
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 19, column: 19]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 19, column: 23]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: lang, line: 19, column: 24]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 19, column: 28]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: String, line: 19, column: 29]
+   |  |  |  |  |- typeName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.lang.String, line: 19, column: 19]
    |  |  |  |  |- TOKEN[type: HASH, text: #, line: 19, column: 35]
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: substring, line: 19, column: 36]
@@ -186,18 +164,10 @@
    |  |  |  |- TOKEN[type: LINK, text: link, line: 23, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 23, column: 9]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 23, column: 13]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: logging, line: 23, column: 14]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.logging, line: 23, column: 9]
    |  |  |  |  |- TOKEN[type: SLASH, text: /, line: 23, column: 21]
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 23, column: 22]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 23, column: 26]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 23, column: 27]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 23, column: 31]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: logging, line: 23, column: 32]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 23, column: 39]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Logger, line: 23, column: 40]
+   |  |  |  |  |- typeName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.logging.Logger, line: 23, column: 22]
    |  |  |  |  |- TOKEN[type: HASH, text: #, line: 23, column: 46]
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: getLogger, line: 23, column: 47]
@@ -222,18 +192,10 @@
    |  |  |  |- TOKEN[type: LINK, text: link, line: 27, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 27, column: 9]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 27, column: 13]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base, line: 27, column: 14]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.base, line: 27, column: 9]
    |  |  |  |  |- TOKEN[type: SLASH, text: /, line: 27, column: 18]
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 27, column: 19]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 27, column: 23]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 27, column: 24]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 27, column: 28]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: function, line: 27, column: 29]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 27, column: 37]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Function, line: 27, column: 38]
+   |  |  |  |  |- typeName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.function.Function, line: 27, column: 19]
    |  |  |  |  |- TOKEN[type: HASH, text: #, line: 27, column: 46]
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: apply, line: 27, column: 47]
@@ -252,18 +214,10 @@
    |  |  |  |- TOKEN[type: LINK, text: link, line: 31, column: 4]
    |  |  |  |- reference
    |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 31, column: 9]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 31, column: 13]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: base, line: 31, column: 14]
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.base, line: 31, column: 9]
    |  |  |  |  |- TOKEN[type: SLASH, text: /, line: 31, column: 18]
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 31, column: 19]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 31, column: 23]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 31, column: 24]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 31, column: 28]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: stream, line: 31, column: 29]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 31, column: 35]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Stream, line: 31, column: 36]
+   |  |  |  |  |- typeName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.stream.Stream, line: 31, column: 19]
    |  |  |  |  |- TOKEN[type: HASH, text: #, line: 31, column: 42]
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: map, line: 31, column: 43]
@@ -281,14 +235,8 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 35, column: 4]
    |  |  |  |- reference
-   |  |  |  |  |- qualifiedName
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 35, column: 9]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 35, column: 13]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 35, column: 14]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 35, column: 18]
-   |  |  |  |  |  |- TOKEN[type: IDENTIFIER, text: Map, line: 35, column: 19]
-   |  |  |  |  |  |- TOKEN[type: DOT, text: ., line: 35, column: 22]
-   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Entry, line: 35, column: 23]
+   |  |  |  |  |- typeName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.Map.Entry, line: 35, column: 9]
    |  |  |  |  |- TOKEN[type: HASH, text: #, line: 35, column: 28]
    |  |  |  |  '- memberReference
    |  |  |  |     |- TOKEN[type: IDENTIFIER, text: getKey, line: 35, column: 29]
@@ -311,11 +259,7 @@
    |     |- linkInlineTag
    |     |  |- TOKEN[type: LINK, text: link, line: 39, column: 4]
    |     |  |- reference
-   |     |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 39, column: 9]
-   |     |  |  |- TOKEN[type: DOT, text: ., line: 39, column: 13]
-   |     |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 39, column: 14]
-   |     |  |  |- TOKEN[type: DOT, text: ., line: 39, column: 18]
-   |     |  |  '- TOKEN[type: IDENTIFIER, text: Arrays, line: 39, column: 19]
+   |     |  |  '- TOKEN[type: IDENTIFIER, text: java.util.Arrays, line: 39, column: 9]
    |     |  '- description
    |     |     '- TOKEN[type: TEXT, text:  array, line: 39, column: 25]
    |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 39, column: 31]

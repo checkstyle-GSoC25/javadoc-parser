@@ -40,7 +40,7 @@
    |  |  |     |  |- linkInlineTag
    |  |  |     |  |  |- TOKEN[type: LINK, text: link, line: 4, column: 34]
    |  |  |     |  |  |- reference
-   |  |  |     |  |  |  |- qualifiedName
+   |  |  |     |  |  |  |- typeName
    |  |  |     |  |  |  |  '- TOKEN[type: IDENTIFIER, text: Opcode, line: 4, column: 39]
    |  |  |     |  |  |  |- TOKEN[type: HASH, text: #, line: 4, column: 45]
    |  |  |     |  |  |  '- memberReference

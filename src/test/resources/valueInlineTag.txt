@@ -24,12 +24,8 @@
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE, text: value, line: 3, column: 15]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 3, column: 21]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 3, column: 24]
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 3, column: 25]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 3, column: 32]
-   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 3, column: 33]
+   |  |  |     |- typeName
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: com.example.Constants, line: 3, column: 21]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 3, column: 42]
    |  |  |     '- memberReference
    |  |  |        '- TOKEN[type: IDENTIFIER, text: TIMEOUT_MS, line: 3, column: 43]
@@ -50,12 +46,8 @@
    |  |  |  |- TOKEN[type: VALUE, text: value, line: 5, column: 15]
    |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 5, column: 21]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 5, column: 26]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 5, column: 29]
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 5, column: 30]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 5, column: 37]
-   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 5, column: 38]
+   |  |  |     |- typeName
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: com.example.Constants, line: 5, column: 26]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 5, column: 47]
    |  |  |     '- memberReference
    |  |  |        '- TOKEN[type: IDENTIFIER, text: PI, line: 5, column: 48]
@@ -67,7 +59,7 @@
    |  |  |- valueInlineTag
    |  |  |  |- TOKEN[type: VALUE, text: value, line: 6, column: 15]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
+   |  |  |     |- typeName
    |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 6, column: 21]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 6, column: 30]
    |  |  |     '- memberReference
@@ -81,7 +73,7 @@
    |  |  |  |- TOKEN[type: VALUE, text: value, line: 7, column: 15]
    |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.1f, line: 7, column: 21]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
+   |  |  |     |- typeName
    |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 7, column: 26]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 7, column: 35]
    |  |  |     '- memberReference
@@ -95,12 +87,8 @@
    |  |  |  |- TOKEN[type: VALUE, text: value, line: 8, column: 15]
    |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 8, column: 21]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 9, column: 16]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 9, column: 19]
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 9, column: 20]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 9, column: 27]
-   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 9, column: 28]
+   |  |  |     |- typeName
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: com.example.Constants, line: 9, column: 16]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 9, column: 37]
    |  |  |     '- memberReference
    |  |  |        '- TOKEN[type: IDENTIFIER, text: PI, line: 9, column: 38]
@@ -113,12 +101,8 @@
    |  |  |  |- TOKEN[type: VALUE, text: value, line: 10, column: 15]
    |  |  |  |- TOKEN[type: FORMAT_SPECIFIER, text: %.2f, line: 11, column: 16]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 12, column: 16]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 19]
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 12, column: 20]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 27]
-   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Constants, line: 12, column: 28]
+   |  |  |     |- typeName
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: com.example.Constants, line: 12, column: 16]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 12, column: 37]
    |  |  |     '- memberReference
    |  |  |        '- TOKEN[type: IDENTIFIER, text: PI, line: 12, column: 38]

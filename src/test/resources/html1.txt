@@ -63,12 +63,8 @@
    |     |  |  |  |- linkInlineTag
    |     |  |  |  |  |- TOKEN[type: LINK, text: link, line: 12, column: 10]
    |     |  |  |  |  '- reference
-   |     |  |  |  |     |- qualifiedName
-   |     |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 12, column: 15]
-   |     |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 19]
-   |     |  |  |  |     |  |- TOKEN[type: IDENTIFIER, text: util, line: 12, column: 20]
-   |     |  |  |  |     |  |- TOKEN[type: DOT, text: ., line: 12, column: 24]
-   |     |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: Collections, line: 12, column: 25]
+   |     |  |  |  |     |- typeName
+   |     |  |  |  |     |  '- TOKEN[type: IDENTIFIER, text: java.util.Collections, line: 12, column: 15]
    |     |  |  |  |     |- TOKEN[type: HASH, text: #, line: 12, column: 36]
    |     |  |  |  |     '- memberReference
    |     |  |  |  |        |- TOKEN[type: IDENTIFIER, text: unmodifiableList, line: 12, column: 37]
@@ -92,11 +88,7 @@
    |     |     |  |- linkInlineTag
    |     |     |  |  |- TOKEN[type: LINK, text: link, line: 13, column: 10]
    |     |     |  |  '- reference
-   |     |     |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 13, column: 15]
-   |     |     |  |     |- TOKEN[type: DOT, text: ., line: 13, column: 19]
-   |     |     |  |     |- TOKEN[type: IDENTIFIER, text: util, line: 13, column: 20]
-   |     |     |  |     |- TOKEN[type: DOT, text: ., line: 13, column: 24]
-   |     |     |  |     '- TOKEN[type: IDENTIFIER, text: ArrayList, line: 13, column: 25]
+   |     |     |  |     '- TOKEN[type: IDENTIFIER, text: java.util.ArrayList, line: 13, column: 15]
    |     |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 13, column: 34]
    |     |     '- htmlTagEnd
    |     |        |- TOKEN[type: TAG_OPEN, text: <, line: 13, column: 35]

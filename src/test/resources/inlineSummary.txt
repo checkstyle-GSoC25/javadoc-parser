@@ -110,12 +110,8 @@
    |  |  |     |  |- valueInlineTag
    |  |  |     |  |  |- TOKEN[type: VALUE, text: value, line: 11, column: 4]
    |  |  |     |  |  '- reference
-   |  |  |     |  |     |- qualifiedName
-   |  |  |     |  |     |  |- TOKEN[type: IDENTIFIER, text: java, line: 11, column: 10]
-   |  |  |     |  |     |  |- TOKEN[type: DOT, text: ., line: 11, column: 14]
-   |  |  |     |  |     |  |- TOKEN[type: IDENTIFIER, text: lang, line: 11, column: 15]
-   |  |  |     |  |     |  |- TOKEN[type: DOT, text: ., line: 11, column: 19]
-   |  |  |     |  |     |  '- TOKEN[type: IDENTIFIER, text: Math, line: 11, column: 20]
+   |  |  |     |  |     |- typeName
+   |  |  |     |  |     |  '- TOKEN[type: IDENTIFIER, text: java.lang.Math, line: 11, column: 10]
    |  |  |     |  |     |- TOKEN[type: HASH, text: #, line: 11, column: 24]
    |  |  |     |  |     '- memberReference
    |  |  |     |  |        '- TOKEN[type: IDENTIFIER, text: PI, line: 11, column: 25]
@@ -133,11 +129,8 @@
    |     |        |- linkInlineTag
    |     |        |  |- TOKEN[type: LINK, text: link, line: 12, column: 32]
    |     |        |  |- reference
-   |     |        |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 12, column: 37]
-   |     |        |  |  |- TOKEN[type: DOT, text: ., line: 12, column: 41]
-   |     |        |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 12, column: 42]
-   |     |        |  |  |- TOKEN[type: DOT, text: ., line: 12, column: 46]
-   |     |        |  |  |- TOKEN[type: IDENTIFIER, text: List, line: 12, column: 47]
+   |     |        |  |  |- qualifiedName
+   |     |        |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.List, line: 12, column: 37]
    |     |        |  |  '- typeArguments
    |     |        |  |     |- TOKEN[type: LT, text: <, line: 12, column: 51]
    |     |        |  |     |- typeArgument
