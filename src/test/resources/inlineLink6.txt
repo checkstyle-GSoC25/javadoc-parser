@@ -5,11 +5,8 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 1, column: 4]
    |  |  |  |- reference
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 1, column: 9]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 1, column: 13]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 1, column: 14]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 1, column: 18]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: List, line: 1, column: 19]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.List, line: 1, column: 9]
    |  |  |  |  '- typeArguments
    |  |  |  |     |- TOKEN[type: LT, text: <, line: 1, column: 23]
    |  |  |  |     |- typeArgument
@@ -23,11 +20,8 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 2, column: 4]
    |  |  |  |- reference
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 2, column: 9]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 13]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 2, column: 14]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 2, column: 18]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: List, line: 2, column: 19]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.List, line: 2, column: 9]
    |  |  |  |  '- typeArguments
    |  |  |  |     |- TOKEN[type: LT, text: <, line: 2, column: 23]
    |  |  |  |     |- typeArgument
@@ -41,17 +35,14 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 3, column: 4]
    |  |  |  |- reference
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 3, column: 9]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 3, column: 13]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 3, column: 14]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 3, column: 18]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: List, line: 3, column: 19]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.List, line: 3, column: 9]
    |  |  |  |  '- typeArguments
    |  |  |  |     |- TOKEN[type: LT, text: <, line: 3, column: 23]
    |  |  |  |     |- typeArgument
    |  |  |  |     |  |- TOKEN[type: QUESTION, text: ?, line: 3, column: 24]
    |  |  |  |     |  |- TOKEN[type: EXTENDS, text: extends, line: 3, column: 26]
-   |  |  |  |     |  '- qualifiedName
+   |  |  |  |     |  '- typeName
    |  |  |  |     |     '- TOKEN[type: IDENTIFIER, text: Number, line: 3, column: 34]
    |  |  |  |     '- TOKEN[type: GT, text: >, line: 3, column: 40]
    |  |  |  '- description
@@ -62,17 +53,14 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 4, column: 4]
    |  |  |  |- reference
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 4, column: 9]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 4, column: 13]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 4, column: 14]
-   |  |  |  |  |- TOKEN[type: DOT, text: ., line: 4, column: 18]
-   |  |  |  |  |- TOKEN[type: IDENTIFIER, text: List, line: 4, column: 19]
+   |  |  |  |  |- qualifiedName
+   |  |  |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.List, line: 4, column: 9]
    |  |  |  |  '- typeArguments
    |  |  |  |     |- TOKEN[type: LT, text: <, line: 4, column: 23]
    |  |  |  |     |- typeArgument
    |  |  |  |     |  |- TOKEN[type: QUESTION, text: ?, line: 4, column: 24]
    |  |  |  |     |  |- TOKEN[type: SUPER, text: super, line: 4, column: 26]
-   |  |  |  |     |  '- qualifiedName
+   |  |  |  |     |  '- typeName
    |  |  |  |     |     '- TOKEN[type: IDENTIFIER, text: Integer, line: 4, column: 32]
    |  |  |  |     '- TOKEN[type: GT, text: >, line: 4, column: 39]
    |  |  |  '- description
@@ -83,11 +71,8 @@
    |     |- linkInlineTag
    |     |  |- TOKEN[type: LINK, text: link, line: 5, column: 4]
    |     |  |- reference
-   |     |  |  |- TOKEN[type: IDENTIFIER, text: java, line: 5, column: 9]
-   |     |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 13]
-   |     |  |  |- TOKEN[type: IDENTIFIER, text: util, line: 5, column: 14]
-   |     |  |  |- TOKEN[type: DOT, text: ., line: 5, column: 18]
-   |     |  |  |- TOKEN[type: IDENTIFIER, text: Map, line: 5, column: 19]
+   |     |  |  |- qualifiedName
+   |     |  |  |  '- TOKEN[type: IDENTIFIER, text: java.util.Map, line: 5, column: 9]
    |     |  |  '- typeArguments
    |     |  |     |- TOKEN[type: LT, text: <, line: 5, column: 22]
    |     |  |     |- typeArgument
@@ -96,7 +81,7 @@
    |     |  |     |- typeArgument
    |     |  |     |  |- TOKEN[type: QUESTION, text: ?, line: 5, column: 31]
    |     |  |     |  |- TOKEN[type: EXTENDS, text: extends, line: 5, column: 33]
-   |     |  |     |  '- qualifiedName
+   |     |  |     |  '- typeName
    |     |  |     |     '- TOKEN[type: IDENTIFIER, text: Number, line: 5, column: 41]
    |     |  |     '- TOKEN[type: GT, text: >, line: 5, column: 47]
    |     |  '- description
