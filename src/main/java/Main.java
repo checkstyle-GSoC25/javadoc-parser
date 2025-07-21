@@ -22,7 +22,6 @@ public class Main {
             printLexedTokens(tokens);
 
             JavadocParser parser = new JavadocParser(tokens, unclosed);
-            parser.setTrace(true);
             JavadocParser.JavadocContext tree = ParseAndPrintStats(parser);
             printParseTree(tree, parser);
             DisplayTreeInGUI(tree, parser);
