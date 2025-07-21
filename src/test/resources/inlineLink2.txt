@@ -5,12 +5,8 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 1, column: 4]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: com, line: 1, column: 9]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 1, column: 12]
-   |  |  |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 1, column: 13]
-   |  |  |     |  |- TOKEN[type: DOT, text: ., line: 1, column: 20]
-   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: MyClass, line: 1, column: 21]
+   |  |  |     |- typeName
+   |  |  |     |  '- TOKEN[type: IDENTIFIER, text: com.example.MyClass, line: 1, column: 9]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 1, column: 28]
    |  |  |     '- memberReference
    |  |  |        |- TOKEN[type: IDENTIFIER, text: myMethod, line: 1, column: 29]
@@ -22,7 +18,7 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 2, column: 4]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
+   |  |  |     |- typeName
    |  |  |     |  '- TOKEN[type: IDENTIFIER, text: MyClass, line: 2, column: 9]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 2, column: 16]
    |  |  |     '- memberReference
@@ -35,7 +31,7 @@
    |  |  |- linkInlineTag
    |  |  |  |- TOKEN[type: LINK, text: link, line: 3, column: 4]
    |  |  |  '- reference
-   |  |  |     |- qualifiedName
+   |  |  |     |- typeName
    |  |  |     |  '- TOKEN[type: IDENTIFIER, text: MyClass, line: 3, column: 9]
    |  |  |     |- TOKEN[type: HASH, text: #, line: 3, column: 16]
    |  |  |     '- memberReference
@@ -50,10 +46,8 @@
    |     |- linkInlineTag
    |     |  |- TOKEN[type: LINK, text: link, line: 4, column: 4]
    |     |  '- reference
-   |     |     |- qualifiedName
-   |     |     |  |- TOKEN[type: IDENTIFIER, text: example, line: 4, column: 9]
-   |     |     |  |- TOKEN[type: DOT, text: ., line: 4, column: 16]
-   |     |     |  '- TOKEN[type: IDENTIFIER, text: MyClass, line: 4, column: 17]
+   |     |     |- typeName
+   |     |     |  '- TOKEN[type: IDENTIFIER, text: example.MyClass, line: 4, column: 9]
    |     |     |- TOKEN[type: HASH, text: #, line: 4, column: 24]
    |     |     '- memberReference
    |     |        |- TOKEN[type: IDENTIFIER, text: myMethod, line: 4, column: 25]

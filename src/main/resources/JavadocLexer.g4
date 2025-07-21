@@ -6,7 +6,7 @@ channels {
 
 tokens {
     JAVADOC, LEADING_ASTERISK, NEWLINE, TEXT, WS, JAVADOC_INLINE_TAG_START, JAVADOC_INLINE_TAG_END,
-    CODE, LINK, IDENTIFIER, DOT, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN,
+    CODE, LINK, IDENTIFIER, HASH, LPAREN, RPAREN, COMMA, LINKPLAIN,
     AUTHOR, DEPRECATED, RETURN, PARAM, TAG_OPEN, TAG_CLOSE, TAG_SLASH_CLOSE,
     TAG_SLASH, EQUALS, TAG_NAME, ATTRIBUTE_VALUE, SLASH, PARAMETER_TYPE, LT, GT, EXTENDS,
     SUPER, QUESTION, VALUE, FORMAT_SPECIFIER, INHERIT_DOC, SUMMARY, SYSTEM_PROPERTY,
@@ -140,17 +140,14 @@ SnippetAttribute_JAVADOC_INLINE_TAG_END: '}' { braceCounter--; } -> type(JAVADOC
 mode LINK_MODE;
 EXTENDS: 'extends';
 SUPER: 'super';
-IDENTIFIER:
-    Letter LetterOrDigit*
+IDENTIFIER: ([a-zA-Z0-9_$] | '.')+
     {
         int la = _input.LA(1);
-        if ((previousTokenType == HASH && la != '(')
-            || (previousTokenType == DOT && Character.isWhitespace(la))) {
+        if (Character.isWhitespace(la) || la == '\n' || la == '\r') {
             pushMode(LINK_TAG_DESCRIPTION);
         }
     };
 QUESTION: '?';
-DOT: '.';
 HASH: '#';
 LPAREN: '(' -> pushMode(PARAMETER_LIST);
 SLASH: '/';
@@ -185,10 +182,9 @@ RPAREN: ')' {
   };
 
 mode VALUE_MODE;
-Value_IDENTIFIER: Letter LetterOrDigit* -> type(IDENTIFIER);
+Value_IDENTIFIER: ([a-zA-Z0-9_$] | '.')+ -> type(IDENTIFIER);
 FORMAT_SPECIFIER: '%' [#+\- 0,(]* [0-9]* ('.' [0-9]+)? [a-zA-Z];
 Value_HASH: '#' -> type(HASH);
-Value_DOT: '.' -> type(DOT);
 Value_WS: [ \t]+ -> channel(WHITESPACES);
 Value_NEWLINE: '\r'? '\n' {setAfterNewline();} -> pushMode(START_OF_LINE), type(NEWLINE), channel(NEWLINES);
 Value_JAVADOC_INLINE_TAG_END: '}' -> type(JAVADOC_INLINE_TAG_END), popMode, popMode;
@@ -242,16 +238,15 @@ FIELD_TYPE: ([a-zA-Z0-9_$] | '.' | '[' | ']')+ -> mode(TEXT_MODE);
 mode SEE_MODE;
 STRING_LITERAL: '"' .*? '"' -> mode(TEXT_MODE);
 See_TAG_OPEN: '<' {_input.seek(_input.index() - 1);} -> skip, mode(TEXT_MODE);
-See_IDENTIFIER: Letter LetterOrDigit*
+See_IDENTIFIER: ([a-zA-Z0-9_$] | '.')+
     {
         int la = _input.LA(1);
         if (Character.isWhitespace(la) || la == '\n' || la == '\r') {
-            _mode = TEXT_MODE;
+            mode(TEXT_MODE);
         }
     } -> type(IDENTIFIER);
 
 See_HASH: '#' -> type(HASH);
-See_DOT: '.' -> type(DOT);
 See_LPAREN: '(' -> type(LPAREN), pushMode(PARAMETER_LIST);
 See_NEWLINE
     : '\r'? '\n' {setAfterNewline();} -> pushMode(START_OF_LINE), type(NEWLINE), channel(NEWLINES)

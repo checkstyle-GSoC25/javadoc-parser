@@ -29,11 +29,7 @@
    |     |  |- linkInlineTag
    |     |  |  |- TOKEN[type: LINK, text: link, line: 6, column: 13]
    |     |  |  '- reference
-   |     |  |     |- TOKEN[type: IDENTIFIER, text: java, line: 6, column: 18]
-   |     |  |     |- TOKEN[type: DOT, text: ., line: 6, column: 22]
-   |     |  |     |- TOKEN[type: IDENTIFIER, text: util, line: 6, column: 23]
-   |     |  |     |- TOKEN[type: DOT, text: ., line: 6, column: 27]
-   |     |  |     '- TOKEN[type: IDENTIFIER, text: List, line: 6, column: 28]
+   |     |  |     '- TOKEN[type: IDENTIFIER, text: java.util.List, line: 6, column: 18]
    |     |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 6, column: 32]
    |     '- TOKEN[type: TEXT, text:  v3.1, line: 6, column: 33]
    |- blockTag
