@@ -9,29 +9,40 @@
    |  |  '- nonTightHtmlContent
    |  |     |- TOKEN[type: TEXT, text: This is a normal paragraph, line: 3, column: 2]
    |  |     '- TOKEN[type: TEXT, text: Here's a list of features:, line: 5, column: 2]
+   |  |- htmlElement
+   |  |  |- htmlTagStart
+   |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 2]
+   |  |  |  |- TOKEN[type: TAG_NAME, text: ul, line: 6, column: 3]
+   |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 5]
+   |  |  |- htmlContent
+   |  |  |  |- htmlElement
+   |  |  |  |  |- htmlTagStart
+   |  |  |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 4]
+   |  |  |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 7, column: 5]
+   |  |  |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 7]
+   |  |  |  |  '- nonTightHtmlContent
+   |  |  |  |     '- TOKEN[type: TEXT, text: Feature one, line: 7, column: 8]
+   |  |  |  '- htmlElement
+   |  |  |     |- htmlTagStart
+   |  |  |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 4]
+   |  |  |     |  |- TOKEN[type: TAG_NAME, text: li, line: 8, column: 5]
+   |  |  |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 7]
+   |  |  |     '- nonTightHtmlContent
+   |  |  |        '- TOKEN[type: TEXT, text: Feature two, line: 8, column: 8]
+   |  |  '- htmlTagEnd
+   |  |     |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 2]
+   |  |     |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 3]
+   |  |     |- TOKEN[type: TAG_NAME, text: ul, line: 9, column: 4]
+   |  |     '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 6]
    |  '- htmlElement
    |     |- htmlTagStart
-   |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 6, column: 2]
-   |     |  |- TOKEN[type: TAG_NAME, text: ul, line: 6, column: 3]
-   |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 6, column: 5]
-   |     |- htmlContent
-   |     |  |- htmlElement
-   |     |  |  |- htmlTagStart
-   |     |  |  |  |- TOKEN[type: TAG_OPEN, text: <, line: 7, column: 4]
-   |     |  |  |  |- TOKEN[type: TAG_NAME, text: li, line: 7, column: 5]
-   |     |  |  |  '- TOKEN[type: TAG_CLOSE, text: >, line: 7, column: 7]
-   |     |  |  '- nonTightHtmlContent
-   |     |  |     '- TOKEN[type: TEXT, text: Feature one, line: 7, column: 8]
-   |     |  '- htmlElement
-   |     |     |- htmlTagStart
-   |     |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 8, column: 4]
-   |     |     |  |- TOKEN[type: TAG_NAME, text: li, line: 8, column: 5]
-   |     |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 8, column: 7]
-   |     |     '- nonTightHtmlContent
-   |     |        '- TOKEN[type: TEXT, text: Feature two, line: 8, column: 8]
-   |     '- htmlTagEnd
-   |        |- TOKEN[type: TAG_OPEN, text: <, line: 9, column: 2]
-   |        |- TOKEN[type: TAG_SLASH, text: /, line: 9, column: 3]
-   |        |- TOKEN[type: TAG_NAME, text: ul, line: 9, column: 4]
-   |        '- TOKEN[type: TAG_CLOSE, text: >, line: 9, column: 6]
-   '- TOKEN[type: EOF, text: <EOF>, line: 9, column: 7]
+   |     |  |- TOKEN[type: TAG_OPEN, text: <, line: 10, column: 2]
+   |     |  |- TOKEN[type: TAG_NAME, text: test, line: 10, column: 3]
+   |     |  |- htmlAttribute
+   |     |  |  |- TOKEN[type: TAG_ATTR_NAME, text: test, line: 10, column: 8]
+   |     |  |  |- TOKEN[type: EQUALS, text: =, line: 10, column: 12]
+   |     |  |  '- TOKEN[type: ATTRIBUTE_VALUE, text: "hello", line: 10, column: 13]
+   |     |  '- TOKEN[type: TAG_CLOSE, text: >, line: 10, column: 20]
+   |     '- nonTightHtmlContent
+   |        '- TOKEN[type: TEXT, text: content, line: 10, column: 21]
+   '- TOKEN[type: EOF, text: <EOF>, line: 10, column: 28]
