@@ -123,11 +123,39 @@ SNIPPET: 'snippet' -> pushMode(SNIPPET_ATTRIBUTE);
 CUSTOM_NAME: [a-zA-Z0-9:._-]+ -> pushMode(INLINE_TAG_DESCRIPTION);
 
 mode PLAIN_TEXT_TAG;
-Code_NEWLINE: '\r'? '\n' {setAfterNewline();} -> type(NEWLINE), channel(NEWLINES), pushMode(START_OF_LINE);
-Code_LBRACE: '{' { braceCounter++; } -> type(TEXT);
-Code_RBRACE: '}' { braceCounter > 1 }? { braceCounter--; } -> type(TEXT);
-JAVADOC_INLINE_TAG_END: '}' { braceCounter == 1 }? { braceCounter--; } -> popMode, popMode;
-Code_TEXT: ~[{}\r\n]+ -> type(TEXT);
+PlainText_LBRACE: '{' { braceCounter++; }-> more;
+
+PlainText_RBRACE: { braceCounter > 1 }? '}' { braceCounter--; } -> more;
+
+PlainText_TEXT: ~[{}\r\n]+ -> more;
+
+// Emits accumulated text when encountering either the final closing `}`
+// of the inline tag or a newline character.
+EMIT_INLINE_TAG_TEXT
+    : {(braceCounter == 1 && _input.LA(1) == '}') || _input.LA(1) == '\r' || _input.LA(1) == '\n'}?
+     {
+        int la = _input.LA(1);
+        String text = _input.getText(Interval.of(_tokenStartCharIndex, _input.index() - 1));
+        if (!text.isEmpty()) {
+            setType(TEXT);
+        }
+        else {
+            skip();
+        }
+
+        if (la == '}') {
+            pushMode(INLINE_TAG_END_TOKEN);
+        } else {
+             pushMode(INLINE_TAG_NEWLINE);
+        }
+     };
+
+mode INLINE_TAG_END_TOKEN;
+JAVADOC_INLINE_TAG_END: '}' { braceCounter == 1 }? {braceCounter--;} -> popMode, popMode, popMode;
+
+mode INLINE_TAG_NEWLINE;
+InlineTag_NEWLINE: '\r'? '\n' {setAfterNewline();} -> type(NEWLINE), channel(NEWLINES);
+InlineTag_LEADING_ASTERISK: [ \t]* '*' -> channel(LEADING_ASTERISKS), type(LEADING_ASTERISK), popMode;
 
 mode SNIPPET_ATTRIBUTE;
 SNIPPET_ATTR_NAME: Letter LetterOrDigit*;

@@ -61,19 +61,13 @@
    |  |  |- literalInlineTag
    |  |  |  |- TOKEN[type: LITERAL, text: literal, line: 7, column: 4]
    |  |  |  '- description
-   |  |  |     |- TOKEN[type: TEXT, text:  , line: 7, column: 11]
-   |  |  |     |- TOKEN[type: TEXT, text: {, line: 7, column: 12]
-   |  |  |     |- TOKEN[type: TEXT, text: @code code, line: 7, column: 13]
-   |  |  |     '- TOKEN[type: TEXT, text: }, line: 7, column: 23]
+   |  |  |     '- TOKEN[type: TEXT, text:  {@code code}, line: 7, column: 11]
    |  |  '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 7, column: 24]
    |  '- inlineTag
    |     |- TOKEN[type: JAVADOC_INLINE_TAG_START, text: {@, line: 8, column: 2]
    |     |- literalInlineTag
    |     |  |- TOKEN[type: LITERAL, text: literal, line: 8, column: 4]
    |     |  '- description
-   |     |     |- TOKEN[type: TEXT, text:  , line: 8, column: 11]
-   |     |     |- TOKEN[type: TEXT, text: {, line: 8, column: 12]
-   |     |     |- TOKEN[type: TEXT, text:  <p> , line: 8, column: 13]
-   |     |     '- TOKEN[type: TEXT, text: }, line: 8, column: 18]
+   |     |     '- TOKEN[type: TEXT, text:  { <p> }, line: 8, column: 11]
    |     '- TOKEN[type: JAVADOC_INLINE_TAG_END, text: }, line: 8, column: 19]
    '- TOKEN[type: EOF, text: <EOF>, line: 9, column: 0]
